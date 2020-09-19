@@ -7,10 +7,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p 
-        className="title-font">
+        <p
+          className="title-font">
           Japanese BBQ<br></br>
-          DARUMA AOE
+          DARUMA<br></br>
+          AOE
         </p>
         <a
           className="App-link"
