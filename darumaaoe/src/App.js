@@ -10,7 +10,7 @@ function App() {
         <p
           className="title-font">
           Japanese BBQ<br></br>
-          DARUMA<br></br>
+          YAKINIKU DARUMA<br></br>
           AOE
         </p>
         <a
