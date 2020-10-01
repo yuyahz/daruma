@@ -7,6 +7,7 @@ import { News } from './News';
 import { NoMatch } from './NoMatch';
 import { Quality } from './Quality';
 import { Recruit } from './Recruit';
+
 class App extends Component {
   render() {
     return (
