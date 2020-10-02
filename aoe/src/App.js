@@ -7,14 +7,19 @@ import { News } from './News';
 import { NoMatch } from './NoMatch';
 import { Quality } from './Quality';
 import { Recruit } from './Recruit';
-import { Layout } from './components/Layout'
+import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
+import TopLogo from './MTL/TopLogo.svg';
+import { Container } from 'react-bootstrap';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-      <NavigationBar />
+        <Container>
+          <img src={TopLogo} alt="Logo"></img>
+        </Container>
+        <NavigationBar />
         <Layout>
           <Router>
             <Switch>
