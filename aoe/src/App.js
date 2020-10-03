@@ -10,15 +10,14 @@ import { Recruit } from './Recruit';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import TopLogo from './MTL/TopLogo.svg';
-import { Container } from 'react-bootstrap';
+import TitleHalfCircle from './MTL/TitleHalfCircle.svg';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Container>
-          <img src={TopLogo} alt="Logo"></img>
-        </Container>
+        <img className="TopLogo" src={TopLogo} alt="Logo"></img>
+        <div className="TitleHalfCircle"><img src={TitleHalfCircle} alt="HalfCircle" /></div>
         <NavigationBar />
         <Layout>
           <Router>

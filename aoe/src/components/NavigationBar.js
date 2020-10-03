@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Styles = styled.div`
 .navbar {
     padding: 20px 100px 30px 100px;
+    position:relative;
 }
 
 .navbar-nav .nav-link {
@@ -20,7 +21,7 @@ const Styles = styled.div`
 export const NavigationBar = () => (
     <Styles>
         <Navbar expand="lg">
-        
+
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
 
