@@ -17,7 +17,10 @@ class App extends Component {
     return (
       <React.Fragment>
         <img className="TopLogo" src={TopLogo} alt="Logo"></img>
-        <div className="TitleHalfCircle"><img src={TitleHalfCircle} alt="HalfCircle" /></div>
+        <div className="TitleHalfCircle">
+          <img src={TitleHalfCircle} alt="HalfCircle" />
+          <h2 className="C_Subhead">焼肉と韓国料理のお店</h2>
+        </div>
         <NavigationBar />
         <Layout>
           <Router>
