@@ -19,7 +19,10 @@ class App extends Component {
         <img className="TopLogo" src={TopLogo} alt="Logo"></img>
         <div className="TitleHalfCircle">
           <img src={TitleHalfCircle} alt="HalfCircle" />
-          <h2 className="C_Subhead">焼肉と韓国料理のお店</h2>
+          <div className="TitleHeadMain">
+            <h3 className="HeadSub">創業五十年岡山</h3>
+            <h2 className="HeadMain">焼肉と韓国料理のお店</h2>
+          </div>
         </div>
         <NavigationBar />
         <Layout>

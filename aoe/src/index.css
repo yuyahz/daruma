@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-size: 15px;
   background-color: #C73D13;
   font-family: 'PT Sans', sans-serif, 'Noto Sans JP', sans-serif, 'Noto Serif JP', serif;
   -webkit-font-smoothing: antialiased;
@@ -11,7 +12,9 @@ code {
     monospace;
 }
 
-.TopLogo {
+/* //////// Home //////// */
+
+/* .TopLogo {
   position: absolute; 
   right: 50%;
   left: 50%;
@@ -19,29 +22,44 @@ code {
   filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.30));
 }
 
-.TitleDeco{
+.TitleDeco {
   position: relative;
   margin-top: 100px;
 }
 
-.TitleHalfCircle{
-  position: absolute;
-  top: 0%;
-  left: 10%;
-  transform: translateX(-50%);
-}
-
-.TitleMainDeco{
+.TitleMainDeco {
   position: absolute;
   top: 0%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.C_Subhead{
-  font-family: 'Noto Serif JP', serif;
-  font-size: 44px;
-  writing-mode: vertical-rl;
-  position: relative;
-  left: 40%;
+.TitleHalfCircle {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translateX(-50%);
 }
+
+.TitleHeadMain {
+  font-family: 'Noto Serif JP', serif;
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+}
+
+.HeadMain {
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: 1rem
+}
+
+.HeadSub {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 1rem;
+  position: absolute;
+  left: 70%;
+  color: white;
+} */

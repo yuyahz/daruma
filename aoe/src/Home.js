@@ -1,13 +1,21 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap';
+import './Home.css'
+import { Container, Row, Col } from 'react-bootstrap';
 import TitleMainDeco from './MTL/TitleMainDeco.svg';
 
 export const Home = () => (
-    <Container fluid={true}>
-        <Row className="TitleDeco">
-            <div className="TitleMainDeco">
-            <img src={TitleMainDeco} alt="MainDeco" />
-            </div>
-        </Row>
-    </Container>
+    <React.Fragment>
+        <Container fluid={true}>
+            <Row className="TitleDeco">
+                <Col>
+                    <div className="TitleMainDeco">
+                        <img src={TitleMainDeco} alt="MainDeco" />
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col>ppppppppppppppppppppppppppppppp</Col>
+            </Row>
+        </Container>
+    </React.Fragment>
 )

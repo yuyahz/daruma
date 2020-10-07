@@ -1,0 +1,49 @@
+.TopLogo {
+    position: absolute; 
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.30));
+  }
+  
+  .TitleDeco {
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .TitleMainDeco {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .TitleHalfCircle {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translateX(-50%);
+  }
+  
+  .TitleHeadMain {
+    font-family: 'Noto Serif JP', serif;
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+  }
+  
+  .HeadMain {
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 1rem
+  }
+  
+  .HeadSub {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1rem;
+    position: absolute;
+    left: 70%;
+    color: white;
+  }
