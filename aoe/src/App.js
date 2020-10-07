@@ -10,20 +10,12 @@ import { Recruit } from './Recruit';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import TopLogo from './MTL/TopLogo.svg';
-import TitleHalfCircle from './MTL/TitleHalfCircle.svg';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <img className="TopLogo" src={TopLogo} alt="Logo"></img>
-        <div className="TitleHalfCircle">
-          <img src={TitleHalfCircle} alt="HalfCircle" />
-          <div className="TitleHeadMain">
-            <h3 className="HeadSub">創業五十年岡山</h3>
-            <h2 className="HeadMain">焼肉と韓国料理のお店</h2>
-          </div>
-        </div>
         <NavigationBar />
         <Layout>
           <Router>

@@ -4,52 +4,49 @@
     left: 50%;
     transform: translateX(-50%);
     filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.30));
-  }
-  
-.TitleDeco {
+}
+
+.TitleSec {
     position: relative;
-    margin-top: 6%;
-  }
-  
-  .TitleMainDeco {
+}
+
+.Title {
+    position: relative;
+}
+
+.TitleDeco {
     position: absolute;
-    top: 0%;
+    top: 50%;
     left: 50%;
+    transform: translateY(40%) translateX(-50%);
+    
+}
+
+.TitleHalfCircle {
+    position: relative;
+    left: 35%;
     transform: translateX(-50%);
-  }
-  
-  .TitleHalfCircle {
+}
+
+.TitleHead {
     position: absolute;
-    top: 0%;
-    left: 10%;
-    transform: translateX(-50%);
-  }
-  
-  .TitleHeadMain {
+    left: 15%;
+    top: 15%;
     font-family: 'Noto Serif JP', serif;
     writing-mode: vertical-rl;
-    position: absolute;
-    left: 30%;
-    top: 15%;
-  }
-  
-  .HeadMain {
+}
+
+.HeadMain {
     font-size: 2.5rem;
     font-weight: 100;
-    letter-spacing: 1rem
-  }
-  
-  .HeadSub {
+    letter-spacing: 1rem;
+}
+
+.HeadSub {
     font-size: 1rem;
     font-weight: 100;
     letter-spacing: 1rem;
     position: absolute;
-    left: 70%;
+    left: 75%;
     color: white;
-  }
-
-  .Carousels {
-      width: 100px;
-      height: 800px;
-      background-color: thistle;
-  }
+}

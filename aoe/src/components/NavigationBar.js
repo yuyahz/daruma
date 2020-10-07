@@ -4,8 +4,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 .navbar {
-    padding: 30px 200px 30px 270px;
-    position:relative;
+    padding:20px 150px 0 200px;
 }
 
 .navbar-nav .nav-link {
@@ -37,7 +36,6 @@ export const NavigationBar = () => (
                     <Nav.Item><Nav.Link href="/quality">QUALITY</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/recuruit">RECURUIT</Nav.Link></Nav.Item>
                 </Nav>
-
             </Navbar.Collapse>
         </Navbar>
     </Styles>
