@@ -6,9 +6,9 @@
     filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.30));
   }
   
-  .TitleDeco {
+.TitleDeco {
     position: relative;
-    margin-top: 100px;
+    margin-top: 6%;
   }
   
   .TitleMainDeco {
@@ -46,4 +46,10 @@
     position: absolute;
     left: 70%;
     color: white;
+  }
+
+  .Carousels {
+      width: 100px;
+      height: 800px;
+      background-color: thistle;
   }

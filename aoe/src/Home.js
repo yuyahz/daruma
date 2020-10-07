@@ -13,8 +13,9 @@ export const Home = () => (
                     </div>
                 </Col>
             </Row>
-            <Row>
-                <Col>ppppppppppppppppppppppppppppppp</Col>
+            <Row className="Carousels">
+                <Col>
+                </Col>
             </Row>
         </Container>
     </React.Fragment>
