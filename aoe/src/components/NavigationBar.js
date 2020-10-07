@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 .navbar {
-    padding:20px 150px 0 200px;
+    padding:20px;
 }
 
 .navbar-nav .nav-link {

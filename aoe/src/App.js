@@ -15,8 +15,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <img className="TopLogo" src={TopLogo} alt="Logo"></img>
         <NavigationBar />
+        <img className="TopLogo" src={TopLogo} alt="Logo"></img>
         <Layout>
           <Router>
             <Switch>
