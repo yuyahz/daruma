@@ -79,16 +79,29 @@
     100% {opacity: 1;}
 }
 
-.Carousel {
-
-    margin: 13%;
+.Slider {
+    position: relative;
+    margin: 15%;
+    padding-bottom: 8%;
 }
 
-.CarouselSec {
-
+.SliderCaption {
+    position: absolute;
+    bottom: -40%;
+    left: -6%;
+    padding-top: 9%;
+    padding-left: 7%;
+    padding-right: 7%;
+    border-radius: 5%;
+    font-size: 0.9vw;
+    font-family: 'Noto Serif JP', serif;
+    color: #FFFFFF;
+    writing-mode: vertical-rl;
+    background-color:#C73D13;
 }
 
-.yakinikuPic {
-    margin: 5%;
-    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+.Intro {
+    font-family: 'Noto Serif JP', serif;
+    margin: 15%;
+    color: #FFFFFF;
 }
