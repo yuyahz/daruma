@@ -9,14 +9,12 @@ import { Quality } from './Quality';
 import { Recruit } from './Recruit';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
-import TopLogo from './MTL/TopLogo.svg';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <NavigationBar />
-        <img className="TopLogo" src={TopLogo} alt="Logo"></img>
         <Layout>
           <Router>
             <Switch>

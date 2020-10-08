@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 .navbar {
-    padding:20px;
+    padding:30px 170px 10px 120px;
+    position:relative;
+    z-index:1000;
 }
 
 .navbar-nav .nav-link {
@@ -25,7 +27,7 @@ export const NavigationBar = () => (
             <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="mr-auto">
-                    <Button variant="outline-primary btn-lg shadow">RENT BBQ</Button>
+                    <Button variant="light btn-lg bshadow">RENT BBQ</Button>
                 </Nav>
 
                 <Nav className="ml-auto">

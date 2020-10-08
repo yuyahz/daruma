@@ -1,5 +1,6 @@
 .TopLogo {
     position: absolute; 
+    max-width: 30%;
     right: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -12,14 +13,14 @@
 
 .Title {
     position: relative;
+    margin-top: -6.4%;
 }
 
 .TitleDeco {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(30%) translateX(-50%);
-    
+    transform: translateY(50%) translateX(-50%);
 }
 
 .TitleHalfCircle {
@@ -31,22 +32,63 @@
 .TitleHead {
     position: absolute;
     left: 15%;
-    top:15%;
+    top:18%;
     font-family: 'Noto Serif JP', serif;
     writing-mode: vertical-rl;
 }
 
 .HeadMain {
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     font-weight: 100;
-    letter-spacing: 1rem;
+    letter-spacing: 1vw;
 }
 
 .HeadSub {
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: 100;
-    letter-spacing: 1rem;
+    letter-spacing: 1vw;
     position: absolute;
     left: 75%;
     color: white;
+}
+
+.ScrollSec {
+    position: relative;
+}
+
+.Scroll {
+    position: absolute; 
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(6px 6px 6px rgb(255, 230, 0));
+    -webkit-animation:blink 1.0s ease-in-out infinite alternate;
+    -moz-animation:blink 1.0s ease-in-out infinite alternate;
+    animation:blink 1.0s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes blink {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@keyframes blink {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+.Carousel {
+
+    margin: 13%;
+}
+
+.CarouselSec {
+
+}
+
+.yakinikuPic {
+    margin: 5%;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
 }
