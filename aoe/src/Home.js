@@ -7,6 +7,12 @@ import TopLogo from './MTL/TopLogo.svg';
 import ScrollIcon from './MTL/ScrollIcon.svg';
 import Fuji from './MTL/Fuji.png';
 import Fuji2 from './MTL/Fuji2.png';
+import TakeoutDeco from './MTL/TakeoutDeco.svg';
+import Takeout from './MTL/Takeout.svg';
+import PointCardDeco from './MTL/PointCardDeco.svg';
+import PointCard from './MTL/PointCard.svg';
+import Card from './MTL/Card.svg';
+import Contact from './MTL/Contact.svg';
 
 export const Home = () => (
     <React.Fragment>
@@ -99,13 +105,37 @@ export const Home = () => (
 
             <Row>
                 <Col>
-                    <p>oooooooooo</p>
+                    <p>õõõõõõõõõõõ</p>
                 </Col>
             </Row>
 
             <Row>
                 <Col>
-                    <p>oooooooooo</p>
+                    <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
+                </Col>
+                <Col>
+                    <Image className="Takeout" src={Takeout} alt="Takeout" fluid />
+                </Col>
+            </Row>
+
+            <Row>
+                <Col>
+                    <Image className="PointCard" src={PointCard} alt="PointCard" fluid />
+                </Col>
+                <Col>
+                    <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
+                </Col>
+            </Row>
+
+            <Row>
+                <Col>
+                    <Image className="Card" src={Card} alt="Card" fluid />
+                </Col>
+            </Row>
+
+            <Row>
+                <Col>
+                    <Image className="Contact" src={Contact} alt="Contact" fluid />
                 </Col>
             </Row>
         </Container>
