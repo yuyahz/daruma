@@ -105,7 +105,7 @@ export const Home = () => (
 
             <Row>
                 <Col>
-                    <p>õõõõõõõõõõõ</p>
+                    <p>õõõ</p>
                 </Col>
             </Row>
 
