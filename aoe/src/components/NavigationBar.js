@@ -27,7 +27,7 @@ export const NavigationBar = () => (
             <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="mr-auto">
-                    <Button variant="light btn-lg bshadow">RENT BBQ</Button>
+                    <Button variant="light btn-lg shadow">RENT BBQ</Button>
                 </Nav>
 
                 <Nav className="ml-auto">
