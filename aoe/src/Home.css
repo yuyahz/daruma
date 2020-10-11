@@ -102,7 +102,7 @@
 
 .IntroSec {
     margin-bottom: 10%;
-    height: 30vw;
+    height: 100%;
 }
 
 .IntroPic_LS {
@@ -120,7 +120,7 @@
 }
 
 .IntroCaption_LS {
-    padding: 30% 18% 10%;
+    padding: 30% 18% 5%;
 }
 
 .IntroCaption_RS {
@@ -128,7 +128,7 @@
 }
 
 .IntroCaption_L {
-    font-size: 2vw;
+    font-size: 220%;
     letter-spacing: 0.1vw;
     padding-bottom: 3%;
     font-family: 'Noto Serif JP', serif;
@@ -136,7 +136,31 @@
 }
 
 .IntroCaption_S {
-    font-size: 0.9vw;
+    font-size: 80%;
     font-family: 'Noto Serif JP', serif;
     color: #F3F0DB;
+}
+
+.TakeoutSec {
+    margin:15% 15% 0 15%;
+}
+
+.Takeout {
+
+}
+
+.TakeoutDeco {
+    width: 60%;
+}
+
+.PointCardSec {
+    margin: 15% 15% 15% 15%;
+}
+
+.PointCard {
+
+}
+
+.PointCardDeco {
+    width: 60%;
 }

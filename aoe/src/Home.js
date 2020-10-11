@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import { Container, Row, Col, Carousel, Image } from 'react-bootstrap';
+import { Container, Row, Col, Carousel, Image, Collapse } from 'react-bootstrap';
 import TitleMainDeco from './MTL/TitleMainDeco.svg';
 import TitleHalfCircle from './MTL/TitleHalfCircle.svg';
 import TopLogo from './MTL/TopLogo.svg';
@@ -62,10 +62,10 @@ export const Home = () => (
             </Row>
 
             <Row className="IntroSec">
-                <Col className="IntroPic_LS_Sec">
+                <Col sm className="IntroPic_LS_Sec">
                     <Image className="IntroPic_LS" src={Fuji2} rounded fluid />
                 </Col>
-                <Col>
+                <Col sm>
                     <div className="IntroCaption_LS">
                         <h3 className="IntroCaption_L">
                             ダルマオリジナルの秘伝のタレ</h3>
@@ -76,7 +76,7 @@ export const Home = () => (
             </Row>
 
             <Row className="IntroSec">
-                <Col>
+                <Col sm>
                     <div className="IntroCaption_RS">
                         <h3 className="IntroCaption_L">
                             豊富なサイドメニュー</h3>
@@ -84,16 +84,16 @@ export const Home = () => (
                             多彩なサイドメニューは、こだわりの手作り。 ダルマ開店当時の人気メニュー「ホルモンうどん焼き」 から好評の豆腐チゲ、キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
                     </div>
                 </Col>
-                <Col className="IntroPic_RS_Sec">
+                <Col sm className="IntroPic_RS_Sec">
                     <Image className="IntroPic_RS" src={Fuji2} rounded fluid />
                 </Col>
             </Row>
 
             <Row className="IntroSec">
-                <Col>
+                <Col sm>
                     <Image className="IntroPic_LS" src={Fuji2} rounded fluid />
                 </Col>
-                <Col>
+                <Col sm>
                     <div className="IntroCaption_LS">
                         <h3 className="IntroCaption_L">
                             ボリューム満点のお肉</h3>
@@ -104,37 +104,45 @@ export const Home = () => (
             </Row>
 
             <Row>
-                <Col>
+                <Col sm="12" md={{ size: 6, offset: 3 }}>
                     <p>õõõ</p>
                 </Col>
             </Row>
 
             <Row>
-                <Col>
-                    <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
+                <Col sm>
+                    <div class="TakeoutSec">
+                        <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
+                    </div>
                 </Col>
-                <Col>
-                    <Image className="Takeout" src={Takeout} alt="Takeout" fluid />
-                </Col>
-            </Row>
-
-            <Row>
-                <Col>
-                    <Image className="PointCard" src={PointCard} alt="PointCard" fluid />
-                </Col>
-                <Col>
-                    <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
+                <Col sm>
+                    <div class="TakeoutSec">
+                        <Image className="Takeout" src={Takeout} alt="Takeout" fluid />
+                    </div>
                 </Col>
             </Row>
 
             <Row>
-                <Col>
+                <Col sm>
+                    <div class="PointCardSec">
+                        <Image className="PointCard" src={PointCard} alt="PointCard" fluid />
+                    </div>
+                </Col>
+                <Col sm>
+                    <div class="PointCardSec">
+                        <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
+                    </div>
+                </Col>
+            </Row>
+
+            <Row>
+                <Col sm="12" md={{ size: 6, offset: 3 }}>
                     <Image className="Card" src={Card} alt="Card" fluid />
                 </Col>
             </Row>
 
             <Row>
-                <Col>
+                <Col sm="12" md={{ size: 6, offset: 3 }}>
                     <Image className="Contact" src={Contact} alt="Contact" fluid />
                 </Col>
             </Row>
