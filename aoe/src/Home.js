@@ -18,7 +18,7 @@ export const Home = () => (
     <React.Fragment>
         <Container fluid={true}>
             <Row className="Title">
-                <Col>
+                <Col xs={6} md={4}>
                     <div>
                         <Image className="TitleHalfCircle" src={TitleHalfCircle} alt="HalfCircle" fluid />
                         <div className="TitleHead">
@@ -27,13 +27,13 @@ export const Home = () => (
                         </div>
                     </div>
                 </Col>
-                <Col >
+                <Col xs={6} md={4}>
                     <Image className="TopLogo" src={TopLogo} alt="Logo" fluid />
                     <div className="Title">
                         <Image className="TitleDeco" src={TitleMainDeco} alt="MainDeco" fluid />
                     </div>
                 </Col>
-                <Col className="ScrollSec">
+                <Col xs={6} md={4} className="ScrollSec">
                     <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
                 </Col>
             </Row>
