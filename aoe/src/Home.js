@@ -105,7 +105,7 @@ export const Home = () => (
 
             <Row>
                 <Col sm="12" md={{ size: 6, offset: 3 }}>
-                    <p>õõõ</p>
+                    <p>Hellow world</p>
                 </Col>
             </Row>
 
