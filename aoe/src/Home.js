@@ -9,9 +9,11 @@ import Fuji from './MTL/Fuji.png';
 import Fuji2 from './MTL/Fuji2.png';
 import Takeout_Sec from './MTL/Takeout_Sec.svg';
 import PointCard_Sec from './MTL/PointCard_Sec.svg';
+import NewsTitle from './MTL/NewsTitle.svg';
 import { NewsList } from './components/NewsList';
 import Card from './MTL/Card.svg';
 import Contact from './MTL/Contact.svg';
+import Copylight from './MTL/Copylight.svg';
 
 export const Home = () => (
     <React.Fragment>
@@ -114,6 +116,11 @@ export const Home = () => (
                 </Col>
             </Row>
 
+            <Row className="NewsTitle">
+                <Col md={{ span: 2, offset: 5 }}>
+                    <Image src={NewsTitle} alt="NewsTitle" fluid />
+                </Col>
+            </Row>
             <NewsList />
 
             <Row className="Card">
@@ -125,6 +132,12 @@ export const Home = () => (
             <Row className="Contact">
                 <Col md={{ span: 6, offset: 3 }}>
                     <Image src={Contact} alt="Contact" fluid />
+                </Col>
+            </Row>
+
+            <Row className="Copylight">
+                <Col md={{ span: 6, offset: 3 }}>
+                    <Image src={Copylight} alt="Copylight" fluid />
                 </Col>
             </Row>
         </Container>

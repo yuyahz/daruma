@@ -8,9 +8,19 @@ const Styles = styled.div`
     color: #F3F0DB;
 }
 
-.TabContent {
+.Tab {
+    margin: 6%;
+}
+
+.TabFrame {
     margin: 3%;
-    border:1px solid #325A8C;
+    border: 5px solid #007BFF;
+    border-radius: 15px;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.TabContent {
+    margin: 10%;
 }
 
 .title {
@@ -31,18 +41,27 @@ export const NewsList = () => (
                 <Tab.Container defaultActiveKey="#link1">
                     <Row>
                         <Col sm={4}>
-                            <ListGroup>
+                            <ListGroup className="Tab">
                                 <ListGroup.Item action href="#link1">
-                                    New HP
+                                    2020.10.23 New HP
                                     </ListGroup.Item>
                                 <ListGroup.Item action href="#link2">
-                                    2011.4.14
+                                    2011.4.14 義援金について
+                                    </ListGroup.Item>
+                                <ListGroup.Item action href="#link3">
+                                    .
+                                    </ListGroup.Item>
+                                <ListGroup.Item action href="#link4">
+                                    .
+                                    </ListGroup.Item>
+                                <ListGroup.Item action href="#link5">
+                                    .
                                     </ListGroup.Item>
                             </ListGroup>
                         </Col>
                         <Col sm={8} className="NewsSec">
-                            <Tab.Content className="TabContent">
-                                <Tab.Pane eventKey="#link1">
+                            <Tab.Content className="TabFrame">
+                                <Tab.Pane className="TabContent" eventKey="#link1">
                                     <h3 className="title">ホームページリニューアルのお知らせ</h3>
                                     <p className="br">日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。</p>
                                     <p className="br">本日、ホームページの全面リニューアルをいたしました。</p>
@@ -50,7 +69,7 @@ export const NewsList = () => (
                                     <p className="br">今後とも、内容の充実を図るとともに、わかりやすく・最新の情報を発信してまいりますので、何卒よろしくお願い申し上げます。</p>
                                     <TabContent />
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="#link2">
+                                <Tab.Pane className="TabContent" eventKey="#link2">
                                     <h3 className="title">義援金、店頭募金送金のご報告</h3>
                                     <p className="br">被災地の少しでも早い復興をお祈り申し上げます。</p>
                                         企業としては微力でありますが、日本赤十字社を通じて義援金をお送りいたしました。
