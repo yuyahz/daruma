@@ -95,7 +95,7 @@
     border-radius: 5%;
     font-size: 0.9vw;
     font-family: 'Noto Serif JP', serif;
-    color: #F3F0DB;;
+    color: #F3F0DB;
     writing-mode: vertical-rl;
     background-color:#C73D13;
 }
@@ -142,25 +142,21 @@
 }
 
 .TakeoutSec {
-    margin:15% 15% 0 15%;
-}
-
-.Takeout {
-
-}
-
-.TakeoutDeco {
-    width: 60%;
+    margin: 18% 0 10% 0;
+    text-align: center;
 }
 
 .PointCardSec {
-    margin: 15% 15% 15% 15%;
+    margin: 10% 0 15% 0;
+    text-align: center;
 }
 
-.PointCard {
-
+.Card {
+    margin: 13% 0 13% 0;
+    text-align: center;
 }
 
-.PointCardDeco {
-    width: 60%;
+.Contact {
+    margin: 13% 0 13% 0;
+    text-align: center;
 }

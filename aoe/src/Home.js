@@ -1,16 +1,15 @@
 import React from 'react'
 import './Home.css'
-import { Container, Row, Col, Carousel, Image, Collapse } from 'react-bootstrap';
+import { Container, Row, Col, Carousel, Image, } from 'react-bootstrap';
 import TitleMainDeco from './MTL/TitleMainDeco.svg';
 import TitleHalfCircle from './MTL/TitleHalfCircle.svg';
 import TopLogo from './MTL/TopLogo.svg';
 import ScrollIcon from './MTL/ScrollIcon.svg';
 import Fuji from './MTL/Fuji.png';
 import Fuji2 from './MTL/Fuji2.png';
-import TakeoutDeco from './MTL/TakeoutDeco.svg';
-import Takeout from './MTL/Takeout.svg';
-import PointCardDeco from './MTL/PointCardDeco.svg';
-import PointCard from './MTL/PointCard.svg';
+import Takeout_Sec from './MTL/Takeout_Sec.svg';
+import PointCard_Sec from './MTL/PointCard_Sec.svg';
+import { NewsList } from './components/NewsList';
 import Card from './MTL/Card.svg';
 import Contact from './MTL/Contact.svg';
 
@@ -103,47 +102,29 @@ export const Home = () => (
                 </Col>
             </Row>
 
-            <Row>
-                <Col sm="12" md={{ size: 6, offset: 3 }}>
-                    <p>Hellow world Hellow world</p>
+            <Row className="TakeoutSec">
+                <Col md={{ span: 10, offset: 1 }}>
+                    <Image src={Takeout_Sec} alt="Takeout_Sec" fluid />
                 </Col>
             </Row>
 
-            <Row>
-                <Col sm>
-                    <div class="TakeoutSec">
-                        <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
-                    </div>
-                </Col>
-                <Col sm>
-                    <div class="TakeoutSec">
-                        <Image className="Takeout" src={Takeout} alt="Takeout" fluid />
-                    </div>
+            <Row className="PointCardSec">
+                <Col md={{ span: 10, offset: 1 }}>
+                    <Image src={PointCard_Sec} alt="PointCard_Sec" fluid />
                 </Col>
             </Row>
 
-            <Row>
-                <Col sm>
-                    <div class="PointCardSec">
-                        <Image className="PointCard" src={PointCard} alt="PointCard" fluid />
-                    </div>
-                </Col>
-                <Col sm>
-                    <div class="PointCardSec">
-                        <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
-                    </div>
+            <NewsList />
+
+            <Row className="Card">
+                <Col md={{ span: 4, offset: 4 }}>
+                    <Image src={Card} alt="Card" fluid />
                 </Col>
             </Row>
 
-            <Row>
-                <Col sm="12" md={{ size: 6, offset: 3 }}>
-                    <Image className="Card" src={Card} alt="Card" fluid />
-                </Col>
-            </Row>
-
-            <Row>
-                <Col sm="12" md={{ size: 6, offset: 3 }}>
-                    <Image className="Contact" src={Contact} alt="Contact" fluid />
+            <Row className="Contact">
+                <Col md={{ span: 6, offset: 3 }}>
+                    <Image src={Contact} alt="Contact" fluid />
                 </Col>
             </Row>
         </Container>
