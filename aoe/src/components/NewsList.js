@@ -13,20 +13,18 @@ const Styles = styled.div`
 }
 
 .TabFrame {
-    margin: 3%;
     border: 5px solid #007BFF;
     border-radius: 15px;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .TabContent {
-    margin: 10%;
+    margin: 8%;
 }
 
 .title {
     color: #F3F0DB;
     padding-bottom: 5%;
-    ${'' /* text-shadow: 2px 3px 10px #5A8FCB; */}
 }
 
 .br {

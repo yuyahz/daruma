@@ -1,6 +1,7 @@
 .TopLogo {
     position: absolute; 
     max-width: 30%;
+    top: -50%;
     right: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -82,7 +83,7 @@
 
 .Slider {
     position: relative;
-    margin: 15%;
+    margin: 10%;
     padding-bottom: 8%;
 }
 
@@ -102,48 +103,31 @@
 }
 
 .IntroSec {
-    margin-bottom: 10%;
-    height: 100%;
-}
-
-.IntroPic_LS {
-    position: absolute;
-    right: 0%;
-    width: 40%;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-}
-
-.IntroPic_RS {
-    position: absolute;
-    left: 0%;
-    width: 40%;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-}
-
-.IntroCaption_LS {
-    padding: 30% 18% 5%;
-}
-
-.IntroCaption_RS {
-    padding: 30% 18% 10%;
-}
-
-.IntroCaption_L {
-    font-size: 220%;
-    letter-spacing: 0.1vw;
-    padding-bottom: 3%;
-    font-family: 'Noto Serif JP', serif;
-    color:#F3F0DB;
-}
-
-.IntroCaption_S {
-    font-size: 80%;
     font-family: 'Noto Serif JP', serif;
     color: #F3F0DB;
 }
 
+.IntroCaptionTitle {
+    padding-bottom: 3vw;
+}
+
+.IntroCaption { 
+    padding: 12vw;
+}
+
+.IntroPicRight {
+    padding: 6%;
+    float: right;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.IntroPicLeft {
+    padding: 6%;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
 .TakeoutSec {
-    margin: 18% 0 10% 0;
+    margin: 13% 0 10% 0;
     text-align: center;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
@@ -155,7 +139,7 @@
 }
 
 .NewsTitle {
-    margin: 1%;
+    margin: 10% 1% 1% 1%;
     text-align: center;
     filter: drop-shadow(2px 3px 5px rgba(255, 255, 255, 0.479));
     -webkit-animation:blink 1.5s ease-in-out infinite alternate;

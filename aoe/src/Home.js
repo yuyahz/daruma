@@ -62,47 +62,56 @@ export const Home = () => (
                 </Col>
             </Row>
 
-            <Row className="IntroSec">
-                <Col sm className="IntroPic_LS_Sec">
-                    <Image className="IntroPic_LS" src={Fuji2} rounded fluid />
+            <Row xs={1} md={2} className="IntroSec">
+                <Col>
+                    <Image className="IntroPicRight" src={Fuji2} rounded />
                 </Col>
-                <Col sm>
-                    <div className="IntroCaption_LS">
-                        <h3 className="IntroCaption_L">
-                            ダルマオリジナルの秘伝のタレ</h3>
-                        <p className="IntroCaption_S">
-                            ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
+                <Col>
+                    <div>
+                        <div className="IntroCaption">
+                            <h2 className="IntroCaptionTitle">
+                                ダルマオリジナルの秘伝のタレ</h2>
+                            <p>
+                                ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
+                        </div>
                     </div>
                 </Col>
             </Row>
 
-            <Row className="IntroSec">
-                <Col sm>
-                    <div className="IntroCaption_RS">
-                        <h3 className="IntroCaption_L">
-                            豊富なサイドメニュー</h3>
-                        <p className="IntroCaption_S">
+            <Row xs={1} md={2} className="IntroSec">
+                <Col>
+                    <div className="IntroCaption">
+                        <h2 className="IntroCaptionTitle">
+                            豊富なサイドメニュー</h2>
+                        <p>
                             多彩なサイドメニューは、こだわりの手作り。 ダルマ開店当時の人気メニュー「ホルモンうどん焼き」 から好評の豆腐チゲ、キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
                     </div>
                 </Col>
-                <Col sm className="IntroPic_RS_Sec">
-                    <Image className="IntroPic_RS" src={Fuji2} rounded fluid />
+                <Col>
+                    <Image className="IntroPicLeft" src={Fuji2} rounded />
                 </Col>
             </Row>
 
-            <Row className="IntroSec">
-                <Col sm>
-                    <Image className="IntroPic_LS" src={Fuji2} rounded fluid />
+            <Row xs={1} md={2} className="IntroSec">
+                <Col>
+                    <Image className="IntroPicRight" src={Fuji2} rounded fluid />
                 </Col>
-                <Col sm>
-                    <div className="IntroCaption_LS">
-                        <h3 className="IntroCaption_L">
-                            ボリューム満点のお肉</h3>
-                        <p className="IntroCaption_S">
+                <Col>
+                    <div className="IntroCaption">
+                        <h2 className="IntroCaptionTitle">
+                            ボリューム満点のお肉</h2>
+                        <p>
                             ダルマのお肉はおいしくて、ボリューム満点!! 食肉業者直売だから実現したこのボリューム！この価格！ お腹いっぱい新鮮なお肉を楽しんで頂く為、スタッフ一同 日々お客様の為に精進しています。</p>
                     </div>
                 </Col>
             </Row>
+
+            <Row className="NewsTitle">
+                <Col md={{ span: 2, offset: 5 }}>
+                    <Image src={NewsTitle} alt="NewsTitle" fluid />
+                </Col>
+            </Row>
+            <NewsList />
 
             <Row className="TakeoutSec">
                 <Col md={{ span: 10, offset: 1 }}>
@@ -115,13 +124,6 @@ export const Home = () => (
                     <Image src={PointCard_Sec} alt="PointCard_Sec" fluid />
                 </Col>
             </Row>
-
-            <Row className="NewsTitle">
-                <Col md={{ span: 2, offset: 5 }}>
-                    <Image src={NewsTitle} alt="NewsTitle" fluid />
-                </Col>
-            </Row>
-            <NewsList />
 
             <Row className="Card">
                 <Col md={{ span: 4, offset: 4 }}>
