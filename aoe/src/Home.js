@@ -7,8 +7,10 @@ import TopLogo from './MTL/TopLogo.svg';
 import ScrollIcon from './MTL/ScrollIcon.svg';
 import Fuji from './MTL/Fuji.png';
 import Fuji2 from './MTL/Fuji2.png';
-import Takeout_Sec from './MTL/Takeout_Sec.svg';
-import PointCard_Sec from './MTL/PointCard_Sec.svg';
+import Takeout from './MTL/Takeout.svg';
+import TakeoutDeco from './MTL/TakeoutDeco.svg';
+import PointCard from './MTL/PointCard.svg';
+import PointCardDeco from './MTL/PointCardDeco.svg';
 import NewsTitle from './MTL/NewsTitle.svg';
 import { NewsList } from './components/NewsList';
 import Card from './MTL/Card.svg';
@@ -62,47 +64,61 @@ export const Home = () => (
                 </Col>
             </Row>
 
-            <Row xs={1} md={2} className="IntroSec">
-                <Col>
-                    <Image className="IntroPicRight" src={Fuji2} rounded />
-                </Col>
-                <Col>
-                    <div>
-                        <div className="IntroCaption">
-                            <h2 className="IntroCaptionTitle">
-                                ダルマオリジナルの秘伝のタレ</h2>
-                            <p>
-                                ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
-                        </div>
-                    </div>
-                </Col>
-            </Row>
-
-            <Row xs={1} md={2} className="IntroSec">
-                <Col>
-                    <div className="IntroCaption">
-                        <h2 className="IntroCaptionTitle">
-                            豊富なサイドメニュー</h2>
-                        <p>
-                            多彩なサイドメニューは、こだわりの手作り。 ダルマ開店当時の人気メニュー「ホルモンうどん焼き」 から好評の豆腐チゲ、キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
-                    </div>
-                </Col>
-                <Col>
-                    <Image className="IntroPicLeft" src={Fuji2} rounded />
+            <Row className="IntroSec">
+                <Col md={{ span: 6, offset: 3 }}>
+                    <Row className="Takeout" xs={1} md={2}>
+                        <Col>
+                            <Image className="IntroPicLeft" src={Fuji2} rounded />
+                        </Col>
+                        <Col xs={12}>
+                            <div className="IntroCaption">
+                                <h2 className="IntroCaptionTitle">受け継がれる</h2>
+                                <h2 className="br_TopPage">秘伝のタレ</h2>
+                                <p>ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、
+                                    守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
+                                    幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
 
-            <Row xs={1} md={2} className="IntroSec">
-                <Col>
-                    <Image className="IntroPicRight" src={Fuji2} rounded fluid />
+            <Row className="IntroSec">
+                <Col md={{ span: 6, offset: 3 }}>
+                    <Row className="Takeout" xs={1} md={2}>
+                        <Col>
+                            <div className="IntroCaption">
+                                <h2 className="IntroCaptionTitle">豊富な</h2>
+                                <h2 className="br_TopPage">サイドメニュー</h2>
+                                <p>
+                                    多彩なサイドメニューは、こだわりの手作り。 ダルマ開店当時の人気メニュー「ホルモンうどん焼き」 から好評の豆腐チゲ、
+                                    キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
+                            </div>
+                        </Col>
+                        <Col xs={12}>
+                            <Image className="IntroRight" src={Fuji2} rounded />
+                        </Col>
+                    </Row>
                 </Col>
-                <Col>
-                    <div className="IntroCaption">
-                        <h2 className="IntroCaptionTitle">
-                            ボリューム満点のお肉</h2>
-                        <p>
-                            ダルマのお肉はおいしくて、ボリューム満点!! 食肉業者直売だから実現したこのボリューム！この価格！ お腹いっぱい新鮮なお肉を楽しんで頂く為、スタッフ一同 日々お客様の為に精進しています。</p>
-                    </div>
+            </Row>
+
+            <Row className="IntroSec">
+                <Col md={{ span: 6, offset: 3 }}>
+                    <Row className="Takeout" xs={1} md={2}>
+                        <Col>
+                            <Image className="IntroPicLeft" src={Fuji2} rounded />
+                        </Col>
+                        <Col xs={12}>
+                            <div className="IntroCaption">
+                                <h2 className="IntroCaptionTitle">
+                                    ボリューム満点</h2>
+                                <h2 className="br_TopPage">のお肉</h2>
+                                <p>
+                                    ダルマのお肉はおいしくて、ボリューム満点 食肉業者直売だから実現したこのボリューム！この価格！
+                                    お腹いっぱい新鮮なお肉を楽しんで頂く為、スタッフ一同 日々お客様の為に精進しています。</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
 
@@ -113,15 +129,29 @@ export const Home = () => (
             </Row>
             <NewsList />
 
-            <Row className="TakeoutSec">
-                <Col md={{ span: 10, offset: 1 }}>
-                    <Image src={Takeout_Sec} alt="Takeout_Sec" fluid />
+            <Row>
+                <Col md={{ span: 8, offset: 2 }}>
+                    <Row className="PointCard" xs={1} md={2}>
+                        <Col>
+                            <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
+                        </Col>
+                        <Col>
+                            <Image src={PointCard} alt="PointCard" fluid />
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
 
-            <Row className="PointCardSec">
-                <Col md={{ span: 10, offset: 1 }}>
-                    <Image src={PointCard_Sec} alt="PointCard_Sec" fluid />
+            <Row>
+                <Col md={{ span: 8, offset: 2 }}>
+                    <Row className="Takeout" xs={1} md={2}>
+                        <Col>
+                            <Image src={Takeout} alt="Takeout" fluid />
+                        </Col>
+                        <Col xs={12}>
+                            <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
 
