@@ -20,13 +20,9 @@ export const Home = () => (
     <React.Fragment>
         <Container fluid={true}>
             <Row className="Title">
-                <Col>
+                <Col className="d-none d-sm-block">
                     <div>
                         <Image className="TitleHalfCircle" src={TitleHalfCircle} alt="HalfCircle" fluid />
-                        <div className="TitleHead">
-                            <h3 className="HeadSub">創業五十年岡山</h3>
-                            <h2 className="HeadMain">焼肉と韓国料理のお店</h2>
-                        </div>
                     </div>
                 </Col>
                 <Col>
@@ -34,7 +30,7 @@ export const Home = () => (
                         <Image className="TitleDeco" src={TitleMainDeco} alt="MainDeco" fluid />
                     </div>
                 </Col>
-                <Col className="ScrollSec">
+                <Col className="ScrollSec" className="d-none d-sm-block">
                     <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
                 </Col>
             </Row>
@@ -62,27 +58,27 @@ export const Home = () => (
                 </Col>
             </Row>
 
-            <Row className="IntroSec">
-                <Col md={{ span: 6, offset: 3 }}>
-                    <Row className="Takeout" xs={1} md={2}>
-                        <Col className="IntroPicLeft">
-                            <Image src={Fuji2} rounded />
-                        </Col>
-                        <Col>
-                            <div className="IntroCaption">
-                                <h2 className="IntroCaptionTitle">受け継がれる</h2>
-                                <h2 className="br_TopPage">秘伝のタレ</h2>
-                                <p>ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、
-                                守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
+        <Row className="IntroSec">
+            <Col md={{ span: 10, offset: 1 }}>
+                <Row className="Takeout" xs={1} md={2}>
+                    <Col className="IntroPic_L">
+                        <Image src={Fuji2} rounded />
+                    </Col>
+                    <Col>
+                        <div className="IntroCaption">
+                            <h2 className="IntroCaptionTitle">受け継がれる</h2>
+                            <h2 className="br_TopPage">秘伝のタレ</h2>
+                            <p>ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、
+                            守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
                                     幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+                        </div>
+                    </Col>
+                </Row>
+            </Col>
+        </Row>
 
             <Row className="IntroSec">
-                <Col md={{ span: 6, offset: 3 }}>
+                <Col md={{ span: 10, offset: 1 }}>
                     <Row className="Takeout" xs={1} md={2}>
                         <Col>
                             <div className="IntroCaption">
@@ -93,85 +89,86 @@ export const Home = () => (
                                     キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
                             </div>
                         </Col>
-                        <Col className="IntroPicRight">
+                        <Col className="IntroPic_R">
                             <Image src={Fuji2} rounded />
                         </Col>
                     </Row>
                 </Col>
             </Row>
 
-            <Row className="IntroSec">
-                <Col md={{ span: 6, offset: 3 }}>
-                    <Row className="Takeout" xs={1} md={2}>
-                        <Col className="IntroPicLeft">
-                            <Image src={Fuji2} rounded />
-                        </Col>
-                        <Col>
-                            <div className="IntroCaption">
-                                <h2 className="IntroCaptionTitle">
-                                    ボリューム満点</h2>
-                                <h2 className="br_TopPage">のお肉</h2>
-                                <p>
-                                    ダルマのお肉はおいしくて、ボリューム満点 食肉業者直売だから実現したこのボリューム！この価格！
+        <Row className="IntroSec">
+            <Col md={{ span: 10, offset: 1 }}>
+                <Row className="Takeout" xs={1} md={2}>
+                    <Col className="IntroPic_L">
+                        <Image src={Fuji2} rounded />
+                    </Col>
+                    <Col>
+                        <div className="IntroCaption">
+                            <h2 className="IntroCaptionTitle">
+                                ボリューム満点</h2>
+                            <h2 className="br_TopPage">のお肉</h2>
+                            <p>
+                                ダルマのお肉はおいしくて、ボリューム満点 食肉業者直売だから実現したこのボリューム！この価格！
                                     お腹いっぱい新鮮なお肉を楽しんで頂く為、スタッフ一同 日々お客様の為に精進しています。</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+                        </div>
+                    </Col>
+                </Row>
+            </Col>
+        </Row>
 
-            <Row className="NewsTitle">
-                <Col md={{ span: 2, offset: 5 }}>
-                    <Image src={NewsTitle} alt="NewsTitle" fluid />
-                </Col>
-            </Row>
-            <NewsList />
+        <Row className="NewsTitle">
+            <Col md={{ span: 2, offset: 5 }}>
+                <Image src={NewsTitle} alt="NewsTitle" fluid />
+            </Col>
+        </Row>
+        <NewsList />
 
-            <Row>
-                <Col md={{ span: 8, offset: 2 }}>
-                    <Row className="PointCard" xs={1} md={2}>
-                        <Col xs={6} md={4}>
-                            <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
-                        </Col>
-                        <Col xs={12} md={8}>
-                            <Image className="Ob" src={PointCard} alt="PointCard" fluid />
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+        <Row>
+            <Col md={{ span: 8, offset: 2 }}>
+                <Row className="PointCard" xs={1} md={2}>
+                    <Col xs={6} md={4}>
+                        <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
+                    </Col>
+                    <Col xs={12} md={8}>
+                        <Image className="Ob" src={PointCard} alt="PointCard" fluid />
+                    </Col>
+                </Row>
+            </Col>
+        </Row>
 
-            <Row>
-                <Col md={{ span: 8, offset: 2 }}>
-                    <Row className="Takeout" xs={1} md={2}>
-                        <Col xs={12} md={8}>
-                            <Image className="Ob" src={Takeout} alt="Takeout" fluid />
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+        <Row>
+            <Col md={{ span: 8, offset: 2 }}>
+                <Row className="Takeout" xs={1} md={2}>
+                    <Col xs={12} md={8}>
+                        <Image className="Ob" src={Takeout} alt="Takeout" fluid />
+                    </Col>
+                    <Col xs={6} md={4}>
+                        <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
+                    </Col>
+                </Row>
+            </Col>
+        </Row>
 
-            <Row className="Card">
-                <Col md={{ span: 4, offset: 4 }}>
-                    <Image src={Card} alt="Card" fluid />
-                </Col>
-            </Row>
+        <Row className="Card">
+            <Col md={{ span: 4, offset: 4 }}>
+                <Image src={Card} alt="Card" fluid />
+            </Col>
+        </Row>
 
-            <Row className="Contact">
-                <Col md={{ span: 6, offset: 3 }}>
-                    <Image src={Contact} alt="Contact" fluid />
-                </Col>
-            </Row>
+        <Row className="Contact">
+            <Col md={{ span: 6, offset: 3 }}>
+                <Image src={Contact} alt="Contact" fluid />
+            </Col>
+        </Row>
 
-            <Row className="Copylight">
-                <Col md={{ span: 6, offset: 3 }}>
-                    <Image src={Copylight} alt="Copylight" fluid />
-                </Col>
-            </Row>
+        <Row className="Copylight">
+            <Col md={{ span: 6, offset: 3 }}>
+                <Image src={Copylight} alt="Copylight" fluid />
+            </Col>
+        </Row>
+
         </Container>
-    </React.Fragment>
+    </React.Fragment >
 )
 
 

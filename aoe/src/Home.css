@@ -1,6 +1,6 @@
 .TopLogo {
     position: absolute; 
-    max-width: 30%;
+    width: 15%;
     right: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -20,31 +20,23 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(60%) translateX(-50%);
+    transform: translateY(30%) translateX(-50%);
 }
 
 .TitleHalfCircle {
     position: relative;
-    left: 35%;
-    transform: translateX(-50%);
-}
-
-.TitleHead {
-    position: absolute;
-    left: 15%;
-    top:18%;
-    font-family: 'Noto Serif JP', serif;
-    writing-mode: vertical-rl;
+    left: 25%;
+    transform: translateY(-13%) translateX(-50%);
 }
 
 .HeadMain {
-    font-size: 2.5vw;
+    font-size: 220%;
     font-weight: 100;
     letter-spacing: 1vw;
 }
 
 .HeadSub {
-    font-size: 1vw;
+    font-size: 100%;
     font-weight: 100;
     letter-spacing: 1vw;
     position: absolute;
@@ -58,9 +50,9 @@
 
 .Scroll {
     position: absolute; 
-    top: 70%;
+    top: 55%;
     left: 70%;
-    width: 4%;
+    width: 3%;
     transform: translateX(-50%);
     filter: drop-shadow(2px 3px 5px rgba(255, 255, 255, 0.315));
     -webkit-animation:blink 1.5s ease-in-out infinite alternate;
@@ -111,7 +103,7 @@
 }
 
 .IntroCaption {
-    padding: 10% 0 10%;
+    margin: 0 5% 0 5%;
 }
 
 .br_TopPage {
@@ -122,14 +114,13 @@
     padding-bottom: 10%;
 }
 
-.IntroPicRight {
-    text-align: center;
+.IntroPic_L {
+    text-align: right;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
-.IntroPicLeft {
-    width: 100%;
-    text-align: center;
+.IntroPic_R {
+    text-align: left;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 

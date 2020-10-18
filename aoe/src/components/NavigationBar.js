@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 .navbar {
-    padding: 1% 5% 1% 5%;
+    margin: 1% 7% 1% 6%;
     position:relative;
     z-index: 1000;
 }
@@ -19,7 +19,7 @@ const Styles = styled.div`
 }
 
 .mr-auto {
-    padding: 3%;
+    padding: 4%;
 }
 `;
 
