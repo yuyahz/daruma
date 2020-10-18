@@ -4,9 +4,9 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 .navbar {
-    padding:30px 170px 10px 120px;
+    padding: 1% 5% 1% 5%;
     position:relative;
-    z-index:1000;
+    z-index: 1000;
 }
 
 .navbar-nav .nav-link {
@@ -16,7 +16,11 @@ const Styles = styled.div`
         color: #5A8FCB;
         }
     }
-} 
+}
+
+.mr-auto {
+    padding: 3%;
+}
 `;
 
 export const NavigationBar = () => (

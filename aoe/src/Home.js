@@ -3,7 +3,6 @@ import './Home.css'
 import { Container, Row, Col, Carousel, Image, } from 'react-bootstrap';
 import TitleMainDeco from './MTL/TitleMainDeco.svg';
 import TitleHalfCircle from './MTL/TitleHalfCircle.svg';
-import TopLogo from './MTL/TopLogo.svg';
 import ScrollIcon from './MTL/ScrollIcon.svg';
 import Fuji from './MTL/Fuji.png';
 import Fuji2 from './MTL/Fuji2.png';
@@ -31,7 +30,6 @@ export const Home = () => (
                     </div>
                 </Col>
                 <Col>
-                    <Image className="TopLogo" src={TopLogo} alt="Logo" fluid />
                     <div className="Title">
                         <Image className="TitleDeco" src={TitleMainDeco} alt="MainDeco" fluid />
                     </div>
@@ -42,7 +40,7 @@ export const Home = () => (
             </Row>
 
             <Row className="Slider">
-                <Col>
+                <Col className="d-none d-sm-block">
                     <Carousel>
                         <Carousel.Item>
                             <Image className="d-block w-100" src={Fuji} alt="First slide" rounded />
@@ -67,15 +65,15 @@ export const Home = () => (
             <Row className="IntroSec">
                 <Col md={{ span: 6, offset: 3 }}>
                     <Row className="Takeout" xs={1} md={2}>
-                        <Col>
-                            <Image className="IntroPicLeft" src={Fuji2} rounded />
+                        <Col className="IntroPicLeft">
+                            <Image src={Fuji2} rounded />
                         </Col>
-                        <Col xs={12}>
+                        <Col>
                             <div className="IntroCaption">
                                 <h2 className="IntroCaptionTitle">受け継がれる</h2>
                                 <h2 className="br_TopPage">秘伝のタレ</h2>
                                 <p>ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、
-                                    守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
+                                守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
                                     幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
                             </div>
                         </Col>
@@ -95,8 +93,8 @@ export const Home = () => (
                                     キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
                             </div>
                         </Col>
-                        <Col xs={12}>
-                            <Image className="IntroRight" src={Fuji2} rounded />
+                        <Col className="IntroPicRight">
+                            <Image src={Fuji2} rounded />
                         </Col>
                     </Row>
                 </Col>
@@ -105,10 +103,10 @@ export const Home = () => (
             <Row className="IntroSec">
                 <Col md={{ span: 6, offset: 3 }}>
                     <Row className="Takeout" xs={1} md={2}>
-                        <Col>
-                            <Image className="IntroPicLeft" src={Fuji2} rounded />
+                        <Col className="IntroPicLeft">
+                            <Image src={Fuji2} rounded />
                         </Col>
-                        <Col xs={12}>
+                        <Col>
                             <div className="IntroCaption">
                                 <h2 className="IntroCaptionTitle">
                                     ボリューム満点</h2>
@@ -132,11 +130,11 @@ export const Home = () => (
             <Row>
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row className="PointCard" xs={1} md={2}>
-                        <Col>
+                        <Col xs={6} md={4}>
                             <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
                         </Col>
-                        <Col>
-                            <Image src={PointCard} alt="PointCard" fluid />
+                        <Col xs={12} md={8}>
+                            <Image className="Ob" src={PointCard} alt="PointCard" fluid />
                         </Col>
                     </Row>
                 </Col>
@@ -145,10 +143,10 @@ export const Home = () => (
             <Row>
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row className="Takeout" xs={1} md={2}>
-                        <Col>
-                            <Image src={Takeout} alt="Takeout" fluid />
+                        <Col xs={12} md={8}>
+                            <Image className="Ob" src={Takeout} alt="Takeout" fluid />
                         </Col>
-                        <Col xs={12}>
+                        <Col xs={6} md={4}>
                             <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
                         </Col>
                     </Row>

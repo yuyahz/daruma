@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Container, Row, Col, Image, } from 'react-bootstrap';
+import TopLogo from './MTL/TopLogo.svg';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import { Home } from './Home';
 import { Info } from './Info';
@@ -14,6 +16,9 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <Row>
+          <Col md={{ span: 6, offset: 3 }}><Image className="TopLogo" src={TopLogo} alt="Logo" fluid /></Col>
+        </Row>
         <NavigationBar />
         <Layout>
           <Router>

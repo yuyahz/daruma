@@ -123,10 +123,13 @@
 }
 
 .IntroPicRight {
+    text-align: center;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .IntroPicLeft {
+    width: 100%;
+    text-align: center;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -157,8 +160,8 @@
 }
 
 .PointCardDeco {
-    width:50%;
-    padding: 5%;
+    width:100%;
+    padding:20%;
 }
 
 .Takeout {
@@ -166,10 +169,14 @@
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
+.Ob {
+    width: 100%;
+}
+
 .TakeoutDeco {
     float: right;
-    width: 50%;
-    padding: 5%;
+    width: 100%;
+    padding: 20%;
 }
 
 .Card {
