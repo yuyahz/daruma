@@ -1,11 +1,11 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import styled from 'styled-components';
-import NewsTitle from './MTL/NewsTitle.svg';
+import NewsTitle from './assets/NewsTitle.svg';
 import { NewsList } from './components/NewsList';
-import Card from './MTL/Card.svg';
-import Contact from './MTL/Contact.svg';
-import Copylight from './MTL/Copylight.svg';
+import CardList from './assets/CardList.svg';
+import Contact from './assets/Contact.svg';
+import Copylight from './assets/Copylight.svg';
 
 const Styles = styled.div`
 .News {
@@ -39,9 +39,9 @@ export const News = () => (
                 </div>
             </Col>
         </Row>
-        <Row className="Card">
+        <Row className="CardList">
             <Col md={{ span: 4, offset: 4 }}>
-                <Image src={Card} alt="Card" fluid />
+                <Image src={CardList} alt="CardList" fluid />
             </Col>
         </Row>
 

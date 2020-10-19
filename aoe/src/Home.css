@@ -151,7 +151,7 @@
     padding: 20%;
 }
 
-.Card {
+.CardList {
     margin: 3% 0 3% 0;
     text-align: center;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));

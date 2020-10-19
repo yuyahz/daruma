@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Image, } from 'react-bootstrap';
-import TopLogo from './MTL/TopLogo.svg';
+import TopLogo from './assets/TopLogo.svg';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import { Home } from './Home';
 import { News } from './News';

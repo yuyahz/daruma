@@ -1,20 +1,20 @@
 import React from 'react'
 import './Home.css'
 import { Container, Row, Col, Carousel, Image, } from 'react-bootstrap';
-import TitleMainDeco from './MTL/TitleMainDeco.svg';
-import TitleHalfCircle from './MTL/TitleHalfCircle.svg';
-import ScrollIcon from './MTL/ScrollIcon.svg';
-import Fuji from './MTL/Fuji.png';
-import Fuji2 from './MTL/Fuji2.png';
-import Takeout from './MTL/Takeout.svg';
-import TakeoutDeco from './MTL/TakeoutDeco.svg';
-import PointCard from './MTL/PointCard.svg';
-import PointCardDeco from './MTL/PointCardDeco.svg';
-import NewsTitle from './MTL/NewsTitle.svg';
+import TitleMainDeco from './assets/TitleMainDeco.svg';
+import TitleHalfCircle from './assets/TitleHalfCircle.svg';
+import ScrollIcon from './assets/ScrollIcon.svg';
+import Fuji from './assets/Fuji.png';
+import Fuji2 from './assets/Fuji2.png';
+import Takeout from './assets/Takeout.svg';
+import TakeoutDeco from './assets/TakeoutDeco.svg';
+import PointCard from './assets/PointCard.svg';
+import PointCardDeco from './assets/PointCardDeco.svg';
+import NewsTitle from './assets/NewsTitle.svg';
 import { NewsList } from './components/NewsList';
-import Card from './MTL/Card.svg';
-import Contact from './MTL/Contact.svg';
-import Copylight from './MTL/Copylight.svg';
+import CardList from './assets/CardList.svg';
+import Contact from './assets/Contact.svg';
+import Copylight from './assets/Copylight.svg';
 
 export const Home = () => (
     <Container fluid={true}>
@@ -146,9 +146,9 @@ export const Home = () => (
             </Col>
         </Row>
 
-        <Row className="Card">
+        <Row className="CardList">
             <Col md={{ span: 4, offset: 4 }}>
-                <Image src={Card} alt="Card" fluid />
+                <Image src={CardList} alt="CardList" fluid />
             </Col>
         </Row>
 
