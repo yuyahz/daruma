@@ -3,6 +3,7 @@ import { Row, Col, Image, } from 'react-bootstrap';
 import TopLogo from './MTL/TopLogo.svg';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import { Home } from './Home';
+import { News } from './News';
 import { Info } from './Info';
 import { Menu } from './Menu';
 import { Recruit } from './Recruit';
@@ -23,6 +24,7 @@ class App extends Component {
           <Router>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/news" component={News} />
               <Route path="/info" component={Info} />
               <Route path="/menu" component={Menu} />
               <Route path="/recruit" component={Recruit} />

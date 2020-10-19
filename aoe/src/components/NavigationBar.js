@@ -40,6 +40,9 @@ export const NavigationBar = () => (
                         <Nav.Link href="/">HOME</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
+                        <Nav.Link href="/news">NEWS</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
                         <Nav.Link href="/info">INFO</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
