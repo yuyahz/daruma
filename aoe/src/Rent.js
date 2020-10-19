@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const News = () => (
+export const Rent = () => (
     <div>
-        <h2>News</h2>
+        <h2>Rent</h2>
     </div>
 )

@@ -37,9 +37,9 @@
     position: absolute; 
     top: 55%;
     left: 70%;
-    width: 3%;
+    width: 0.9vw;
     transform: translateX(-50%);
-    filter: drop-shadow(2px 3px 5px rgba(255, 255, 255, 0.315));
+    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.5));
     -webkit-animation:blink 1.5s ease-in-out infinite alternate;
     -moz-animation:blink 1.5s ease-in-out infinite alternate;
     animation:blink 1.5s ease-in-out infinite alternate;
@@ -166,4 +166,8 @@
 .Copylight {
     margin: 15% 0 5% 0;
     text-align: center;
+}
+
+.CopylightIcon {
+    width: 65%;
 }

@@ -3,8 +3,9 @@ import { Nav, Navbar, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
+
 .navbar {
-    margin: 1% 7% 1% 6%;
+    margin: 0% 6% 0% 6%;
     position:relative;
     z-index: 1000;
 }
@@ -19,7 +20,7 @@ const Styles = styled.div`
 }
 
 .mr-auto {
-    padding: 4%;
+    padding: 5%;
 }
 `;
 
@@ -31,16 +32,22 @@ export const NavigationBar = () => (
             <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="mr-auto">
-                    <Button variant="light btn-lg shadow">RENT BBQ</Button>
+                    <Button href="/rent" variant="light btn-lg shadow">RENT BBQ</Button>
                 </Nav>
 
                 <Nav className="ml-auto">
-                    <Nav.Item><Nav.Link href="/">HOME</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/news">NEWS</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/info">INFO</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/menu">MENU</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/quality">QUALITY</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/recuruit">RECURUIT</Nav.Link></Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link href="/">HOME</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link href="/info">INFO</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link href="/menu">MENU</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link href="/recuruit">RECURUIT</Nav.Link>
+                    </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

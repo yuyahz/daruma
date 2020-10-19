@@ -5,10 +5,9 @@ import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import { Home } from './Home';
 import { Info } from './Info';
 import { Menu } from './Menu';
-import { News } from './News';
-import { NoMatch } from './NoMatch';
-import { Quality } from './Quality';
 import { Recruit } from './Recruit';
+import { Rent } from './Rent';
+import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 
@@ -24,11 +23,10 @@ class App extends Component {
           <Router>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/" component={Info} />
-              <Route path="/" component={Menu} />
-              <Route path="/" component={News} />
-              <Route path="/" component={Quality} />
-              <Route path="/" component={Recruit} />
+              <Route path="/info" component={Info} />
+              <Route path="/menu" component={Menu} />
+              <Route path="/recruit" component={Recruit} />
+              <Route path="/rent" component={Rent} />
               <Route component={NoMatch} />
             </Switch>
           </Router>

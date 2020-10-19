@@ -17,43 +17,43 @@ import Contact from './MTL/Contact.svg';
 import Copylight from './MTL/Copylight.svg';
 
 export const Home = () => (
-        <Container fluid={true}>
-            <Row className="Title">
-                <Col sm>
-                    <div className="d-none d-sm-block">
-                        <Image className="TitleHalfCircle" src={TitleHalfCircle} alt="HalfCircle" fluid />
-                    </div>
-                </Col>
-                <Col sm className="TitleDeco">
-                        <Image src={TitleMainDeco} alt="MainDeco" fluid />
-                </Col>
-                <Col sm className="ScrollSec d-none d-sm-block">
-                        <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
-                </Col>
-            </Row>
+    <Container fluid={true}>
+        <Row className="Title">
+            <Col sm>
+                <div className="d-none d-sm-block">
+                    <Image className="TitleHalfCircle" src={TitleHalfCircle} alt="HalfCircle" fluid />
+                </div>
+            </Col>
+            <Col sm className="TitleDeco">
+                <Image src={TitleMainDeco} alt="MainDeco" fluid />
+            </Col>
+            <Col sm className="ScrollSec d-none d-sm-block">
+                <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
+            </Col>
+        </Row>
 
-            <Row className="Slider d-none d-sm-block">
-                <Col md={{ span: 8, offset: 2 }} className="d-none d-sm-block">
-                    <Carousel>
-                        <Carousel.Item>
-                            <Image className="d-block w-100" src={Fuji} alt="First slide" rounded />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <Image className="d-block w-100" src={Fuji} alt="Second slide" rounded />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <Image className="d-block w-100" src={Fuji} alt="Third slide" rounded />
-                        </Carousel.Item>
-                    </Carousel>
-                    <div className="SliderCaption">
-                        <p>五 十 年 守 り 続 け た</p>
-                        <p>味 を そ の ま ま に</p>
-                        <p>昔 か ら 変 わ ら ぬ</p>
-                        <p>伝 統 の 味 を 届 け る 為 に</p>
-                        <p>そ し て こ れ か ら も</p>
-                    </div>
-                </Col>
-            </Row>
+        <Row className="Slider d-none d-sm-block">
+            <Col md={{ span: 8, offset: 2 }} className="d-none d-sm-block">
+                <Carousel>
+                    <Carousel.Item>
+                        <Image className="d-block w-100" src={Fuji} alt="First slide" rounded />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Image className="d-block w-100" src={Fuji} alt="Second slide" rounded />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Image className="d-block w-100" src={Fuji} alt="Third slide" rounded />
+                    </Carousel.Item>
+                </Carousel>
+                <div className="SliderCaption">
+                    <p>五 十 年 守 り 続 け た</p>
+                    <p>味 を そ の ま ま に</p>
+                    <p>昔 か ら 変 わ ら ぬ</p>
+                    <p>伝 統 の 味 を 届 け る 為 に</p>
+                    <p>そ し て こ れ か ら も</p>
+                </div>
+            </Col>
+        </Row>
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
@@ -74,24 +74,24 @@ export const Home = () => (
             </Col>
         </Row>
 
-            <Row className="IntroSec">
-                <Col md={{ span: 10, offset: 1 }}>
-                    <Row className="Takeout" xs={1} md={2}>
-                        <Col>
-                            <div className="IntroCaption">
-                                <h2 className="IntroCaptionTitle">豊富な</h2>
-                                <h2 className="br_TopPage">サイドメニュー</h2>
-                                <p>
-                                    多彩なサイドメニューは、こだわりの手作り。 ダルマ開店当時の人気メニュー「ホルモンうどん焼き」 から好評の豆腐チゲ、
+        <Row className="IntroSec">
+            <Col md={{ span: 10, offset: 1 }}>
+                <Row className="Takeout" xs={1} md={2}>
+                    <Col>
+                        <div className="IntroCaption">
+                            <h2 className="IntroCaptionTitle">豊富な</h2>
+                            <h2 className="br_TopPage">サイドメニュー</h2>
+                            <p>
+                                多彩なサイドメニューは、こだわりの手作り。 ダルマ開店当時の人気メニュー「ホルモンうどん焼き」 から好評の豆腐チゲ、
                                     キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
-                            </div>
-                        </Col>
-                        <Col className="IntroPic_R">
-                            <Image src={Fuji2} rounded />
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+                        </div>
+                    </Col>
+                    <Col className="IntroPic_R">
+                        <Image src={Fuji2} rounded />
+                    </Col>
+                </Row>
+            </Col>
+        </Row>
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
@@ -159,12 +159,12 @@ export const Home = () => (
         </Row>
 
         <Row className="Copylight">
-            <Col md={{ span: 6, offset: 3 }}>
-                <Image src={Copylight} alt="Copylight" fluid />
+            <Col md={{ span: 4, offset: 4 }}>
+                <Image className="CopylightIcon" src={Copylight} alt="Copylight" fluid />
             </Col>
         </Row>
 
-        </Container>
+    </Container>
 )
 
 
