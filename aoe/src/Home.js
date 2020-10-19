@@ -17,26 +17,23 @@ import Contact from './MTL/Contact.svg';
 import Copylight from './MTL/Copylight.svg';
 
 export const Home = () => (
-    <React.Fragment>
         <Container fluid={true}>
             <Row className="Title">
-                <Col className="d-none d-sm-block">
-                    <div>
+                <Col sm>
+                    <div className="d-none d-sm-block">
                         <Image className="TitleHalfCircle" src={TitleHalfCircle} alt="HalfCircle" fluid />
                     </div>
                 </Col>
-                <Col>
-                    <div className="Title">
-                        <Image className="TitleDeco" src={TitleMainDeco} alt="MainDeco" fluid />
-                    </div>
+                <Col sm className="TitleDeco">
+                        <Image src={TitleMainDeco} alt="MainDeco" fluid />
                 </Col>
-                <Col className="ScrollSec" className="d-none d-sm-block">
-                    <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
+                <Col sm className="ScrollSec d-none d-sm-block">
+                        <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
                 </Col>
             </Row>
 
-            <Row className="Slider">
-                <Col className="d-none d-sm-block">
+            <Row className="Slider d-none d-sm-block">
+                <Col md={{ span: 8, offset: 2 }} className="d-none d-sm-block">
                     <Carousel>
                         <Carousel.Item>
                             <Image className="d-block w-100" src={Fuji} alt="First slide" rounded />
@@ -130,7 +127,7 @@ export const Home = () => (
                         <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
                     </Col>
                     <Col xs={12} md={8}>
-                        <Image className="Ob" src={PointCard} alt="PointCard" fluid />
+                        <Image src={PointCard} alt="PointCard" fluid />
                     </Col>
                 </Row>
             </Col>
@@ -140,7 +137,7 @@ export const Home = () => (
             <Col md={{ span: 8, offset: 2 }}>
                 <Row className="Takeout" xs={1} md={2}>
                     <Col xs={12} md={8}>
-                        <Image className="Ob" src={Takeout} alt="Takeout" fluid />
+                        <Image src={Takeout} alt="Takeout" fluid />
                     </Col>
                     <Col xs={6} md={4}>
                         <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />
@@ -168,7 +165,6 @@ export const Home = () => (
         </Row>
 
         </Container>
-    </React.Fragment >
 )
 
 
