@@ -1,10 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
 import styled from 'styled-components';
-import FujiCard from './assets/FujiCard.png';
+import { MenuCard } from './components/MenuCard';
 import CardList from './assets/CardList.svg';
 import Contact from './assets/Contact.svg';
 import Copylight from './assets/Copylight.svg';
+import { MenuYakiniku } from './MenuYakiniku';
+import { MenuOneDish } from './MenuOneDish';
+import { MenuRiceDishes } from './MenuRiceDishes';
+import { MenuDrink } from './MenuDrink';
+import { MenuDessert } from './MenuDessert';
+import { MenuPartyPlan } from './MenuPartyPlan';
+import { MenuLunch } from './MenuLunch';
 
 const Styles = styled.div`
 .SideSpace {
@@ -17,6 +25,7 @@ const Styles = styled.div`
 
 .CardRadius {
     border-radius: 50px 70px 70px 0;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.5));
 }
 
 .CardPic {
@@ -26,116 +35,29 @@ const Styles = styled.div`
 .CardList {
     margin-top: 10%;
 }
+
+.CardTitle {
+    color: #C73D13;
+    font-size: 140%;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
+}
+
+.CardText {
+    font-size: 80%;
+}
+
+.CardButton {
+    font-size: 80%;
+    border-radius: 50px 70px 70px 0;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.3));
+}
 `;
 
 export const Menu = () => (
     <Styles>
         <Container fluid>
-            <Row className="SideSpace">
-                <Col className="CardSec" xs={12} md={4}>
-                    <Card className="CardRadius">
-                        <Card.Img className="CardPic" variant="top" src={FujiCard} alt="FujiCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="CardSec" xs={12} md={4}>
-                    <Card className="CardRadius">
-                        <Card.Img className="CardPic" variant="top" src={FujiCard} alt="FujiCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="CardSec" xs={12} md={4}>
-                    <Card className="CardRadius">
-                        <Card.Img className="CardPic" variant="top" src={FujiCard} alt="FujiCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-
-            <Row className="SideSpace">
-                <Col className="CardSec" xs={12} md={4}>
-                    <Card className="CardRadius">
-                        <Card.Img className="CardPic" variant="top" src={FujiCard} alt="FujiCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="CardSec" xs={12} md={4}>
-                    <Card className="CardRadius">
-                        <Card.Img className="CardPic" variant="top" src={FujiCard} alt="FujiCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="CardSec" xs={12} md={4}>
-                    <Card className="CardRadius">
-                        <Card.Img className="CardPic" variant="top" src={FujiCard} alt="FujiCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-
-            <Row className="SideSpace">
-                <Col className="CardSec" xs={12} md={4}>
-                    <Card className="CardRadius">
-                        <Card.Img className="CardPic" variant="top" src={FujiCard} alt="FujiCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="CardSec" xs={12} md={4}>
-                    <Card className="CardRadius">
-                        <Card.Img className="CardPic" variant="top" src={FujiCard} alt="FujiCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-
+        <MenuCard />
             <Row className="CardList">
                 <Col md={{ span: 4, offset: 4 }}>
                     <Image src={CardList} alt="CardList" fluid />
@@ -154,5 +76,5 @@ export const Menu = () => (
                 </Col>
             </Row>
         </Container>
-    </Styles>
+    </Styles >
 )
