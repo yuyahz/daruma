@@ -6,13 +6,13 @@ import { MenuCard } from './components/MenuCard';
 import CardList from './assets/CardList.svg';
 import Contact from './assets/Contact.svg';
 import Copylight from './assets/Copylight.svg';
-import { MenuYakiniku } from './MenuYakiniku';
-import { MenuOneDish } from './MenuOneDish';
-import { MenuRiceDishes } from './MenuRiceDishes';
-import { MenuDrink } from './MenuDrink';
-import { MenuDessert } from './MenuDessert';
-import { MenuPartyPlan } from './MenuPartyPlan';
-import { MenuLunch } from './MenuLunch';
+import MenuYakiniku from './pages/MenuYakiniku';
+import MenuOneDish from './pages/MenuOneDish';
+import MenuRiceDishes from './pages/MenuRiceDishes';
+import MenuDrink from './pages/MenuDrink';
+import MenuDessert from './pages/MenuDessert';
+import MenuPartyPlan from './pages/MenuPartyPlan';
+import MenuLunch from './pages/MenuLunch';
 
 const Styles = styled.div`
 .SideSpace {
