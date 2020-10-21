@@ -9,7 +9,7 @@ import { Menu } from './Menu';
 import { Recruit } from './Recruit';
 import { Rent } from './Rent';
 import { NoMatch } from './NoMatch';
-import { Layout } from './components/Layout';
+import { LayoutNav } from './components/LayoutNav';
 import { NavigationBar } from './components/NavigationBar';
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
           <Col md={{ span: 6, offset: 3 }}><Image className="TopLogo" src={TopLogo} alt="Logo" fluid /></Col>
         </Row>
         <NavigationBar />
-        <Layout>
+        <LayoutNav>
           <Router>
             <Switch>
               <Route exact path="/" component={Home} />
@@ -32,7 +32,7 @@ class App extends Component {
               <Route component={NoMatch} />
             </Switch>
           </Router>
-        </Layout>
+        </LayoutNav>
       </React.Fragment>
     );
   }
