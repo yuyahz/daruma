@@ -12,8 +12,10 @@ import { MenuPartyPlan } from './pages/MenuPartyPlan';
 import { MenuLunch } from './pages/MenuLunch';
 
 export const Menu = () => (
-        <Container fluid>
-            <MenuCard />
-            <MenuBottom />
-        </Container>
+    <Container fluid>
+
+        <MenuCard />
+        <MenuBottom />
+
+    </Container>
 )
