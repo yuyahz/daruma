@@ -2,31 +2,39 @@ import React from "react";
 import { Container, Row, Col, Button, Card, Image } from "react-bootstrap";
 import styled from "styled-components";
 import FujiCard from "../assets/FujiCard.png";
+
 const Styles = styled.div`
+
 .SideSpace {
     margin: 0% 10%;
     -webkit-flex-direction: row; 
     flex-direction: row;
 }
+
 .CardSec {
-    padding: 4%;
+    padding: 4% 4% 10%;
 }
+
 .CardRadius {
     border-radius: 50px 70px 70px 0;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.5));
 }
+
 .CardPic {
     border-radius: 50px 70px 0 0;
 }
+
 .CardTitle {
     color: #c73d13;
     font-size: 140%;
     font-family: "Noto Serif JP", serif;
     font-weight: bold;
 }
+
 .CardText {
     font-size: 80%;
 }
+
 .CardButton {
     font-size: 80%;
     border-radius: 50px 70px 70px 0;
@@ -62,7 +70,6 @@ export const MenuCard = () => (
         </Container>
     </Styles>
 );
-
 
 const CardData = [
     {

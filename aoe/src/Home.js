@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import { Container, Row, Col, Carousel, Image, } from 'react-bootstrap';
+import { Container, Row, Col, Carousel, Image } from 'react-bootstrap';
 import TitleMainDeco from './assets/TitleMainDeco.svg';
 import TitleHalfCircle from './assets/TitleHalfCircle.svg';
 import ScrollIcon from './assets/ScrollIcon.svg';
@@ -12,9 +12,7 @@ import PointCard from './assets/PointCard.svg';
 import PointCardDeco from './assets/PointCardDeco.svg';
 import NewsTitle from './assets/NewsTitle.svg';
 import { NewsList } from './components/NewsList';
-import CardList from './assets/CardList.svg';
-import Contact from './assets/Contact.svg';
-import Copylight from './assets/Copylight.svg';
+import { MenuBottom } from './components/MenuBottom';
 
 export const Home = () => (
     <Container fluid={true}>
@@ -146,7 +144,9 @@ export const Home = () => (
             </Col>
         </Row>
 
-        <Row className="CardList">
+        <MenuBottom />
+
+        {/* <Row className="CardList">
             <Col md={{ span: 4, offset: 4 }}>
                 <Image src={CardList} alt="CardList" fluid />
             </Col>
@@ -162,7 +162,7 @@ export const Home = () => (
             <Col md={{ span: 4, offset: 4 }}>
                 <Image className="CopylightIcon" src={Copylight} alt="Copylight" fluid />
             </Col>
-        </Row>
+        </Row> */}
 
     </Container>
 )

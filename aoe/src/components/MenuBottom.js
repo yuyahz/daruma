@@ -23,9 +23,9 @@ const Styles = styled.div`
     border-radius: 50px 70px 0 0;
 }
 
-.CardList {
+${'' /* .CardList {
     margin-top: 10%;
-}
+} */}
 
 .CardTitle {
     color: #C73D13;

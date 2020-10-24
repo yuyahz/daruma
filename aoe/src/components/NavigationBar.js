@@ -44,13 +44,13 @@ export const NavigationBar = () => (
                             <Nav.Link href="/news">NEWS</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/info">INFO</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
                             <Nav.Link href="/menu">MENU</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/recuruit">RECURUIT</Nav.Link>
+                            <Nav.Link href="/info">INFO</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="/recruit">RECURUIT</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
