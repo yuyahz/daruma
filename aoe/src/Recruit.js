@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import styled from "styled-components";
 import { MenuBottom } from './components/MenuBottom';
 import Fuji3 from './assets/Fuji3.png';
-import styled from "styled-components";
 
 const Styles = styled.div`
 
@@ -23,7 +23,8 @@ const Styles = styled.div`
     padding-bottom: 3%;
     margin-bottom: 5%;
     font-family: 'Noto Serif JP', serif;
-    background: linear-gradient(transparent 50%, #007BFF 50%);
+    background: linear-gradient(transparent 0%, #C73D13 50%);
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .RecruitSubTitle {
