@@ -39,9 +39,13 @@ const Styles = styled.div`
     color: #F3F0DB;
 }
 
-.RecruitPic {
+.RecruitPicSec {
     text-align: center;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.RecruitPic {
+    ${'' /* width: 100%; */}
 }
 `;
 
@@ -52,22 +56,22 @@ export const Recruit = () => (
             <Row className="RecruitSecTitle">
                 <Col md={{ span: 6, offset: 3 }}>
                     <div className="RecruitText">
-                        <h1 className="RecruitTitle">アルバイト募集中</h1>
+                        <h2 className="RecruitTitle">アルバイト募集中</h2>
                         <p>未経験でも大丈夫！先輩スタッフが丁寧にお教えいたしますので、ご安心下さい。
-                    興味のある方は 086 - 224 - 3525 までお気軽にお電話下さい。</p>
+                            興味のある方は 086 - 224 - 3525 までお気軽にお電話下さい。</p>
                     </div>
                 </Col>
             </Row>
 
             <Row className="RecruitSecTop">
                 <Col md={{ span: 8, offset: 2 }}>
-                    <Row className="" xs={1} md={2}>
-                        <Col className="RecruitPic">
-                            <Image src={Fuji3} rounded />
+                    <Row xs={1} md={2}>
+                        <Col className="RecruitPicSec">
+                            <Image className="RecruitPic" src={Fuji3} rounded />
                         </Col>
                         <Col>
                             <div className="RecruitText">
-                                <h2 className="RecruitSubTitle">ホールスタッフ</h2>
+                                <h3 className="RecruitSubTitle">ホールスタッフ</h3>
                                 <p>条件　16歳以上　土日勤務可能な方</p>
                                 <p>・11時～22時の内5時間程度　※ラストまで入れる方歓迎</p>
                                 <p>・時給 ￥970   ・研修期間中 ￥920</p>
@@ -81,13 +85,13 @@ export const Recruit = () => (
 
             <Row className="RecruitSecBottom">
                 <Col md={{ span: 8, offset: 2 }}>
-                    <Row className="" xs={1} md={2}>
-                        <Col className="RecruitPic">
-                            <Image src={Fuji3} rounded />
+                    <Row xs={1} md={2}>
+                        <Col className="RecruitPicSec">
+                            <Image className="RecruitPic" src={Fuji3} rounded />
                         </Col>
                         <Col>
                             <div className="RecruitText">
-                                <h2 className="RecruitSubTitle">キッチンスタッフ</h2>
+                                <h3 className="RecruitSubTitle">キッチンスタッフ</h3>
                                 <p>条件　16歳以上　土日勤務可能な方</p>
                                 <p>・11時～22時の内5時間程度　※ラストまで入れる方歓迎</p>
                                 <p>・時給 ￥970   ・研修期間中 ￥920</p>
