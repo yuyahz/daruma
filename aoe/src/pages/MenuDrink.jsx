@@ -1,9 +1,13 @@
 import React from 'react';
+import { Image, } from 'react-bootstrap';
 
-export const Drink = () => {
+import YakinikuDeco from '../assets/YakinikuDeco.svg';
+
+export const Drink = ({data}) => {
     return (
         <div>
-            <h2>Drink</h2>
+            <Image src={YakinikuDeco} alt="Logo" fluid />
+            <h1>{data.cardTitle}</h1>
         </div>
     );
 }
