@@ -58,6 +58,7 @@
 }
 
 .Slider {
+    margin: 5% 0;
     position: relative;
     padding-bottom: 10%;
 }
@@ -80,6 +81,12 @@
 .IntroSec {
     font-family: 'Noto Serif JP', serif;
     color: #F3F0DB;
+}
+
+.IntroSecInside {
+    text-align: center;
+    margin: 5% 0 5% 0;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .IntroCaptionTitle {
@@ -116,7 +123,7 @@
 }
 
 .NewsTitle {
-    margin: 5% 1% 1% 1%;
+    margin: 10% 1% 1% 1%;
     text-align: center;
     filter: drop-shadow(2px 3px 5px rgba(255, 255, 255, 0.479));
     -webkit-animation:blink 1.5s ease-in-out infinite alternate;
@@ -138,7 +145,7 @@
 
 .PointCard {
     text-align: center;
-    margin: 15% 0 5% 0;
+    margin: 25% 0 5% 0;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -148,7 +155,7 @@
 
 .Takeout {
     text-align: center;
-    margin: 5% 0 10% 0;
+    margin: 5% 0 25% 0;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 

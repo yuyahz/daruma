@@ -55,7 +55,7 @@ export const Home = () => (
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
-                <Row className="Takeout" xs={1} md={2}>
+                <Row className="IntroSecInside" xs={1} md={2}>
                     <Col>
                         <Image className="IntroPic_L" src={Fuji2} rounded />
                     </Col>
@@ -74,7 +74,7 @@ export const Home = () => (
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
-                <Row className="Takeout" xs={1} md={2}>
+                <Row className="IntroSecInside" xs={1} md={2}>
                     <Col>
                         <div className="IntroCaption">
                             <h2 className="IntroCaptionTitle">豊富な</h2>
@@ -92,7 +92,7 @@ export const Home = () => (
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
-                <Row className="Takeout" xs={1} md={2}>
+                <Row className="IntroSecInside" xs={1} md={2}>
                     <Col>
                         <Image className="IntroPic_L" src={Fuji2} rounded />
                     </Col>
