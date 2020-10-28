@@ -34,18 +34,25 @@ const Styles = styled.div`
     border-bottom: solid 1px #007BFF;
 }
 
+.RecruitTitleText {
+    font-family: 'Noto Serif JP', serif;
+}
+
 .RecruitText {
     font-size: 90%;
     color: #F3F0DB;
 }
 
 .RecruitPicSec {
-    text-align: center;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+    
 }
 
 .RecruitPic {
-    ${'' /* width: 100%; */}
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 `;
 
@@ -57,7 +64,7 @@ export const Recruit = () => (
                 <Col md={{ span: 6, offset: 3 }}>
                     <div className="RecruitText">
                         <h2 className="RecruitTitle">アルバイト募集中</h2>
-                        <p>未経験でも大丈夫！先輩スタッフが丁寧にお教えいたしますので、ご安心下さい。
+                        <p className="RecruitTitleText">未経験でも大丈夫！先輩スタッフが丁寧にお教えいたしますので、ご安心下さい。
                             興味のある方は 086 - 224 - 3525 までお気軽にお電話下さい。</p>
                     </div>
                 </Col>
@@ -66,7 +73,7 @@ export const Recruit = () => (
             <Row className="RecruitSecTop">
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row xs={1} md={2}>
-                        <Col className="RecruitPicSec">
+                        <Col>
                             <Image className="RecruitPic" src={Fuji3} rounded />
                         </Col>
                         <Col>
@@ -86,7 +93,7 @@ export const Recruit = () => (
             <Row className="RecruitSecBottom">
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row xs={1} md={2}>
-                        <Col className="RecruitPicSec">
+                        <Col>
                             <Image className="RecruitPic" src={Fuji3} rounded />
                         </Col>
                         <Col>

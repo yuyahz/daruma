@@ -56,15 +56,15 @@ export const Home = () => (
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
                 <Row className="Takeout" xs={1} md={2}>
-                    <Col className="IntroPic_L">
-                        <Image src={Fuji2} rounded />
+                    <Col>
+                        <Image className="IntroPic_L" src={Fuji2} rounded />
                     </Col>
                     <Col>
                         <div className="IntroCaption">
                             <h2 className="IntroCaptionTitle">受け継がれる</h2>
                             <h2 className="br_TopPage">秘伝のタレ</h2>
                             <p>ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、
-                            守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
+                                守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
                                 幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
                         </div>
                     </Col>
@@ -83,8 +83,8 @@ export const Home = () => (
                                 キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
                         </div>
                     </Col>
-                    <Col className="IntroPic_R">
-                        <Image src={Fuji2} rounded />
+                    <Col>
+                        <Image className="IntroPic_R" src={Fuji2} rounded />
                     </Col>
                 </Row>
             </Col>
@@ -93,8 +93,8 @@ export const Home = () => (
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
                 <Row className="Takeout" xs={1} md={2}>
-                    <Col className="IntroPic_L">
-                        <Image src={Fuji2} rounded />
+                    <Col>
+                        <Image className="IntroPic_L" src={Fuji2} rounded />
                     </Col>
                     <Col>
                         <div className="IntroCaption">
