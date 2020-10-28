@@ -11,6 +11,7 @@ import { Rent } from './Rent';
 import { NoMatch } from './NoMatch';
 import { LayoutNav } from './components/LayoutNav';
 import { NavigationBar } from './components/NavigationBar';
+import MenuItem from './MenuItem';
 
 class App extends Component {
   render() {
@@ -25,7 +26,8 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/news" component={News} />
-              <Route path="/menu" component={Menu} />
+              <Route exact path="/menu" component={Menu} />
+              <Route path="/menu/:id" component={MenuItem} />
               <Route path="/info" component={Info} />
               <Route path="/recruit" component={Recruit} />
               <Route path="/rent" component={Rent} />

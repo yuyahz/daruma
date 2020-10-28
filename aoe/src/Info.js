@@ -31,7 +31,9 @@ const Styles = styled.div`
 .InfoFrame {
     margin: 10% 5%;
     padding: 3% 3% 1%;
+    font-family: 'Noto Serif JP', serif;
     background-color: #C73D13;
+    border: 4px double #007BFF;
     border-radius: 15px;
     filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
 }
@@ -71,9 +73,11 @@ export const Info = () => (
                     <div className="InfoText">
                         <h2 className="InfoTitle">店内紹介</h2>
                         <div className="InfoFrame">
-                            <p>明るい店内は、アットホームな雰囲気！宴会、2次会に最適な広さです。</p>
-                            <p>お座敷の席が多いため、お子様連れのお客様も、ゆっくりお食事が楽しめます。</p>
-                            <p>店内が広く、段差も少ないため車椅子のお客様も、安心してご来店いただけます。</p>
+                            <div>
+                                <p>明るい店内は、アットホームな雰囲気！宴会、2次会に最適な広さです。</p>
+                                <p>お座敷の席が多いため、お子様連れのお客様も、ゆっくりお食事が楽しめます。</p>
+                                <p>店内が広く、段差も少ないため車椅子のお客様も、安心してご来店いただけます。</p>
+                            </div>
                         </div>
                     </div>
                 </Col>
