@@ -64,7 +64,7 @@ export const Home = () => (
                             <h2 className="IntroCaptionTitle">受け継がれる</h2>
                             <h2 className="br_TopPage">秘伝のタレ</h2>
                             <p>ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、
-                                守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
+                            守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
                                 幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
                         </div>
                     </Col>
@@ -114,7 +114,7 @@ export const Home = () => (
                 <Image src={NewsTitle} alt="NewsTitle" fluid />
             </Col>
         </Row>
-        
+
         <NewsList />
 
         <Row>
@@ -134,7 +134,9 @@ export const Home = () => (
             <Col md={{ span: 8, offset: 2 }}>
                 <Row className="Takeout" xs={1} md={2}>
                     <Col xs={12} md={8}>
-                        <Image src={Takeout} alt="Takeout" fluid />
+                        <a href={require('./assets/Document.pdf')} target="_blank">
+                            <Image className="TakeoutButton" src={Takeout} alt="Takeout" fluid />
+                        </a>
                     </Col>
                     <Col xs={6} md={4}>
                         <Image className="TakeoutDeco" src={TakeoutDeco} alt="TakeoutDeco" fluid />

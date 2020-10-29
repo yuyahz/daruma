@@ -66,5 +66,5 @@ export const BottomSet = () => (
                 </Col>
             </Row>
         </Container>
-    </Styles >
+    </Styles>
 )

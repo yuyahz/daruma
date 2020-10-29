@@ -38,7 +38,7 @@ const Styles = styled.div`
     font-family: 'Noto Serif JP', serif;
     background-color: #C73D13;
     border: 4px double #007BFF;
-    border-radius: 15px;
+    border-radius: 10rem;
     filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
 }
 
@@ -147,6 +147,6 @@ export const Info = () => (
 
             <BottomSet />
         </Container>
-    </Styles >
+    </Styles>
 
 )
