@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import styled from 'styled-components';
-import { MenuBottom } from './components/MenuBottom';
+import { BottomSet } from './components/BottomSet';
 import Fuji4 from './assets/Fuji4.png';
 
 const Styles = styled.div`
@@ -21,6 +21,10 @@ const Styles = styled.div`
 
 .InfoSec {
     padding: 3%;
+}
+
+.InfoBottomSec {
+    margin-bottom: 7%;
 }
 
 .InfoText {
@@ -128,7 +132,7 @@ export const Info = () => (
             </Row>
 
             <Row className="InfoSecTitle">
-                <Col md={{ span: 8, offset: 2 }}>
+                <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
                     <Row xs={1} md={1}>
                         <Image src={Fuji4} rounded />
                         <div className="InfoSec">
@@ -141,7 +145,7 @@ export const Info = () => (
                 </Col>
             </Row>
 
-            <MenuBottom />
+            <BottomSet />
         </Container>
     </Styles >
 

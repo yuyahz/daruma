@@ -6,13 +6,14 @@ import {CardData} from "../config/data";
 const Styles = styled.div`
 
 .SideSpace {
-    margin: 0% 10%;
+    margin: 0% 10% 10% 10%;
     -webkit-flex-direction: row; 
     flex-direction: row;
 }
 
 .CardSec {
     padding: 4% 4% 10%;
+    }
 }
 
 .CardRadius {

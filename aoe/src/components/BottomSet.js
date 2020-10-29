@@ -45,7 +45,7 @@ ${'' /* .CardList {
 }
 `;
 
-export const MenuBottom = () => (
+export const BottomSet = () => (
     <Styles>
         <Container fluid>
             <Row className="CardList">

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
 import styled from 'styled-components';
 import { MenuCard } from './components/MenuCard';
-import { MenuBottom } from './components/MenuBottom';
+import { BottomSet } from './components/BottomSet';
 import { MenuYakiniku } from './pages/MenuYakiniku';
 import { MenuOneDish } from './pages/MenuOneDish';
 import { MenuRiceDishes } from './pages/MenuRiceDishes';
@@ -15,7 +15,7 @@ export const Menu = () => (
     <Container fluid>
 
         <MenuCard />
-        <MenuBottom />
+        <BottomSet />
 
     </Container>
 )

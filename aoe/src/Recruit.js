@@ -1,21 +1,21 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import styled from "styled-components";
-import { MenuBottom } from './components/MenuBottom';
+import { BottomSet } from './components/BottomSet';
 import Fuji3 from './assets/Fuji3.png';
 
 const Styles = styled.div`
 
-.RecruitSecTitle {
+.RecruitTitleSec {
     padding-top: 2%;
     text-align: center;
 }
 
-.RecruitSecTop {
+.RecruitTopSec {
     padding: 5% 0;
 }
 
-.RecruitSecBottom {
+.RecruitBottomSec {
     padding-bottom: 8%;
 }
 
@@ -43,10 +43,6 @@ const Styles = styled.div`
     color: #F3F0DB;
 }
 
-.RecruitPicSec {
-    
-}
-
 .RecruitPic {
     margin: 0 auto;
     display: block;
@@ -60,7 +56,7 @@ export const Recruit = () => (
 
     <Styles>
         <Container fluid={true}>
-            <Row className="RecruitSecTitle">
+            <Row className="RecruitTitleSec">
                 <Col md={{ span: 6, offset: 3 }}>
                     <div className="RecruitText">
                         <h2 className="RecruitTitle">アルバイト募集中</h2>
@@ -70,7 +66,7 @@ export const Recruit = () => (
                 </Col>
             </Row>
 
-            <Row className="RecruitSecTop">
+            <Row className="RecruitTopSec">
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row xs={1} md={2}>
                         <Col>
@@ -90,7 +86,7 @@ export const Recruit = () => (
                 </Col>
             </Row>
 
-            <Row className="RecruitSecBottom">
+            <Row className="RecruitBottomSec">
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row xs={1} md={2}>
                         <Col>
@@ -110,7 +106,7 @@ export const Recruit = () => (
                 </Col>
             </Row>
 
-            <MenuBottom />
+            <BottomSet />
 
         </Container>
     </Styles>

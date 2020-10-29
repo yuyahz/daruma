@@ -12,7 +12,7 @@ import PointCard from './assets/PointCard.svg';
 import PointCardDeco from './assets/PointCardDeco.svg';
 import NewsTitle from './assets/NewsTitle.svg';
 import { NewsList } from './components/NewsList';
-import { MenuBottom } from './components/MenuBottom';
+import { BottomSet } from './components/BottomSet';
 
 export const Home = () => (
     <Container fluid={true}>
@@ -55,7 +55,7 @@ export const Home = () => (
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
-                <Row className="IntroSecInside" xs={1} md={2}>
+                <Row className="IntroInsideSec" xs={1} md={2}>
                     <Col>
                         <Image className="IntroPic_L" src={Fuji2} rounded />
                     </Col>
@@ -74,7 +74,7 @@ export const Home = () => (
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
-                <Row className="IntroSecInside" xs={1} md={2}>
+                <Row className="IntroInsideSec" xs={1} md={2}>
                     <Col>
                         <div className="IntroCaption">
                             <h2 className="IntroCaptionTitle">豊富な</h2>
@@ -92,7 +92,7 @@ export const Home = () => (
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
-                <Row className="IntroSecInside" xs={1} md={2}>
+                <Row className="IntroInsideSec" xs={1} md={2}>
                     <Col>
                         <Image className="IntroPic_L" src={Fuji2} rounded />
                     </Col>
@@ -114,6 +114,7 @@ export const Home = () => (
                 <Image src={NewsTitle} alt="NewsTitle" fluid />
             </Col>
         </Row>
+        
         <NewsList />
 
         <Row>
@@ -142,25 +143,7 @@ export const Home = () => (
             </Col>
         </Row>
 
-        <MenuBottom />
-
-        {/* <Row className="CardList">
-            <Col md={{ span: 4, offset: 4 }}>
-                <Image src={CardList} alt="CardList" fluid />
-            </Col>
-        </Row>
-
-        <Row className="Contact">
-            <Col md={{ span: 6, offset: 3 }}>
-                <Image src={Contact} alt="Contact" fluid />
-            </Col>
-        </Row>
-
-        <Row className="Copylight">
-            <Col md={{ span: 4, offset: 4 }}>
-                <Image className="CopylightIcon" src={Copylight} alt="Copylight" fluid />
-            </Col>
-        </Row> */}
+        <BottomSet />
 
     </Container>
 )

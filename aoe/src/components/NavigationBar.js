@@ -33,7 +33,7 @@ export const NavigationBar = () => (
                 <Navbar.Collapse id="basic-navbar-nav">
 
                     <Nav className="mr-auto">
-                        <Button href="/rent" variant="light btn-lg shadow">RENT BBQ</Button>
+                        <Button href="/rent" variant="light btn-lg shadow" waves-effect>RENT BBQ</Button>
                     </Nav>
 
                     <Nav className="ml-auto">

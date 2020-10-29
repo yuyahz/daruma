@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 import { CardData } from "./config/data";
-import { MenuBottom } from './components/MenuBottom';
+import { BottomSet } from './components/BottomSet';
 import { Yakiniku } from './pages/MenuYakiniku';
 import { OneDish } from './pages/MenuOneDish';
 import { RiceDishes } from './pages/MenuRiceDishes';
@@ -16,7 +16,7 @@ const MenuItem = () => {
     return (
         <>
             {getComponent(id)}
-            <MenuBottom />
+            <BottomSet />
         </>
     )
 
