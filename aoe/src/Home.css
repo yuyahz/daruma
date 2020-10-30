@@ -166,7 +166,8 @@
 
 .TakeoutButton:hover {
     transform: scale(0.95);
-    transition-duration: 1.3s;
+    transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 
 .CardList {
