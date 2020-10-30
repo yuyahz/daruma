@@ -68,6 +68,10 @@
     text-align: right;
 }
 
+.MenuSmText {
+    font-size: 70%;
+}
+
 .MenuTax {
     padding-right: 4%;
     font-size: 80%;

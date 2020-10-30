@@ -43,7 +43,7 @@ export const OneDish = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥580</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">激辛韓国ラーメン(青唐辛子入)</p>
+                                <p className="MenuTitele">激辛韓国ラーメン (青唐辛子入)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥680</p>
                             </div>
                             <div className="MenuCap">
@@ -51,7 +51,7 @@ export const OneDish = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥470</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ナムル単品(もやしor大根orほうれん草)</p>
+                                <p className="MenuTitele">ナムル単品 (もやしor大根orほうれん草)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥370</p>
                             </div>
                             <div className="MenuCap">
@@ -63,7 +63,7 @@ export const OneDish = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥370</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ニンニク(スライスorかたまり)</p>
+                                <p className="MenuTitele">ニンニク (スライスorかたまり)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥390</p>
                             </div>
                             <div className="MenuCap">
@@ -75,7 +75,7 @@ export const OneDish = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥580</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">スルメ珍味(韓国風甘辛あえ)</p>
+                                <p className="MenuTitele">スルメ珍味 (韓国風甘辛あえ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥420</p>
                             </div>
                             <div className="MenuCap">
@@ -97,15 +97,15 @@ export const OneDish = ({ data }) => {
 
                         <Row className="MenuSec" xs={1} md={1}>
                             <div className="MenuCap">
-                                <p className="MenuTitele">野菜サラダ(和風/ゴマダレ/青じそ)</p>
+                                <p className="MenuTitele">野菜サラダ (和風/ゴマダレ/青じそ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥470</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ツナサラダ(和風/ゴマダレ/青じそ)</p>
+                                <p className="MenuTitele">ツナサラダ (和風/ゴマダレ/青じそ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥520</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ヘルシー海藻サラダ(和風/ゴマダレ/青じそ)</p>
+                                <p className="MenuTitele">ヘルシー海藻サラダ (和風/ゴマダレ/青じそ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥520</p>
                             </div>
                             <div className="MenuCap">
@@ -117,11 +117,11 @@ export const OneDish = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥520</p>
                             </div>                            
                             <div className="MenuCap">
-                                <p className="MenuTitele">チシャ(唐辛子味噌付きサニーレタス)</p>
+                                <p className="MenuTitele">チシャ (唐辛子味噌付きサニーレタス)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥430</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">野菜焼き盛り合わせ(キャベツ/ピーマン/かぼちゃ/人参等)</p>
+                                <p className="MenuTitele">野菜焼き盛り合わせ (キャベツ/ピーマン/かぼちゃ/人参等)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥430</p>
                             </div>
                             <div className="MenuCap">

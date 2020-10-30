@@ -35,15 +35,15 @@ export const Drink = ({ data }) => {
 
                         <Row className="MenuSec" xs={1} md={1}>
                             <div className="MenuCap">
-                                <p className="MenuTitele">生ビール / 小ジョッキ　(キリン)</p>
+                                <p className="MenuTitele">生ビール / 小ジョッキ (キリン)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥530</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">生ビール / 中ジョッキ　(キリン)</p>
+                                <p className="MenuTitele">生ビール / 中ジョッキ (キリン)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥580</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ビール / 中瓶　(キリンorアサヒ)</p>
+                                <p className="MenuTitele">ビール / 中瓶 (キリンorアサヒ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥530</p>
                             </div>
                             <div className="MenuCap">
@@ -52,7 +52,7 @@ export const Drink = ({ data }) => {
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">お酒</p>
-                                <p className="MenuText"><span className="MenuTextSp">(1号)¥320</span>(2号)¥630</p>
+                                <p className="MenuText"><span className="MenuTextSp">(1号) ¥320</span>(2号) ¥630</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">生冷酒</p>
@@ -85,16 +85,16 @@ export const Drink = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥630</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">泡盛 / 八重泉やえせん(古酒)</p>
+                                <p className="MenuTitele">泡盛 / 八重泉やえせん (古酒)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥650</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">韓国焼酎</p>
-                                <p className="MenuText"><span className="MenuTextSp">(1杯)¥320</span>(2杯)¥840</p>
+                                <p className="MenuText"><span className="MenuTextSp">(1杯) ¥320</span>(2杯) ¥840</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">高麗人参焼酎</p>
-                                <p className="MenuText"><span className="MenuTextSp"></span>(1杯)¥320</p>
+                                <p className="MenuText"><span className="MenuTextSp"></span>(1杯) ¥320</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">黒ウーロン茶</p>
@@ -102,7 +102,7 @@ export const Drink = ({ data }) => {
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">マッコリ(米)</p>
-                                <p className="MenuText"><span className="MenuTextSp">(1杯)¥320</span>(1瓶)¥1050</p>
+                                <p className="MenuText"><span className="MenuTextSp">(1杯) ¥320</span>(1瓶) ¥1050</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTax"></p>
@@ -111,8 +111,8 @@ export const Drink = ({ data }) => {
 
                         <Row className="MenuSec" xs={1} md={1}>
                             <div className="MenuCap">
-                                <p className="MenuTitele">レモン / ライム / グレープフルーツ / カシス / ウメ / カルピスライチ / ゆず
-                                シークヮーサー(沖縄みかん)白桃 / 巨峰</p>
+                                <p className="MenuTitele">レモン / ライム / グレープフルーツ / カシス / ウメ / カルピスライチ / ゆず /
+                                シークヮーサー / 白桃 / 巨峰</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>ALL  ¥220</p>
                             </div>
                             <div className="MenuCap">
@@ -122,7 +122,7 @@ export const Drink = ({ data }) => {
 
                         <Row className="MenuSec" xs={1} md={1}>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ハーフボトル(赤・白・ロゼ)</p>
+                                <p className="MenuTitele">ハーフボトル (赤・白・ロゼ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥1050</p>
                             </div>
                             <div className="MenuCap">

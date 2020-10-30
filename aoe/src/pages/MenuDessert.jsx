@@ -25,15 +25,15 @@ export const Dessert = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥310</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">オレンジシャーベット(果肉入り)</p>
+                                <p className="MenuTitele">オレンジシャーベット (果肉入り)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥510</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">アップルシャーベット(果肉入り)</p>
+                                <p className="MenuTitele">アップルシャーベット (果肉入り)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥510</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">パインシャーベット(果肉入り)</p>
+                                <p className="MenuTitele">パインシャーベット (果肉入り)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥510</p>
                             </div>
                             <div className="MenuCap">
@@ -41,7 +41,7 @@ export const Dessert = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥530</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">生チョコアイス(チョコ・抹茶)</p>
+                                <p className="MenuTitele">生チョコアイス (チョコ・抹茶)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥370</p>
                             </div>
                             <div className="MenuCap">
@@ -50,7 +50,7 @@ export const Dessert = ({ data }) => {
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">クリームジュース</p>
-                                <p className="MenuText"><span className="MenuTextSp"></span>¥500</p>
+                                <p className="MenuText"><span className="MenuTextSp"></span>¥330</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTax">※税抜き価格表示</p>

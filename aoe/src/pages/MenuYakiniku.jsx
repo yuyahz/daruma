@@ -47,11 +47,11 @@ export const Yakiniku = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp">¥1060 </span>¥590</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">味わいカルビ(中落ち)</p>
+                                <p className="MenuTitele">味わいカルビ (中落ち)</p>
                                 <p className="MenuText"><span className="MenuTextSp">¥680</span>¥380</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ギアラ(赤セン)</p>
+                                <p className="MenuTitele">ギアラ (赤セン)</p>
                                 <p className="MenuText"><span className="MenuTextSp">¥530</span>¥270</p>
                             </div>
                             <div className="MenuCap">
@@ -87,7 +87,7 @@ export const Yakiniku = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp">¥630</span>¥330</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">牛ホホ肉(ツラミ)</p>
+                                <p className="MenuTitele">牛ホホ肉 (ツラミ)</p>
                                 <p className="MenuText"><span className="MenuTextSp">¥580</span>¥300</p>
                             </div>
                             <div className="MenuCap">
@@ -99,7 +99,7 @@ export const Yakiniku = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp">¥1310</span>¥730</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">上タン(10食限定)</p>
+                                <p className="MenuTitele">上タン (10食限定)</p>
                                 <p className="MenuText"><span className="MenuTextSp">¥1730</span>¥960</p>
                             </div>
                             <div className="MenuCap">
@@ -123,7 +123,7 @@ export const Yakiniku = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp">¥550</span>¥300</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">豚肉(つらみ)</p>
+                                <p className="MenuTitele">豚肉 (つらみ)</p>
                                 <p className="MenuText"><span className="MenuTextSp">¥550</span>¥300</p>
                             </div>
                             <div className="MenuCap">
@@ -135,7 +135,7 @@ export const Yakiniku = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp">¥600</span>¥330</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">歌声(タレ・辛ダレ)豚の軟骨</p>
+                                <p className="MenuTitele">歌声 (タレ・辛ダレ)　※ 豚の軟骨</p>
                                 <p className="MenuText"><span className="MenuTextSp">¥500</span>¥270</p>
                             </div>
                             <div className="MenuCap">
@@ -206,21 +206,21 @@ export const Yakiniku = ({ data }) => {
                                     </div>
                                 </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ファミリーセット(３～４人前)</p>
+                                <p className="MenuTitele">ファミリーセット (３～４人前)</p>
                                 <p className="MenuText"><span className="MenuTextSpSingle">¥3400</span></p>
                             </div>
                             <div className="MenuCapSet">
                                 <p className="MenuTitele">カルビ/ハラミ/あじわいカルビ/ホルモン/トリ/ブタ/ウィンナー/野菜</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ペアセット(２人前)</p>
+                                <p className="MenuTitele">ペアセット (２人前)</p>
                                 <p className="MenuText"><span className="MenuTextSpSingle">¥2400</span></p>
                             </div>
                             <div className="MenuCapSet">
                                 <p className="MenuTitele">カルビ/ハラミ/あじわいカルビ/ホルモン/トリ/ウィンナー/野菜海の幸セット</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ペアセット(２人前)</p>
+                                <p className="MenuTitele">ペアセット (２人前)</p>
                                 <p className="MenuText"><span className="MenuTextSpSingle">¥1580</span></p>
                             </div>
                             <div className="MenuCapSet">

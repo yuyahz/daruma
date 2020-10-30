@@ -29,7 +29,7 @@ export const Lunch = ({ data }) => {
                                 <p className="MenuTitele">好きなお肉をセレクト!!</p>
                             </div>
                             <div className="MenuCapSet">
-                                <p className="MenuTitele">うす切りカルビ + ( ..... ) + ( ..... )　※ うす切りカルビは必須となります。</p>
+                                <p className="MenuTitele">うす切りカルビ + ( ..... ) + ( ..... )　 <span className="MenuSmText">※ うす切りカルビは必須となります。</span></p>
                             </div>
                             <div className="MenuCapSet">
                                 <p className="MenuTitele">以下のメニューより２品お選び下さい</p>
@@ -64,18 +64,18 @@ export const Lunch = ({ data }) => {
                                 <p className="MenuTitele">本日の一品、キムチ、サラダ、ライス、デザート　付き</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">カムジャタンランチ</p>
+                                <p className="MenuTitele">カムジャタンランチ <span className="MenuSmText">(韓国風　豚スベアリブとじゃがいもの辛口チゲ)</span></p>
                                 <p className="MenuText"><span className="MenuTextSpSingle"></span>¥1080</p>
                             </div>
                             <div className="MenuCapSet">
-                                <p className="MenuTitele">(韓国風　豚スベアリブとじゃがいもの辛口チゲ)、本日の一品、キムチ、サラダ、ライス、デザート　付き</p>
+                                <p className="MenuTitele">本日の一品、キムチ、サラダ、ライス、デザート　付き</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">プゴクスープランチ</p>
+                                <p className="MenuTitele">プゴクスープランチ <span className="MenuSmText">(干しダラの旨み、たっぷり野菜のスープ)</span></p>
                                 <p className="MenuText"><span className="MenuTextSpSingle"></span>¥880</p>
                             </div>
                             <div className="MenuCapSet">
-                                <p className="MenuTitele">(干しダラの旨み、たっぷり野菜のスープ　デトックス効果　美肌へ)、ビビンバ（小）、本日の一品、キムチ、サラダ、デザート　付き</p>
+                                <p className="MenuTitele">ビビンバ（小）、本日の一品、キムチ、サラダ、デザート　付き</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">にんにくチャーハンランチ</p>

@@ -22,7 +22,7 @@ export const RiceDishes = ({ data }) => {
                         <Row className="MenuSec" xs={1} md={1}>
                             <div className="MenuCap">
                                 <p className="MenuTitele">クッパ</p>
-                                <p className="MenuText"><span className="MenuTextSp">(小)¥480</span>(大)¥700</p>
+                                <p className="MenuText"><span className="MenuTextSp">(小) ¥480</span>(大) ¥700</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">テールクッパ</p>
@@ -54,11 +54,11 @@ export const RiceDishes = ({ data }) => {
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTitele">ご飯</p>
-                                <p className="MenuText"><span className="MenuTextSp">(小)¥220</span><span className="MenuTextSp">(中)¥480</span>(大)¥700</p>
+                                <p className="MenuText"><span className="MenuTextSp">(小) ¥220</span><span className="MenuTextSp">(中) ¥480</span>(大) ¥700</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">冷麺(夏季のみ)</p>
-                                <p className="MenuText"><span className="MenuTextSp">(小)¥690</span>(大)¥890</p>
+                                <p className="MenuTitele">冷麺 (夏季のみ)</p>
+                                <p className="MenuText"><span className="MenuTextSp">(小) ¥690</span>(大) ¥890</p>
                             </div>
                             <div className="MenuCap">
                                 <p className="MenuTax"></p>
@@ -87,11 +87,11 @@ export const RiceDishes = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥390</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">ワカ玉スープ(ワカメ・玉子入)</p>
+                                <p className="MenuTitele">ワカ玉スープ (ワカメ・玉子入)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥430</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">プゴクスープ(干しダラのスープ)</p>
+                                <p className="MenuTitele">プゴクスープ (干しダラのスープ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥530</p>
                             </div>
                             <div className="MenuCap">
@@ -113,11 +113,11 @@ export const RiceDishes = ({ data }) => {
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥420</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">大根キムチ(カクテキ)</p>
+                                <p className="MenuTitele">大根キムチ (カクテキ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥420</p>
                             </div>
                             <div className="MenuCap">
-                                <p className="MenuTitele">キュウリキムチ(オイキムチ)</p>
+                                <p className="MenuTitele">キュウリキムチ (オイキムチ)</p>
                                 <p className="MenuText"><span className="MenuTextSp"></span>¥420</p>
                             </div>
                             <div className="MenuCap">
