@@ -165,8 +165,8 @@
 }
 
 .TakeoutButton:hover {
-    transform: scale(0.9);
-    transition-duration: 0.9s;
+    transform: scale(0.95);
+    transition-duration: 1.3s;
 }
 
 .CardList {

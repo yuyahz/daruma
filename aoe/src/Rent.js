@@ -148,7 +148,4 @@ export const Rent = () => (
 
         </Container>
     </Styles>
-
-
-
 )

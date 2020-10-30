@@ -135,7 +135,7 @@ export const Home = () => (
                 <Row className="Takeout" xs={1} md={2}>
                     <Col xs={12} md={8}>
                         <a href={require('./assets/Document.pdf')} target="_blank">
-                            <Image className="TakeoutButton" src={Takeout} alt="Takeout" fluid />
+                            <Image className="TakeoutButton" src={Takeout} alt="Takeout" ontouchstart="" fluid />
                         </a>
                     </Col>
                     <Col xs={6} md={4}>
