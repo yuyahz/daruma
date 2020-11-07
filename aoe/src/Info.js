@@ -3,6 +3,11 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import styled from 'styled-components';
 import { BottomSet } from './components/BottomSet';
 import Fuji4 from './assets/Fuji4.png';
+import InfoFloor from './assets/InfoFloor.png';
+import InfoParty_1 from './assets/InfoParty_1.png';
+import InfoParty_2 from './assets/InfoParty_2.png';
+import InfoWaitting_1 from './assets/InfoWaitting_1.png';
+import InfoWaitting_2 from './assets/InfoWaitting_2.png';
 
 const Styles = styled.div`
 
@@ -66,6 +71,10 @@ const Styles = styled.div`
     white-space: pre-wrap;
     font-size: 60%;
 }
+
+.InfoParty_1 {
+    margin-bottom: 3%; 
+}
 `;
 
 export const Info = () => (
@@ -104,7 +113,7 @@ export const Info = () => (
             <Row className="InfoSecTitle">
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row xs={1} md={1}>
-                        <Image src={Fuji4} rounded />
+                        <Image src={InfoFloor} rounded />
                         <div className="InfoSec">
                             <div className="InfoCap">
                                 <p className="InfoCapTitele">板の間</p>
@@ -118,7 +127,8 @@ export const Info = () => (
             <Row className="InfoSecTitle">
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row xs={1} md={1}>
-                        <Image src={Fuji4} rounded />
+                        <Image className="InfoParty_1" src={InfoParty_1} rounded />
+                        <Image src={InfoParty_2} rounded />
                         <div className="InfoSec">
                             <div className="InfoCap">
                                 <p className="InfoCapTitele">宴会場</p>
@@ -134,7 +144,7 @@ export const Info = () => (
             <Row className="InfoSecTitle">
                 <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
                     <Row xs={1} md={1}>
-                        <Image src={Fuji4} rounded />
+                        <Image src={InfoWaitting_1} rounded />
                         <div className="InfoSec">
                             <div className="InfoCap">
                                 <p className="InfoCapTitele">待合室</p>

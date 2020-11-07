@@ -11,7 +11,7 @@ import Takeout from './assets/Takeout.svg';
 import TakeoutDeco from './assets/TakeoutDeco.svg';
 import PointCard from './assets/PointCard.svg';
 import PointCardDeco from './assets/PointCardDeco.svg';
-import NewsTitle from './assets/NewsTitle.svg';
+// import NewsTitle from './assets/NewsTitle.svg';
 import { NewsList } from './components/NewsList';
 import { BottomSet } from './components/BottomSet';
 
@@ -31,34 +31,32 @@ export const Home = () => (
             </Col>
         </Row>
 
-        <Row className="RecruitTopSec">
-            <Col md={{ span: 8, offset: 2 }}>
-                <Row xs={1} md={2}>
-                    <Col>
-                        <Carousel>
-                            <Carousel.Item>
-                                <Image className="d-block w-100" src={Slider_1} alt="First slide" rounded />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Image className="d-block w-100" src={Slider_2} alt="Second slide" rounded />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Image className="d-block w-100" src={Slider_1} alt="Third slide" rounded />
-                            </Carousel.Item>
-                        </Carousel>
-                    </Col>
-                    <Col>
-                        <div >
-                            <p>五 十 年 守 り 続 け た</p>
-                            <p>味 を そ の ま ま に</p>
-                            <p>昔 か ら 変 わ ら ぬ</p>
-                            <p>伝 統 の 味 を 届 け る 為 に</p>
-                            <p>そ し て こ れ か ら も</p>
-                        </div>
-                    </Col>
-                </Row>
+        <Container fluid className="CarouselBg">
+        <Row>
+            <Col sm={6} className="CarouselCap">
+                <div className="CarouselText">
+                    <p>五 十 年 守 り 続 け た</p>
+                    <p>味 を そ の ま ま に</p>
+                    <p>昔 か ら 変 わ ら ぬ</p>
+                    <p>伝 統 の 味 を 届 け る 為 に</p>
+                    <p>そ し て こ れ か ら も。</p>
+                </div>
+            </Col>
+            <Col sm={6}>
+                <Carousel>
+                    <Carousel.Item>
+                        <Image className="d-block w-100" src={Slider_1} alt="First slide" rounded />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Image className="d-block w-100" src={Slider_2} alt="Second slide" rounded />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Image className="d-block w-100" src={Slider_1} alt="Third slide" rounded />
+                    </Carousel.Item>
+                </Carousel>
             </Col>
         </Row>
+        </Container>
 
         {/* <Row className="Slider d-none d-sm-block">
             <Col md={{ span: 8, offset: 2 }} className="d-none d-sm-block">
@@ -83,7 +81,7 @@ export const Home = () => (
             </Col>
         </Row> */}
 
-        <Row className="IntroSec">
+        <Row className="IntroSecTop">
             <Col md={{ span: 10, offset: 1 }}>
                 <Row className="IntroInsideSec" xs={1} md={2}>
                     <Col>
@@ -95,7 +93,7 @@ export const Home = () => (
                             <h2 className="br_TopPage">秘伝のタレ</h2>
                             <p>ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、
                             守り続けているタレはコクと甘みの ある深い味わいになっています。 焼肉の味を引き立たせることはもちろん、
-                                幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
+                            幅広い年齢層 の方に美味しく召し上がって頂けます。</p>
                         </div>
                     </Col>
                 </Row>
@@ -110,7 +108,7 @@ export const Home = () => (
                             <h2 className="IntroCaptionTitle">豊富な</h2>
                             <h2 className="br_TopPage">サイドメニュー</h2>
                             <p>多彩なサイドメニューは、こだわりの手作り。 ダルマ開店当時の人気メニュー「ホルモンうどん焼き」 から好評の豆腐チゲ、
-                                キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
+                            キムチチゲなどおいしい一品が勢 揃い。サラダやデザートも充実しているのでお子様にも 女性にも喜ばれています。</p>
                         </div>
                     </Col>
                     <Col>
@@ -120,7 +118,7 @@ export const Home = () => (
             </Col>
         </Row>
 
-        <Row className="IntroSec">
+        <Row className="IntroSecBottom">
             <Col md={{ span: 10, offset: 1 }}>
                 <Row className="IntroInsideSec" xs={1} md={2}>
                     <Col>
@@ -128,8 +126,7 @@ export const Home = () => (
                     </Col>
                     <Col>
                         <div className="IntroCaption">
-                            <h2 className="IntroCaptionTitle">
-                                ボリューム満点</h2>
+                            <h2 className="IntroCaptionTitle">ボリューム満点</h2>
                             <h2 className="br_TopPage">のお肉</h2>
                             <p>ダルマのお肉はおいしくて、ボリューム満点 食肉業者直売だから実現したこのボリューム！この価格！
                                 お腹いっぱい新鮮なお肉を楽しんで頂く為、スタッフ一同 日々お客様の為に精進しています。</p>
@@ -139,15 +136,18 @@ export const Home = () => (
             </Col>
         </Row>
 
-        <Row className="NewsTitle">
-            <Col md={{ span: 2, offset: 5 }}>
-                <Image src={NewsTitle} alt="NewsTitle" fluid />
-            </Col>
-        </Row>
-        <NewsList />
+        <Container  fluid className="NewsBg">
+            <Row className="NewsTitle">
+                <Col md={{ span: 2, offset: 5 }}>
+                    <p className="NewsTitleFlashing">News</p>
+                    <p>新着情報</p>
+                </Col>
+            </Row>
+            <NewsList />
+        </Container>
 
         <Row className="bg">
-            <Col md={{ span: 8, offset: 2 }}>
+            <Col md={{ span: 10, offset: 1 }}>
                 <Row className="PointCard" xs={1} md={2}>
                     <Col xs={6} md={4}>
                         <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
@@ -160,7 +160,7 @@ export const Home = () => (
         </Row>
 
         <Row>
-            <Col md={{ span: 8, offset: 2 }}>
+            <Col md={{ span: 10, offset: 1 }}>
                 <Row className="Takeout" xs={1} md={2}>
                     <Col xs={12} md={8}>
                         <a href={require('./assets/Document.pdf')} target="_blank">

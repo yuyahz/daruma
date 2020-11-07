@@ -3,6 +3,7 @@ import { Row, Col, ListGroup, Tab, TabContent } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
+
 .NewsSec {
     font-family: 'Noto Serif JP', serif;
     color: #F3F0DB;
@@ -13,9 +14,10 @@ const Styles = styled.div`
 }
 
 .TabFrame {
-    border: 5px solid #007BFF;
+    border: 5px solid #fff;
     border-radius: 15px;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+    background-color: #007BFF;
 }
 
 .TabContent {

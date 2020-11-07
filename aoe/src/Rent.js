@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { BottomSet } from './components/BottomSet';
 import Fuji7 from './assets/Fuji7.png';
 import Fuji6 from './assets/Fuji6.png';
+import Takeout from './assets/Takeout.svg';
 
 const Styles = styled.div`
 
@@ -21,7 +22,7 @@ const Styles = styled.div`
 }
 
 .RentBottomSec {
-    margin-bottom: 7%;
+    margin-bottom: 2%;
 }
 
 .RentTitle {
@@ -64,6 +65,17 @@ const Styles = styled.div`
     white-space: pre-wrap;
     font-size: 60%;
 }
+
+.RentButtonSec {
+    margin-bottom: 13%;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.RentButton:hover {
+    transform: scale(0.95);
+    transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
 `;
 
 export const Rent = () => (
@@ -75,7 +87,7 @@ export const Rent = () => (
                     <div className="RentText">
                         <h1 className="RentTitle">BBQ器具無料貸し出し</h1>
                         <p className="RentText">アウトドアで本格焼肉を手軽に！後片付けも楽々！
-                            使用後はそのまま当店まで返却するだけ!!</p>
+                            使用後はそのまま当店まで返却するだけ!!</p>  
                     </div>
                 </Col>
             </Row>
@@ -140,6 +152,14 @@ export const Rent = () => (
                                 <p className="Rentbr">ウインナー 2本</p></p></p></p>
                             </div>
                         </Col>
+                    </Row>
+                </Col>
+            </Row>
+
+            <Row className="RentButtonSec">
+                <Col md={{ span: 8, offset: 2 }}>
+                    <Row xs={1} md={1}>
+                        <Image className="RentButton" src={Takeout}/>
                     </Row>
                 </Col>
             </Row>

@@ -20,7 +20,7 @@
 .TitleHalfCircle {
     position: relative;
     left: 25%;
-    transform: translateY(-13%) translateX(-50%);
+    transform: translateY(-10%) translateX(-50%);
 }
 
 .HeadMain {
@@ -57,7 +57,30 @@
     100% {opacity: 1;}
 }
 
-.Slider {
+.CarouselBg {
+    background-color: #fff;
+    padding: 5% 10%;
+    border-radius: 50px;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.CarouselCap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CarouselText {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 1;
+    color: #C73D13;
+    writing-mode: vertical-rl;
+    align-items: center;
+}
+
+/* .Slider {
     margin: 5% 0;
     position: relative;
     padding-bottom: 10%;
@@ -76,9 +99,21 @@
     color: #F3F0DB;
     writing-mode: vertical-rl;
     background-color:#C73D13;
-}
+} */
 
 .IntroSec {
+    font-family: 'Noto Serif JP', serif;
+    color: #F3F0DB;
+}
+
+.IntroSecTop {
+    margin-top: 10%;
+    font-family: 'Noto Serif JP', serif;
+    color: #F3F0DB;
+}
+
+.IntroSecBottom {
+    margin-bottom: 10%;
     font-family: 'Noto Serif JP', serif;
     color: #F3F0DB;
 }
@@ -122,10 +157,20 @@
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
+.NewsBg {
+    background-color: #fff;
+    padding: 2% 10% 5%;
+    border-radius: 50px;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
 .NewsTitle {
-    margin: 10% 1% 1% 1%;
+    margin-bottom: 1%;
+    color: #007BFF;
     text-align: center;
-    filter: drop-shadow(2px 3px 5px rgba(255, 255, 255, 0.479));
+}
+
+.NewsTitleFlashing {
     -webkit-animation:blink 1.5s ease-in-out infinite alternate;
     -moz-animation:blink 1.5s ease-in-out infinite alternate;
     animation:blink 1.5s ease-in-out infinite alternate;
@@ -145,7 +190,7 @@
 
 .PointCard {
     text-align: center;
-    margin: 25% 0 5% 0;
+    margin: 20% 0 5% 0;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
