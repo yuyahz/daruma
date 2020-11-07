@@ -6,7 +6,9 @@ import TitleHalfCircle from './assets/TitleHalfCircle.svg';
 import ScrollIcon from './assets/ScrollIcon.svg';
 import Slider_1 from './assets/Slider_1.png';
 import Slider_2 from './assets/Slider_2.png';
-import Fuji2 from './assets/Fuji2.png';
+import IntroPic_1 from './assets/IntroPic_1.png';
+import IntroPic_2 from './assets/IntroPic_2.png';
+import IntroPic_3 from './assets/IntroPic_3.png';
 import Takeout from './assets/Takeout.svg';
 import TakeoutDeco from './assets/TakeoutDeco.svg';
 import PointCard from './assets/PointCard.svg';
@@ -85,10 +87,10 @@ export const Home = () => (
             <Col md={{ span: 10, offset: 1 }}>
                 <Row className="IntroInsideSec" xs={1} md={2}>
                     <Col>
-                        <Image className="IntroPic_L" src={Fuji2} rounded />
+                        <Image className="IntroPic_L" src={IntroPic_1} rounded />
                     </Col>
-                    <Col>
-                        <div className="IntroCaption">
+                    <Col className="IntroCaption">
+                        <div>
                             <h2 className="IntroCaptionTitle">受け継がれる</h2>
                             <h2 className="br_TopPage">秘伝のタレ</h2>
                             <p>ダルマのタレは、10種類以上の厳選された素材を独自の 製法でブレンドした、秘伝の味。 創業から変わらず、
@@ -103,8 +105,8 @@ export const Home = () => (
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
                 <Row className="IntroInsideSec" xs={1} md={2}>
-                    <Col>
-                        <div className="IntroCaption">
+                    <Col  className="IntroCaption">
+                        <div>
                             <h2 className="IntroCaptionTitle">豊富な</h2>
                             <h2 className="br_TopPage">サイドメニュー</h2>
                             <p>多彩なサイドメニューは、こだわりの手作り。 ダルマ開店当時の人気メニュー「ホルモンうどん焼き」 から好評の豆腐チゲ、
@@ -112,7 +114,7 @@ export const Home = () => (
                         </div>
                     </Col>
                     <Col>
-                        <Image className="IntroPic_R" src={Fuji2} rounded />
+                        <Image className="IntroPic_R" src={IntroPic_2} rounded />
                     </Col>
                 </Row>
             </Col>
@@ -122,10 +124,10 @@ export const Home = () => (
             <Col md={{ span: 10, offset: 1 }}>
                 <Row className="IntroInsideSec" xs={1} md={2}>
                     <Col>
-                        <Image className="IntroPic_L" src={Fuji2} rounded />
+                        <Image className="IntroPic_L" src={IntroPic_3} rounded />
                     </Col>
-                    <Col>
-                        <div className="IntroCaption">
+                    <Col className="IntroCaption">
+                        <div>
                             <h2 className="IntroCaptionTitle">ボリューム満点</h2>
                             <h2 className="br_TopPage">のお肉</h2>
                             <p>ダルマのお肉はおいしくて、ボリューム満点 食肉業者直売だから実現したこのボリューム！この価格！
