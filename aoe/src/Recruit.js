@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import styled from "styled-components";
 import { BottomSet } from './components/BottomSet';
-import Fuji3 from './assets/Fuji3.png';
+import RecruitServer from './assets/RecruitServer.png';
+import RecruitKitchen from './assets/RecruitKitchen.png';
 
 const Styles = styled.div`
 
@@ -70,7 +71,7 @@ export const Recruit = () => (
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row xs={1} md={2}>
                         <Col>
-                            <Image className="RecruitPic" src={Fuji3} rounded />
+                            <Image className="RecruitPic" src={RecruitServer} rounded />
                         </Col>
                         <Col>
                             <div className="RecruitText">
@@ -90,7 +91,7 @@ export const Recruit = () => (
                 <Col md={{ span: 8, offset: 2 }}>
                     <Row xs={1} md={2}>
                         <Col>
-                            <Image className="RecruitPic" src={Fuji3} rounded />
+                            <Image className="RecruitPic" src={RecruitKitchen} rounded />
                         </Col>
                         <Col>
                             <div className="RecruitText">

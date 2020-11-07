@@ -4,7 +4,8 @@ import { Container, Row, Col, Carousel, Image } from 'react-bootstrap';
 import TitleMainDeco from './assets/TitleMainDeco.svg';
 import TitleHalfCircle from './assets/TitleHalfCircle.svg';
 import ScrollIcon from './assets/ScrollIcon.svg';
-import Fuji from './assets/Fuji.png';
+import Slider_1 from './assets/Slider_1.png';
+import Slider_2 from './assets/Slider_2.png';
 import Fuji2 from './assets/Fuji2.png';
 import Takeout from './assets/Takeout.svg';
 import TakeoutDeco from './assets/TakeoutDeco.svg';
@@ -30,17 +31,46 @@ export const Home = () => (
             </Col>
         </Row>
 
-        <Row className="Slider d-none d-sm-block">
+        <Row className="RecruitTopSec">
+            <Col md={{ span: 8, offset: 2 }}>
+                <Row xs={1} md={2}>
+                    <Col>
+                        <Carousel>
+                            <Carousel.Item>
+                                <Image className="d-block w-100" src={Slider_1} alt="First slide" rounded />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <Image className="d-block w-100" src={Slider_2} alt="Second slide" rounded />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <Image className="d-block w-100" src={Slider_1} alt="Third slide" rounded />
+                            </Carousel.Item>
+                        </Carousel>
+                    </Col>
+                    <Col>
+                        <div >
+                            <p>五 十 年 守 り 続 け た</p>
+                            <p>味 を そ の ま ま に</p>
+                            <p>昔 か ら 変 わ ら ぬ</p>
+                            <p>伝 統 の 味 を 届 け る 為 に</p>
+                            <p>そ し て こ れ か ら も</p>
+                        </div>
+                    </Col>
+                </Row>
+            </Col>
+        </Row>
+
+        {/* <Row className="Slider d-none d-sm-block">
             <Col md={{ span: 8, offset: 2 }} className="d-none d-sm-block">
                 <Carousel>
                     <Carousel.Item>
-                        <Image className="d-block w-100" src={Fuji} alt="First slide" rounded />
+                        <Image className="d-block w-100" src={Slider_1} alt="First slide" rounded />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Image className="d-block w-100" src={Fuji} alt="Second slide" rounded />
+                        <Image className="d-block w-100" src={Slider_2} alt="Second slide" rounded />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Image className="d-block w-100" src={Fuji} alt="Third slide" rounded />
+                        <Image className="d-block w-100" src={Slider_1} alt="Third slide" rounded />
                     </Carousel.Item>
                 </Carousel>
                 <div className="SliderCaption">
@@ -51,7 +81,7 @@ export const Home = () => (
                     <p>そ し て こ れ か ら も</p>
                 </div>
             </Col>
-        </Row>
+        </Row> */}
 
         <Row className="IntroSec">
             <Col md={{ span: 10, offset: 1 }}>
@@ -114,10 +144,9 @@ export const Home = () => (
                 <Image src={NewsTitle} alt="NewsTitle" fluid />
             </Col>
         </Row>
-
         <NewsList />
 
-        <Row>
+        <Row className="bg">
             <Col md={{ span: 8, offset: 2 }}>
                 <Row className="PointCard" xs={1} md={2}>
                     <Col xs={6} md={4}>
