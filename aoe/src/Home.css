@@ -1,84 +1,101 @@
 .TopLogo {
-    position: absolute; 
-    width: 15%;
-    right: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  position: absolute;
+  width: 15%;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .Title {
-    position: relative;
-    margin-top: -8%;
-    margin-bottom: 8%;
+  position: relative;
+  margin-top: -8%;
+  margin-bottom: 8%;
 }
 
 .TitleDeco {
-    text-align: center;
-    padding: 8% 8%;
+  text-align: center;
+  padding: 8% 8%;
 }
 
 .TitleHalfCircle {
-    position: relative;
-    left: 25%;
-    transform: translateY(-10%) translateX(-50%);
+  position: relative;
+  left: 25%;
+  transform: translateY(-10%) translateX(-50%);
 }
 
 .HeadMain {
-    font-size: 220%;
-    font-weight: 100;
-    letter-spacing: 1vw;
+  font-size: 220%;
+  font-weight: 100;
+  letter-spacing: 1vw;
 }
 
 .ScrollSec {
-    position: relative;
+  position: relative;
 }
 
 .Scroll {
-    position: absolute; 
-    top: 55%;
-    left: 70%;
-    width: 0.9vw;
-    transform: translateX(-50%);
-    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.5));
-    -webkit-animation:blink 1.5s ease-in-out infinite alternate;
-    -moz-animation:blink 1.5s ease-in-out infinite alternate;
-    animation:blink 1.5s ease-in-out infinite alternate;
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  width: 0.9vw;
+  transform: translateX(-50%);
+  filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.5));
+  -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+  -moz-animation: blink 1.5s ease-in-out infinite alternate;
+  animation: blink 1.5s ease-in-out infinite alternate;
 }
 @-webkit-keyframes blink {
-    0% {opacity: 0.1;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @-moz-keyframes blink {
-    0% {opacity: 0.1;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes blink {
-    0% {opacity: 0.1;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .CarouselBg {
-    background-color: #fff;
-    padding: 5% 10%;
-    border-radius: 50px;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  background-color: #fff;
+  padding: 5% 10%;
+  border: solid 10px #c73d13;
+  border-radius: 50px;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.CarouselShadow {
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.4));
 }
 
 .CarouselCap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .CarouselText {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 2vw;
-    font-weight: 600;
-    line-height: 1;
-    color: #C73D13;
-    writing-mode: vertical-rl;
-    align-items: center;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.8vw;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #c73d13;
+  writing-mode: vertical-rl;
+  align-items: center;
 }
 
 /* .Slider {
@@ -103,136 +120,149 @@
 } */
 
 .IntroSec {
-    font-family: 'Noto Serif JP', serif;
-    color: #F3F0DB;
+  font-family: "Noto Serif JP", serif;
+  color: #f3f0db;
 }
 
 .IntroSecTop {
-    margin-top: 15%;
-    font-family: 'Noto Serif JP', serif;
-    color: #F3F0DB;
+  margin-top: 15%;
+  font-family: "Noto Serif JP", serif;
+  color: #f3f0db;
 }
 
 .IntroSecBottom {
-    margin-bottom: 15%;
-    font-family: 'Noto Serif JP', serif;
-    color: #F3F0DB;
+  margin-bottom: 15%;
+  font-family: "Noto Serif JP", serif;
+  color: #f3f0db;
 }
 
 .IntroInsideSec {
-    text-align: left;
-    margin: 5% 0 5% 0;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  text-align: left;
+  margin: 5% 0 5% 0;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .IntroCaptionTitle {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .IntroCaption {
-    text-align: left;
-    padding: 10%;
+  text-align: left;
+  padding: 10%;
 }
 
 .br_TopPage {
-    white-space: pre-wrap;
-    font-family: 'Noto Serif JP', serif;
-    font-size: 36px;
-    color: #F3F0DB;
-    padding-bottom: 10%;
+  white-space: pre-wrap;
+  font-family: "Noto Serif JP", serif;
+  font-size: 36px;
+  color: #f3f0db;
+  padding-bottom: 10%;
 }
 
 .IntroPic_L {
-    margin-left: auto;
-    display: block;
-    height: auto;
-    max-width: 80%;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  margin-left: auto;
+  display: block;
+  height: auto;
+  max-width: 80%;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .IntroPic_R {
-    margin-right: auto;
-    display: block;
-    height: auto;
-    max-width: 80%;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  margin-right: auto;
+  display: block;
+  height: auto;
+  max-width: 80%;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .NewsBg {
-    background-color: #fff;
-    padding: 2% 10% 5%;
-    border-radius: 50px;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  background-color: #fff;
+  padding: 2% 10% 5%;
+  border: solid 10px #007bff;
+  border-radius: 50px;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .NewsTitle {
-    margin-bottom: 1%;
-    color: #007BFF;
-    text-align: center;
+  margin-bottom: 1%;
+  color: #007bff;
+  text-align: center;
 }
 
 .NewsTitleFlashing {
-    -webkit-animation:blink 1.5s ease-in-out infinite alternate;
-    -moz-animation:blink 1.5s ease-in-out infinite alternate;
-    animation:blink 1.5s ease-in-out infinite alternate;
+  -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+  -moz-animation: blink 1.5s ease-in-out infinite alternate;
+  animation: blink 1.5s ease-in-out infinite alternate;
 }
 @-webkit-keyframes blink {
-    0% {opacity: 0.1;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @-moz-keyframes blink {
-    0% {opacity: 0.1;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes blink {
-    0% {opacity: 0.1;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .PointCard {
-    text-align: center;
-    margin: 20% 0 5% 0;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  text-align: center;
+  margin: 20% 0 5% 0;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .PointCardDeco {
-    padding:20%;
+  padding: 20%;
 }
 
 .Takeout {
-    text-align: center;
-    margin: 5% 0 20% 0;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  text-align: center;
+  margin: 5% 0 20% 0;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .TakeoutDeco {
-    float: right;
-    padding: 20%;
+  float: right;
+  padding: 20%;
 }
 
 .TakeoutButton:hover {
-    transform: scale(0.95);
-    transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  transform: scale(0.95);
+  transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 
 .CardList {
-    margin: 3% 0 3% 0;
-    text-align: center;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  margin: 3% 0 3% 0;
+  text-align: center;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .Contact {
-    margin: 8% 0 13% 0;
-    text-align: center;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  margin: 8% 0 13% 0;
+  text-align: center;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .Copylight {
-    margin: 15% 0 5% 0;
-    text-align: center;
+  margin: 15% 0 5% 0;
+  text-align: center;
 }
 
 .CopylightIcon {
-    width: 65%;
+  width: 65%;
 }

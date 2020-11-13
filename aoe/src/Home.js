@@ -6,6 +6,7 @@ import TitleHalfCircle from './assets/TitleHalfCircle.svg';
 import ScrollIcon from './assets/ScrollIcon.svg';
 import Slider_1 from './assets/Slider_1.png';
 import Slider_2 from './assets/Slider_2.png';
+import Slider_3 from './assets/Slider_3.png';
 import IntroPic_1 from './assets/IntroPic_1.png';
 import IntroPic_2 from './assets/IntroPic_2.png';
 import IntroPic_3 from './assets/IntroPic_3.png';
@@ -41,11 +42,11 @@ export const Home = () => (
                     <p>味 を そ の ま ま に</p>
                     <p>昔 か ら 変 わ ら ぬ</p>
                     <p>伝 統 の 味 を 届 け る 為 に</p>
-                    <p>そ し て こ れ か ら も。</p>
+                    <p>そ し て こ れ か ら も 。</p>
                 </div>
             </Col>
             <Col sm={6}>
-                <Carousel>
+                <Carousel className="CarouselShadow">
                     <Carousel.Item>
                         <Image className="d-block w-100" src={Slider_1} alt="First slide" rounded />
                     </Carousel.Item>
@@ -53,7 +54,7 @@ export const Home = () => (
                         <Image className="d-block w-100" src={Slider_2} alt="Second slide" rounded />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Image className="d-block w-100" src={Slider_1} alt="Third slide" rounded />
+                        <Image className="d-block w-100" src={Slider_3} alt="Third slide" rounded />
                     </Carousel.Item>
                 </Carousel>
             </Col>
