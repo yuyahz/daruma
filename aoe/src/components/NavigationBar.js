@@ -15,23 +15,19 @@ const Styles = styled.div`
     color: #5A8FCB;
     text-Decoration: none;
     transition: 0.9s cubic-bezier(0.22, 1, 0.36, 1);
-
     &:hover {
         color: #C73D13;
         }
     }
-}
 
 .Link {
     color: #FFFFFF;
     text-Decoration: none;
     transition: 0.9s cubic-bezier(0.22, 1, 0.36, 1);
-
     &:hover {
         color: #5A8FCB;
         }
     }
-}
 
 .mr-auto {
     padding: 5%;
