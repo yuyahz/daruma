@@ -10,7 +10,7 @@ const Styles = styled.div`
     padding: 2% 0;
     margin-bottom: 5%;
     text-align: center;
-    color: #fff;
+    color: #ffff;
 }
 `;
 

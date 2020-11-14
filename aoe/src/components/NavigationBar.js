@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -10,8 +11,21 @@ const Styles = styled.div`
     z-index: 1000;
 }
 
-.navbar-nav .nav-link {
+.LinkRent {
+    color: #5A8FCB;
+    text-Decoration: none;
+    transition: 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &:hover {
+        color: #C73D13;
+        }
+    }
+}
+
+.Link {
     color: #FFFFFF;
+    text-Decoration: none;
+    transition: 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 
     &:hover {
         color: #5A8FCB;
@@ -33,24 +47,36 @@ export const NavigationBar = () => (
                 <Navbar.Collapse id="basic-navbar-nav">
 
                     <Nav className="mr-auto">
-                        <Button href="/rent" variant="light btn-lg shadow" waves-effect>RENT BBQ</Button>
+                        <Button variant="light btn-lg shadow" waves-effect>
+                            <Link to="/rent" className="LinkRent">RENT BBQ</Link>
+                        </Button>
                     </Nav>
 
                     <Nav className="ml-auto">
                         <Nav.Item>
-                            <Nav.Link href="/">HOME</Nav.Link>
+                            <Nav.Link>
+                                <Link to="/" className="Link">HOME</Link>
+                            </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/news">NEWS</Nav.Link>
+                            <Nav.Link>
+                                <Link to="/news" className="Link">NEWS</Link>
+                            </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/menu">MENU</Nav.Link>
+                            <Nav.Link>
+                            <Link to="/menu" className="Link">MENU</Link>
+                            </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/info">INFO</Nav.Link>
+                            <Nav.Link>
+                                <Link to="/info" className="Link">INFO</Link>
+                            </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/recruit">RECURUIT</Nav.Link>
+                            <Nav.Link>
+                                <Link to="/recruit" className="Link">RECRUIT</Link>
+                            </Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

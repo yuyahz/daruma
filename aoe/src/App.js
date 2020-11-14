@@ -22,7 +22,7 @@ class App extends Component {
         </Row>
         <NavigationBar />
         <LayoutNav>
-          <Router>
+          {/* <Router> */}
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/news" component={News} />
@@ -33,7 +33,7 @@ class App extends Component {
               <Route path="/rent" component={Rent} />
               <Route component={NoMatch} />
             </Switch>
-          </Router>
+          {/* </Router> */}
         </LayoutNav>
       </React.Fragment>
     );
