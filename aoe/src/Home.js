@@ -151,12 +151,12 @@ export const Home = () => (
 
         <Row className="bg">
             <Col md={{ span: 10, offset: 1 }}>
-                <Row className="PointCard" xs={1} md={2}>
+                <Row className="Point" xs={1} md={2}>
                     <Col xs={6} md={4}>
-                        <Image className="PointCardDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
+                        <Image className="PointDeco" src={PointCardDeco} alt="PointCardDeco" fluid />
                     </Col>
                     <Col xs={12} md={8}>
-                        <Image src={PointCard} alt="PointCard" fluid />
+                        <Image className="PointBtn" src={PointCard} alt="PointCard" fluid />
                     </Col>
                 </Row>
             </Col>
@@ -167,7 +167,7 @@ export const Home = () => (
                 <Row className="Takeout" xs={1} md={2}>
                     <Col xs={12} md={8}>
                         <a href={require('./assets/Document.pdf')} target="_blank">
-                            <Image className="TakeoutButton" src={Takeout} alt="Takeout" ontouchstart="" fluid />
+                            <Image className="TakeoutBtn" src={Takeout} alt="Takeout" ontouchstart="" fluid />
                         </a>
                     </Col>
                     <Col xs={6} md={4}>

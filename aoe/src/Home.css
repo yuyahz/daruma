@@ -219,14 +219,18 @@
   }
 }
 
-.PointCard {
+.Point {
   text-align: center;
   margin: 20% 0 5% 0;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
-.PointCardDeco {
+.PointDeco {
   padding: 20%;
+}
+
+.PointBtn {
+  border-radius: 4rem;
 }
 
 .Takeout {
@@ -240,10 +244,14 @@
   padding: 20%;
 }
 
-.TakeoutButton:hover {
+.TakeoutBtn:hover {
   transform: scale(0.95);
   transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
+
+.TakeoutBtn {
+  border-radius: 4rem;
 }
 
 .CardList {
