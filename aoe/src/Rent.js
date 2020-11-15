@@ -66,12 +66,18 @@ const Styles = styled.div`
     font-size: 60%;
 }
 
-.RentButtonSec {
+.RentBtn {
+    width: 70%;
+    border-radius: 7rem;
+}
+
+.RentBtnSec {
+    text-align: center;
     margin-bottom: 13%;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
-.RentButton:hover {
+.RentBtn:hover {
     transform: scale(0.95);
     transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
@@ -156,11 +162,9 @@ export const Rent = () => (
                 </Col>
             </Row>
 
-            <Row className="RentButtonSec">
-                <Col md={{ span: 8, offset: 2 }}>
-                    <Row xs={1} md={1}>
-                        <Image className="RentButton" src={Takeout}/>
-                    </Row>
+            <Row>
+                <Col md={{ span: 6, offset: 3 }} className="RentBtnSec">
+                <Image className="RentBtn" src={Takeout}/>
                 </Col>
             </Row>
 
