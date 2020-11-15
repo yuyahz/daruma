@@ -43,7 +43,7 @@ export const NewsList = () => (
                         <Col sm={4}>
                             <ListGroup className="Tab">
                                 <ListGroup.Item action href="#link1">
-                                    2020.10.23 New HP
+                                    2020.11.14 New HP
                                     </ListGroup.Item>
                                 <ListGroup.Item action href="#link2">
                                     2011.4.14 義援金について
