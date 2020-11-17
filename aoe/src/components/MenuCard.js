@@ -14,7 +14,6 @@ const Styles = styled.div`
 
 .CardSec {
     padding: 4% 4% 10%;
-    }
 }
 
 .CardRadius {
