@@ -1,117 +1,117 @@
 .MenuDeco {
-    text-align:center;
-    border: 4px double #C73D13;
-    border-radius: 10rem;
-    filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
-    background-color: #007BFF;
+  text-align: center;
+  border: 4px double #c73d13;
+  border-radius: 10rem;
+  filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
+  background-color: #007bff;
 }
 
 .MenuTitleSpace {
-    margin: 3% 0;
+  margin: 3% 0;
 }
 
 .MenuSpace {
-    margin: 5% 0 10% 0;
+  margin: 5% 0 10% 0;
 }
 
 .MenuDecoTitle {
-    width: 15%;
-    padding: 1%;
+  width: 15%;
+  padding: 1%;
 }
 
 .MenuSec {
-    margin: 6%;
+  margin: 6%;
 }
 
 .MenuHdCap {
-    padding: 1% 0;
-    color: #007BFF;
+  padding: 1% 0;
+  color: #007bff;
 }
 
 .MenuHdTitele {
-    padding-left: 6%;
-    font-size: 80%;
-    text-align: left;
-    float: left;
+  padding-left: 6%;
+  font-size: 80%;
+  text-align: left;
+  float: left;
 }
 
 .MenuHdText {
-    padding-right: 4%;
-    font-size: 80%;
-    text-align: right;
+  padding-right: 4%;
+  font-size: 80%;
+  text-align: right;
 }
 
 .HdTextSp {
-    margin-right: 7.5%;
+  margin-right: 7.5%;
 }
 
 .MenuCap {
-    border-top: solid 1px #007BFF;
-    padding-top: 2%;
-    color: #F3F0DB;
+  border-top: solid 1px #007bff;
+  padding-top: 2%;
+  color: #f3f0db;
 }
 
 .MenuCapSet {
-    color: #F3F0DB;
+  color: #f3f0db;
 }
 
 .MenuTitele {
-    padding-left: 4%;
-    font-size: 110%;
-    text-align: left;
-    float: left;
+  padding-left: 4%;
+  font-size: 110%;
+  text-align: left;
+  float: left;
 }
 
 .MenuText {
-    padding-right: 4%;
-    font-size: 120%;
-    text-align: right;
+  padding-right: 4%;
+  font-size: 120%;
+  text-align: right;
 }
 
 .MenuSmText {
-    font-size: 70%;
+  font-size: 70%;
 }
 
 .MenuTax {
-    padding-right: 4%;
-    font-size: 80%;
-    text-align: right;
+  padding-right: 4%;
+  font-size: 80%;
+  text-align: right;
 }
 
 .MenuTextSp {
-    margin-right: 6%;
+  margin-right: 6%;
 }
 
 .MenuTextSpSingle {
-    margin-right: 11%;
+  margin-right: 11%;
 }
 
 .MenuLunchTitle {
-    padding-top: 5%;
-    text-align: center;
+  padding-top: 5%;
+  text-align: center;
 }
 
 .MenuLunchText {
-    font-family: 'Noto Serif JP', serif;
-    color: #F3F0DB;
+  font-family: "Noto Serif JP", serif;
+  color: #f3f0db;
 }
 
 .MenuLunchBottom {
-    padding: 5% 20%;
+  padding: 5% 20%;
 }
 
 .MenuLunchBottomText {
-    padding: 10%;
-    font-family: 'Noto Serif JP', serif;
-    background-color: #007BFF;
-    border-radius: 7rem;
-    color: #F3F0DB;
-    filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
-    border: 4px double #C73D13;
+  padding: 10%;
+  font-family: "Noto Serif JP", serif;
+  background-color: #007bff;
+  border-radius: 7rem;
+  color: #f3f0db;
+  filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
+  border: 4px double #c73d13;
 }
 
 .MenuBr {
-    white-space: pre-wrap;
-    font-weight: bold;
-    text-shadow: (2px 3px 5px rgba(1, 1, 0, 0.3));
+  white-space: pre-wrap;
+  font-weight: bold;
+  text-shadow: (2px 3px 5px rgba(1, 1, 0, 0.3));
 }

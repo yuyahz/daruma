@@ -1,13 +1,14 @@
 body {
   margin: 0;
   font-size: 15px;
-  background-color: #C73D13;
-  font-family: 'PT Sans', sans-serif, 'Noto Sans JP', sans-serif, 'Noto Serif JP', serif;
+  background-color: #c73d13;
+  font-family: "PT Sans", sans-serif, "Noto Sans JP", sans-serif,
+    "Noto Serif JP", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
