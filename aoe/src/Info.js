@@ -140,8 +140,7 @@ export const Info = () => (
                 <p className="InfoCapText">
                   宴会場は最大６０名まで、利用可能
                   <p className="InfoBr">
-                    ※
-                    (少人数でご利用したいお客様は、個室としてもご利用して頂けます)
+                    ※(少人数でご利用したいお客様は、個室としてもご利用して頂けます)
                   </p>
                 </p>
               </div>
