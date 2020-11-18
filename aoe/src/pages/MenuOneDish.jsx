@@ -44,7 +44,7 @@ export const OneDish = ({ data }) => {
               <div className="MenuCap">
                 <p className="MenuTitele">元祖ホルモンうどん</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp"></span>¥600
+                  <span className="MenuTextSp"></span>¥680
                 </p>
               </div>
               <div className="MenuCap">
@@ -184,7 +184,7 @@ export const OneDish = ({ data }) => {
               <div className="MenuCap">
                 <p className="MenuTitele">野菜焼き単品</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp"></span>¥270
+                  <span className="MenuTextSp"></span>¥280
                 </p>
               </div>
               <div className="MenuCap">

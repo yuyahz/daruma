@@ -81,6 +81,12 @@ const Styles = styled.div`
     transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
   }
+
+  .RentTaxBr {
+    padding: 3% 12%;
+    white-space: pre-wrap;
+    text-align: right;
+  }
 `;
 
 export const Rent = () => (
@@ -93,6 +99,7 @@ export const Rent = () => (
             <p className="RentText">
               アウトドアで本格焼肉を手軽に！後片付けも楽々！
               使用後はそのまま当店まで返却するだけ!!
+              <p className="RentTaxBr">※税抜き価格表示</p>
             </p>
           </div>
         </Col>

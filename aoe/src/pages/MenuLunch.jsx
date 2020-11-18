@@ -25,13 +25,16 @@ export const Lunch = ({ data }) => {
             <Row xs={1} md={1}>
               <Col className="MenuLunchTitle">
                 <h3 className="MenuLunchText">
-                  ランチタイムは、11:00～14:00　平日のみ実施中！
+                  ランチメニューは、11:00～14:00　平日のみ実施中！
                 </h3>
               </Col>
             </Row>
 
             <Row className="MenuSec" xs={1} md={1}>
               <div className="MenuCap">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>焼肉セレクトランチ</p>
+              </div>
+              <div className="MenuCapSet">
                 <p className="MenuTitele">好きなお肉をセレクト!!</p>
               </div>
               <div className="MenuCapSet">
@@ -47,9 +50,18 @@ export const Lunch = ({ data }) => {
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  ハラミ、上ホルモン、ホルモン、レバーブタ、ブタバラ、トリ、セセリウィンナー(3本)、
-                  センマイ、ブタロース、よめなかせ、心臓、ギアラ、本日の一品、キムチ、サラダ、ライス、スープ、デザート
-                  付き
+                  ハラミ、上ホルモン、ホルモン、レバ、ーブタ、ブタバラ、トリ、セセリ、ウィンナー(3本)、
+                  センマイ、ブタロース、よめなかせ、心臓、ギアラ
+                </p>
+              </div>
+              <div className="MenuCapSet">
+                <p className="MenuTitele">
+                  ※お肉とは別に下記のメニュー付きです
+                </p>
+              </div>
+              <div className="MenuCapSet">
+                <p className="MenuTitele">
+                  本日の一品、キムチ、サラダ、ライス、スープ、デザート
                 </p>
               </div>
               <div className="MenuCapSet">
@@ -59,79 +71,90 @@ export const Lunch = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">ホルモンうどんランチ</p>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>ホルモンうどんランチ</p>
+              </div>
+              <div className="MenuCapSet">
+                <p className="MenuTitele">
+                  本日の一品、キムチ、サラダ、ライス、デザート
+                </p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle"></span>¥880
                 </p>
               </div>
+              <div className="MenuCap">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>韓国ラーメンランチ</p>
+              </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  本日の一品、キムチ、サラダ、ライス、デザート　付き
+                  本日の一品、キムチ、サラダ、ライス、デザート
                 </p>
-              </div>
-              <div className="MenuCap">
-                <p className="MenuTitele">韓国ラーメンランチ</p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle"></span>¥880
                 </p>
               </div>
+              <div className="MenuCap">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>豆腐チゲランチ</p>
+              </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  本日の一品、キムチ、サラダ、ライス、デザート　付き
+                  本日の一品、キムチ、サラダ、ライス、デザート
                 </p>
-              </div>
-              <div className="MenuCap">
-                <p className="MenuTitele">豆腐チゲランチ</p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle"></span>¥880
                 </p>
               </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">
-                  本日の一品、キムチ、サラダ、ライス、デザート　付き
-                </p>
-              </div>
               <div className="MenuCap">
-                <p className="MenuTitele">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                   カムジャタンランチ{" "}
                   <span className="MenuSmText">
                     (韓国風　豚スベアリブとじゃがいもの辛口チゲ)
                   </span>
                 </p>
+              </div>
+              <div className="MenuCapSet">
+                <p className="MenuTitele">
+                  本日の一品、キムチ、サラダ、ライス、デザート
+                </p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle"></span>¥1080
                 </p>
               </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">
-                  本日の一品、キムチ、サラダ、ライス、デザート　付き
-                </p>
-              </div>
               <div className="MenuCap">
-                <p className="MenuTitele">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                   プゴクスープランチ{" "}
                   <span className="MenuSmText">
                     (干しダラの旨み、たっぷり野菜のスープ)
                   </span>
                 </p>
-                <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥880
-                </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  ビビンバ（小）、本日の一品、キムチ、サラダ、デザート　付き
+                  ビビンバ（小）、本日の一品、キムチ、サラダ、デザート
+                </p>
+                <p className="MenuText">
+                  <span className="MenuTextSpSingle"></span>¥1150
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">にんにくチャーハンランチ</p>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>にんにくチャーハンランチ</p>
+              </div>
+              <div className="MenuCapSet">
+                <p className="MenuTitele">
+                  本日の一品、キムチ、サラダ、スープ、デザート
+                </p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle"></span>¥780
                 </p>
               </div>
+              <div className="MenuCap">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>和牛すじ煮込み汁ランチ</p>
+              </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  本日の一品、キムチ、サラダ、スープ、デザート　付き
+                  本日の一品、キムチ、サラダ、ライス、デザート
+                </p>
+                <p className="MenuText">
+                  <span className="MenuTextSpSingle"></span>¥780
                 </p>
               </div>
               <div className="MenuCap">

@@ -74,14 +74,14 @@ export const RiceDishes = ({ data }) => {
               <div className="MenuCap">
                 <p className="MenuTitele">ご飯</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp">(小) ¥220</span>
-                  <span className="MenuTextSp">(中) ¥480</span>(大) ¥700
+                  <span className="MenuTextSp">(小) ¥190</span>
+                  <span className="MenuTextSp">(中) ¥220</span>(大) ¥260
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">冷麺 (夏季のみ)</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp">(小) ¥690</span>(大) ¥890
+                  <span className="MenuTextSp">(小) ¥680</span>(大) ¥890
                 </p>
               </div>
               <div className="MenuCap">

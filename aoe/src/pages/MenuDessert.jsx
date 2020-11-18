@@ -44,7 +44,7 @@ export const Dessert = ({ data }) => {
               <div className="MenuCap">
                 <p className="MenuTitele">パインシャーベット (果肉入り)</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp"></span>¥510
+                  <span className="MenuTextSp"></span>¥530
                 </p>
               </div>
               <div className="MenuCap">
@@ -66,9 +66,9 @@ export const Dessert = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">クリームジュース</p>
+                <p className="MenuTitele">クリームコーラ</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp"></span>¥330
+                  <span className="MenuTextSp"></span>¥500
                 </p>
               </div>
               <div className="MenuCap">

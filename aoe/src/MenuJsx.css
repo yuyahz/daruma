@@ -55,11 +55,35 @@
   color: #f3f0db;
 }
 
+.MenuCapSetParty {
+  text-align: right;
+  color: #f3f0db;
+  color: 
+}
+
 .MenuTitele {
   padding-left: 4%;
   font-size: 110%;
   text-align: left;
   float: left;
+}
+
+.MenuTitleBg {
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  color: #f3f0db;
+  background: #007bff;
+  border-radius: 10px;
+  filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.1));
+}
+
+.MenuTitleBgSub {
+  padding: 0.5em 1rem;
+  margin: 1em 0;
+  color: #f3f0db;
+  background: #c73d13;
+  border-radius: 10px;
+  filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
 }
 
 .MenuText {
@@ -114,4 +138,8 @@
   white-space: pre-wrap;
   font-weight: bold;
   text-shadow: (2px 3px 5px rgba(1, 1, 0, 0.3));
+}
+
+.MenuBrParty {
+  white-space: pre-wrap;
 }

@@ -23,13 +23,11 @@ export const Yakiniku = ({ data }) => {
         <Row className="MenuSpace">
           <Col md={{ span: 8, offset: 2 }}>
             <Row className="MenuSec" xs={1} md={1}>
-              <div className="MenuHdSec">
-                <div className="MenuHdCap">
-                  <p className="MenuHdTitele">部位</p>
-                  <p className="MenuHdText">
-                    <span className="HdTextSp">通常</span>ハーフ
-                  </p>
-                </div>
+              <div className="MenuHdCap">
+                <p className="MenuHdTitele">部位</p>
+                <p className="MenuHdText">
+                  <span className="HdTextSp">通常</span>ハーフ
+                </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">カルビ</p>
@@ -283,36 +281,42 @@ export const Yakiniku = ({ data }) => {
                 </div>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">ファミリーセット (３～４人前)</p>
-                <p className="MenuText">
-                  <span className="MenuTextSpSingle">¥3400</span>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  ファミリーセット (３～４人前)
                 </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
                   カルビ/ハラミ/あじわいカルビ/ホルモン/トリ/ブタ/ウィンナー/野菜
                 </p>
+                <p className="MenuText">
+                  <span className="MenuTextSpSingle">¥3400</span>
+                </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">ペアセット (２人前)</p>
-                <p className="MenuText">
-                  <span className="MenuTextSpSingle">¥2400</span>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  ペアセット (２人前)
                 </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
                   カルビ/ハラミ/あじわいカルビ/ホルモン/トリ/ウィンナー/野菜海の幸セット
                 </p>
+                <p className="MenuText">
+                  <span className="MenuTextSpSingle">¥2400</span>
+                </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">ペアセット (２人前)</p>
-                <p className="MenuText">
-                  <span className="MenuTextSpSingle">¥1580</span>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  ホルモンセット (２人前)
                 </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
                   上ホルモン/よめなかせ/歌声/ホルモン/ギアラ
+                </p>
+                <p className="MenuText">
+                  <span className="MenuTextSpSingle">¥1580</span>
                 </p>
               </div>
               <div className="MenuCap">

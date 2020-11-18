@@ -23,15 +23,20 @@ export const PartyPlan = ({ data }) => {
         <Row className="MenuSpace">
           <Col md={{ span: 8, offset: 2 }}>
             <Row className="MenuSec" xs={1} md={1}>
-              <div className="MenuHdSec">
-                <div className="MenuHdCap">
-                  <p className="MenuHdTitele">コース・内容</p>
-                </div>
+              <div className="MenuCapSetParty">
+                <p>
+                  ※ 表示価格は1名様料金です。
+                  <p className="MenuBrParty">
+                    ※コースメニューは3名様以上より承ります。
+                  </p>
+                </p>
+              </div>
+              <div className="MenuHdCap">
+                <p className="MenuHdTitele">コース・内容</p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">2,000円コース</p>
-                <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  2,000円 コース
                 </p>
               </div>
               <div className="MenuCapSet">
@@ -40,48 +45,52 @@ export const PartyPlan = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">3,000円コース</p>
-                <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  3,000円コース
                 </p>
               </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">
-                  (Ａコース) いろんなお肉を食べたい方
-                </p>
+              <div className={"MenuTitle" + " " + "MenuTitleBgSub"}>
+                <div className="MenuCapSet">
+                  <p className="MenuTitele">
+                    ( Ａコース ) いろんなお肉を食べたい方
+                  </p>
+                </div>
+                <div className="MenuCapSet">
+                  <p className="MenuTitele">
+                    塩タン、カルビ、ロース、上ミノ、上ホルモン、ブタ、ムンチサラダ、盛キムチ、
+                    野菜焼、本日のデザート
+                  </p>
+                </div>
               </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">
-                  塩タン、カルビ、ロース、上ミノ、上ホルモン、ブタ、ムンチサラダ、盛キムチ、
-                  野菜焼、本日のデザート
-                </p>
+              <div className={"MenuTitle" + " " + "MenuTitleBgSub"}>
+                <div className="MenuCapSet">
+                  <p className="MenuTitele">
+                    ( B コース ) お肉をガツンと食べたい方
+                  </p>
+                </div>
+                <div className="MenuCapSet">
+                  <p className="MenuTitele">
+                    カルビ、ロース、ブタ、ホルモン、トントロ、チシャ、もやしナムル、キムチ、
+                    本日のデザート
+                  </p>
+                </div>
               </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">
-                  (B コース) お肉をガツンと食べたい方
-                </p>
-              </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">
-                  カルビ、ロース、ブタ、ホルモン、トントロ、チシャ、もやしナムル、キムチ
-                  本日のデザート
-                </p>
-              </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">
-                  (Ｃコース) お肉とオリジナルメニューを食べたい方　※要予約
-                </p>
-              </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">
-                  カルビ、ロース、セセリ、ブタ、ホルモン、ムンチサラダ、もやしナムル、チシャ
-                  牛スジ韓国煮、揚げ物、ピリ辛きゅうり漬け、本日のデザート
-                </p>
+              <div className={"MenuTitle" + " " + "MenuTitleBgSub"}>
+                <div className="MenuCapSet">
+                  <p className="MenuTitele">
+                    ( Ｃコース ) お肉とオリジナルメニューを食べたい方　※要予約
+                  </p>
+                </div>
+                <div className="MenuCapSet">
+                  <p className="MenuTitele">
+                    カルビ、ロース、セセリ、ブタ、ホルモン、ムンチサラダ、もやしナムル、チシャ、
+                    牛スジ韓国煮、揚げ物、ピリ辛きゅうり漬け、本日のデザート
+                  </p>
+                </div>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">4,000円コース</p>
-                <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  4,000円コース
                 </p>
               </div>
               <div className="MenuCapSet">

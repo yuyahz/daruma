@@ -24,6 +24,9 @@ export const Drink = ({ data }) => {
           <Col md={{ span: 8, offset: 2 }}>
             <Row className="MenuSec" xs={1} md={1}>
               <div className="MenuCap">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  ソフトドリンク
+                </p>
                 <p className="MenuTitele">
                   ウーロン茶 / コーラ / オレンジジュース / キリンレモン /
                   カルピス / ジンジャエール
@@ -71,7 +74,7 @@ export const Drink = ({ data }) => {
               <div className="MenuCap">
                 <p className="MenuTitele">お酒</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp">(1号) ¥320</span>(2号) ¥630
+                  <span className="MenuTextSp">(1合) ¥320</span>(2合) ¥630
                 </p>
               </div>
               <div className="MenuCap">
@@ -101,7 +104,7 @@ export const Drink = ({ data }) => {
               <div className="MenuCap">
                 <p className="MenuTitele">麦 / 二階堂</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp"></span>¥530
+                  <span className="MenuTextSp"></span>¥630
                 </p>
               </div>
               <div className="MenuCap">
@@ -153,9 +156,10 @@ export const Drink = ({ data }) => {
 
             <Row className="MenuSec" xs={1} md={1}>
               <div className="MenuCap">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>チューハイ</p>
                 <p className="MenuTitele">
-                  レモン / ライム / グレープフルーツ / カシス / ウメ /
-                  カルピスライチ / ゆず / シークヮーサー / 白桃 / 巨峰
+                  レモン / ライム / グレープフルーツ / カシス / カルピス /
+                  ライチ / ゆず / シークァーサー / 巨峰
                 </p>
                 <p className="MenuText">
                   <span className="MenuTextSp"></span>ALL ¥220
