@@ -98,7 +98,7 @@ export const Rent = () => (
             <h1 className="RentTitle">BBQ器具無料貸し出し</h1>
             <p className="RentText">
               アウトドアで本格焼肉を手軽に！後片付けも楽々！
-              使用後はそのまま当店まで返却するだけ!!
+              使用後はそのまま当店まで返却するだけ !!
               <p className="RentTaxBr">※税抜き価格表示</p>
             </p>
           </div>
