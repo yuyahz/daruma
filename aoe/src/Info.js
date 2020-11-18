@@ -24,6 +24,10 @@ const Styles = styled.div`
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
   }
 
+  .InfoPic {
+    max-width: 100%;
+  }
+
   .InfoSec {
     padding: 3%;
   }
@@ -43,7 +47,7 @@ const Styles = styled.div`
     font-family: "Noto Serif JP", serif;
     background-color: #c73d13;
     border: 4px double #007bff;
-    border-radius: 10rem;
+    border-radius: 1rem;
     filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
   }
 
@@ -85,17 +89,15 @@ export const Info = () => (
           <div className="InfoText">
             <h2 className="InfoTitle">店内紹介</h2>
             <div className="InfoFrame">
-              <div>
-                <p>
-                  明るい店内は、アットホームな雰囲気！宴会、2次会に最適な広さです。
-                </p>
-                <p>
-                  お座敷の席が多いため、お子様連れのお客様も、ゆっくりお食事が楽しめます。
-                </p>
-                <p>
-                  店内が広く、段差も少ないため車椅子のお客様も、安心してご来店いただけます。
-                </p>
-              </div>
+              <p>
+                明るい店内は、アットホームな雰囲気！宴会、2次会に最適な広さです。
+              </p>
+              <p>
+                お座敷の席が多いため、お子様連れのお客様も、ゆっくりお食事が楽しめます。
+              </p>
+              <p>
+                店内が広く、段差も少ないため車椅子のお客様も、安心してご来店いただけます。
+              </p>
             </div>
           </div>
         </Col>
@@ -104,7 +106,9 @@ export const Info = () => (
       <Row className="InfoSecTitle">
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
-            <Image src={Fuji4} rounded />
+            <Col>
+              <Image src={Fuji4} className="InfoPic" rounded />
+            </Col>
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">BOX席</p>
@@ -118,7 +122,9 @@ export const Info = () => (
       <Row className="InfoSecTitle">
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
-            <Image src={InfoFloor} rounded />
+            <Col>
+              <Image src={InfoFloor} className="InfoPic" rounded />
+            </Col>
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">板の間</p>
@@ -132,8 +138,16 @@ export const Info = () => (
       <Row className="InfoSecTitle">
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
-            <Image className="InfoParty_1" src={InfoParty_1} rounded />
-            <Image src={InfoParty_2} rounded />
+            <Col>
+              <Image
+                className={"InfoPic" + " " + " InfoParty_1"}
+                src={InfoParty_1}
+                rounded
+              />
+            </Col>
+            <Col>
+              <Image src={InfoParty_2} className="InfoPic" rounded />
+            </Col>
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">宴会場</p>
@@ -152,7 +166,9 @@ export const Info = () => (
       <Row className="InfoSecTitle">
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
-            <Image src={InfoWaitting_1} rounded />
+            <Col>
+              <Image src={InfoWaitting_1} className="InfoPic" rounded />
+            </Col>
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">待合室</p>
@@ -168,21 +184,25 @@ export const Info = () => (
       <Row className="InfoSecTitle">
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
-            <Image src={Parking_1} rounded />
-            <div className="InfoSec">
-              <div className="InfoCap">
-                <p className="InfoCapTitele">第一駐車場</p>
-                <p className="InfoCapText">最大　40台</p>
-              </div>
-            </div>
+            <Col>
+              <Image src={Parking_1} className="InfoPic" rounded />
+            </Col>
           </Row>
+          <div className="InfoSec">
+            <div className="InfoCap">
+              <p className="InfoCapTitele">第一駐車場</p>
+              <p className="InfoCapText">最大　40台</p>
+            </div>
+          </div>
         </Col>
       </Row>
 
       <Row className="InfoSecTitle">
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
-            <Image src={Parking_2} rounded />
+            <Col>
+              <Image src={Parking_2} className="InfoPic" rounded />
+            </Col>
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">第二駐車場</p>

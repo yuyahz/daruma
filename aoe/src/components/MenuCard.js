@@ -5,47 +5,46 @@ import styled from "styled-components";
 import { CardData } from "../config/data";
 
 const Styles = styled.div`
-
-.SideSpace {
+  .SideSpace {
     margin: 0% 10% 10% 10%;
-    -webkit-flex-direction: row; 
+    -webkit-flex-direction: row;
     flex-direction: row;
-}
+  }
 
-.CardSec {
+  .CardSec {
     padding: 4% 4% 10%;
-}
+  }
 
-.CardRadius {
+  .CardRadius {
     border-radius: 50px 70px 70px 0;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.5));
-}
+  }
 
-.CardPic {
+  .CardPic {
     border-radius: 50px 70px 0 0;
-}
+  }
 
-.CardTitle {
+  .CardTitle {
     color: #c73d13;
     font-size: 140%;
     font-family: "Noto Serif JP", serif;
     font-weight: bold;
-}
+  }
 
-.CardText {
+  .CardText {
     font-size: 80%;
-}
+  }
 
-.CardButton {
+  .CardButton {
     font-size: 80%;
     border-radius: 50px 70px 70px 0;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.3));
-}
+  }
 
-.CardButtonText {
-  text-decoration: none;
-  color: #fff;
-}
+  .CardButtonText {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
 
 const MenuCardColumn = ({ cardData }) => (

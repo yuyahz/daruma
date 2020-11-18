@@ -184,7 +184,9 @@ export const Rent = () => (
 
       <Row>
         <Col md={{ span: 6, offset: 3 }} className="RentBtnSec">
-          <Image className="RentBtn" src={Takeout} />
+          <a href={require("./assets/Document.pdf")} target="_blank">
+            <Image className="RentBtn" src={Takeout} />
+          </a>
         </Col>
       </Row>
 
