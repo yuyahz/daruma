@@ -112,7 +112,7 @@ export const Info = () => (
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">BOX席</p>
-                <p className="InfoCapText">6人席 × 3</p>
+                {/* <p className="InfoCapText">6人席 × 3</p> */}
               </div>
             </div>
           </Row>
@@ -128,7 +128,7 @@ export const Info = () => (
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">板の間</p>
-                <p className="InfoCapText">４人席 × 5　6人席 × 3</p>
+                {/* <p className="InfoCapText">４人席 × 5　6人席 × 3</p> */}
               </div>
             </div>
           </Row>
@@ -191,7 +191,7 @@ export const Info = () => (
           <div className="InfoSec">
             <div className="InfoCap">
               <p className="InfoCapTitele">第一駐車場</p>
-              <p className="InfoCapText">最大　40台</p>
+              <p className="InfoCapText">最大　16台</p>
             </div>
           </div>
         </Col>
@@ -206,7 +206,7 @@ export const Info = () => (
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">第二駐車場</p>
-                <p className="InfoCapText">最大 18台</p>
+                <p className="InfoCapText">最大 16台</p>
               </div>
             </div>
           </Row>

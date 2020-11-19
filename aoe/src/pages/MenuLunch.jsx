@@ -40,13 +40,13 @@ export const Lunch = ({ data }) => {
                 <p className="MenuTitele">
                   好きなお肉をセレクト!!{" "}
                   <span className="MenuSmText">
-                    ※うす切りカルビは必須となります。
+                    ※焼きしゃぶロースは必須となります。
                   </span>
                 </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  うす切りカルビ以外のその他のお肉は以下のメニューより２品お選び下さい。
+                  焼きしゃぶロース以外のその他のお肉は以下のメニューより２品お選び下さい。
                 </p>
               </div>
               <div className="MenuCapSet">
