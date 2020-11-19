@@ -13,7 +13,7 @@ const Styles = styled.div`
   }
 
   .RentSec {
-    margin: 5% 0;
+    margin: 5% 0 0 0;
   }
 
   .RentTopSec {
@@ -82,10 +82,11 @@ const Styles = styled.div`
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
   }
 
-  .RentTaxBr {
-    padding: 3% 12%;
-    white-space: pre-wrap;
-    text-align: right;
+  .RentTax {
+    font-size: 90%;
+    color: #f3f0db;
+    text-align: center;
+    margin: 5% 0 20% 0;
   }
 `;
 
@@ -99,7 +100,6 @@ export const Rent = () => (
             <p className="RentText">
               アウトドアで本格焼肉を手軽に！後片付けも楽々！
               使用後はそのまま当店まで返却するだけ !!
-              <p className="RentTaxBr">※税抜き価格表示</p>
             </p>
           </div>
         </Col>
@@ -186,6 +186,12 @@ export const Rent = () => (
               </div>
             </Col>
           </Row>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col md={{ span: 6, offset: 3 }}>
+          <p className="RentTax">※税抜き価格表示</p>
         </Col>
       </Row>
 

@@ -94,7 +94,7 @@ export const Lunch = ({ data }) => {
                   本日の一品、キムチ、サラダ、スープ（小）、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥880
+                  <span className="MenuTextSpSingle"></span>¥1150
                 </p>
               </div>
               <div className="MenuCap">

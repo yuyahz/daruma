@@ -42,25 +42,32 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link1">
-                  2020.11.20 New HP
+                  2011.11.19 11月定休日
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link2">
-                  2011.4.14 義援金について
+                  2020.11.17 New HP
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link3">
-                  .
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link4">
-                  .
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link5">
-                  .
+                  2011.4.14 義援金について
                 </ListGroup.Item>
               </ListGroup>
             </Col>
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link1">
+                  <h3 className="title">11月定休日のお知らせ</h3>
+                  <p className="br">
+                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
+                  </p>
+                  <p className="br">11月定休日</p>
+                  <p className="br">（水曜日）25日、（月曜日）30日</p>
+                  <p className="br">
+                    30日は定休日とさせていただきますので、お間違いのないようによろしくお願いいたします。
+                  </p>
+                  <TabContent />
+                </Tab.Pane>
+
+                <Tab.Pane className="TabContent" eventKey="#link2">
                   <h3 className="title">ホームページリニューアルのお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -76,7 +83,8 @@ export const NewsList = () => (
                   </p>
                   <TabContent />
                 </Tab.Pane>
-                <Tab.Pane className="TabContent" eventKey="#link2">
+
+                <Tab.Pane className="TabContent" eventKey="#link3">
                   <h3 className="title">義援金、店頭募金送金のご報告</h3>
                   <p className="br">
                     被災地の少しでも早い復興をお祈り申し上げます。
