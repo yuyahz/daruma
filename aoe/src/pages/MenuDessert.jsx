@@ -30,19 +30,19 @@ export const Dessert = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">オレンジシャーベット (果肉入り)</p>
+                <p className="MenuTitele">オレンジシャーベット（果肉入り）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp"></span>¥510
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">アップルシャーベット (果肉入り)</p>
+                <p className="MenuTitele">アップルシャーベット（果肉入り）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp"></span>¥510
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">パインシャーベット (果肉入り)</p>
+                <p className="MenuTitele">パインシャーベット（果肉入り）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp"></span>¥530
                 </p>
@@ -54,7 +54,7 @@ export const Dessert = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">生チョコアイス (チョコ・抹茶)</p>
+                <p className="MenuTitele">生チョコアイス（チョコ・抹茶）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp"></span>¥370
                 </p>

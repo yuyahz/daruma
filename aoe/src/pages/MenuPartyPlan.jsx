@@ -52,7 +52,7 @@ export const PartyPlan = ({ data }) => {
               <div className={"MenuTitle" + " " + "MenuTitleBgSub"}>
                 <div className="MenuCapSet">
                   <p className="MenuTitele">
-                    ( Ａコース ) いろんなお肉を食べたい方
+                    （Ａコース）いろんなお肉を食べたい方
                   </p>
                 </div>
                 <div className="MenuCapSet">
@@ -65,7 +65,7 @@ export const PartyPlan = ({ data }) => {
               <div className={"MenuTitle" + " " + "MenuTitleBgSub"}>
                 <div className="MenuCapSet">
                   <p className="MenuTitele">
-                    ( B コース ) お肉をガツンと食べたい方
+                    （Bコース）お肉をガツンと食べたい方
                   </p>
                 </div>
                 <div className="MenuCapSet">
@@ -78,7 +78,7 @@ export const PartyPlan = ({ data }) => {
               <div className={"MenuTitle" + " " + "MenuTitleBgSub"}>
                 <div className="MenuCapSet">
                   <p className="MenuTitele">
-                    ( Ｃコース ) お肉とオリジナルメニューを食べたい方　※要予約
+                    （Ｃコース）お肉とオリジナルメニューを食べたい方　※要予約
                   </p>
                 </div>
                 <div className="MenuCapSet">
@@ -95,7 +95,7 @@ export const PartyPlan = ({ data }) => {
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  上ロース、上カルビ、塩上タン、上ミノ、上ホルモン、ムンチサラダ、チシャ
+                  上ロース、上カルビ、塩上タン、上ミノ、上ホルモン、ムンチサラダ、チシャ、
                   キムチ、本日のデザート
                 </p>
               </div>
@@ -111,7 +111,7 @@ export const PartyPlan = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">※飲み放題コース追加　(要予約)</p>
+                <p className="MenuTitele">※飲み放題コース追加（要予約）</p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle"></span>
                 </p>

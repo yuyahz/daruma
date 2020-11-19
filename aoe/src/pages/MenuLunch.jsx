@@ -32,25 +32,26 @@ export const Lunch = ({ data }) => {
 
             <Row className="MenuSec" xs={1} md={1}>
               <div className="MenuCap">
-                <p className={"MenuTitle" + " " + "MenuTitleBg"}>焼肉セレクトランチ</p>
-              </div>
-              <div className="MenuCapSet">
-                <p className="MenuTitele">好きなお肉をセレクト!!</p>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  焼肉セレクトランチ
+                </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  うす切りカルビ + ( ..... ) + ( ..... )　{" "}
+                  好きなお肉をセレクト!!{" "}
                   <span className="MenuSmText">
-                    ※ うす切りカルビは必須となります。
+                    ※うす切りカルビは必須となります。
                   </span>
                 </p>
               </div>
               <div className="MenuCapSet">
-                <p className="MenuTitele">以下のメニューより２品お選び下さい</p>
+                <p className="MenuTitele">
+                  うす切りカルビ以外のその他のお肉は以下のメニューより２品お選び下さい。
+                </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  ハラミ、上ホルモン、ホルモン、レバ、ーブタ、ブタバラ、トリ、セセリ、ウィンナー(3本)、
+                  ハラミ、上ホルモン、ホルモン、レバー、ブタ、ブタバラ、トリ、セセリ、ウィンナー（3本）、
                   センマイ、ブタロース、よめなかせ、心臓、ギアラ
                 </p>
               </div>
@@ -61,7 +62,7 @@ export const Lunch = ({ data }) => {
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  本日の一品、キムチ、サラダ、ライス、スープ、デザート
+                  本日の一品、キムチ、サラダ、ライス、スープ（小）、デザート
                 </p>
               </div>
               <div className="MenuCapSet">
@@ -71,7 +72,9 @@ export const Lunch = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className={"MenuTitle" + " " + "MenuTitleBg"}>ホルモンうどんランチ</p>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  ホルモンうどんランチ
+                </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
@@ -82,7 +85,22 @@ export const Lunch = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className={"MenuTitle" + " " + "MenuTitleBg"}>韓国ラーメンランチ</p>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  石焼ビビンバランチ
+                </p>
+              </div>
+              <div className="MenuCapSet">
+                <p className="MenuTitele">
+                  本日の一品、キムチ、サラダ、スープ（小）、デザート
+                </p>
+                <p className="MenuText">
+                  <span className="MenuTextSpSingle"></span>¥880
+                </p>
+              </div>
+              <div className="MenuCap">
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  韓国ラーメンランチ
+                </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
@@ -93,7 +111,9 @@ export const Lunch = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className={"MenuTitle" + " " + "MenuTitleBg"}>豆腐チゲランチ</p>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  豆腐チゲランチ
+                </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
@@ -107,7 +127,7 @@ export const Lunch = ({ data }) => {
                 <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                   カムジャタンランチ{" "}
                   <span className="MenuSmText">
-                    (韓国風　豚スベアリブとじゃがいもの辛口チゲ)
+                    （韓国風　豚スベアリブとじゃがいもの辛口チゲ）
                   </span>
                 </p>
               </div>
@@ -123,7 +143,7 @@ export const Lunch = ({ data }) => {
                 <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                   プゴクスープランチ{" "}
                   <span className="MenuSmText">
-                    (干しダラの旨み、たっぷり野菜のスープ)
+                    （干しダラの旨み、たっぷり野菜のスープ）
                   </span>
                 </p>
               </div>
@@ -136,25 +156,29 @@ export const Lunch = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className={"MenuTitle" + " " + "MenuTitleBg"}>にんにくチャーハンランチ</p>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  にんにくチャーハンランチ
+                </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  本日の一品、キムチ、サラダ、スープ、デザート
+                  本日の一品、キムチ、サラダ、スープ（小）、デザート
                 </p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle"></span>¥780
                 </p>
               </div>
               <div className="MenuCap">
-                <p className={"MenuTitle" + " " + "MenuTitleBg"}>和牛すじ煮込み汁ランチ</p>
+                <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  和牛すじ煮込み汁ランチ
+                </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
                   本日の一品、キムチ、サラダ、ライス、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥780
+                  <span className="MenuTextSpSingle"></span>¥880
                 </p>
               </div>
               <div className="MenuCap">

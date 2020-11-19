@@ -60,13 +60,13 @@ export const Yakiniku = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">味わいカルビ (中落ち)</p>
+                <p className="MenuTitele">味わいカルビ（中落ち）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp">¥680</span>¥380
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">ギアラ (赤セン)</p>
+                <p className="MenuTitele">ギアラ（赤セン）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp">¥530</span>¥270
                 </p>
@@ -120,7 +120,7 @@ export const Yakiniku = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">牛ホホ肉 (ツラミ)</p>
+                <p className="MenuTitele">牛ホホ肉（ツラミ）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp">¥580</span>¥300
                 </p>
@@ -138,7 +138,7 @@ export const Yakiniku = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">上タン (10食限定)</p>
+                <p className="MenuTitele">上タン（10食限定）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp">¥1730</span>¥960
                 </p>
@@ -170,7 +170,7 @@ export const Yakiniku = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">豚肉 (つらみ)</p>
+                <p className="MenuTitele">豚肉（つらみ）</p>
                 <p className="MenuText">
                   <span className="MenuTextSp">¥550</span>¥300
                 </p>
@@ -188,7 +188,7 @@ export const Yakiniku = ({ data }) => {
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTitele">歌声 (タレ・辛ダレ)　※ 豚の軟骨</p>
+                <p className="MenuTitele">歌声（タレ・辛ダレ）※豚の軟骨</p>
                 <p className="MenuText">
                   <span className="MenuTextSp">¥500</span>¥270
                 </p>
@@ -282,12 +282,12 @@ export const Yakiniku = ({ data }) => {
               </div>
               <div className="MenuCap">
                 <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                  ファミリーセット (３～４人前)
+                  ファミリーセット（３～４人前）
                 </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  カルビ/ハラミ/あじわいカルビ/ホルモン/トリ/ブタ/ウィンナー/野菜
+                  カルビ、ハラミ、あじわいカルビ、ホルモン、トリ、ブタ、ウィンナー、野菜
                 </p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle">¥3400</span>
@@ -295,12 +295,12 @@ export const Yakiniku = ({ data }) => {
               </div>
               <div className="MenuCap">
                 <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                  ペアセット (２人前)
+                  ペアセット（２人前）
                 </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  カルビ/ハラミ/あじわいカルビ/ホルモン/トリ/ウィンナー/野菜海の幸セット
+                  カルビ、ハラミ、あじわいカルビ、ホルモン、トリ、ウィンナー、野菜
                 </p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle">¥2400</span>
@@ -308,12 +308,12 @@ export const Yakiniku = ({ data }) => {
               </div>
               <div className="MenuCap">
                 <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                  ホルモンセット (２人前)
+                  ホルモンセット（２人前）
                 </p>
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  上ホルモン/よめなかせ/歌声/ホルモン/ギアラ
+                  上ホルモン、よめなかせ、歌声、ホルモン、ギアラ
                 </p>
                 <p className="MenuText">
                   <span className="MenuTextSpSingle">¥1580</span>
