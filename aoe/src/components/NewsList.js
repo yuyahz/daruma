@@ -52,6 +52,7 @@ export const NewsList = () => (
                 </ListGroup.Item>
               </ListGroup>
             </Col>
+
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link1">
@@ -101,7 +102,9 @@ export const NewsList = () => (
                 </Tab.Pane>
               </Tab.Content>
             </Col>
+            
           </Row>
+          
         </Tab.Container>
       </Col>
     </Row>
