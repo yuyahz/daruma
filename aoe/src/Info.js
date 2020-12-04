@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
 import { BottomSet } from "./components/BottomSet";
-import Fuji4 from "./assets/Fuji4.png";
+import InfoBox from "./assets/InfoBox.png";
 import InfoFloor from "./assets/InfoFloor.png";
 import InfoParty_1 from "./assets/InfoParty_1.png";
 import InfoParty_2 from "./assets/InfoParty_2.png";
@@ -107,7 +107,7 @@ export const Info = () => (
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
             <Col>
-              <Image src={Fuji4} className="InfoPic" rounded />
+              <Image src={InfoBox} className="InfoPic" rounded />
             </Col>
             <div className="InfoSec">
               <div className="InfoCap">

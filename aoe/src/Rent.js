@@ -2,8 +2,11 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
 import { BottomSet } from "./components/BottomSet";
-import Fuji7 from "./assets/Fuji7.png";
-import Fuji6 from "./assets/Fuji6.png";
+import BBQ_AllStuffs from "./assets/BBQ_AllStuffs.png";
+import BBQ from "./assets/BBQ.png";
+import TeburaSet from "./assets/TeburaSet.png";
+import Set1600 from "./assets/Set1600.png";
+import Set2100 from "./assets/Set2100.png";
 import Takeout from "./assets/Takeout.svg";
 
 const Styles = styled.div`
@@ -109,7 +112,7 @@ export const Rent = () => (
         <Col md={{ span: 8, offset: 2 }} className="RentTopSec">
           <Row xs={1} md={2}>
             <Col>
-              <Image className="RentPic" src={Fuji7} rounded />
+              <Image className="RentPic" src={BBQ_AllStuffs} rounded />
             </Col>
             <Col>
               <div className="RentText">
@@ -132,7 +135,7 @@ export const Rent = () => (
         <Col md={{ span: 8, offset: 2 }}>
           <Row xs={1} md={2}>
             <Col>
-              <Image className="RentPic" src={Fuji6} rounded />
+              <Image className="RentPic" src={BBQ} rounded />
               <div className="RentCaption RentText">
                 <p>
                   一度に10人前のお肉が焼ける直径45cmの器具なので、大人数でもOK
@@ -141,7 +144,7 @@ export const Rent = () => (
               </div>
             </Col>
             <Col>
-              <Image className="RentPic" src={Fuji6} rounded />
+              <Image className="RentPic" src={TeburaSet} rounded />
               <div className="RentCaption RentText">
                 <p>人数分の箸、コップ、ゴミ袋は無料で差し上げます !!</p>
               </div>
@@ -154,7 +157,7 @@ export const Rent = () => (
         <Col md={{ span: 8, offset: 2 }} className="RentBottomSec">
           <Row xs={1} md={2}>
             <Col>
-              <Image className="RentPic" src={Fuji6} rounded />
+              <Image className="RentPic" src={Set1600} rounded />
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">
@@ -170,7 +173,7 @@ export const Rent = () => (
               </div>
             </Col>
             <Col>
-              <Image className="RentPic" src={Fuji6} rounded />
+              <Image className="RentPic" src={Set2100} rounded />
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">
