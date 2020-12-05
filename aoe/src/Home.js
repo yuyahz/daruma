@@ -10,6 +10,7 @@ import Slider_3 from "./assets/Slider_3.png";
 import IntroPic_1 from "./assets/IntroPic_1.png";
 import IntroPic_2 from "./assets/IntroPic_2.png";
 import IntroPic_3 from "./assets/IntroPic_3.png";
+import * as FadeIn from "./components/FadeIn";
 import Takeout from "./assets/Takeout.svg";
 import TakeoutDeco from "./assets/TakeoutDeco.svg";
 import PointCard from "./assets/PointCard.svg";
@@ -84,7 +85,9 @@ export const Home = () => (
       <Col md={{ span: 10, offset: 1 }}>
         <Row className="IntroInsideSec" xs={1} md={2}>
           <Col>
-            <Image className="IntroPic_L" src={IntroPic_1} rounded />
+            <FadeIn.Left>
+              <Image className="IntroPic_L" src={IntroPic_1} rounded />
+            </FadeIn.Left>
           </Col>
           <Col className="IntroCaption">
             <div>
@@ -119,7 +122,9 @@ export const Home = () => (
             </div>
           </Col>
           <Col>
-            <Image className="IntroPic_R" src={IntroPic_2} rounded />
+            <FadeIn.Right>
+              <Image className="IntroPic_R" src={IntroPic_2} rounded />
+            </FadeIn.Right>
           </Col>
         </Row>
       </Col>
@@ -129,7 +134,9 @@ export const Home = () => (
       <Col md={{ span: 10, offset: 1 }}>
         <Row className="IntroInsideSec" xs={1} md={2}>
           <Col>
-            <Image className="IntroPic_L" src={IntroPic_3} rounded />
+            <FadeIn.Left>
+              <Image className="IntroPic_L" src={IntroPic_3} rounded />
+            </FadeIn.Left>
           </Col>
           <Col className="IntroCaption">
             <div>

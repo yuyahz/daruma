@@ -98,27 +98,6 @@
   align-items: center;
 }
 
-/* .Slider {
-    margin: 5% 0;
-    position: relative;
-    padding-bottom: 10%;
-}
-
-.SliderCaption {
-    position: absolute;
-    bottom: -40%;
-    left: -6%;
-    padding-top: 9%;
-    padding-left: 7%;
-    padding-right: 7%;
-    border-radius: 5%;
-    font-size: 0.9vw;
-    font-family: 'Noto Serif JP', serif;
-    color: #F3F0DB;
-    writing-mode: vertical-rl;
-    background-color:#C73D13;
-} */
-
 .IntroSec {
   font-family: "Noto Serif JP", serif;
   color: #f3f0db;

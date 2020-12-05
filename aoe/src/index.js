@@ -6,6 +6,8 @@ import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
+    <script src="path/to/intersection-observer.js"></script>
+    <script src="app.js"></script>
     <Router>
       <App />
     </Router>
