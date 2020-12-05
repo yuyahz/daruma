@@ -8,6 +8,8 @@ const Styles = styled.div`
     margin: 0% 6% 0% 6%;
     position: relative;
     z-index: 1000;
+    font-weight: bold;
+    letter-spacing: 0.15em;
   }
 
   .LinkRent {

@@ -1,6 +1,7 @@
 import React from "react";
-import { Row, Col, ListGroup, Tab, TabContent } from "react-bootstrap";
+import { Row, Col, Image, ListGroup, Tab, TabContent } from "react-bootstrap";
 import styled from "styled-components";
+import Calender from "../assets/Calender.svg";
 
 const Styles = styled.div`
   .NewsSec {
@@ -31,6 +32,14 @@ const Styles = styled.div`
   .br {
     white-space: pre-wrap;
   }
+
+  .Calender {
+    margin-top: 8%;
+    padding: 3%;
+    border-radius: 15px;
+    background-color: #fff;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  }
 `;
 
 export const NewsList = () => (
@@ -42,7 +51,7 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link1">
-                  2011.11.19 11月定休日
+                  2011.12.6 12月定休日
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link2">
                   2020.11.17 New HP
@@ -56,14 +65,15 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link1">
-                  <h3 className="title">11月定休日のお知らせ</h3>
+                  <h3 className="title">12月定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
-                  <p className="br">11月定休日</p>
-                  <p className="br">（水曜日）25日、（月曜日）30日</p>
                   <p className="br">
-                    30日は定休日とさせていただきますので、お間違いのないようによろしくお願いいたします。
+                    年末年始の定休日は下記の通りです。スタッフ一同心よりお待ちしております。
+                  </p>
+                  <p className="br">
+                    ※ 月曜日は通常通り定休日となります。
                   </p>
                   <TabContent />
                 </Tab.Pane>
@@ -103,8 +113,8 @@ export const NewsList = () => (
               </Tab.Content>
             </Col>
 
-            <Col sm={12} className="">
-              {/* calender */}
+            <Col sm={12} className="Calender">
+              <Image src={Calender} alt="Calender" fluid />
             </Col>
           </Row>
         </Tab.Container>

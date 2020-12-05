@@ -165,6 +165,8 @@
 .NewsTitle {
   margin-bottom: 1%;
   color: #007bff;
+  font-weight: bold;
+  letter-spacing: 0.2em;
   text-align: center;
 }
 
