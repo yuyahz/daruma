@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
+import * as FadeIn from "./components/FadeIn";
 import { BottomSet } from "./components/BottomSet";
 import InfoBox from "./assets/InfoBox.png";
 import InfoFloor from "./assets/InfoFloor.png";
@@ -107,7 +108,9 @@ export const Info = () => (
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
             <Col>
-              <Image src={InfoBox} className="InfoPic" rounded />
+              <FadeIn.Up>
+                <Image src={InfoBox} className="InfoPic" rounded />
+              </FadeIn.Up>
             </Col>
             <div className="InfoSec">
               <div className="InfoCap">
@@ -123,7 +126,9 @@ export const Info = () => (
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
             <Col>
-              <Image src={InfoFloor} className="InfoPic" rounded />
+              <FadeIn.Up>
+                <Image src={InfoFloor} className="InfoPic" rounded />
+              </FadeIn.Up>
             </Col>
             <div className="InfoSec">
               <div className="InfoCap">
@@ -139,14 +144,18 @@ export const Info = () => (
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
             <Col>
-              <Image
-                className={"InfoPic" + " " + " InfoParty_1"}
-                src={InfoParty_1}
-                rounded
-              />
+              <FadeIn.Up>
+                <Image
+                  className={"InfoPic" + " " + " InfoParty_1"}
+                  src={InfoParty_1}
+                  rounded
+                />
+              </FadeIn.Up>
             </Col>
             <Col>
-              <Image src={InfoParty_2} className="InfoPic" rounded />
+              <FadeIn.Up>
+                <Image src={InfoParty_2} className="InfoPic" rounded />
+              </FadeIn.Up>
             </Col>
             <div className="InfoSec">
               <div className="InfoCap">
@@ -167,7 +176,9 @@ export const Info = () => (
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
             <Col>
-              <Image src={InfoWaitting_1} className="InfoPic" rounded />
+              <FadeIn.Up>
+                <Image src={InfoWaitting_1} className="InfoPic" rounded />
+              </FadeIn.Up>
             </Col>
             <div className="InfoSec">
               <div className="InfoCap">
@@ -185,7 +196,9 @@ export const Info = () => (
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
             <Col>
-              <Image src={Parking_1} className="InfoPic" rounded />
+              <FadeIn.Up>
+                <Image src={Parking_1} className="InfoPic" rounded />
+              </FadeIn.Up>
             </Col>
           </Row>
           <div className="InfoSec">
@@ -201,7 +214,9 @@ export const Info = () => (
         <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
           <Row xs={1} md={1}>
             <Col>
-              <Image src={Parking_2} className="InfoPic" rounded />
+              <FadeIn.Up>
+                <Image src={Parking_2} className="InfoPic" rounded />
+              </FadeIn.Up>
             </Col>
             <div className="InfoSec">
               <div className="InfoCap">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
+import * as FadeIn from "./components/FadeIn";
 import { BottomSet } from "./components/BottomSet";
 import BBQ_AllStuffs from "./assets/BBQ_AllStuffs.png";
 import BBQ from "./assets/BBQ.png";
@@ -112,7 +113,9 @@ export const Rent = () => (
         <Col md={{ span: 8, offset: 2 }} className="RentTopSec">
           <Row xs={1} md={2}>
             <Col>
-              <Image className="RentPic" src={BBQ_AllStuffs} rounded />
+              <FadeIn.Up>
+                <Image className="RentPic" src={BBQ_AllStuffs} rounded />
+              </FadeIn.Up>
             </Col>
             <Col>
               <div className="RentText">
@@ -135,7 +138,9 @@ export const Rent = () => (
         <Col md={{ span: 8, offset: 2 }}>
           <Row xs={1} md={2}>
             <Col>
-              <Image className="RentPic" src={BBQ} rounded />
+              <FadeIn.Up>
+                <Image className="RentPic" src={BBQ} rounded />
+              </FadeIn.Up>
               <div className="RentCaption RentText">
                 <p>
                   一度に10人前のお肉が焼ける直径45cmの器具なので、大人数でもOK
@@ -144,7 +149,9 @@ export const Rent = () => (
               </div>
             </Col>
             <Col>
-              <Image className="RentPic" src={TeburaSet} rounded />
+              <FadeIn.Up>
+                <Image className="RentPic" src={TeburaSet} rounded />
+              </FadeIn.Up>
               <div className="RentCaption RentText">
                 <p>人数分の箸、コップ、ゴミ袋は無料で差し上げます !!</p>
               </div>
@@ -157,7 +164,9 @@ export const Rent = () => (
         <Col md={{ span: 8, offset: 2 }} className="RentBottomSec">
           <Row xs={1} md={2}>
             <Col>
-              <Image className="RentPic" src={Set1600} rounded />
+              <FadeIn.Up>
+                <Image className="RentPic" src={Set1600} rounded />
+              </FadeIn.Up>
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">
@@ -173,7 +182,9 @@ export const Rent = () => (
               </div>
             </Col>
             <Col>
-              <Image className="RentPic" src={Set2100} rounded />
+              <FadeIn.Up>
+                <Image className="RentPic" src={Set2100} rounded />
+              </FadeIn.Up>
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">

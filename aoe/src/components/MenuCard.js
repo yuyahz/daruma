@@ -3,6 +3,7 @@ import { Container, Row, Col, Button, Card, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { CardData } from "../config/data";
+import * as FadeIn from "./FadeIn";
 
 const Styles = styled.div`
   .SideSpace {
@@ -49,6 +50,7 @@ const Styles = styled.div`
 
 const MenuCardColumn = ({ cardData }) => (
   <Col className="CardSec" xs={12} md={4}>
+    <FadeIn.Up>
     <Card className="CardRadius">
       <Card.Img
         className="CardPic"
@@ -67,7 +69,8 @@ const MenuCardColumn = ({ cardData }) => (
           </Link>
         </Button>
       </Card.Body>
-    </Card>
+      </Card>
+      </FadeIn.Up>
   </Col>
 );
 
