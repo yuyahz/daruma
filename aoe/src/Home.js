@@ -14,7 +14,6 @@ import Takeout from "./assets/Takeout.svg";
 import TakeoutDeco from "./assets/TakeoutDeco.svg";
 import PointCard from "./assets/PointCard.svg";
 import PointCardDeco from "./assets/PointCardDeco.svg";
-// import NewsTitle from './assets/NewsTitle.svg';
 import { NewsList } from "./components/NewsList";
 import { BottomSet } from "./components/BottomSet";
 
@@ -80,29 +79,6 @@ export const Home = () => (
         </Col>
       </Row>
     </Container>
-
-    {/* <Row className="Slider d-none d-sm-block">
-            <Col md={{ span: 8, offset: 2 }} className="d-none d-sm-block">
-                <Carousel>
-                    <Carousel.Item>
-                        <Image className="d-block w-100" src={Slider_1} alt="First slide" rounded />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <Image className="d-block w-100" src={Slider_2} alt="Second slide" rounded />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <Image className="d-block w-100" src={Slider_1} alt="Third slide" rounded />
-                    </Carousel.Item>
-                </Carousel>
-                <div className="SliderCaption">
-                    <p>五 十 年 守 り 続 け た</p>
-                    <p>味 を そ の ま ま に</p>
-                    <p>昔 か ら 変 わ ら ぬ</p>
-                    <p>伝 統 の 味 を 届 け る 為 に</p>
-                    <p>そ し て こ れ か ら も</p>
-                </div>
-            </Col>
-        </Row> */}
 
     <Row className="IntroSecTop">
       <Col md={{ span: 10, offset: 1 }}>

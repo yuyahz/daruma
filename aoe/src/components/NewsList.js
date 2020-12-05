@@ -106,9 +106,7 @@ export const NewsList = () => (
             <Col sm={12} className="">
               {/* calender */}
             </Col>
-            
           </Row>
-          
         </Tab.Container>
       </Col>
     </Row>
