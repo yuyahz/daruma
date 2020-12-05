@@ -1,4 +1,3 @@
-import FujiCard from "../assets/FujiCard.png";
 import Yakiniku from "../assets/Yakiniku.png";
 import OneDish from "../assets/OneDish.png";
 import RiceDishes from "../assets/RiceDishes.png";
