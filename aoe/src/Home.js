@@ -22,17 +22,21 @@ export const Home = () => (
   <Container fluid={true}>
     <Row className="Title">
       <Col sm>
-        <div className="d-none d-sm-block">
-          <Image
-            className="TitleHalfCircle"
-            src={TitleHalfCircle}
-            alt="HalfCircle"
-            fluid
-          />
-        </div>
+        <FadeIn.Left>
+          <div className="d-none d-sm-block">
+            <Image
+              className="TitleHalfCircle"
+              src={TitleHalfCircle}
+              alt="HalfCircle"
+              fluid
+            />
+          </div>
+        </FadeIn.Left>
       </Col>
       <Col sm className="TitleDeco">
-        <Image src={TitleMainDeco} alt="MainDeco" fluid />
+        <FadeIn.Down>
+          <Image src={TitleMainDeco} alt="MainDeco" fluid />
+        </FadeIn.Down>
       </Col>
       <Col sm className="ScrollSec d-none d-sm-block">
         <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
@@ -89,6 +93,7 @@ export const Home = () => (
               <Image className="IntroPic_L" src={IntroPic_1} rounded />
             </FadeIn.Left>
           </Col>
+
           <Col className="IntroCaption">
             <div>
               <h2 className="IntroCaptionTitle">受け継がれる</h2>
@@ -121,6 +126,7 @@ export const Home = () => (
               </p>
             </div>
           </Col>
+
           <Col>
             <FadeIn.Right>
               <Image className="IntroPic_R" src={IntroPic_2} rounded />
@@ -168,15 +174,24 @@ export const Home = () => (
       <Col md={{ span: 10, offset: 1 }}>
         <Row className="Point" xs={1} md={2}>
           <Col xs={6} md={4}>
-            <Image
-              className="PointDeco"
-              src={PointCardDeco}
-              alt="PointCardDeco"
-              fluid
-            />
+            <FadeIn.Up>
+              <Image
+                className="PointDeco"
+                src={PointCardDeco}
+                alt="PointCardDeco"
+                fluid
+              />
+            </FadeIn.Up>
           </Col>
           <Col xs={12} md={8}>
-            <Image className="PointBtn" src={PointCard} alt="PointCard" fluid />
+            <FadeIn.Up>
+              <Image
+                className="PointBtn"
+                src={PointCard}
+                alt="PointCard"
+                fluid
+              />
+            </FadeIn.Up>
           </Col>
         </Row>
       </Col>
@@ -186,15 +201,17 @@ export const Home = () => (
       <Col md={{ span: 10, offset: 1 }}>
         <Row className="Takeout" xs={1} md={2}>
           <Col xs={12} md={8}>
-            <a href={require("./assets/Document.pdf")} target="_blank">
-              <Image
-                className="TakeoutBtn"
-                src={Takeout}
-                alt="Takeout"
-                ontouchstart=""
-                fluid
-              />
-            </a>
+            <FadeIn.Up>
+              <a href={require("./assets/Document.pdf")} target="_blank">
+                <Image
+                  className="TakeoutBtn"
+                  src={Takeout}
+                  alt="Takeout"
+                  ontouchstart=""
+                  fluid
+                />
+              </a>
+            </FadeIn.Up>
           </Col>
           <Col xs={6} md={4}>
             <Image
