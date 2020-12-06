@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Fade } from "react-bootstrap";
+import * as FadeIn from "./components/FadeIn";
 import styled from "styled-components";
 import { BottomSet } from "./components/BottomSet";
 import RecruitServer from "./assets/RecruitServer.png";
@@ -71,7 +72,9 @@ export const Recruit = () => (
         <Col md={{ span: 8, offset: 2 }}>
           <Row xs={1} md={2}>
             <Col>
-              <Image className="RecruitPic" src={RecruitServer} rounded />
+              <FadeIn.Up>
+                <Image className="RecruitPic" src={RecruitServer} rounded />
+              </FadeIn.Up>
             </Col>
             <Col>
               <div className="RecruitText">
@@ -91,7 +94,9 @@ export const Recruit = () => (
         <Col md={{ span: 8, offset: 2 }}>
           <Row xs={1} md={2}>
             <Col>
-              <Image className="RecruitPic" src={RecruitKitchen} rounded />
+              <FadeIn.Up>
+                <Image className="RecruitPic" src={RecruitKitchen} rounded />
+              </FadeIn.Up>
             </Col>
             <Col>
               <div className="RecruitText">
