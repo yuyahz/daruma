@@ -29,7 +29,7 @@ const Styles = styled.div`
   }
 
   .RecruitSubTitle {
-    padding: 5% 0; 
+    padding: 5% 0;
     margin-bottom: 5%;
     font-family: "Noto Serif JP", serif;
     border-bottom: solid 1px #007bff;
