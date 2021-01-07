@@ -35,6 +35,7 @@ const Styles = styled.div`
 
   .Calender {
     margin-top: 8%;
+    text-align: center;
     padding: 3%;
     border-radius: 15px;
     background-color: #fff;
@@ -51,7 +52,7 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link1">
-                  2011.12.6 12月定休日
+                  2011.12.6 1月後半の定休日
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link2">
                   2020.11.17 New HP
@@ -65,16 +66,14 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link1">
-                  <h3 className="title">12月定休日のお知らせ</h3>
+                  <h3 className="title">1月後半の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br">
-                    年末年始の定休日は下記の通りです。スタッフ一同心よりお待ちしております。
+                    1月後半のの定休日は下記の通りです。スタッフ一同心よりお待ちしております。
                   </p>
-                  <p className="br">
-                    ※ 月曜日は通常通り定休日となります。
-                  </p>
+                  <p className="br">※ 13日水曜は振替休定休日となります。ご来店ご予定の方はお間違いのないよう、よろしくお願い致します。</p>
                   <TabContent />
                 </Tab.Pane>
 
