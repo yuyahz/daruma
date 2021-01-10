@@ -8,7 +8,7 @@ import Copylight from "../assets/Copylight.svg";
 const Styles = styled.div`
   .BottomSet {
     padding: 2% 0;
-    margin-bottom: 1.5%;
+    margin-bottom: 10%;
     text-align: center;
     color: #ffff;
   }
