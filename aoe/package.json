@@ -15,6 +15,7 @@
     "react-genie": "^0.2.2",
     "react-inview-monitor": "^2.3.0",
     "react-placeholder": "^4.0.3",
+    "react-responsive": "^8.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",

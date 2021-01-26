@@ -19,7 +19,9 @@ class App extends Component {
       <React.Fragment>
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
-            <Image className="TopLogo" src={TopLogo} alt="Logo" fluid />
+            <div className="d-none d-md-block">
+              <Image className="TopLogo" src={TopLogo} alt="Logo" fluid />
+            </div>
           </Col>
         </Row>
         <NavigationBar />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Image, ListGroup, Tab, TabContent } from "react-bootstrap";
 import styled from "styled-components";
-import Calender from "../assets/Calender.svg";
+// import Calender from "../assets/Calender.svg";
 
 const Styles = styled.div`
   .NewsSec {
@@ -52,7 +52,7 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link1">
-                  2021.1.8 1月後半の定休日
+                  2021.1.26 2月の定休日
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link2">
                   2020.11.17 New HP
@@ -71,11 +71,7 @@ export const NewsList = () => (
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br">
-                    1月後半の定休日は下記の通りです。スタッフ一同心よりお待ちしております。
-                  </p>
-                  <p className="br">
-                    ※
-                    13日水曜は振替休定休日となります。ご来店ご予定の方はお間違いのないよう、よろしくお願い致します。
+                    2月の定休日は通常通り毎週月曜日になります。スタッフ一同心よりお待ちしております。
                   </p>
                   <TabContent />
                 </Tab.Pane>
@@ -115,9 +111,11 @@ export const NewsList = () => (
               </Tab.Content>
             </Col>
 
+            {/* In order to if random day off happend
+
             <Col sm={12} className="Calender">
               <Image src={Calender} alt="Calender" fluid />
-            </Col>
+            </Col> */}
           </Row>
         </Tab.Container>
       </Col>
