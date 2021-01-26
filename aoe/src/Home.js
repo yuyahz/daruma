@@ -1,8 +1,13 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import "./Home.css";
 import { Container, Row, Col, Carousel, Image } from "react-bootstrap";
+import { NewsList } from "./components/NewsList";
+import { BottomSet } from "./components/BottomSet";
+import * as FadeIn from "./components/FadeIn";
 import TitleMainDeco from "./assets/TitleMainDeco.svg";
 import TitleHalfCircle from "./assets/TitleHalfCircle.svg";
+import TakeoutBag from "./assets/TakeoutBag.svg";
 import ScrollIcon from "./assets/ScrollIcon.svg";
 import Slider_1 from "./assets/Slider_1.png";
 import Slider_2 from "./assets/Slider_2.png";
@@ -10,13 +15,10 @@ import Slider_3 from "./assets/Slider_3.png";
 import IntroPic_1 from "./assets/IntroPic_1.png";
 import IntroPic_2 from "./assets/IntroPic_2.png";
 import IntroPic_3 from "./assets/IntroPic_3.png";
-import * as FadeIn from "./components/FadeIn";
 import Takeout from "./assets/Takeout.svg";
 import TakeoutDeco from "./assets/TakeoutDeco.svg";
 import PointCard from "./assets/PointCard.svg";
 import PointCardDeco from "./assets/PointCardDeco.svg";
-import { NewsList } from "./components/NewsList";
-import { BottomSet } from "./components/BottomSet";
 
 export const Home = () => (
   <Container fluid={true}>
@@ -39,7 +41,35 @@ export const Home = () => (
         </FadeIn.Down>
       </Col>
       <Col sm className="ScrollSec d-none d-sm-block">
+        <HashLink smooth to="#takeout">
+          <div className="TakeoutTop">
+            <Image
+              className="TakeoutBag"
+              src={TakeoutBag}
+              alt="TakeoutIcon"
+              fluid
+            />
+            <p className="TakeoutText">Takeout</p>
+          </div>
+        </HashLink>
         <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
+      </Col>
+    </Row>
+
+    {/* This line inorder for Mobile */}
+    <Row className="MobileTakeout  d-block d-sm-none">
+      <Col className="ScrollSec">
+        <HashLink smooth to="#takeout">
+          <div className="TakeoutTop">
+            <Image
+              className="TakeoutBag"
+              src={TakeoutBag}
+              alt="TakeoutIcon"
+              fluid
+            />
+            <p className="TakeoutText">Takeout</p>
+          </div>
+        </HashLink>
       </Col>
     </Row>
 
@@ -198,7 +228,7 @@ export const Home = () => (
     </Row>
 
     <Row>
-      <Col md={{ span: 10, offset: 1 }}>
+      <Col md={{ span: 10, offset: 1 }} id="takeout">
         <Row className="Takeout" xs={1} md={2}>
           <Col xs={12} md={8}>
             <FadeIn.Up>

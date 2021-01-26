@@ -36,11 +36,11 @@
 
 .Scroll {
   position: absolute;
-  top: 55%;
-  left: 70%;
-  width: 0.9vw;
+  bottom: 15%;
+  right: 0;
+  width: 1vw;
   transform: translateX(-50%);
-  filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
   -webkit-animation: blink 1.5s ease-in-out infinite alternate;
   -moz-animation: blink 1.5s ease-in-out infinite alternate;
   animation: blink 1.5s ease-in-out infinite alternate;
@@ -70,9 +70,52 @@
   }
 }
 
+.TakeoutTop {
+  width: 50%;
+  padding: 0 15px 0 15px;
+  background-color: #007bff;
+  margin: 100px;
+  display: flex;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
+
+.TakeoutTop:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
+
+.TakeoutText {
+  margin: 10% auto;
+  font-size: 100%;
+  font-family: "Noto sans JP", serif;
+  color: #fff;
+}
+
+.TakeoutBag {
+  display: inline-block;
+  margin-right: 10px;
+  width: 15%;
+}
+
+/* for Mobile */
+.MobileTakeout {
+  text-align: center;
+  color: #fff;
+  margin-top: 200px;
+  margin-left:16px;
+}
+
 .CarouselBg {
   background-color: #fff;
-  padding: 5% 10%;
+  padding:5% 10%;
   border: solid 10px #c73d13;
   border-radius: 50px;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
@@ -225,14 +268,14 @@
   padding: 20%;
 }
 
-.TakeoutBtn:hover {
-  transform: scale(0.95);
-  transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
-}
-
 .TakeoutBtn {
   border-radius: 2rem;
+}
+
+.TakeoutBtn:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 
 .CardList {
@@ -255,4 +298,3 @@
 .CopylightIcon {
   width: 65%;
 }
-
