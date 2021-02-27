@@ -55,7 +55,7 @@ export const NewsList = () => (
                   2021.1.27 // 1月の臨時定休日について
                 </ListGroup.Item> */}
                 <ListGroup.Item action href="#link1">
-                  2021.1.26 // 2月の定休日
+                  2021.1.26 // 3月の定休日
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link2">
                   2020.11.17 // New HP
@@ -80,12 +80,12 @@ export const NewsList = () => (
                 </Tab.Pane> */}
 
                 <Tab.Pane className="TabContent" eventKey="#link1">
-                  <h3 className="title">2月の定休日のお知らせ</h3>
+                  <h3 className="title">3月の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br">
-                    2月の定休日は通常通り毎週月曜日になります。スタッフ一同心よりお待ちしております。
+                    3月の定休日は通常通り毎週月曜日になります。スタッフ一同心よりお待ちしております。
                   </p>
                   <TabContent />
                 </Tab.Pane>
