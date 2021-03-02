@@ -110,12 +110,12 @@
   text-align: center;
   color: #fff;
   margin-top: 200px;
-  margin-left:16px;
+  margin-left: 16px;
 }
 
 .CarouselBg {
   background-color: #fff;
-  padding:5% 10%;
+  padding: 5% 10%;
   border: solid 10px #c73d13;
   border-radius: 50px;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
@@ -297,4 +297,10 @@
 
 .CopylightIcon {
   width: 65%;
+}
+
+.Hanami {
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
 }
