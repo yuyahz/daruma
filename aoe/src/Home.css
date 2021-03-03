@@ -21,7 +21,7 @@
 .TitleHalfCircle {
   position: relative;
   left: 25%;
-  transform: translateY(-10%) translateX(-50%);
+  transform: translateY(-9%) translateX(-50%);
 }
 
 .HeadMain {

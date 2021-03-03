@@ -36,9 +36,9 @@ export const Home = () => (
         </FadeIn.Left>
       </Col>
       <Col sm className="TitleDeco">
-        {/* <FadeIn.Down> */}
+        <FadeIn.Down>
           <Image src={TitleMainDeco} alt="MainDeco" fluid />
-        {/* </FadeIn.Down> */}
+        </FadeIn.Down>
       </Col>
       <Col sm className="ScrollSec d-none d-sm-block">
         <HashLink smooth to="#takeout">
