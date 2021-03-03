@@ -74,11 +74,11 @@
   width: 50%;
   padding: 0 15px 0 15px;
   background-color: #007bff;
-  margin: 100px;
+  margin: 30%;
   display: flex;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
   position: absolute;
-  bottom: 0;
+  bottom: 5rem;
   left: 0;
   right: 0;
   text-align: center;
@@ -94,24 +94,84 @@
 
 .TakeoutText {
   margin: 10% auto;
-  font-size: 100%;
   font-family: "Noto sans JP", serif;
   color: #fff;
 }
 
-.TakeoutBag {
-  display: inline-block;
-  margin-right: 10px;
-  width: 15%;
+.HanamiTop {
+  width: 50%;
+  padding: 0 15px 0 15px;
+  background-color: #fcbfb9;
+  margin: 30%;
+  display: flex;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
+
+.HanamiTop:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
+
+.HanamiText {
+  margin: 10% auto;
+  font-family: "Noto sans JP", serif;
+  color: #fff;
 }
 
 /* for Mobile */
 .MobileTakeout {
-  text-align: center;
   color: #fff;
-  margin-top: 200px;
-  margin-left: 16px;
+  background-color: #007bff;
+  margin: 30px 20px 30px 20px;
+  text-align: center;
+  padding: 20px 0 6px 0;
+  border-radius: 10px;
 }
+
+.MobileTakeout:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
+
+.TakeoutTextM {
+  font-size: 100%;
+  padding-top: 10px;
+  font-family: "Noto sans JP", serif;
+  color: #fff;
+}
+
+.MobileHanami {
+  color: #fff;
+  background-color: #fcbfb9;
+  margin: 30px 20px 70px 20px;
+  text-align: center;
+  padding: 20px 0 6px 0;
+  border-radius: 10px;
+}
+
+.MobileHanami:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
+
+.HanamiTextM {
+  font-size: 100%;
+  padding-top: 10px;
+  font-family: "Noto sans JP", serif;
+  color: #fff;
+}
+
+/* for Mobile */
 
 .CarouselBg {
   background-color: #fff;
