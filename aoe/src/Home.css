@@ -175,9 +175,9 @@
 
 .CarouselBg {
   background-color: #fff;
+  width: 100%;
   padding: 5% 10%;
-  border: solid 10px #c73d13;
-  border-radius: 50px;
+  border-radius: 10px;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -193,9 +193,10 @@
 
 .CarouselText {
   font-family: "Noto Serif JP", serif;
-  font-size: 1.8vw;
-  font-weight: 900;
-  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.2vw;
+  line-height: 2;
   color: #c73d13;
   writing-mode: vertical-rl;
   align-items: center;
@@ -224,33 +225,48 @@
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
-.IntroCaptionTitle {
-  font-size: 36px;
-}
-
 .IntroCaption {
   text-align: left;
-  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IntroCaption2 {
+  padding: 20%;
+}
+
+.IntroCaptionTitle1 {
+  font-size: 32px;
+}
+
+.IntroCaptionTitle2 {
+  font-size: 32px;
+  padding-bottom: 10%;
 }
 
 .br_TopPage {
   white-space: pre-wrap;
   font-family: "Noto Serif JP", serif;
-  font-size: 36px;
+  font-size: 32px;
   color: #f3f0db;
   padding-bottom: 10%;
 }
 
-.IntroPic_L {
-  margin-left: auto;
+.IntroCaptionP {
+  font-size: 14px;
+}
+
+.IntroPic_R {
+  margin-right: auto;
   display: block;
   height: auto;
   max-width: 80%;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
-.IntroPic_R {
-  margin-right: auto;
+.IntroPic_L {
+  margin-left: auto;
   display: block;
   height: auto;
   max-width: 80%;
@@ -314,6 +330,7 @@
 }
 
 .PointBtn {
+  max-width: 600px;
   border-radius: 2rem;
 }
 
@@ -329,6 +346,7 @@
 }
 
 .TakeoutBtn {
+  max-width: 600px;
   border-radius: 2rem;
 }
 

@@ -65,7 +65,7 @@ export const Home = () => (
       </Col>
     </Row>
 
-    {/* This line inorder for Mobile */}
+    {/* This line in order for Mobile */}
     <Row className="MobileTakeout  d-block d-sm-none">
       <Col className="ScrollSec">
         <HashLink smooth to="#takeout">
@@ -143,15 +143,14 @@ export const Home = () => (
           </Col>
 
           <Col className="IntroCaption">
-            <div>
-              <h2 className="IntroCaptionTitle">受け継がれる</h2>
-              <h2 className="br_TopPage">秘伝のタレ</h2>
-              <p>
+            <div className="IntroCaption2">
+              <h2 className="IntroCaptionTitle1">受け継がれる<h2 className="br_TopPage">秘伝のタレ</h2></h2>
+              <p className="IntroCaptionP">
                 ダルマのタレは、10種類以上の厳選された素材を独自の製法でブレンドした、秘伝の味。
                 創業から変わらず、
                 守り続けているタレはコクと甘みのある深い味わいになっています。
-                焼肉の味を引き立たせることはもちろん、 幅広い年齢層
-                の方に美味しく召し上がって頂けます。
+                焼肉の味を引き立たせることはもちろん、
+                幅広い年齢層の方に美味しく召し上がって頂けます。
               </p>
             </div>
           </Col>
@@ -163,10 +162,9 @@ export const Home = () => (
       <Col md={{ span: 10, offset: 1 }}>
         <Row className="IntroInsideSec" xs={1} md={2}>
           <Col className="IntroCaption">
-            <div>
-              <h2 className="IntroCaptionTitle">豊富な</h2>
-              <h2 className="br_TopPage">サイドメニュー</h2>
-              <p>
+            <div className="IntroCaption2">
+              <h2 className="IntroCaptionTitle2">豊富なサイドメニュー</h2>
+              <p className="IntroCaptionP">
                 多彩なサイドメニューは、こだわりの手作り。ダルマ開店当時の人気メニュー「ホルモンうどん焼き」から好評の豆腐チゲ、
                 キムチチゲなどおいしい一品が勢
                 揃い。サラダやデザートも充実しているのでお子様にも
@@ -175,7 +173,7 @@ export const Home = () => (
             </div>
           </Col>
 
-          <Col>
+          <Col className="PicBase">
             <FadeIn.Right>
               <Image className="IntroPic_R" src={IntroPic_2} rounded />
             </FadeIn.Right>
@@ -193,10 +191,9 @@ export const Home = () => (
             </FadeIn.Left>
           </Col>
           <Col className="IntroCaption">
-            <div>
-              <h2 className="IntroCaptionTitle">ボリューム満点</h2>
-              <h2 className="br_TopPage">のお肉</h2>
-              <p>
+            <div className="IntroCaption2">
+              <h2 className="IntroCaptionTitle2">ボリューム満点のお肉</h2>
+              <p className="IntroCaptionP">
                 ダルマのお肉はおいしくて、ボリューム満点
                 食肉業者直売だから実現したこのボリューム！この価格！
                 お腹いっぱい新鮮なお肉を楽しんで頂く為、スタッフ一同
