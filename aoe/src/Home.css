@@ -1,3 +1,9 @@
+@media screen and (min-width: 1441px) {
+  .ForBigScreen {
+    padding: 0 20% 0 20%;
+  }
+}
+
 .TopLogo {
   position: absolute;
   width: 15%;
@@ -9,19 +15,21 @@
 
 .Title {
   position: relative;
-  margin-top: -8%;
-  margin-bottom: 8%;
+  margin-top: -10%;
+  margin-bottom: 10%;
 }
 
 .TitleDeco {
   text-align: center;
-  padding: 8% 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .TitleHalfCircle {
   position: relative;
   left: 25%;
-  transform: translateY(-9%) translateX(-50%);
+  transform: translateY(-7%) translateX(-50%);
 }
 
 .HeadMain {
@@ -181,6 +189,13 @@
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
+@media screen and (min-width: 767px) {
+  .CarouselPic {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
+
 .CarouselShadow {
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.4));
 }
@@ -220,7 +235,6 @@
 }
 
 .IntroInsideSec {
-  text-align: left;
   margin: 5% 0 5% 0;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
@@ -257,20 +271,18 @@
   font-size: 14px;
 }
 
-.IntroPic_R {
-  margin-right: auto;
+.IntroPic {
   display: block;
   height: auto;
   max-width: 80%;
+  margin: 0 auto;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
-.IntroPic_L {
-  margin-left: auto;
-  display: block;
-  height: auto;
-  max-width: 80%;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+@media screen and (min-width: 767px) {
+  .IntroPic {
+    max-width: 400px;
+  }
 }
 
 .NewsBg {

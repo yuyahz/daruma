@@ -20,6 +20,17 @@ export const Dessert = ({ data }) => {
           </Col>
         </Row>
 
+        <Row>
+          <Col className="MobileTitle">
+            <Image
+              className="MobileDecoTitle"
+              src={DessertDeco}
+              alt="Logo"
+              fluid
+            />
+          </Col>
+        </Row>
+
         <Row className="MenuSpace">
           <Col md={{ span: 8, offset: 2 }}>
             <Row className="MenuSec" xs={1} md={1}>

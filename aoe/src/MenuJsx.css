@@ -6,8 +6,36 @@
   background-color: #007bff;
 }
 
+@media screen and (max-width: 575px) {
+  .MenuDeco {
+    display: none;
+  }
+}
+
+.MobileTitle{
+  text-align: center;
+}
+
+@media screen and (min-width: 575px) {
+  .MobileTitle {
+    display: none;
+  }
+}
+
+.MobileDecoTitle {
+  width: 45%;
+  padding-bottom: 15%;
+}
+
 .MenuTitleSpace {
   margin: 3% 0;
+  padding: 0 12% 0 12%;
+}
+
+@media screen and (max-width: 575px) {
+  .MenuTitleSpace {
+    padding: 10% 0 10% 0;
+  }
 }
 
 .MenuSpace {
@@ -16,7 +44,19 @@
 
 .MenuDecoTitle {
   width: 15%;
-  padding: 1%;
+  padding: 2%;
+}
+
+@media screen and (min-width: 1441px) {
+  .MenuDecoTitle {
+    max-width: 10%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .MenuDecoTitle {
+    max-width: 100%;
+  }
 }
 
 .MenuSec {

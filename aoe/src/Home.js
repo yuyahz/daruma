@@ -25,7 +25,7 @@ import { FaShoppingBag } from "react-icons/fa";
 import { GiFruitTree } from "react-icons/gi";
 
 export const Home = () => (
-  <Container fluid={true}>
+  <Container fluid={true} className="ForBicScreen">
     <Row className="Title">
       <Col sm>
         <FadeIn.Left>
@@ -106,7 +106,7 @@ export const Home = () => (
           <Carousel className="CarouselShadow">
             <Carousel.Item>
               <Image
-                className="d-block w-100"
+                className="d-block w-100 CarouselPic"
                 src={Slider_1}
                 alt="First slide"
                 rounded
@@ -114,7 +114,7 @@ export const Home = () => (
             </Carousel.Item>
             <Carousel.Item>
               <Image
-                className="d-block w-100"
+                className="d-block w-100 CarouselPic"
                 src={Slider_2}
                 alt="Second slide"
                 rounded
@@ -122,7 +122,7 @@ export const Home = () => (
             </Carousel.Item>
             <Carousel.Item>
               <Image
-                className="d-block w-100"
+                className="d-block w-100 CarouselPic"
                 src={Slider_3}
                 alt="Third slide"
                 rounded
@@ -138,13 +138,15 @@ export const Home = () => (
         <Row className="IntroInsideSec" xs={1} md={2}>
           <Col>
             <FadeIn.Left>
-              <Image className="IntroPic_L" src={IntroPic_1} rounded />
+              <Image className="IntroPic" src={IntroPic_1} rounded />
             </FadeIn.Left>
           </Col>
 
           <Col className="IntroCaption">
             <div className="IntroCaption2">
-              <h2 className="IntroCaptionTitle1">受け継がれる<h2 className="br_TopPage">秘伝のタレ</h2></h2>
+              <h2 className="IntroCaptionTitle1">
+                受け継がれる<h2 className="br_TopPage">秘伝のタレ</h2>
+              </h2>
               <p className="IntroCaptionP">
                 ダルマのタレは、10種類以上の厳選された素材を独自の製法でブレンドした、秘伝の味。
                 創業から変わらず、
@@ -161,21 +163,19 @@ export const Home = () => (
     <Row className="IntroSec">
       <Col md={{ span: 10, offset: 1 }}>
         <Row className="IntroInsideSec" xs={1} md={2}>
-          <Col className="IntroCaption">
+          <Col className="IntroCaption"  xs={{ order: 12 }} md={{ order: 1 }}>
             <div className="IntroCaption2">
               <h2 className="IntroCaptionTitle2">豊富なサイドメニュー</h2>
               <p className="IntroCaptionP">
                 多彩なサイドメニューは、こだわりの手作り。ダルマ開店当時の人気メニュー「ホルモンうどん焼き」から好評の豆腐チゲ、
-                キムチチゲなどおいしい一品が勢
-                揃い。サラダやデザートも充実しているのでお子様にも
-                女性にも喜ばれています。
+                キムチチゲなどおいしい一品が勢揃い。サラダやデザートも充実しているのでお子様にも女性にも喜ばれています。
               </p>
-            </div>
+            </div> 
           </Col>
 
-          <Col className="PicBase">
+          <Col xs={{ order: 1 }} md={{ order: 12 }}>
             <FadeIn.Right>
-              <Image className="IntroPic_R" src={IntroPic_2} rounded />
+              <Image className="IntroPic" src={IntroPic_2} rounded />
             </FadeIn.Right>
           </Col>
         </Row>
@@ -187,7 +187,7 @@ export const Home = () => (
         <Row className="IntroInsideSec" xs={1} md={2}>
           <Col>
             <FadeIn.Left>
-              <Image className="IntroPic_L" src={IntroPic_3} rounded />
+              <Image className="IntroPic" src={IntroPic_3} rounded />
             </FadeIn.Left>
           </Col>
           <Col className="IntroCaption">
