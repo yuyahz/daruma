@@ -30,10 +30,23 @@ const Styles = styled.div`
 
   .RentTitle {
     padding-bottom: 3%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     font-family: "Noto Serif JP", serif;
-    background: linear-gradient(transparent 50%, #007bff 50%);
+    background: linear-gradient(transparent 30%, #007bff 30%);
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+
+  .RentText {
+    font-size: 90%;
+    color: #f3f0db;
+  }
+
+  .RentTitleText {
+    display: inline-block;
+  }
+
+  .RentTitleText2 {
+    font-family: "Noto Serif JP", serif;
   }
 
   .RentSubTitle {
@@ -41,15 +54,6 @@ const Styles = styled.div`
     margin-bottom: 5%;
     font-family: "Noto Serif JP", serif;
     border-bottom: solid 1px #007bff;
-  }
-
-  .RentTitleText {
-    font-family: "Noto Serif JP", serif;
-  }
-
-  .RentText {
-    font-size: 90%;
-    color: #f3f0db;
   }
 
   .RentCaption {
@@ -71,7 +75,7 @@ const Styles = styled.div`
 
   .RentBtn {
     width: 70%;
-    border-radius: 7rem;
+    border-radius: 4rem;
   }
 
   .RentBtnSec {
@@ -98,10 +102,12 @@ export const Rent = () => (
   <Styles>
     <Container fluid={true}>
       <Row className="RentSecTitle">
-        <Col md={{ span: 6, offset: 3 }}>
+        <Col md={{ span: 8, offset: 2 }}>
           <div className="RentText">
-            <h1 className="RentTitle">BBQ器具無料貸し出し</h1>
-            <p className="RentText">
+            <h2 className="RentTitle">
+              BBQ器具<h2 className="RentTitleText">無料貸し出し</h2>
+            </h2>
+            <p className="RentTitleText2">
               アウトドアで本格焼肉を手軽に！後片付けも楽々！
               使用後はそのまま当店まで返却するだけ !!
             </p>
@@ -126,7 +132,7 @@ export const Rent = () => (
                     5人前以上ご注文の方に限り無料貸し出し可能。
                   </u>
                 </p>
-                <p>必要なお客様には 炭 1 袋 ¥780 で販売していますおります。</p>
+                <p>必要なお客様には 炭 1 袋 ¥850 で販売しております。</p>
                 <p>内容 ( 1kg , 着火剤付き , 約 1 台分)</p>
               </div>
             </Col>
@@ -170,7 +176,7 @@ export const Rent = () => (
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">
-                  ￥1600 セット ( 1人前 )
+                  ￥1800 セット ( 1人前 )
                   <p className="Rentbr">
                     カルビ 70ｇ / ハラミ 90ｇ / 上ミノ 30ｇ
                     <p className="Rentbr">
@@ -188,7 +194,7 @@ export const Rent = () => (
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">
-                  ￥2100 セット ( 1人前 )
+                  ￥2300 セット ( 1人前 )
                   <p className="Rentbr">
                     カルビ 90ｇ / ハラミ 110ｇ / 上ミノ 30ｇ
                     <p className="Rentbr">
@@ -205,7 +211,7 @@ export const Rent = () => (
 
       <Row>
         <Col md={{ span: 6, offset: 3 }}>
-          <p className="RentTax">※税抜き価格表示</p>
+          <p className="RentTax">※税込価格表示</p>
         </Col>
       </Row>
 

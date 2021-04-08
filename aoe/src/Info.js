@@ -19,9 +19,8 @@ const Styles = styled.div`
 
   .InfoTitle {
     padding-bottom: 3%;
-    margin-bottom: 5%;
     font-family: "Noto Serif JP", serif;
-    background: linear-gradient(transparent 50%, #007bff 50%);
+    background: linear-gradient(transparent 30%, #007bff 30%);
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
   }
 

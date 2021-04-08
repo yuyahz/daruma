@@ -22,9 +22,9 @@ const Styles = styled.div`
 
   .RecruitTitle {
     padding-bottom: 3%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     font-family: "Noto Serif JP", serif;
-    background: linear-gradient(transparent 50%, #007bff 50%);
+    background: linear-gradient(transparent 30%, #007bff 30%);
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
   }
 
@@ -57,7 +57,7 @@ export const Recruit = () => (
   <Styles>
     <Container fluid={true}>
       <Row className="RecruitTitleSec">
-        <Col md={{ span: 6, offset: 3 }}>
+        <Col md={{ span: 8, offset: 2 }}>
           <div className="RecruitText">
             <h2 className="RecruitTitle">アルバイト募集中</h2>
             <p className="RecruitTitleText">
