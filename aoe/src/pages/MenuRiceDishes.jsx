@@ -61,7 +61,7 @@ export const RiceDishes = ({ data }) => {
               <div className="MenuCap">
                 <p className="MenuTitele">ビビンバ</p>
                 <p className="MenuText">
-                  <span className="MenuTextSp"></span>¥700
+                  <span className="MenuTextSp"></span>¥770
                 </p>
               </div>
               <div className="MenuCap">
