@@ -26,7 +26,7 @@ class App extends Component {
         </Row>
         <NavigationBar />
         <LayoutNav>
-          {/* <Router> */}
+          {/* <Router basename={process.env.PUBLIC_URL + "/"}> */}
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/news" component={News} />
