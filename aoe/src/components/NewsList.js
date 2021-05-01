@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Image, ListGroup, Tab, TabContent } from "react-bootstrap";
 import styled from "styled-components";
-// import Calender from "../assets/Calender.svg";
+import Calender from "../assets/Calender_golden_week.svg";
 
 const Styles = styled.div`
   .NewsSec {
@@ -34,7 +34,7 @@ const Styles = styled.div`
   }
 
   .Calender {
-    margin-top: 8%;
+    margin: 8% 0 8% 0;
     text-align: center;
     padding: 3%;
     border-radius: 15px;
@@ -71,9 +71,10 @@ export const NewsList = () => (
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br">
-                    5月の定休日は (火曜 / 6日, 月曜 / 10日, 月曜 / 17日, 火曜 / 18日, 水曜 / 19日,
-                    月曜 / 24日, 月曜 / 31日)
-                    になります。スタッフ一同心よりお待ちしております。
+                    <Col sm={12} className="Calender">
+                      <Image src={Calender} alt="Calender" fluid />
+                    </Col>
+                    スタッフ一同心よりお待ちしております。
                   </p>
                   <TabContent />
                 </Tab.Pane>
