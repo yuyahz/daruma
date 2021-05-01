@@ -48,8 +48,11 @@ export const PartyPlan = ({ data }) => {
               </div>
               <div className="MenuCap">
                 <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                  2,200円 コース
+                  2,000円 コース
                 </p>
+                {/* <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  2,200円 コース
+                </p> */}
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
@@ -58,8 +61,11 @@ export const PartyPlan = ({ data }) => {
               </div>
               <div className="MenuCap">
                 <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                  3,300円コース
+                  3,000円コース
                 </p>
+                {/* <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  3,300円コース
+                </p> */}
               </div>
               <div className={"MenuTitle" + " " + "MenuTitleBgSub"}>
                 <div className="MenuCapSet">
@@ -102,8 +108,11 @@ export const PartyPlan = ({ data }) => {
               </div>
               <div className="MenuCap">
                 <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                  4,400円コース
+                  4,000円コース
                 </p>
+                {/* <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                  4,400円コース
+                </p> */}
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
@@ -119,8 +128,11 @@ export const PartyPlan = ({ data }) => {
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
-                  + 440円で中ライスとスープ小が追加できます。
+                  + 400円で中ライスとスープ小が追加できます。
                 </p>
+                {/* <p className="MenuTitele">
+                  + 440円で中ライスとスープ小が追加できます。
+                </p> */}
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">※飲み放題コース追加（要予約）</p>
@@ -130,13 +142,18 @@ export const PartyPlan = ({ data }) => {
               </div>
               <div className="MenuCapSet">
                 <p className="MenuTitele">
+                  各コースに + 1,500円で90分 / +
+                  2,000円で120分飲み放題にできます。
+                </p>
+                {/* <p className="MenuTitele">
                   各コースに + 1,600円で90分 / +
                   2,200円で120分飲み放題にできます。
-                </p>
+                </p> */}
               </div>
 
               <div className="MenuCap">
-                <p className="MenuTax">※税込価格表示</p>
+                <p className="MenuTax">※税抜き価格表示</p>
+                {/* <p className="MenuTax">※税込価格表示</p> */}
               </div>
             </Row>
           </Col>

@@ -39,7 +39,7 @@ const Styles = styled.div`
   .CardButton {
     font-size: 80%;
     border-radius: 50px 70px 70px 0;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.2));
   }
 
   .CardButtonText {
@@ -51,26 +51,26 @@ const Styles = styled.div`
 const MenuCardColumn = ({ cardData }) => (
   <Col className="CardSec" xs={12} md={4}>
     <FadeIn.Up>
-    <Card className="CardRadius">
-      <Card.Img
-        className="CardPic"
-        variant="top"
-        src={cardData.cardImg}
-        alt="FujiCard"
-      />
-      <Card.Body>
-        <Card.Title className="CardTitle">{cardData.cardTitle}</Card.Title>
-        <Card.Text>
-          <p className="CardText">{cardData.cardText}</p>
-        </Card.Text>
-        <Button className="CardButton" variant="primary">
+      <Card className="CardRadius">
+        <Card.Img
+          className="CardPic"
+          variant="top"
+          src={cardData.cardImg}
+          alt="Card"
+        />
+        <Card.Body>
+          <Card.Title className="CardTitle">{cardData.cardTitle}</Card.Title>
+          <Card.Text>
+            <p className="CardText">{cardData.cardText}</p>
+          </Card.Text>
           <Link to={`/menu/${cardData.id}`} className="CardButtonText">
-            詳しく
+          <Button className="CardButton" variant="primary">
+              詳しく
+          </Button>
           </Link>
-        </Button>
-      </Card.Body>
+        </Card.Body>
       </Card>
-      </FadeIn.Up>
+    </FadeIn.Up>
   </Col>
 );
 

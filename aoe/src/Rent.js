@@ -132,7 +132,8 @@ export const Rent = () => (
                     5人前以上ご注文の方に限り無料貸し出し可能。
                   </u>
                 </p>
-                <p>必要なお客様には 炭 1 袋 ¥850 で販売しております。</p>
+                <p>必要なお客様には 炭 1 袋 ¥780 で販売しております。</p>
+                {/* <p>必要なお客様には 炭 1 袋 ¥850 で販売しております。</p> */}
                 <p>内容 ( 1kg , 着火剤付き , 約 1 台分)</p>
               </div>
             </Col>
@@ -176,7 +177,8 @@ export const Rent = () => (
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">
-                  ￥1800 セット ( 1人前 )
+                  ￥1600 セット ( 1人前 )
+                  {/* ￥1800 セット ( 1人前 ) */}
                   <p className="Rentbr">
                     カルビ 70ｇ / ハラミ 90ｇ / 上ミノ 30ｇ
                     <p className="Rentbr">
@@ -194,7 +196,8 @@ export const Rent = () => (
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">
-                  ￥2300 セット ( 1人前 )
+                ￥2100 セット ( 1人前 )
+                  {/* ￥2300 セット ( 1人前 ) */}
                   <p className="Rentbr">
                     カルビ 90ｇ / ハラミ 110ｇ / 上ミノ 30ｇ
                     <p className="Rentbr">

@@ -58,7 +58,7 @@ export const Home = () => (
             <IconContext.Provider value={{ color: "white", size: "20%" }}>
               <GiFruitTree style={{ paddingTop: "10px" }} />
             </IconContext.Provider>
-            <p className="HanamiText">お花見</p>
+            <p className="HanamiText">お持ち帰り</p>
           </div>
         </Link>
         <Image className="Scroll" src={ScrollIcon} alt="ScrollIcon" fluid />
@@ -85,7 +85,7 @@ export const Home = () => (
             <IconContext.Provider value={{ color: "white", size: "45px" }}>
               <GiFruitTree />
             </IconContext.Provider>
-            <p className="HanamiTextM">お花見</p>
+            <p className="HanamiTextM">お持ち帰り</p>
           </div>
         </Link>
       </Col>
