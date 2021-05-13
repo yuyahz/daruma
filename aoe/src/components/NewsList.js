@@ -41,6 +41,10 @@ const Styles = styled.div`
     background-color: #fff;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
   }
+
+  .bold {
+    font-weight: 900;
+  }
 `;
 
 export const NewsList = () => (
@@ -70,11 +74,11 @@ export const NewsList = () => (
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
+                  <p className="br bold">
+                    「まん延防止」のため5月17日から31日までお休みさせて頂きます。
+                  </p>
                   <p className="br">
-                    <Col sm={12} className="Calender">
-                      <Image src={Calender} alt="Calender" fluid />
-                    </Col>
-                    スタッフ一同心よりお待ちしております。
+                    営業再開後、スタッフ一同お客様のお越しを心よりお待ちしております。
                   </p>
                   <TabContent />
                 </Tab.Pane>
