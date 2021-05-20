@@ -79,8 +79,8 @@ export const Lunch = ({ data }) => {
               <div className="MenuCapSet">
                 <p className="MenuTitele"></p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥1180
-                  {/* <span className="MenuTextSpSingle"></span>¥1290 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥1180 */}
+                  <span className="MenuTextSpSingle"></span>¥1290
                 </p>
               </div>
               <div className="MenuCap">
@@ -93,8 +93,8 @@ export const Lunch = ({ data }) => {
                   本日の一品、キムチ、サラダ、ライス、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥880
-                  {/* <span className="MenuTextSpSingle"></span>¥960 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥880 */}
+                  <span className="MenuTextSpSingle"></span>¥960
                 </p>
               </div>
               <div className="MenuCap">
@@ -107,8 +107,8 @@ export const Lunch = ({ data }) => {
                   本日の一品、キムチ、サラダ、スープ（小）、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥1150
-                  {/* <span className="MenuTextSpSingle"></span>¥1260 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥1150 */}
+                  <span className="MenuTextSpSingle"></span>¥1260
                 </p>
               </div>
               <div className="MenuCap">
@@ -121,8 +121,8 @@ export const Lunch = ({ data }) => {
                   本日の一品、キムチ、サラダ、ライス、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥880
-                  {/* <span className="MenuTextSpSingle"></span>¥960 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥880 */}
+                  <span className="MenuTextSpSingle"></span>¥960
                 </p>
               </div>
               <div className="MenuCap">
@@ -135,8 +135,8 @@ export const Lunch = ({ data }) => {
                   本日の一品、キムチ、サラダ、ライス、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥880
-                  {/* <span className="MenuTextSpSingle"></span>¥960 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥880 */}
+                  <span className="MenuTextSpSingle"></span>¥960
                 </p>
               </div>
               <div className="MenuCap">
@@ -152,8 +152,8 @@ export const Lunch = ({ data }) => {
                   本日の一品、キムチ、サラダ、ライス、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥1080
-                  {/* <span className="MenuTextSpSingle"></span>¥1180 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥1080 */}
+                  <span className="MenuTextSpSingle"></span>¥1180
                 </p>
               </div>
               <div className="MenuCap">
@@ -169,8 +169,8 @@ export const Lunch = ({ data }) => {
                   ビビンバ（小）、本日の一品、キムチ、サラダ、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥1150
-                  {/* <span className="MenuTextSpSingle"></span>¥1260 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥1150 */}
+                  <span className="MenuTextSpSingle"></span>¥1260
                 </p>
               </div>
               <div className="MenuCap">
@@ -183,8 +183,8 @@ export const Lunch = ({ data }) => {
                   本日の一品、キムチ、サラダ、スープ（小）、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥780
-                  {/* <span className="MenuTextSpSingle"></span>¥850 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥780 */}
+                  <span className="MenuTextSpSingle"></span>¥850
                 </p>
               </div>
               <div className="MenuCap">
@@ -197,13 +197,13 @@ export const Lunch = ({ data }) => {
                   本日の一品、キムチ、サラダ、ライス、デザート
                 </p>
                 <p className="MenuText">
-                  <span className="MenuTextSpSingle"></span>¥880
-                  {/* <span className="MenuTextSpSingle"></span>¥960 */}
+                  {/* <span className="MenuTextSpSingle"></span>¥880 */}
+                  <span className="MenuTextSpSingle"></span>¥960
                 </p>
               </div>
               <div className="MenuCap">
-                <p className="MenuTax">※税抜き価格表示</p>
-                {/* <p className="MenuTax">※税込価格表示</p> */}
+                {/* <p className="MenuTax">※税抜き価格表示</p> */}
+                <p className="MenuTax">※税込価格表示</p>
               </div>
             </Row>
 
