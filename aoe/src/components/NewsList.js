@@ -100,9 +100,6 @@ export const NewsList = () => (
                   <p className="br">
                     6月15日は臨時定休日とさせていただきます。ご迷惑をおかけ致しますが、お間違いのないようによろしくお願い致します。
                   </p>
-                  <p className="br">
-                    スタッフ一同お客様のお越しを心よりお待ちしております。
-                  </p>
                   <TabContent />
                 </Tab.Pane>
 
