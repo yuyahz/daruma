@@ -95,7 +95,7 @@ export const Home = () => (
       <Row>
         <Col sm={6} className="CarouselCap">
           <div className="CarouselText">
-            <p>五 十 年 守 り 続 け た</p>
+            <p>六 十 年 守 り 続 け た</p>
             <p>味 を そ の ま ま に</p>
             <p>昔 か ら 変 わ ら ぬ</p>
             <p>伝 統 の 味 を 届 け る 為 に</p>
