@@ -51,26 +51,26 @@ export const NewsList = () => (
   <Styles>
     <Row>
       <Col md={{ span: 8, offset: 2 }}>
-        <Tab.Container defaultActiveKey="#link1">
+        <Tab.Container defaultActiveKey="#link">
           <Row>
             <Col sm={4}>
               <ListGroup className="Tab">
-                {/* <ListGroup.Item action href="#link">
-                  2021.8.31 // 9月の定休日について
-                </ListGroup.Item> */}
+                <ListGroup.Item action href="#link">
+                  2021.9.28 // 10月の定休日について
+                </ListGroup.Item>
                 <ListGroup.Item action href="#link1">
                   2021.8.18 // 臨時休業について
                 </ListGroup.Item>
+                {/* <ListGroup.Item action href="#link2">
+
+                </ListGroup.Item> */}
+                {/* <ListGroup.Item action href="#link3">
+
+                </ListGroup.Item> */}
                 <ListGroup.Item action href="#link2">
-                  2021.7.29 // 8月の定休日について
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link3">
-                  2021.6.29 // 7月の定休日について
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link4">
                   2020.11.17 // New HP
                 </ListGroup.Item>
-                <ListGroup.Item action href="#link5">
+                <ListGroup.Item action href="#link3">
                   2011.4.14 // 義援金について
                 </ListGroup.Item>
               </ListGroup>
@@ -78,19 +78,19 @@ export const NewsList = () => (
 
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
-                {/* <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">9月の定休日のお知らせ</h3>
+                <Tab.Pane className="TabContent" eventKey="#link">
+                  <h3 className="title">10月の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br">
-                    9月のお休みは、22日、27日となります。
+                    10月のお休みは、4日、11日、18日、25日となります。
                   </p>
                   <p className="br">
                     スタッフ一同お客様のお越しを心よりお待ちしております。
                   </p>
                   <TabContent />
-                </Tab.Pane> */}
+                </Tab.Pane>
 
                 <Tab.Pane className="TabContent" eventKey="#link1">
                   <h3 className="title">
@@ -109,7 +109,7 @@ export const NewsList = () => (
                   <TabContent />
                 </Tab.Pane>
 
-                <Tab.Pane className="TabContent" eventKey="#link2">
+                {/* <Tab.Pane className="TabContent" eventKey="#link2">
                   <h3 className="title">8月の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -121,9 +121,9 @@ export const NewsList = () => (
                     スタッフ一同お客様のお越しを心よりお待ちしております。
                   </p>
                   <TabContent />
-                </Tab.Pane>
+                </Tab.Pane> */}
 
-                <Tab.Pane className="TabContent" eventKey="#link3">
+                {/* <Tab.Pane className="TabContent" eventKey="#link3">
                   <h3 className="title">7月の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -135,9 +135,9 @@ export const NewsList = () => (
                     スタッフ一同お客様のお越しを心よりお待ちしております。
                   </p>
                   <TabContent />
-                </Tab.Pane>
+                </Tab.Pane> */}
 
-                <Tab.Pane className="TabContent" eventKey="#link4">
+                <Tab.Pane className="TabContent" eventKey="#link2">
                   <h3 className="title">ホームページリニューアルのお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -154,7 +154,7 @@ export const NewsList = () => (
                   <TabContent />
                 </Tab.Pane>
 
-                <Tab.Pane className="TabContent" eventKey="#link5">
+                <Tab.Pane className="TabContent" eventKey="#link3">
                   <h3 className="title">義援金、店頭募金送金のご報告</h3>
                   <p className="br">
                     被災地の少しでも早い復興をお祈り申し上げます。
