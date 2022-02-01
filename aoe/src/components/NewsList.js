@@ -56,9 +56,15 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2021.11.30 // 12月の定休日について
+                  2022.1.31 // 2月の定休日について
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link1">
+                  2022.1.27 //「まん延防止」岡山県全域対象、時短要請について
+                </ListGroup.Item>
+                <ListGroup.Item action href="#link2">
+                  2021.12.31 // 1月の定休日について
+                </ListGroup.Item>
+                <ListGroup.Item action href="#link3">
                   2021.8.18 // 臨時休業について
                 </ListGroup.Item>
                 {/* <ListGroup.Item action href="#link2">
@@ -67,10 +73,10 @@ export const NewsList = () => (
                 {/* <ListGroup.Item action href="#link3">
 
                 </ListGroup.Item> */}
-                <ListGroup.Item action href="#link2">
+                <ListGroup.Item action href="#link4">
                   2020.11.17 // New HP
                 </ListGroup.Item>
-                <ListGroup.Item action href="#link3">
+                <ListGroup.Item action href="#link5">
                   2011.4.14 // 義援金について
                 </ListGroup.Item>
               </ListGroup>
@@ -79,20 +85,53 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">12月の定休日のお知らせ</h3>
+                  <h3 className="title">2月の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br">
-                    12月のお休みは、6日、13日、20日、27日、31日となります。
+                    2月のお休みは、7日、14日、21日、28日となります。
                   </p>
                   <p className="br">
                     スタッフ一同お客様のお越しを心よりお待ちしております。
                   </p>
-                  <TabContent />
                 </Tab.Pane>
 
                 <Tab.Pane className="TabContent" eventKey="#link1">
+                  <h3 className="title">
+                    1月27日現在 岡山県まん延防止要請に伴う営業内容詳細
+                  </h3>
+                  <p className="br">
+                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
+                  </p>
+                  <p className="br">
+                    岡山県まん延防止期間になった為、20時閉店、アルコール提供無しになります。
+                  </p>
+                  <p className="br">
+                    第三者認証店の申請中です。認証が承認され次第アルコール提供あり、21時閉店となります。
+                  </p>
+                  <p className="br">当店は真面目に取り組んでいきます。</p>
+                  <p className="br">もう少しだけお待ちください。</p>
+                  <p className="br">
+                    お手数をおかけいたしますが、スタッフ一同お客様のお越しを心よりお待ちしております。
+                  </p>
+                </Tab.Pane>
+
+                <Tab.Pane className="TabContent" eventKey="#link2">
+                  <h3 className="title">1月の定休日のお知らせ</h3>
+                  <p className="br">謹んで新春をお祝い申し上げます。</p>
+                  <p className="br">
+                    旧年中は大変お世話になり、誠にありがとうございました。
+                  </p>
+                  <p className="br">
+                    1月のお休みは、1日、12日、17日、24日、25日、26日、31日となります。
+                  </p>
+                  <p className="br">
+                    本年も皆様のご多幸を心からお祈り申し上げます。
+                  </p>
+                </Tab.Pane>
+
+                <Tab.Pane className="TabContent" eventKey="#link3">
                   <h3 className="title">
                     8月23日〜9月30日の臨時休業のお知らせ
                   </h3>
@@ -106,7 +145,6 @@ export const NewsList = () => (
                   <p className="br">
                     スタッフ一同お客様のお越しを心よりお待ちしております。
                   </p>
-                  <TabContent />
                 </Tab.Pane>
 
                 {/* <Tab.Pane className="TabContent" eventKey="#link2">
@@ -120,7 +158,6 @@ export const NewsList = () => (
                   <p className="br">
                     スタッフ一同お客様のお越しを心よりお待ちしております。
                   </p>
-                  <TabContent />
                 </Tab.Pane> */}
 
                 {/* <Tab.Pane className="TabContent" eventKey="#link3">
@@ -134,10 +171,9 @@ export const NewsList = () => (
                   <p className="br">
                     スタッフ一同お客様のお越しを心よりお待ちしております。
                   </p>
-                  <TabContent />
                 </Tab.Pane> */}
 
-                <Tab.Pane className="TabContent" eventKey="#link2">
+                <Tab.Pane className="TabContent" eventKey="#link4">
                   <h3 className="title">ホームページリニューアルのお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -151,10 +187,9 @@ export const NewsList = () => (
                   <p className="br">
                     今後とも、内容の充実を図るとともに、わかりやすく・最新の情報を発信してまいりますので、何卒よろしくお願い申し上げます。
                   </p>
-                  <TabContent />
                 </Tab.Pane>
 
-                <Tab.Pane className="TabContent" eventKey="#link3">
+                <Tab.Pane className="TabContent" eventKey="#link5">
                   <h3 className="title">義援金、店頭募金送金のご報告</h3>
                   <p className="br">
                     被災地の少しでも早い復興をお祈り申し上げます。
@@ -167,7 +202,6 @@ export const NewsList = () => (
                   <p className="br">浜店　　　　　 　14,454円</p>
                   <p className="br">青江店　　　　　24,551円</p>
                   (すべて2011年4月14日送金) 皆様の善意に心から御礼申しあげます。
-                  <TabContent />
                 </Tab.Pane>
               </Tab.Content>
             </Col>
