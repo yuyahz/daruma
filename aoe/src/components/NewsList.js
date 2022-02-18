@@ -86,14 +86,16 @@ export const NewsList = () => (
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
                   <h3 className="title">
-                    岡山県まん延防止要請に伴う営業内容詳細
+                    岡山県まん延防止要請に伴う営業内容詳細及び延長について
                   </h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
-                  <p className="br">
-                    2月20日まで岡山県まん延防止期間になった為、期間中は休業させて頂きます。
-                  </p>
+                  <div style={{ textDecoration: "underline" }}>
+                    <p className="br">
+                      3月7日まで岡山県まん延防止期間になった為、期間中は休業させて頂きます。
+                    </p>
+                  </div>
                   <p className="br">
                     但し、期間が延長された場合には引き続き休業させて頂く可能性が
                     ございます。その際は、改めてこちらにてご連絡させていただきます。
