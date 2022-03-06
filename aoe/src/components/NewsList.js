@@ -56,13 +56,13 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2022.2.10 //「まん延防止」岡山県全域対象、時短要請について
+                  2022.3.7 // 3月の定休日について
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link1">
-                  2022.1.31 // 2月の定休日について
+                  2022.2.10 //「まん延防止」岡山県全域対象、時短要請について
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link2">
-                  2021.12.31 // 1月の定休日について
+                  2022.1.31 // 2月の定休日について
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link3">
                   2021.8.18 // 臨時休業について
@@ -85,6 +85,19 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
+                  <h3 className="title">3月の定休日のお知らせ</h3>
+                  <p className="br">
+                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
+                  </p>
+                  <p className="br">
+                    3月のお休みは、7日、14日、23日、28日となります。
+                  </p>
+                  <p className="br">
+                    本年も皆様のご多幸を心からお祈り申し上げます。
+                  </p>
+                </Tab.Pane>
+
+                <Tab.Pane className="TabContent" eventKey="#link1">
                   <h3 className="title">
                     岡山県まん延防止要請に伴う営業内容詳細及び延長について
                   </h3>
@@ -105,7 +118,7 @@ export const NewsList = () => (
                   </p>
                 </Tab.Pane>
 
-                <Tab.Pane className="TabContent" eventKey="#link1">
+                <Tab.Pane className="TabContent" eventKey="#link2">
                   <h3 className="title">2月の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -115,20 +128,6 @@ export const NewsList = () => (
                   </p>
                   <p className="br">
                     スタッフ一同お客様のお越しを心よりお待ちしております。
-                  </p>
-                </Tab.Pane>
-
-                <Tab.Pane className="TabContent" eventKey="#link2">
-                  <h3 className="title">1月の定休日のお知らせ</h3>
-                  <p className="br">謹んで新春をお祝い申し上げます。</p>
-                  <p className="br">
-                    旧年中は大変お世話になり、誠にありがとうございました。
-                  </p>
-                  <p className="br">
-                    1月のお休みは、1日、12日、17日、24日、25日、26日、31日となります。
-                  </p>
-                  <p className="br">
-                    本年も皆様のご多幸を心からお祈り申し上げます。
                   </p>
                 </Tab.Pane>
 
