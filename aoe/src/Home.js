@@ -6,7 +6,7 @@ import { Container, Row, Col, Carousel, Image } from "react-bootstrap";
 import { NewsList } from "./components/NewsList";
 import { BottomSet } from "./components/BottomSet";
 import * as FadeIn from "./components/FadeIn";
-import TitleMainDeco from "./assets/TitleMainDeco.svg";
+import TitleMainDecoHanami from "./assets/TitleMainDecoHanami.svg";
 import TitleHalfCircle from "./assets/TitleHalfCircle.svg";
 import ScrollIcon from "./assets/ScrollIcon.svg";
 import Slider_1 from "./assets/Slider_1.png";
@@ -41,7 +41,7 @@ export const Home = () => (
       </Col>
       <Col sm className="TitleDeco">
         <FadeIn.Down>
-          <Image src={TitleMainDeco} alt="MainDeco" fluid />
+          <Image src={TitleMainDecoHanami} alt="MainDeco" fluid />
         </FadeIn.Down>
       </Col>
       <Col sm className="ScrollSec d-none d-sm-block">
@@ -163,14 +163,14 @@ export const Home = () => (
     <Row className="IntroSec">
       <Col md={{ span: 10, offset: 1 }}>
         <Row className="IntroInsideSec" xs={1} md={2}>
-          <Col className="IntroCaption"  xs={{ order: 12 }} md={{ order: 1 }}>
+          <Col className="IntroCaption" xs={{ order: 12 }} md={{ order: 1 }}>
             <div className="IntroCaption2">
               <h2 className="IntroCaptionTitle2">豊富なサイドメニュー</h2>
               <p className="IntroCaptionP">
                 多彩なサイドメニューは、こだわりの手作り。ダルマ開店当時の人気メニュー「ホルモンうどん焼き」から好評の豆腐チゲ、
                 キムチチゲなどおいしい一品が勢揃い。サラダやデザートも充実しているのでお子様にも女性にも喜ばれています。
               </p>
-            </div> 
+            </div>
           </Col>
 
           <Col xs={{ order: 1 }} md={{ order: 12 }}>

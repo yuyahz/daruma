@@ -56,23 +56,8 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2022.3.7 // 3月の定休日について
+                  2022.3.29 // 4月の定休日について
                 </ListGroup.Item>
-                <ListGroup.Item action href="#link1">
-                  2022.2.10 //「まん延防止」岡山県全域対象、時短要請について
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link2">
-                  2022.1.31 // 2月の定休日について
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link3">
-                  2021.8.18 // 臨時休業について
-                </ListGroup.Item>
-                {/* <ListGroup.Item action href="#link2">
-
-                </ListGroup.Item> */}
-                {/* <ListGroup.Item action href="#link3">
-
-                </ListGroup.Item> */}
                 <ListGroup.Item action href="#link4">
                   2020.11.17 // New HP
                 </ListGroup.Item>
@@ -85,93 +70,17 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">3月の定休日のお知らせ</h3>
+                  <h3 className="title">4月の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br">
-                    3月のお休みは、7日、14日、23日、28日となります。
+                    4月のお休みは、4日、11日、18日、25日となります。
                   </p>
                   <p className="br">
-                    本年も皆様のご多幸を心からお祈り申し上げます。
+                    スタッフ一同、心よりお待ちいたしております。
                   </p>
                 </Tab.Pane>
-
-                <Tab.Pane className="TabContent" eventKey="#link1">
-                  <h3 className="title">
-                    岡山県まん延防止要請に伴う営業内容詳細及び延長について
-                  </h3>
-                  <p className="br">
-                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
-                  </p>
-                  <div style={{ textDecoration: "underline" }}>
-                    <p className="br">
-                      3月7日まで岡山県まん延防止期間になった為、期間中は休業させて頂きます。
-                    </p>
-                  </div>
-                  <p className="br">
-                    但し、期間が延長された場合には引き続き休業させて頂く可能性が
-                    ございます。その際は、改めてこちらにてご連絡させていただきます。
-                  </p>
-                  <p className="br">
-                    お手数をおかけいたしますが、スタッフ一同お客様のお越しを心よりお待ちしております。
-                  </p>
-                </Tab.Pane>
-
-                <Tab.Pane className="TabContent" eventKey="#link2">
-                  <h3 className="title">2月の定休日のお知らせ</h3>
-                  <p className="br">
-                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
-                  </p>
-                  <p className="br">
-                    2月のお休みは、7日、14日、21日、28日となります。
-                  </p>
-                  <p className="br">
-                    スタッフ一同お客様のお越しを心よりお待ちしております。
-                  </p>
-                </Tab.Pane>
-
-                <Tab.Pane className="TabContent" eventKey="#link3">
-                  <h3 className="title">
-                    8月23日〜9月30日の臨時休業のお知らせ
-                  </h3>
-                  <p className="br">
-                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
-                  </p>
-                  <p className="br">
-                    「岡山県からまん延防止等重点措置の要請に従い8月23日から9月30日までお休みさせて頂きます。
-                    尚お休みが延長する場合がありますのでよろしくお願いします」
-                  </p>
-                  <p className="br">
-                    スタッフ一同お客様のお越しを心よりお待ちしております。
-                  </p>
-                </Tab.Pane>
-
-                {/* <Tab.Pane className="TabContent" eventKey="#link2">
-                  <h3 className="title">8月の定休日のお知らせ</h3>
-                  <p className="br">
-                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
-                  </p>
-                  <p className="br">
-                    8月のお休みは、2日、10日、16日、23日、24日、25日、30日となります。
-                  </p>
-                  <p className="br">
-                    スタッフ一同お客様のお越しを心よりお待ちしております。
-                  </p>
-                </Tab.Pane> */}
-
-                {/* <Tab.Pane className="TabContent" eventKey="#link3">
-                  <h3 className="title">7月の定休日のお知らせ</h3>
-                  <p className="br">
-                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
-                  </p>
-                  <p className="br">
-                    7月のお休みは、5日、12日、19日、26日となります。
-                  </p>
-                  <p className="br">
-                    スタッフ一同お客様のお越しを心よりお待ちしております。
-                  </p>
-                </Tab.Pane> */}
 
                 <Tab.Pane className="TabContent" eventKey="#link4">
                   <h3 className="title">ホームページリニューアルのお知らせ</h3>
