@@ -6,7 +6,7 @@ import { Container, Row, Col, Carousel, Image } from "react-bootstrap";
 import { NewsList } from "./components/NewsList";
 import { BottomSet } from "./components/BottomSet";
 import * as FadeIn from "./components/FadeIn";
-import TitleMainDecoHanami from "./assets/TitleMainDecoHanami.svg";
+import TitleMainDeco from "./assets/TitleMainDeco.svg";
 import TitleHalfCircle from "./assets/TitleHalfCircle.svg";
 import ScrollIcon from "./assets/ScrollIcon.svg";
 import Slider_1 from "./assets/Slider_1.png";
@@ -41,7 +41,7 @@ export const Home = () => (
       </Col>
       <Col sm className="TitleDeco">
         <FadeIn.Down>
-          <Image src={TitleMainDecoHanami} alt="MainDeco" fluid />
+          <Image src={TitleMainDeco} alt="MainDeco" fluid />
         </FadeIn.Down>
       </Col>
       <Col sm className="ScrollSec d-none d-sm-block">
