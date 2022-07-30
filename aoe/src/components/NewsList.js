@@ -56,7 +56,7 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2022.6.28 // 7月の定休日について
+                  2022.7.29 // 8月の定休日について ※一部9月含む
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link4">
                   2020.11.17 // New HP
@@ -70,12 +70,13 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">7月の定休日のお知らせ</h3>
+                  <h3 className="title">8月の定休日のお知らせ</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br">
-                    7月のお休みは 4日、11日、20日、25日となります。
+                    8月のお休みは
+                    1日、8日、17日、22日、29日、30日、31日、9月1日となります。
                   </p>
                   <p className="br">
                     スタッフ一同、心よりお待ちいたしております。
