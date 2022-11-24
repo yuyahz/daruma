@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Image, ListGroup, Tab, TabContent } from "react-bootstrap";
 import styled from "styled-components";
-import Calender from "../assets/Calender_golden_week.svg";
+import Calender from "../assets/Calender2022_2023.svg";
 
 const Styles = styled.div`
   .NewsSec {
@@ -33,6 +33,11 @@ const Styles = styled.div`
     white-space: pre-wrap;
   }
 
+  .font {
+    font-size: 20px;
+    font-weight: medium;
+  }
+
   .Calender {
     margin: 8% 0 8% 0;
     text-align: center;
@@ -56,7 +61,7 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2022.10.31 // 11月の定休日について
+                  2022.11.29 // 12月,1月の定休日、年末年始営業日について
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link4">
                   2020.11.17 // New HP
@@ -70,16 +75,30 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">11月の定休日のお知らせ</h3>
+                  <h3 className="title">
+                    12月・1月の定休日、年末年始営業日について
+                  </h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
+                  <p className="br font">
+                    12月のお休みは <u>5日 12日 19日 26日 31日</u>
+                    となります。
+                  </p>
+                  <p className="br font">
+                    1月のお休みは <u>1日 11日 16日 23日 30日</u>となります。
+                  </p>
+                  <p className="br">尚、年末年始は下記の通りとなります。</p>
+                  <Col sm={12} className="Calender">
+                    <Image src={Calender} alt="Calender2022_2023" fluid />
+                  </Col>
                   <p className="br">
-                    11月のお休みは 7日、8日、14日、21日、28日となります。
+                    本年は当店にお越しいただき誠にありがとうございます。
                   </p>
                   <p className="br">
                     スタッフ一同、心よりお待ちいたしております。
                   </p>
+                  <p className="br">どうぞ良いお年をお迎え下さい。</p>
                 </Tab.Pane>
 
                 <Tab.Pane className="TabContent" eventKey="#link4">
@@ -117,7 +136,7 @@ export const NewsList = () => (
 
             {/* In order to if random day off happend
             <Col sm={12} className="Calender">
-              <Image src={Calender} alt="Calender" fluid />
+              <Image src={Calender2022_2023} alt="Calender2022_2023" fluid />
             </Col> */}
           </Row>
         </Tab.Container>
