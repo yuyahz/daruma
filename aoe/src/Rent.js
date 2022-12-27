@@ -180,7 +180,7 @@ export const Rent = () => (
                   {/* ￥1600 セット ( 1人前 ) */}
                   ￥1800 セット ( 1人前 )
                   <p className="Rentbr">
-                    カルビ 70ｇ / ハラミ 90ｇ / 上ミノ 30ｇ
+                    カルビ 60ｇ / ハラミ 80ｇ / 上ミノ 30ｇ
                     <p className="Rentbr">
                       ホルモン 30ｇ / 上ホルモン 30ｇ
                       <p className="Rentbr">ウインナー 2本</p>
@@ -196,12 +196,12 @@ export const Rent = () => (
               <div className="RentCaption RentText">
                 <p>BBQセットメニュー</p>
                 <p className="Rentbr">
-                {/* ￥2100 セット ( 1人前 ) */}
+                  {/* ￥2100 セット ( 1人前 ) */}
                   ￥2300 セット ( 1人前 )
                   <p className="Rentbr">
-                    カルビ 90ｇ / ハラミ 110ｇ / 上ミノ 30ｇ
+                    カルビ 80ｇ / ハラミ 100ｇ / 上ミノ 30ｇ
                     <p className="Rentbr">
-                      ホルモン 30ｇ / 上ホルモン 30ｇ / ブタ 60ｇ
+                      ホルモン 30ｇ / 上ホルモン 30ｇ / ブタ 50ｇ
                       <p className="Rentbr">ウインナー 2本</p>
                     </p>
                   </p>
