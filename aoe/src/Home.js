@@ -7,9 +7,6 @@ import { NewsList } from "./components/NewsList";
 import { BottomSet } from "./components/BottomSet";
 import * as FadeIn from "./components/FadeIn";
 import TitleMainDeco from "./assets/TitleMainDeco.svg";
-// import TitleMainDecoBlue from "./assets/TitleMainDeco-Blue.svg";
-// import TitleMainDecoWhite from "./assets/TitleMainDeco-White.svg";
-import TitleMainDecoDice from "./assets/TitleMainDeco-dice-s.svg";
 import TitleHalfCircle from "./assets/TitleHalfCircle.svg";
 import ScrollIcon from "./assets/ScrollIcon.svg";
 import Slider_1 from "./assets/Slider_1.png";
@@ -44,10 +41,7 @@ export const Home = () => (
       </Col>
       <Col sm className="TitleDeco">
         <FadeIn.Down>
-          <Image src={TitleMainDecoDice} alt="MainDeco" fluid />
-          {/* <Image src={TitleMainDeco} alt="MainDeco" fluid /> */}
-          {/* <Image src={TitleMainDecoBlue} alt="MainDeco" fluid />
-          <Image src={TitleMainDecoWhite} alt="MainDeco" fluid /> */}
+          <Image src={TitleMainDeco} alt="MainDeco" fluid />
         </FadeIn.Down>
       </Col>
       <Col sm className="ScrollSec d-none d-sm-block">
