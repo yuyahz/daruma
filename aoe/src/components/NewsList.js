@@ -61,7 +61,7 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2022.11.29 // 12月,1月の定休日、年末年始営業日について
+                  2023.1.30 // 2月の定休日について
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link4">
                   2020.11.17 // New HP
@@ -75,32 +75,18 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">
-                    12月・1月の定休日、年末年始営業日について
-                  </h3>
+                  <h3 className="title">2月の定休日の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br font">
-                    12月のお休みは <u>5日, 12日, 19日, 26日, 31日</u>
+                    2月のお休みは <u>6日, 13日, 18日, 20日, 27日</u>
                     となります。
-                  </p>
-                  <p className="br font">
-                    1月のお休みは <u>1日, 11日, 16日, 23日, 30日</u>となります。
-                  </p>
-                  <p className="br">尚、年末年始は下記の通りとなります。</p>
-                  <Col sm={12} className="Calender">
-                    <Image src={Calender} alt="Calender2022_2023" fluid />
-                  </Col>
-                  <p className="br">
-                    本年は当店にお越しいただき誠にありがとうございます。
                   </p>
                   <p className="br">
                     スタッフ一同、心よりお待ちいたしております。
                   </p>
-                  <p className="br">どうぞ良いお年をお迎え下さい。</p>
                 </Tab.Pane>
-
                 <Tab.Pane className="TabContent" eventKey="#link4">
                   <h3 className="title">ホームページリニューアルのお知らせ</h3>
                   <p className="br">
@@ -116,7 +102,6 @@ export const NewsList = () => (
                     今後とも、内容の充実を図るとともに、わかりやすく・最新の情報を発信してまいりますので、何卒よろしくお願い申し上げます。
                   </p>
                 </Tab.Pane>
-
                 <Tab.Pane className="TabContent" eventKey="#link5">
                   <h3 className="title">義援金、店頭募金送金のご報告</h3>
                   <p className="br">
