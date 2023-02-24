@@ -60,6 +60,9 @@ export const NewsList = () => (
           <Row>
             <Col sm={4}>
               <ListGroup className="Tab">
+                {/* <ListGroup.Item action href="#link">
+                  2023.2.28 // 3月の定休日について
+                </ListGroup.Item> */}
                 <ListGroup.Item action href="#link">
                   2023.1.30 // 2月の定休日について
                 </ListGroup.Item>
@@ -74,8 +77,22 @@ export const NewsList = () => (
 
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
+                {/* <Tab.Pane className="TabContent" eventKey="#link">
+                  <h3 className="title">3月の定休日について</h3>
+                  <p className="br">
+                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
+                  </p>
+                  <p className="br font">
+                    3月のお休みは <u>6日, 13日, 14日, 15日, 16日, 20日, 27日</u>
+                    となります。
+                  </p>
+                  <p className="br">
+                    スタッフ一同、心よりお待ちいたしております。
+                  </p>
+                </Tab.Pane> */}
+
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">2月の定休日の定休日について</h3>
+                  <h3 className="title">2月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
@@ -87,6 +104,7 @@ export const NewsList = () => (
                     スタッフ一同、心よりお待ちいたしております。
                   </p>
                 </Tab.Pane>
+
                 <Tab.Pane className="TabContent" eventKey="#link4">
                   <h3 className="title">ホームページリニューアルのお知らせ</h3>
                   <p className="br">
@@ -102,6 +120,7 @@ export const NewsList = () => (
                     今後とも、内容の充実を図るとともに、わかりやすく・最新の情報を発信してまいりますので、何卒よろしくお願い申し上げます。
                   </p>
                 </Tab.Pane>
+
                 <Tab.Pane className="TabContent" eventKey="#link5">
                   <h3 className="title">義援金、店頭募金送金のご報告</h3>
                   <p className="br">
