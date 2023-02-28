@@ -60,24 +60,24 @@ export const NewsList = () => (
           <Row>
             <Col sm={4}>
               <ListGroup className="Tab">
-                {/* <ListGroup.Item action href="#link">
-                  2023.2.28 // 3月の定休日について
-                </ListGroup.Item> */}
                 <ListGroup.Item action href="#link">
-                  2023.1.30 // 2月の定休日について
+                  2023.2.28 <h6>3月の定休日について</h6>
+                </ListGroup.Item>
+                <ListGroup.Item action href="#link3">
+                  2023.1.30 <h6>2月の定休日について</h6>
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link4">
-                  2020.11.17 // New HP
+                  2020.11.17 <h6>New HP</h6>
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link5">
-                  2011.4.14 // 義援金について
+                  2011.4.14 <h6>義援金について</h6>
                 </ListGroup.Item>
               </ListGroup>
             </Col>
 
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
-                {/* <Tab.Pane className="TabContent" eventKey="#link">
+                <Tab.Pane className="TabContent" eventKey="#link">
                   <h3 className="title">3月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -89,9 +89,9 @@ export const NewsList = () => (
                   <p className="br">
                     スタッフ一同、心よりお待ちいたしております。
                   </p>
-                </Tab.Pane> */}
+                </Tab.Pane>
 
-                <Tab.Pane className="TabContent" eventKey="#link">
+                <Tab.Pane className="TabContent" eventKey="#link3">
                   <h3 className="title">2月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
