@@ -6,7 +6,7 @@ import { Container, Row, Col, Carousel, Image } from "react-bootstrap";
 import { NewsList } from "./components/NewsList";
 import { BottomSet } from "./components/BottomSet";
 import * as FadeIn from "./components/FadeIn";
-import TitleMainDeco from "./assets/TitleMainDeco.svg";
+import TitleMainDeco from "./assets/TitleMainDecoHanami.svg";
 import TitleHalfCircle from "./assets/TitleHalfCircle.svg";
 import ScrollIcon from "./assets/ScrollIcon.svg";
 import Slider_1 from "./assets/Slider_1.png";
