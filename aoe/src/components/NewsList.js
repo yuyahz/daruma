@@ -61,10 +61,10 @@ export const NewsList = () => (
             <Col sm={4}>
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2023.7.31 <h6>8月の定休日について</h6>
+                  2023.8.31 <h6>9月の定休日について</h6>
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link3">
-                  2023.6.30 <h6>7月の定休日について</h6>
+                  2023.7.31 <h6>8月の定休日について</h6>
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link4">
                   2020.11.17 <h6>New HP</h6>
@@ -78,12 +78,12 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">8月の定休日について</h3>
+                  <h3 className="title">9月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br font">
-                    8月のお休みは <u>7日, 17日, 21日, 22日, 23日, 24日, 28日</u>
+                    9月のお休みは <u>4日, 11日, 20日, 25日</u>
                     となります。
                   </p>
                   <p className="br">
@@ -92,12 +92,12 @@ export const NewsList = () => (
                 </Tab.Pane>
 
                 <Tab.Pane className="TabContent" eventKey="#link3">
-                  <h3 className="title">7月の定休日について</h3>
+                  <h3 className="title">8月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br font">
-                    7月のお休みは <u>3日, 10日, 19日, 24日, 31日</u>
+                    8月のお休みは <u>7日, 17日, 21日, 22日, 23日, 24日, 28日</u>
                     となります。
                   </p>
                   <p className="br">
