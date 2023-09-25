@@ -44,77 +44,88 @@ export const Yakiniku = ({ data }) => {
                 <p className="MenuTitele">カルビ</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥960</span>¥530 */}
-                  <span className="MenuTextSp">¥980</span>¥540
+                  {/* <span className="MenuTextSp">¥980</span>¥540 */}
+                  <span className="MenuTextSp">¥1180</span>¥700
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">ハラミ</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥840</span>¥530 */}
-                  <span className="MenuTextSp">¥880</span>¥490
+                  {/* <span className="MenuTextSp">¥880</span>¥490 */}
+                  <span className="MenuTextSp">¥980</span>¥580
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">タン</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥960</span>¥530 */}
-                  <span className="MenuTextSp">¥980</span>¥540
+                  {/* <span className="MenuTextSp">¥980</span>¥540 */}
+                  <span className="MenuTextSp">¥1180</span>¥700
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">ネギ塩タン</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥960</span>¥530 */}
-                  <span className="MenuTextSp">¥980</span>¥540
+                  {/* <span className="MenuTextSp">¥980</span>¥540 */}
+                  <span className="MenuTextSp">¥1280</span>¥760
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">ロース</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥1060 </span>¥590 */}
-                  <span className="MenuTextSp">¥1150 </span>¥640
+                  {/* <span className="MenuTextSp">¥1150 </span>¥640 */}
+                  <span className="MenuTextSp">¥1280</span>¥760
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">味わいカルビ（中落ち）</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥680</span>¥380 */}
-                  <span className="MenuTextSp">¥740</span>¥410
+                  {/* <span className="MenuTextSp">¥740</span>¥410 */}
+                  <span className="MenuTextSp">¥880</span>¥520
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">ギアラ（赤セン）</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥530</span>¥270 */}
-                  <span className="MenuTextSp">¥630</span>¥350
+                  {/* <span className="MenuTextSp">¥630</span>¥350 */}
+                  <span className="MenuTextSp">¥680</span>¥400
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">上ミノ</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥820</span>¥450 */}
-                  <span className="MenuTextSp">¥860</span>¥480
+                  {/* <span className="MenuTextSp">¥860</span>¥480 */}
+                  <span className="MenuTextSp">¥980</span>¥580
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">センマイ</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥580</span>¥300 */}
-                  <span className="MenuTextSp">¥630</span>¥350
+                  {/* <span className="MenuTextSp">¥630</span>¥350 */}
+                  <span className="MenuTextSp">¥680</span>¥400
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">上ホルモン</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥700</span>¥380 */}
-                  <span className="MenuTextSp">¥780</span>¥430
+                  {/* <span className="MenuTextSp">¥780</span>¥430 */}
+                  <span className="MenuTextSp">¥880</span>¥520
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">ホルモン</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥630</span>¥330 */}
-                  <span className="MenuTextSp">¥680</span>¥380
+                  {/* <span className="MenuTextSp">¥680</span>¥380 */}
+                  <span className="MenuTextSp">¥780</span>¥460
                 </p>
               </div>
               <div className="MenuCap">
@@ -226,7 +237,7 @@ export const Yakiniku = ({ data }) => {
                 <p className="MenuTitele">歌声（タレ・辛ダレ）※豚の軟骨</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥500</span>¥270 */}
-                  <span className="MenuTextSp">¥550</span>¥300
+                  <span className="MenuTextSp">¥650</span>¥390
                 </p>
               </div>
               <div className="MenuCap">
@@ -247,28 +258,29 @@ export const Yakiniku = ({ data }) => {
                 <p className="MenuTitele">若ドリ</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥600</span>¥330 */}
-                  <span className="MenuTextSp">¥580</span>¥320
+                  {/* <span className="MenuTextSp">¥580</span>¥320 */}
+                  <span className="MenuTextSp">¥630</span>¥370
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">鶏のせせり</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSp">¥600</span>¥330 */}
-                  <span className="MenuTextSp">¥580</span>¥320
+                  <span className="MenuTextSp">¥630</span>¥370
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">あらびきウィンナー</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥530</span> */}
-                  <span className="MenuTextSpSingle">¥550</span>
+                  <span className="MenuTextSpSingle">¥580</span>
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">厚切りベーコン</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥550</span> */}
-                  <span className="MenuTextSpSingle">¥600</span>
+                  <span className="MenuTextSpSingle">¥630</span>
                 </p>
               </div>
               <div className="MenuCap">
@@ -289,28 +301,28 @@ export const Yakiniku = ({ data }) => {
                 <p className="MenuTitele">イカ</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥680</span> */}
-                  <span className="MenuTextSpSingle">¥650</span>
+                  <span className="MenuTextSpSingle">¥780</span>
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">エビ</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥790</span> */}
-                  <span className="MenuTextSpSingle">¥780</span>
+                  <span className="MenuTextSpSingle">¥880</span>
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">貝柱</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥790</span> */}
-                  <span className="MenuTextSpSingle">¥780</span>
+                  <span className="MenuTextSpSingle">¥880</span>
                 </p>
               </div>
               <div className="MenuCap">
                 <p className="MenuTitele">海の幸セット</p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥890</span> */}
-                  <span className="MenuTextSpSingle">¥980</span>
+                  <span className="MenuTextSpSingle">¥1180</span>
                 </p>
               </div>
               <div className="MenuCap">
@@ -335,7 +347,8 @@ export const Yakiniku = ({ data }) => {
                 </p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥3400</span> */}
-                  <span className="MenuTextSpSingle">¥3800</span>
+                  {/* <span className="MenuTextSpSingle">¥3800</span> */}
+                  <span className="MenuTextSpSingle">¥3980</span>
                 </p>
               </div>
               <div className="MenuCap">
@@ -349,7 +362,8 @@ export const Yakiniku = ({ data }) => {
                 </p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥2400</span> */}
-                  <span className="MenuTextSpSingle">¥2700</span>
+                  {/* <span className="MenuTextSpSingle">¥2700</span> */}
+                  <span className="MenuTextSpSingle">¥2980</span>
                 </p>
               </div>
               <div className="MenuCap">
@@ -363,7 +377,8 @@ export const Yakiniku = ({ data }) => {
                 </p>
                 <p className="MenuText">
                   {/* <span className="MenuTextSpSingle">¥1580</span> */}
-                  <span className="MenuTextSpSingle">¥1800</span>
+                  {/* <span className="MenuTextSpSingle">¥1800</span> */}
+                  <span className="MenuTextSpSingle">¥1980</span>
                 </p>
               </div>
               <div className="MenuCap">
