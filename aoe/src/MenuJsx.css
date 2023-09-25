@@ -12,19 +12,26 @@
   }
 }
 
-.MobileTitle{
+.MenuTitle {
   text-align: center;
 }
 
-@media screen and (min-width: 575px) {
-  .MobileTitle {
-    display: none;
+.AssetTitle {
+  width: 17%;
+}
+
+@media screen and (max-width: 992px) {
+  .AssetTitle {
+    width: 35%;
+    margin-top: 3rem;
   }
 }
 
-.MobileDecoTitle {
-  width: 45%;
-  padding-bottom: 15%;
+@media screen and (max-width: 575px) {
+  .AssetTitle {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
 }
 
 .MenuTitleSpace {
@@ -39,7 +46,7 @@
 }
 
 .MenuSpace {
-  margin: 5% 0 10% 0;
+  margin: 1% 0 10% 0;
 }
 
 .MenuDecoTitle {
@@ -59,9 +66,9 @@
   }
 }
 
-.MenuSec {
+/* .MenuSec {
   margin: 6%;
-}
+} */
 
 .MenuHdCap {
   padding: 1% 0;

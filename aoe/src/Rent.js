@@ -16,6 +16,12 @@ const Styles = styled.div`
     text-align: center;
   }
 
+  @media screen and (max-width: 992px) {
+    .RentSecTitle {
+      margin-top: 3rem;
+    }
+  }
+
   .RentSec {
     margin: 5% 0 0 0;
   }
@@ -54,6 +60,12 @@ const Styles = styled.div`
     margin-bottom: 5%;
     font-family: "Noto Serif JP", serif;
     border-bottom: solid 1px #007bff;
+  }
+
+  @media screen and (max-width: 768px) {
+    .RentSubTitle {
+      padding: 3% 0 5%;
+    }
   }
 
   .RentCaption {
@@ -218,13 +230,13 @@ export const Rent = () => (
         </Col>
       </Row>
 
-      <Row>
+      {/* <Row>
         <Col md={{ span: 6, offset: 3 }} className="RentBtnSec">
           <a href={require("./assets/Document.pdf")} target="_blank">
             <Image className="RentBtn" src={Takeout} />
           </a>
         </Col>
-      </Row>
+      </Row> */}
 
       <BottomSet />
     </Container>

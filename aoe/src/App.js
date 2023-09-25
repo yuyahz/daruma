@@ -19,7 +19,7 @@ class App extends Component {
       <React.Fragment>
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
-            <div className="d-none d-md-block">
+            <div className="d-none d-lg-block">
               <Image className="TopLogo" src={TopLogo} alt="Logo" fluid />
             </div>
           </Col>

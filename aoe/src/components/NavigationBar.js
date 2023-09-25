@@ -12,6 +12,12 @@ const Styles = styled.div`
     letter-spacing: 0.15em;
   }
 
+  @media screen and (max-width: 992px) {
+    .navbar {
+      margin: 6% 0 0 6%;
+    }
+  }
+
   .LinkRent {
     color: #5a8fcb;
     text-decoration: none;
@@ -31,7 +37,26 @@ const Styles = styled.div`
   }
 
   .mr-auto {
-    padding: 5%;
+    padding: 3% 0 10% 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    .mr-auto {
+      padding: 6% 0 0 0;
+      button {
+        width: 150px;
+      }
+    }
+  }
+
+  .ml-auto {
+    padding: 3% 0 10% 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    .ml-auto {
+      padding: 3% 0;
+    }
   }
 `;
 
@@ -44,7 +69,7 @@ export const NavigationBar = () => (
           <Nav className="mr-auto">
             <Button variant="light btn-lg shadow" waves-effect>
               <Link to="/rent" className="LinkRent">
-                RENT BBQ
+                FREE BBQ RENT 🌸
               </Link>
             </Button>
           </Nav>

@@ -7,7 +7,7 @@ export const Yakiniku = ({ data }) => {
   return (
     <React.Fragment>
       <Container fluid={true}>
-        <Row className="MenuTitleSpace">
+        {/* <Row className="MenuTitleSpace">
           <Col>
             <div className="MenuDeco">
               <Image
@@ -18,16 +18,11 @@ export const Yakiniku = ({ data }) => {
               />
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
-        <Row>
-          <Col className="MobileTitle">
-            <Image
-              className="MobileDecoTitle"
-              src={YakinikuDeco}
-              alt="Logo"
-              fluid
-            />
+        <Row d-flex justify-content-center>
+          <Col className="MenuTitle">
+            <Image className="AssetTitle" src={YakinikuDeco} alt="Logo" fluid />
           </Col>
         </Row>
 

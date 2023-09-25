@@ -7,7 +7,7 @@ export const OneDish = ({ data }) => {
   return (
     <React.Fragment>
       <Container fluid={true}>
-        <Row className="MenuTitleSpace">
+        {/* <Row className="MenuTitleSpace">
           <Col>
             <div className="MenuDeco">
               <Image
@@ -18,16 +18,11 @@ export const OneDish = ({ data }) => {
               />
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row>
-          <Col className="MobileTitle">
-            <Image
-              className="MobileDecoTitle"
-              src={OnedishDeco}
-              alt="Logo"
-              fluid
-            />
+          <Col className="MenuTitle">
+            <Image className="AssetTitle" src={OnedishDeco} alt="Logo" fluid />
           </Col>
         </Row>
 

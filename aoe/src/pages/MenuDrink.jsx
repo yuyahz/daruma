@@ -7,7 +7,7 @@ export const Drink = ({ data }) => {
   return (
     <React.Fragment>
       <Container fluid={true}>
-        <Row className="MenuTitleSpace">
+        {/* <Row className="MenuTitleSpace">
           <Col>
             <div className="MenuDeco">
               <Image
@@ -18,16 +18,11 @@ export const Drink = ({ data }) => {
               />
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row>
-          <Col className="MobileTitle">
-            <Image
-              className="MobileDecoTitle"
-              src={DrinkDeco}
-              alt="Logo"
-              fluid
-            />
+          <Col className="MenuTitle">
+            <Image className="AssetTitle" src={DrinkDeco} alt="Logo" fluid />
           </Col>
         </Row>
 

@@ -7,7 +7,7 @@ export const PartyPlan = ({ data }) => {
   return (
     <React.Fragment>
       <Container fluid={true}>
-        <Row className="MenuTitleSpace">
+        {/* <Row className="MenuTitleSpace">
           <Col>
             <div className="MenuDeco">
               <Image
@@ -18,19 +18,18 @@ export const PartyPlan = ({ data }) => {
               />
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row>
-          <Col className="MobileTitle">
+          <Col className="MenuTitle">
             <Image
-              className="MobileDecoTitle"
+              className="AssetTitle"
               src={PartyPlanDeco}
               alt="Logo"
               fluid
             />
           </Col>
         </Row>
-
 
         <Row className="MenuSpace">
           <Col md={{ span: 8, offset: 2 }}>

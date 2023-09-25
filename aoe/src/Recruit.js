@@ -10,6 +10,10 @@ const Styles = styled.div`
   .RecruitTitleSec {
     padding-top: 2%;
     text-align: center;
+
+    @media screen and (max-width: 992px) {
+      margin-top: 3rem;
+    }
   }
 
   .RecruitTopSec {

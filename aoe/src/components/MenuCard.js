@@ -13,16 +13,30 @@ const Styles = styled.div`
   }
 
   .CardSec {
-    padding: 4% 4% 10%;
+    padding: 2%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .CardSec {
+      padding: 10% 0;
+
+      :first-child {
+        padding-top: 30%;
+      }
+
+      :last-child {
+        padding-bottom: 30%;
+      }
+    }
   }
 
   .CardRadius {
-    border-radius: 50px 70px 70px 0;
+    border-radius: 2.604vw;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.5));
   }
 
   .CardPic {
-    border-radius: 50px 70px 0 0;
+    border-radius: 2.604vw 2.604vw 0 0;
   }
 
   .CardTitle {
@@ -37,8 +51,9 @@ const Styles = styled.div`
   }
 
   .CardButton {
-    font-size: 80%;
-    border-radius: 50px 70px 70px 0;
+    font-size: 14px;
+    padding: 1rem;
+    border-radius: 25px;
     filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.2));
   }
 
@@ -64,9 +79,9 @@ const MenuCardColumn = ({ cardData }) => (
             <p className="CardText">{cardData.cardText}</p>
           </Card.Text>
           <Link to={`/menu/${cardData.id}`} className="CardButtonText">
-          <Button className="CardButton" variant="primary">
+            <Button className="CardButton" variant="primary">
               詳しく
-          </Button>
+            </Button>
           </Link>
         </Card.Body>
       </Card>

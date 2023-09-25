@@ -16,7 +16,7 @@ const Styles = styled.div`
   .TabFrame {
     border: 5px solid #fff;
     border-radius: 15px;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
     background-color: #007bff;
   }
 
@@ -50,6 +50,10 @@ const Styles = styled.div`
   .bold {
     font-weight: 900;
   }
+
+  .list-group {
+    filter: none;
+  }
 `;
 
 export const NewsList = () => (
@@ -58,32 +62,15 @@ export const NewsList = () => (
       <Col md={{ span: 8, offset: 2 }}>
         <Tab.Container defaultActiveKey="#link">
           <Row>
-            <Col sm={4}>
-              <ListGroup className="Tab">
-                <ListGroup.Item action href="#link">
-                  2023.8.31 <h6>9月の定休日について</h6>
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link3">
-                  2023.7.31 <h6>8月の定休日について</h6>
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link4">
-                  2020.11.17 <h6>New HP</h6>
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link5">
-                  2011.4.14 <h6>義援金について</h6>
-                </ListGroup.Item>
-              </ListGroup>
-            </Col>
-
-            <Col sm={8} className="NewsSec">
+            <Col sm={8} className="NewsSec order-sm-2">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">9月の定休日について</h3>
+                  <h3 className="title">10月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br font">
-                    9月のお休みは <u>4日, 11日, 20日, 25日</u>
+                    10月のお休みは <u>2日, 11日, 16日, 23日, 30日</u>
                     となります。
                   </p>
                   <p className="br">
@@ -92,12 +79,12 @@ export const NewsList = () => (
                 </Tab.Pane>
 
                 <Tab.Pane className="TabContent" eventKey="#link3">
-                  <h3 className="title">8月の定休日について</h3>
+                  <h3 className="title">9月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br font">
-                    8月のお休みは <u>7日, 17日, 21日, 22日, 23日, 24日, 28日</u>
+                    9月のお休みは <u>4日, 11日, 20日, 25日</u>
                     となります。
                   </p>
                   <p className="br">
@@ -136,6 +123,23 @@ export const NewsList = () => (
                   (すべて2011年4月14日送金) 皆様の善意に心から御礼申しあげます。
                 </Tab.Pane>
               </Tab.Content>
+            </Col>
+
+            <Col sm={4} className="order-sm-1">
+              <ListGroup className="Tab">
+                <ListGroup.Item action href="#link">
+                  2023.9.26 <h6>10月の定休日について</h6>
+                </ListGroup.Item>
+                <ListGroup.Item action href="#link3">
+                  2023.8.31 <h6>9月の定休日について</h6>
+                </ListGroup.Item>
+                <ListGroup.Item action href="#link4">
+                  2020.11.17 <h6>New HP</h6>
+                </ListGroup.Item>
+                <ListGroup.Item action href="#link5">
+                  2011.4.14 <h6>義援金について</h6>
+                </ListGroup.Item>
+              </ListGroup>
             </Col>
 
             {/* In order to if random day off happend

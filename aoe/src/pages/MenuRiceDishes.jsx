@@ -7,7 +7,7 @@ export const RiceDishes = ({ data }) => {
   return (
     <React.Fragment>
       <Container fluid={true}>
-        <Row className="MenuTitleSpace">
+        {/* <Row className="MenuTitleSpace">
           <Col>
             <div className="MenuDeco">
               <Image
@@ -18,12 +18,12 @@ export const RiceDishes = ({ data }) => {
               />
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row>
-          <Col className="MobileTitle">
+          <Col className="MenuTitle">
             <Image
-              className="MobileDecoTitle"
+              className="AssetTitle"
               src={RicedishesDeco}
               alt="Logo"
               fluid

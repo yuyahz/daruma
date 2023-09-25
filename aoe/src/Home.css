@@ -5,6 +5,7 @@
 }
 
 .TopLogo {
+  max-width: 110px;
   position: absolute;
   width: 15%;
   right: 50%;
@@ -26,6 +27,13 @@
   align-items: center;
 }
 
+@media screen and (max-width: 991px) {
+  .TitleDeco {
+    margin-top: 20%;
+    padding: 20%;
+  }
+}
+
 .TitleHalfCircle {
   position: relative;
   left: 25%;
@@ -38,17 +46,27 @@
   letter-spacing: 1vw;
 }
 
-.ScrollSec {
+.restrict-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Left {
+  max-width: 600px;
+}
+
+.Right {
   position: relative;
+  max-width: 600px;
 }
 
 .Scroll {
   position: absolute;
   bottom: 15%;
   right: 0;
-  width: 1vw;
+  max-width: 18px;
   transform: translateX(-50%);
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.523));
   -webkit-animation: blink 1.5s ease-in-out infinite alternate;
   -moz-animation: blink 1.5s ease-in-out infinite alternate;
   animation: blink 1.5s ease-in-out infinite alternate;
@@ -142,15 +160,10 @@
 .MobileTakeout {
   color: #fff;
   background-color: #007bff;
-  margin: 30px 20px 30px 20px;
+  margin: 0 0.5rem 0 1rem;
   text-align: center;
-  padding: 20px 0 6px 0;
+  padding-top: 1rem;
   border-radius: 10px;
-}
-
-.MobileTakeout:hover {
-  transform: scale(0.95);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -164,15 +177,10 @@
 .MobileHanami {
   color: #fff;
   background-color: #fcbfb9;
-  margin: 30px 20px 70px 20px;
+  margin: 0 0.5rem 0 1rem;
   text-align: center;
-  padding: 20px 0 6px 0;
+  padding-top: 1rem;
   border-radius: 10px;
-}
-
-.MobileHanami:hover {
-  transform: scale(0.95);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -183,20 +191,38 @@
   color: #fff;
 }
 
-/* for Mobile */
-
 .CarouselBg {
   background-color: #fff;
   width: 100%;
   padding: 5% 10%;
-  border-radius: 10px;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  border-radius: 30px;
+  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
+}
+
+.carousel-control-prev {
+  filter: drop-shadow(2px 3px 5px rgba(33, 33, 33, 0.5));
+  opacity: 0.6;
+}
+
+.carousel-control-prev-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control-next {
+  filter: drop-shadow(2px 3px 5px rgba(33, 33, 33, 0.5));
+  opacity: 0.6;
+}
+
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (min-width: 767px) {
   .CarouselPic {
     margin: 0 auto;
-    max-width: 400px;
+    /* max-width: 400px; */
   }
 }
 
@@ -213,12 +239,13 @@
 .CarouselText {
   font-family: "Noto Serif JP", serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 0.2vw;
   line-height: 2;
   color: #c73d13;
   writing-mode: vertical-rl;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .IntroSec {
@@ -240,7 +267,7 @@
 
 .IntroInsideSec {
   margin: 5% 0 5% 0;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .IntroCaption {
@@ -251,7 +278,7 @@
 }
 
 .IntroCaption2 {
-  padding: 7% 10% 10% 10%;
+  padding: 12% 0 7% 0;
 }
 
 .IntroCaptionTitle1 {
@@ -278,23 +305,29 @@
 .IntroPic {
   display: block;
   height: auto;
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
-@media screen and (min-width: 767px) {
+/* @media screen and (min-width: 767px) {
   .IntroPic {
     max-width: 400px;
   }
-}
+} */
 
 .NewsBg {
   background-color: #fff;
-  padding: 2% 10% 5%;
+  padding: 2% 2% 5%;
   border: solid 10px #007bff;
-  border-radius: 50px;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  border-radius: 30px;
+  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
+}
+
+@media screen and (max-width: 576px) {
+  .NewsBg {
+    border-radius: 6.6vw;
+  }
 }
 
 .NewsTitle {
@@ -306,6 +339,8 @@
 }
 
 .NewsTitleFlashing {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   -webkit-animation: blink 1.5s ease-in-out infinite alternate;
   -moz-animation: blink 1.5s ease-in-out infinite alternate;
   animation: blink 1.5s ease-in-out infinite alternate;
@@ -335,10 +370,14 @@
   }
 }
 
+.list-group {
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
 .Point {
   text-align: center;
   margin: 20% 0 5% 0;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .PointDeco {
@@ -350,10 +389,16 @@
   border-radius: 2rem;
 }
 
+@media screen and (max-width: 576px) {
+  .PointBtn {
+    border-radius: 0.5rem;
+  }
+}
+
 .Takeout {
   text-align: center;
   margin: 5% 0 20% 0;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .TakeoutDeco {
@@ -364,6 +409,13 @@
 .TakeoutBtn {
   max-width: 600px;
   border-radius: 2rem;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+@media screen and (max-width: 576px) {
+  .TakeoutBtn {
+    border-radius: 0.5rem;
+  }
 }
 
 .TakeoutBtn:hover {

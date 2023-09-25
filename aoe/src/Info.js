@@ -15,6 +15,10 @@ const Styles = styled.div`
   .InfoSecTitle {
     padding-top: 2%;
     text-align: center;
+
+    @media screen and (max-width: 992px) {
+      margin-top: 3rem;
+    }
   }
 
   .InfoTitle {
