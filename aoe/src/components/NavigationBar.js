@@ -43,8 +43,9 @@ const Styles = styled.div`
   @media screen and (max-width: 992px) {
     .mr-auto {
       padding: 6% 0 0 0;
+
       button {
-        width: 222px;
+        width: 230px;
       }
     }
   }

@@ -125,7 +125,7 @@ export const Drink = ({ data }) => {
                 </div>
               </Row>
 
-              <Row className="MenuSec" xs={1} md={1}>
+              <Row className="MenuSec mb-5" xs={1} md={1}>
                 <div className="MenuCap">
                   <p className="MenuTitele">麦 / 二階堂</p>
                   <p className="MenuText">
