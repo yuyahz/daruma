@@ -68,6 +68,11 @@ export const Home = () => (
     </Row>
 
     {/* This line in order for Mobile */}
+    <Row className="MobileButtonsTitle d-block d-lg-none">
+      <Col className="d-flex justify-content-center">
+        <p>すぐにお持ち帰りしたい方はこちら 💁🏻</p>
+      </Col>
+    </Row>
     <Row className="mb-5">
       <Col className="MobileTakeout d-block d-lg-none">
         <HashLink smooth to="#takeout">

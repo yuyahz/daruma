@@ -37,20 +37,20 @@ const Styles = styled.div`
   }
 
   .mr-auto {
-    padding: 3% 0 10% 0;
+    padding: 50px 0 100px 0;
   }
 
   @media screen and (max-width: 992px) {
     .mr-auto {
       padding: 6% 0 0 0;
       button {
-        width: 150px;
+        width: 222px;
       }
     }
   }
 
   .ml-auto {
-    padding: 3% 0 10% 0;
+    padding: 50px 0 100px 0;
   }
 
   @media screen and (max-width: 992px) {
@@ -69,7 +69,7 @@ export const NavigationBar = () => (
           <Nav className="mr-auto">
             <Button variant="light btn-lg shadow" waves-effect>
               <Link to="/rent" className="LinkRent">
-                FREE BBQ RENT 🌸
+                BBQ 無料貸し出し 🌸
               </Link>
             </Button>
           </Nav>

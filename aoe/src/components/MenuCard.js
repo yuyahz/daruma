@@ -7,7 +7,7 @@ import * as FadeIn from "./FadeIn";
 
 const Styles = styled.div`
   .SideSpace {
-    margin: 0% 10% 10% 10%;
+    margin: 0% 5% 5% 5%;
     -webkit-flex-direction: row;
     flex-direction: row;
   }
@@ -37,6 +37,15 @@ const Styles = styled.div`
 
   .CardPic {
     border-radius: 2.604vw 2.604vw 0 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .CardRadius {
+      border-radius: 8vw;
+    }
+    .CardPic {
+      border-radius: 8vw 8vw 0 0;
+    }
   }
 
   .CardTitle {

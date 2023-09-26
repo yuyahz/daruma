@@ -16,7 +16,6 @@
 
 .Title {
   position: relative;
-  margin-top: -10%;
   margin-bottom: 10%;
 }
 
@@ -29,8 +28,13 @@
 
 @media screen and (max-width: 991px) {
   .TitleDeco {
-    margin-top: 20%;
     padding: 20%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .TitleDeco {
+    margin-top: 20%;
   }
 }
 
@@ -157,6 +161,13 @@
 }
 
 /* for Mobile */
+.MobileButtonsTitle {
+  margin-top: 3rem !important;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
 .MobileTakeout {
   color: #fff;
   background-color: #007bff;
@@ -177,7 +188,7 @@
 .MobileHanami {
   color: #fff;
   background-color: #fcbfb9;
-  margin: 0 0.5rem 0 1rem;
+  margin: 0 1rem 0 0.5rem;
   text-align: center;
   padding-top: 1rem;
   border-radius: 10px;

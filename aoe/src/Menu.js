@@ -11,8 +11,10 @@ import { BottomSet } from "./components/BottomSet";
 // import { MenuLunch } from './pages/MenuLunch';
 
 export const Menu = () => (
-  <Container fluid>
-    <MenuCard />
-    <BottomSet />
-  </Container>
+  <div className="restrict-width">
+    <Container fluid>
+      <MenuCard />
+      <BottomSet />
+    </Container>
+  </div>
 );

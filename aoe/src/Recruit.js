@@ -12,7 +12,7 @@ const Styles = styled.div`
     text-align: center;
 
     @media screen and (max-width: 992px) {
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
   }
 
@@ -59,64 +59,66 @@ const Styles = styled.div`
 
 export const Recruit = () => (
   <Styles>
-    <Container fluid={true}>
-      <Row className="RecruitTitleSec">
-        <Col md={{ span: 8, offset: 2 }}>
-          <div className="RecruitText">
-            <h2 className="RecruitTitle">アルバイト募集中</h2>
-            <p className="RecruitTitleText">
-              未経験でも大丈夫！先輩スタッフが丁寧にお教えいたしますので、ご安心下さい。
-              興味のある方は 086 - 224 - 3525 までお気軽にお電話下さい。
-            </p>
-          </div>
-        </Col>
-      </Row>
+    <div className="restrict-width">
+      <Container fluid={true}>
+        <Row className="RecruitTitleSec">
+          <Col md={{ span: 8, offset: 2 }}>
+            <div className="RecruitText">
+              <h2 className="RecruitTitle">アルバイト募集中</h2>
+              <p className="RecruitTitleText">
+                未経験でも大丈夫！先輩スタッフが丁寧にお教えいたしますので、ご安心下さい。
+                興味のある方は 086 - 224 - 3525 までお気軽にお電話下さい。
+              </p>
+            </div>
+          </Col>
+        </Row>
 
-      <Row className="RecruitTopSec">
-        <Col md={{ span: 8, offset: 2 }}>
-          <Row xs={1} md={2}>
-            <Col>
-              <FadeIn.Up>
-                <Image className="RecruitPic" src={RecruitServer} rounded />
-              </FadeIn.Up>
-            </Col>
-            <Col>
-              <div className="RecruitText">
-                <h3 className="RecruitSubTitle">ホールスタッフ</h3>
-                <p>条件　16歳以上　土日勤務可能な方</p>
-                <p>・11時～22時の内5時間程度　※ラストまで入れる方歓迎</p>
-                <p>・時給 ￥1000 ・研修期間中 ￥950</p>
-                <p>・勤務時間、勤務日数は相談に応じます</p>
-                <p>・食事付き・制服給与</p>
-              </div>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        <Row className="RecruitTopSec">
+          <Col md={{ span: 8, offset: 2 }}>
+            <Row xs={1} md={2}>
+              <Col>
+                <FadeIn.Up>
+                  <Image className="RecruitPic" src={RecruitServer} rounded />
+                </FadeIn.Up>
+              </Col>
+              <Col>
+                <div className="RecruitText">
+                  <h3 className="RecruitSubTitle">ホールスタッフ</h3>
+                  <p>条件　16歳以上　土日勤務可能な方</p>
+                  <p>・11時～22時の内5時間程度　※ラストまで入れる方歓迎</p>
+                  <p>・時給 ￥1000 ・研修期間中 ￥950</p>
+                  <p>・勤務時間、勤務日数は相談に応じます</p>
+                  <p>・食事付き・制服給与</p>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
-      <Row className="RecruitBottomSec">
-        <Col md={{ span: 8, offset: 2 }}>
-          <Row xs={1} md={2}>
-            <Col>
-              <FadeIn.Up>
-                <Image className="RecruitPic" src={RecruitKitchen} rounded />
-              </FadeIn.Up>
-            </Col>
-            <Col>
-              <div className="RecruitText">
-                <h3 className="RecruitSubTitle">キッチンスタッフ</h3>
-                <p>条件　16歳以上　土日勤務可能な方</p>
-                <p>・11時～22時の内5時間程度　※ラストまで入れる方歓迎</p>
-                <p>・時給 ￥1000 ・研修期間中 ￥950</p>
-                <p>・勤務時間、勤務日数は相談に応じます</p>
-                <p>・食事付き・制服給与</p>
-              </div>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        <Row className="RecruitBottomSec">
+          <Col md={{ span: 8, offset: 2 }}>
+            <Row xs={1} md={2}>
+              <Col>
+                <FadeIn.Up>
+                  <Image className="RecruitPic" src={RecruitKitchen} rounded />
+                </FadeIn.Up>
+              </Col>
+              <Col>
+                <div className="RecruitText">
+                  <h3 className="RecruitSubTitle">キッチンスタッフ</h3>
+                  <p>条件　16歳以上　土日勤務可能な方</p>
+                  <p>・11時～22時の内5時間程度　※ラストまで入れる方歓迎</p>
+                  <p>・時給 ￥1000 ・研修期間中 ￥950</p>
+                  <p>・勤務時間、勤務日数は相談に応じます</p>
+                  <p>・食事付き・制服給与</p>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
-      <BottomSet />
-    </Container>
+        <BottomSet />
+      </Container>
+    </div>
   </Styles>
 );

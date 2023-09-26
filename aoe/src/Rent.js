@@ -18,7 +18,7 @@ const Styles = styled.div`
 
   @media screen and (max-width: 992px) {
     .RentSecTitle {
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
   }
 
@@ -112,125 +112,126 @@ const Styles = styled.div`
 
 export const Rent = () => (
   <Styles>
-    <Container fluid={true}>
-      <Row className="RentSecTitle">
-        <Col md={{ span: 8, offset: 2 }}>
-          <div className="RentText">
-            <h2 className="RentTitle">
-              BBQ器具<h2 className="RentTitleText">無料貸し出し</h2>
-            </h2>
-            <p className="RentTitleText2">
-              アウトドアで本格焼肉を手軽に！後片付けも楽々！
-              使用後はそのまま当店まで返却するだけ !!
-            </p>
-          </div>
-        </Col>
-      </Row>
+    <div className="restrict-width">
+      <Container fluid={true}>
+        <Row className="RentSecTitle">
+          <Col md={{ span: 8, offset: 2 }}>
+            <div className="RentText">
+              <h2 className="RentTitle">
+                BBQ器具<h2 className="RentTitleText">無料貸し出し</h2>
+              </h2>
+              <p className="RentTitleText2">
+                アウトドアで本格焼肉を手軽に！後片付けも楽々！
+                使用後はそのまま当店まで返却するだけ !!
+              </p>
+            </div>
+          </Col>
+        </Row>
 
-      <Row className="RentSec">
-        <Col md={{ span: 8, offset: 2 }} className="RentTopSec">
-          <Row xs={1} md={2}>
-            <Col>
-              <FadeIn.Up>
-                <Image className="RentPic" src={BBQ_AllStuffs} rounded />
-              </FadeIn.Up>
-            </Col>
-            <Col>
-              <div className="RentText">
-                <h3 className="RentSubTitle">器具貸し出し条件 </h3>
-                <p>
-                  <u>
-                    お肉10人前以上、またセットメニュー
-                    5人前以上ご注文の方に限り無料貸し出し可能。
-                  </u>
-                </p>
-                {/* <p>必要なお客様には 炭 1 袋 ¥780 で販売しております。</p> */}
-                <p>必要なお客様には 炭 1 袋 ¥850 で販売しております。</p>
-                <p>内容 ( 1kg , 着火剤付き , 約 1 台分)</p>
-              </div>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        <Row className="RentSec">
+          <Col md={{ span: 8, offset: 2 }} className="RentTopSec">
+            <Row xs={1} md={2}>
+              <Col>
+                <FadeIn.Up>
+                  <Image className="RentPic" src={BBQ_AllStuffs} rounded />
+                </FadeIn.Up>
+              </Col>
+              <Col>
+                <div className="RentText">
+                  <h3 className="RentSubTitle">器具貸し出し条件 </h3>
+                  <p>
+                    <u>
+                      お肉10人前以上、またセットメニュー
+                      5人前以上ご注文の方に限り無料貸し出し可能。
+                    </u>
+                  </p>
+                  {/* <p>必要なお客様には 炭 1 袋 ¥780 で販売しております。</p> */}
+                  <p>必要なお客様には 炭 1 袋 ¥850 で販売しております。</p>
+                  <p>内容 ( 1kg , 着火剤付き , 約 1 台分)</p>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
-      <Row className="RentSec">
-        <Col md={{ span: 8, offset: 2 }}>
-          <Row xs={1} md={2}>
-            <Col>
-              <FadeIn.Up>
-                <Image className="RentPic" src={BBQ} rounded />
-              </FadeIn.Up>
-              <div className="RentCaption RentText">
-                <p>
-                  一度に10人前のお肉が焼ける直径45cmの器具なので、大人数でもOK
-                  !!
-                </p>
-              </div>
-            </Col>
-            <Col>
-              <FadeIn.Up>
-                <Image className="RentPic" src={TeburaSet} rounded />
-              </FadeIn.Up>
-              <div className="RentCaption RentText">
-                <p>人数分の箸、コップ、ゴミ袋は無料で差し上げます !!</p>
-              </div>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        <Row className="RentSec">
+          <Col md={{ span: 8, offset: 2 }}>
+            <Row xs={1} md={2}>
+              <Col>
+                <FadeIn.Up>
+                  <Image className="RentPic" src={BBQ} rounded />
+                </FadeIn.Up>
+                <div className="RentCaption RentText">
+                  <p>
+                    一度に10人前のお肉が焼ける直径45cmの器具なので、大人数でもOK
+                    !!
+                  </p>
+                </div>
+              </Col>
+              <Col>
+                <FadeIn.Up>
+                  <Image className="RentPic" src={TeburaSet} rounded />
+                </FadeIn.Up>
+                <div className="RentCaption RentText">
+                  <p>人数分の箸、コップ、ゴミ袋は無料で差し上げます !!</p>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
-      <Row className="RentSec">
-        <Col md={{ span: 8, offset: 2 }} className="RentBottomSec">
-          <Row xs={1} md={2}>
-            <Col>
-              <FadeIn.Up>
-                <Image className="RentPic" src={Set1600} rounded />
-              </FadeIn.Up>
-              <div className="RentCaption RentText">
-                <p>BBQセットメニュー</p>
-                <p className="Rentbr">
-                  {/* ￥1600 セット ( 1人前 ) */}
-                  ￥1800 セット ( 1人前 )
+        <Row className="RentSec">
+          <Col md={{ span: 8, offset: 2 }} className="RentBottomSec">
+            <Row xs={1} md={2}>
+              <Col>
+                <FadeIn.Up>
+                  <Image className="RentPic" src={Set1600} rounded />
+                </FadeIn.Up>
+                <div className="RentCaption RentText">
+                  <p>BBQセットメニュー</p>
                   <p className="Rentbr">
-                    カルビ 60ｇ / ハラミ 80ｇ / 上ミノ 30ｇ
+                    {/* ￥1600 セット ( 1人前 ) */}
+                    ￥1800 セット ( 1人前 )
                     <p className="Rentbr">
-                      ホルモン 30ｇ / 上ホルモン 30ｇ
-                      <p className="Rentbr">ウインナー 2本</p>
+                      カルビ 60ｇ / ハラミ 80ｇ / 上ミノ 30ｇ
+                      <p className="Rentbr">
+                        ホルモン 30ｇ / 上ホルモン 30ｇ
+                        <p className="Rentbr">ウインナー 2本</p>
+                      </p>
                     </p>
                   </p>
-                </p>
-              </div>
-            </Col>
-            <Col>
-              <FadeIn.Up>
-                <Image className="RentPic" src={Set2100} rounded />
-              </FadeIn.Up>
-              <div className="RentCaption RentText">
-                <p>BBQセットメニュー</p>
-                <p className="Rentbr">
-                  {/* ￥2100 セット ( 1人前 ) */}
-                  ￥2300 セット ( 1人前 )
+                </div>
+              </Col>
+              <Col>
+                <FadeIn.Up>
+                  <Image className="RentPic" src={Set2100} rounded />
+                </FadeIn.Up>
+                <div className="RentCaption RentText">
+                  <p>BBQセットメニュー</p>
                   <p className="Rentbr">
-                    カルビ 80ｇ / ハラミ 100ｇ / 上ミノ 30ｇ
+                    {/* ￥2100 セット ( 1人前 ) */}
+                    ￥2300 セット ( 1人前 )
                     <p className="Rentbr">
-                      ホルモン 30ｇ / 上ホルモン 30ｇ / ブタ 50ｇ
-                      <p className="Rentbr">ウインナー 2本</p>
+                      カルビ 80ｇ / ハラミ 100ｇ / 上ミノ 30ｇ
+                      <p className="Rentbr">
+                        ホルモン 30ｇ / 上ホルモン 30ｇ / ブタ 50ｇ
+                        <p className="Rentbr">ウインナー 2本</p>
+                      </p>
                     </p>
                   </p>
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
-      <Row>
-        <Col md={{ span: 6, offset: 3 }}>
-          <p className="RentTax">※税込価格表示</p>
-        </Col>
-      </Row>
+        <Row>
+          <Col md={{ span: 6, offset: 3 }}>
+            <p className="RentTax">※税込価格表示</p>
+          </Col>
+        </Row>
 
-      {/* <Row>
+        {/* <Row>
         <Col md={{ span: 6, offset: 3 }} className="RentBtnSec">
           <a href={require("./assets/Document.pdf")} target="_blank">
             <Image className="RentBtn" src={Takeout} />
@@ -238,7 +239,8 @@ export const Rent = () => (
         </Col>
       </Row> */}
 
-      <BottomSet />
-    </Container>
+        <BottomSet />
+      </Container>
+    </div>
   </Styles>
 );
