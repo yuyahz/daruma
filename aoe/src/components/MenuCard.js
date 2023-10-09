@@ -31,20 +31,20 @@ const Styles = styled.div`
   }
 
   .CardRadius {
-    border-radius: 2.604vw;
+    border-radius: 20px;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.5));
   }
 
   .CardPic {
-    border-radius: 2.604vw 2.604vw 0 0;
+    border-radius: 20px 20px 0 0;
   }
 
   @media screen and (max-width: 768px) {
     .CardRadius {
-      border-radius: 8vw;
+      border-radius: 10px;
     }
     .CardPic {
-      border-radius: 8vw 8vw 0 0;
+      border-radius: 10px 10px 0 0;
     }
   }
 
@@ -62,7 +62,7 @@ const Styles = styled.div`
   .CardButton {
     font-size: 14px;
     padding: 1rem;
-    border-radius: 25px;
+    border-radius: 50px;
     filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.2));
   }
 
