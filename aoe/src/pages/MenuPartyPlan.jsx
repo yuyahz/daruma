@@ -51,7 +51,7 @@ export const PartyPlan = ({ data }) => {
                   2,000円 コース
                 </p> */}
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                    2,200円 コース
+                    2,500円 コース
                   </p>
                 </div>
                 <div className="MenuCapSet">
@@ -64,7 +64,7 @@ export const PartyPlan = ({ data }) => {
                   3,000円コース
                 </p> */}
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                    3,300円 コース
+                    3,500円 コース
                   </p>
                 </div>
                 <div className={"MenuTitle" + " " + "MenuTitleBgSub"}>
@@ -111,7 +111,7 @@ export const PartyPlan = ({ data }) => {
                   4,000円コース
                 </p> */}
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                    4,400円 コース
+                    4,500円 コース
                   </p>
                 </div>
                 <div className="MenuCapSet">
@@ -131,7 +131,7 @@ export const PartyPlan = ({ data }) => {
                   + 400円で中ライスとスープ小が追加できます。
                 </p> */}
                   <p className="MenuTitele">
-                    + 440円で中ライスとスープ小が追加できます。
+                    + 500円で中ライスとスープ小が追加できます。
                   </p>
                 </div>
                 <div className="MenuCap">
@@ -146,8 +146,8 @@ export const PartyPlan = ({ data }) => {
                   2,000円で120分飲み放題にできます。
                 </p> */}
                   <p className="MenuTitele">
-                    各コースに + 1,600円で90分 / +
-                    2,200円で120分飲み放題にできます。
+                    各コースに + 2,000円で90分 / +
+                    2,500円で120分飲み放題にできます。
                   </p>
                 </div>
 
