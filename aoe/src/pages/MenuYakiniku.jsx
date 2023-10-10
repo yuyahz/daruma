@@ -133,7 +133,8 @@ export const Yakiniku = ({ data }) => {
                   <p className="MenuTitele">よめなかせ</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp">580</span>¥300 */}
-                    <span className="MenuTextSp">¥630</span>¥350
+                    {/* <span className="MenuTextSp">¥630</span>¥350 */}
+                    <span className="MenuTextSp">¥780</span>¥460
                   </p>
                 </div>
                 <div className="MenuCap">

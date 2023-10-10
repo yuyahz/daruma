@@ -77,7 +77,8 @@ export const Lunch = ({ data }) => {
                   <p className="MenuText">
                     {/* <span className="MenuTextSpSingle"></span>¥1180 */}
                     {/* <span className="MenuTextSpSingle"></span>¥1290 */}
-                    <span className="MenuTextSpSingle"></span>¥1360
+                    {/* <span className="MenuTextSpSingle"></span>¥1360 */}
+                    <span className="MenuTextSpSingle"></span>¥1390
                   </p>
                 </div>
                 <div className="MenuCap">

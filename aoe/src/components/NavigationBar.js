@@ -37,7 +37,11 @@ const Styles = styled.div`
   }
 
   .mr-auto {
-    padding: 50px 0 100px 0;
+    padding: 24px 0 0 0;
+
+    @media screen and (min-width: 1920px) {
+      padding: 24px 0 6vw 0;
+    }
   }
 
   @media screen and (max-width: 992px) {
@@ -51,7 +55,11 @@ const Styles = styled.div`
   }
 
   .ml-auto {
-    padding: 50px 0 100px 0;
+    padding: 24px 0 0 0;
+
+    @media screen and (min-width: 1920px) {
+      padding: 24px 0 6vw 0;
+    }
   }
 
   @media screen and (max-width: 992px) {
