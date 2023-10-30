@@ -65,13 +65,12 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec order-sm-2">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">10月の定休日について</h3>
+                  <h3 className="title">11月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br font">
-                    10月のお休みは{" "}
-                    <strong>2日, 11日, 16日, 23日, 30日, 31日</strong>
+                    11月のお休みは <strong>6日, 13日, 20日, 27日</strong>
                     となります。
                   </p>
                   <p className="br">
@@ -80,12 +79,13 @@ export const NewsList = () => (
                 </Tab.Pane>
 
                 <Tab.Pane className="TabContent" eventKey="#link3">
-                  <h3 className="title">9月の定休日について</h3>
+                  <h3 className="title">10月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br font">
-                    9月のお休みは <strong>4日, 11日, 20日, 25日</strong>
+                    10月のお休みは{" "}
+                    <strong>2日, 11日, 16日, 23日, 30日, 31日</strong>
                     となります。
                   </p>
                   <p className="br">
@@ -129,10 +129,10 @@ export const NewsList = () => (
             <Col sm={4} className="order-sm-1">
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2023.9.26 <h6>10月の定休日について</h6>
+                  2023.10.30 <h6>11月の定休日について</h6>
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link3">
-                  2023.8.31 <h6>9月の定休日について</h6>
+                  2023.9.26 <h6>10月の定休日について</h6>
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link4">
                   2020.11.17 <h6>New HP</h6>
