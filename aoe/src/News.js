@@ -30,11 +30,12 @@ const Styles = styled.div`
     p {
       color: white;
       font-size: 1.5rem;
-    }
-
-    @media screen and (max-width: 992px) {
       margin-top: 2rem;
     }
+
+    /* @media screen and (max-width: 992px) {
+      margin-top: 2rem;
+    } */
   }
 `;
 
