@@ -65,7 +65,22 @@ export const NewsList = () => (
             <Col sm={8} className="NewsSec order-sm-2">
               <Tab.Content className="TabFrame">
                 <Tab.Pane className="TabContent" eventKey="#link">
-                  <h3 className="title">1月の定休日について</h3>
+                  <h3 className="title">2月の定休日について</h3>
+                  <p className="br">
+                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
+                  </p>
+                  <p className="br font">
+                    1月のお休みは
+                    <strong>5日, 6日, 7日, 14日, 19日, 26日</strong>
+                    となります。
+                  </p>
+                  <p className="br">
+                    スタッフ一同、心よりお待ちいたしております。
+                  </p>
+                </Tab.Pane>
+
+                <Tab.Pane className="TabContent" eventKey="#link2">
+                  <h3 className="title">2月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
@@ -75,24 +90,6 @@ export const NewsList = () => (
                   </p>
                   <p className="br">
                     スタッフ一同、心よりお待ちいたしております。
-                  </p>
-                </Tab.Pane>
-
-                <Tab.Pane className="TabContent" eventKey="#link2">
-                  <h3 className="title">12月の定休日について</h3>
-                  <p className="br">
-                    日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
-                  </p>
-                  <p className="br font">
-                    12月のお休みは <strong>4日, 11日, 18日, 25日</strong>
-                    、年末年始は <strong>31日, 1月1日</strong>
-                    になります。
-                  </p>
-                  <p className="br">
-                    来年も更にお客様に愛されるお店になれるよう努力して参ります。
-                  </p>
-                  <p className="br">
-                    本年も当店をご愛顧いただき、誠にありがとうございました。
                   </p>
                 </Tab.Pane>
 
@@ -132,10 +129,10 @@ export const NewsList = () => (
             <Col sm={4} className="order-sm-1">
               <ListGroup className="Tab">
                 <ListGroup.Item action href="#link">
-                  2024.1.1 <h6>1月の定休日について</h6>
+                  2024.1.31 <h6>2月の定休日について</h6>
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link2">
-                  2023.11.30 <h6>12月の定休日について</h6>
+                  2024.1.1 <h6>1月の定休日について</h6>
                 </ListGroup.Item>
                 <ListGroup.Item action href="#link3">
                   2020.11.17 <h6>New HP</h6>
