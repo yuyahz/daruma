@@ -70,7 +70,7 @@ export const NewsList = () => (
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
                   <p className="br font">
-                    1月のお休みは
+                    2月のお休みは
                     <strong>5日, 6日, 7日, 14日, 19日, 26日</strong>
                     となります。
                   </p>
@@ -80,7 +80,7 @@ export const NewsList = () => (
                 </Tab.Pane>
 
                 <Tab.Pane className="TabContent" eventKey="#link2">
-                  <h3 className="title">2月の定休日について</h3>
+                  <h3 className="title">1月の定休日について</h3>
                   <p className="br">
                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                   </p>
