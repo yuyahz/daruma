@@ -4,9 +4,9 @@ import Logo from "./assets/Logo.svg";
 import { Link } from "react-router-dom";
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
-  Routes,
 } from "react-router-dom";
 import { Home } from "./Home";
 import { News } from "./News";
@@ -22,7 +22,8 @@ import MenuItem from "./MenuItem";
 class App extends Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL + "/"}>
+      <HashRouter basename={process.env.PUBLIC_URL + "/"}>
+        {/* <Router basename={process.env.PUBLIC_URL + "/"}> */}
         {/* <React.Fragment> */}
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
@@ -47,7 +48,8 @@ class App extends Component {
           </Switch>
         </LayoutNav>
         {/* </React.Fragment> */}
-      </Router>
+        {/* </Router> */}
+      </HashRouter>
     );
   }
 }
