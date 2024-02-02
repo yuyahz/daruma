@@ -63,7 +63,7 @@ const Styles = styled.div`
     font-size: 14px;
     padding: 1rem;
     border-radius: 50px;
-    filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.2)); */
   }
 
   .CardButtonText {

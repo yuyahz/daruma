@@ -54,6 +54,10 @@ const Styles = styled.div`
   .list-group {
     filter: none;
   }
+
+  .order-sm-1 {
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  }
 `;
 
 export const NewsList = () => (

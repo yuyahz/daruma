@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import { Row, Col, Image } from "react-bootstrap";
-import TopLogo from "./assets/TopLogo.svg";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Logo from "./assets/Logo.svg";
+import { Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+} from "react-router-dom";
 import { Home } from "./Home";
 import { News } from "./News";
 import { Info } from "./Info";
@@ -16,30 +22,32 @@ import MenuItem from "./MenuItem";
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <Router basename={process.env.PUBLIC_URL + "/"}>
+        {/* <React.Fragment> */}
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
-            <div className="d-none d-lg-block">
-              <Image className="TopLogo" src={TopLogo} alt="Logo" fluid />
-            </div>
+            <Link to="/">
+              <div className="d-none d-lg-block">
+                <Image className="HomeLogo" src={Logo} alt="HomeLogo" fluid />
+              </div>
+            </Link>
           </Col>
         </Row>
         <NavigationBar />
         <LayoutNav>
-          {/* <Router basename={process.env.PUBLIC_URL + "/"}> */}
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route path="/" component={Home} exact />
             <Route path="/news" component={News} />
-            <Route exact path="/menu" component={Menu} />
+            <Route path="/menu" component={Menu} exact />
             <Route path="/menu/:id" component={MenuItem} />
             <Route path="/info" component={Info} />
             <Route path="/recruit" component={Recruit} />
             <Route path="/rent" component={Rent} />
-            <Route component={NoMatch} />
+            <Route path="*" component={NoMatch} />
           </Switch>
-          {/* </Router> */}
         </LayoutNav>
-      </React.Fragment>
+        {/* </React.Fragment> */}
+      </Router>
     );
   }
 }

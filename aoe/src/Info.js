@@ -25,7 +25,7 @@ const Styles = styled.div`
     padding-bottom: 3%;
     font-family: "Noto Serif JP", serif;
     background: linear-gradient(transparent 30%, #007bff 30%);
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 
   .InfoPic {

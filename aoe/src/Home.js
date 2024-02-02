@@ -17,12 +17,13 @@ import IntroPic_2 from "./assets/IntroPic_2.png";
 import IntroPic_3 from "./assets/IntroPic_3.png";
 import Takeout from "./assets/Takeout.svg";
 import TakeoutDeco from "./assets/TakeoutDeco.svg";
+import TitleMainDecoBlue from "./assets/TitleMainDeco-Blue.svg";
 import PointCard from "./assets/PointCard.svg";
 import PointCardDeco from "./assets/PointCardDeco.svg";
-
 import { IconContext } from "react-icons";
 import { FaShoppingBag } from "react-icons/fa";
 import { GiFruitTree } from "react-icons/gi";
+import { FaFax } from "react-icons/fa";
 
 export const Home = () => (
   <Container fluid={true} className="ForBicScreen">
@@ -100,7 +101,7 @@ export const Home = () => (
       <Container fluid className="CarouselBg d-none d-sm-block">
         <Row>
           <Col sm={6} className="align-self-center">
-            <Carousel className="CarouselShadow">
+            <Carousel>
               <Carousel.Item>
                 <Image
                   className="d-block w-100 CarouselPic"
@@ -144,15 +145,17 @@ export const Home = () => (
           <Row className="IntroInsideSec" xs={1} md={2}>
             <Col>
               <FadeIn.Left>
-                <Image className="IntroPic" src={IntroPic_1} rounded />
+                <Image
+                  className="IntroPic"
+                  src={IntroPic_1}
+                  style={{ borderRadius: "25px" }}
+                />
               </FadeIn.Left>
             </Col>
 
             <Col className="IntroCaption">
               <div className="IntroCaption2">
-                <h2 className="IntroCaptionTitle1">
-                  受け継がれる<h2 className="br_TopPage">秘伝のタレ</h2>
-                </h2>
+                <h2 className="IntroCaptionTitle2">受け継がれる秘伝のタレ</h2>
                 <p className="IntroCaptionP">
                   ダルマのタレは、10種類以上の厳選された素材を独自の製法でブレンドした、秘伝の味。
                   創業から変わらず、
@@ -181,7 +184,11 @@ export const Home = () => (
 
             <Col xs={{ order: 1 }} md={{ order: 12 }}>
               <FadeIn.Right>
-                <Image className="IntroPic" src={IntroPic_2} rounded />
+                <Image
+                  className="IntroPic"
+                  src={IntroPic_2}
+                  style={{ borderRadius: "25px" }}
+                />
               </FadeIn.Right>
             </Col>
           </Row>
@@ -193,7 +200,11 @@ export const Home = () => (
           <Row className="IntroInsideSec" xs={1} md={2}>
             <Col>
               <FadeIn.Left>
-                <Image className="IntroPic" src={IntroPic_3} rounded />
+                <Image
+                  className="IntroPic"
+                  src={IntroPic_3}
+                  style={{ borderRadius: "25px" }}
+                />
               </FadeIn.Left>
             </Col>
             <Col className="IntroCaption">
@@ -224,15 +235,13 @@ export const Home = () => (
       <Row className="bg">
         <Col md={{ span: 10, offset: 1 }}>
           <Row className="Point" xs={1} md={2}>
-            <Col xs={6} md={4}>
-              <FadeIn.Up>
-                <Image
-                  className="PointDeco d-none d-sm-block"
-                  src={PointCardDeco}
-                  alt="PointCardDeco"
-                  fluid
-                />
-              </FadeIn.Up>
+            <Col xs={6} md={4} className="deco-mini-logo">
+              <Image
+                className="mini-logo-top d-none d-lg-block"
+                src={TitleMainDecoBlue}
+                alt="TakeoutDeco"
+                fluid
+              />
             </Col>
             <Col xs={12} md={8}>
               <FadeIn.Up>
@@ -254,20 +263,36 @@ export const Home = () => (
             <Col xs={12} md={8}>
               <FadeIn.Up>
                 <a href={require("./assets/Document.pdf")} target="_blank">
-                  <Image
-                    className="TakeoutBtn"
-                    src={Takeout}
-                    alt="Takeout"
-                    ontouchstart=""
-                    fluid
-                  />
+                  <div className="takeout-container">
+                    <IconContext.Provider
+                      value={{ color: "white", size: "30%" }}
+                    >
+                      <FaFax className="d-none d-md-block" />
+                    </IconContext.Provider>
+
+                    <ol type="1" className="against-reboot">
+                      <IconContext.Provider
+                        value={{ color: "white", size: "40px" }}
+                      >
+                        <FaFax className="d-md-none d-lg-none d-xl-none mb-3" />
+                      </IconContext.Provider>
+                      <li style={{ paddingBottom: "6px" }}>
+                        お持ち帰りをご希望のお客様は<u>こちらを</u>
+                        クリックして頂き、FAX用紙をダウンロード
+                      </li>
+                      <li style={{ paddingBottom: "6px" }}>
+                        必要事項を記入後、当店まで送付して頂きます
+                      </li>
+                      <li>受け取り完了後、指定日に商品をお引き取りください</li>
+                    </ol>
+                  </div>
                 </a>
               </FadeIn.Up>
             </Col>
-            <Col xs={6} md={4}>
+            <Col xs={6} md={4} className="deco-mini-logo">
               <Image
-                className="TakeoutDeco d-none d-sm-block"
-                src={TakeoutDeco}
+                className="mini-logo-bottom d-none d-lg-block"
+                src={TitleMainDecoBlue}
                 alt="TakeoutDeco"
                 fluid
               />

@@ -4,14 +4,15 @@
   }
 }
 
-.TopLogo {
+.HomeLogo {
   max-width: 110px;
-  position: absolute;
+  position: fixed;
   width: 15%;
   right: 50%;
   left: 50%;
   transform: translateX(-50%);
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  z-index: 99999;
 }
 
 .Title {
@@ -70,7 +71,6 @@
   right: 0;
   max-width: 18px;
   transform: translateX(-50%);
-  filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.523));
   -webkit-animation: blink 1.5s ease-in-out infinite alternate;
   -moz-animation: blink 1.5s ease-in-out infinite alternate;
   animation: blink 1.5s ease-in-out infinite alternate;
@@ -114,7 +114,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 50px;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -144,7 +144,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 50px;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -206,39 +206,35 @@
   background-color: #fff;
   width: 100%;
   padding: 5% 10%;
-  border-radius: 30px;
+  border-radius: 25px;
   /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .carousel-control-prev {
   filter: drop-shadow(2px 3px 5px rgba(33, 33, 33, 0.5));
-  opacity: 0.6;
+  opacity: 1;
 }
 
-.carousel-control-prev-icon {
+/* .carousel-control-prev-icon {
   width: 30px;
   height: 30px;
-}
+} */
 
 .carousel-control-next {
   filter: drop-shadow(2px 3px 5px rgba(33, 33, 33, 0.5));
-  opacity: 0.6;
+  opacity: 1;
 }
 
-.carousel-control-next-icon {
+/* .carousel-control-next-icon {
   width: 30px;
   height: 30px;
-}
+} */
 
 @media screen and (min-width: 767px) {
   .CarouselPic {
     margin: 0 auto;
     /* max-width: 400px; */
   }
-}
-
-.CarouselShadow {
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.4));
 }
 
 .CarouselCap {
@@ -298,16 +294,16 @@
 
 .IntroCaptionTitle2 {
   font-size: 32px;
-  padding-bottom: 10%;
+  padding-bottom: 3%;
 }
 
-.br_TopPage {
+/* .br_TopPage {
   white-space: pre-wrap;
   font-family: "Noto Serif JP", serif;
   font-size: 32px;
   color: #f3f0db;
-  padding-bottom: 10%;
-}
+  padding-bottom: 3%;
+} */
 
 .IntroCaptionP {
   font-size: 14px;
@@ -402,7 +398,7 @@
 
 @media screen and (max-width: 576px) {
   .PointBtn {
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
   }
 }
 
@@ -410,11 +406,6 @@
   text-align: center;
   margin: 5% 0 20% 0;
   /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
-}
-
-.TakeoutDeco {
-  float: right;
-  padding: 20%;
 }
 
 .TakeoutBtn {
@@ -460,4 +451,63 @@
   width: 100%;
   height: 100vh;
   background-color: yellow;
+}
+
+.takeout-container {
+  min-width: 563px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 60px;
+  transition: 0.2s cubic-bezier(0.65, 0, 0.16, 1);
+}
+
+.takeout-container:hover {
+  transition: 0.2s cubic-bezier(0.65, 0, 0.16, 1);
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.against-reboot {
+  margin-top: 1rem;
+}
+
+.deco-mini-logo {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 690px) {
+  .takeout-container {
+    min-width: 0;
+    padding: 2.899vw 7.246vw;
+    /* border-radius: 20px; */
+  }
+}
+
+.mini-logo-top {
+  width: 20%;
+  rotate: -14deg;
+}
+
+.mini-logo-bottom {
+  width: 20%;
+  rotate: 14deg;
+}
+
+ul,
+ol {
+  padding-inline-start: 60px;
+  /* list-style-position: inside; */
+}
+
+@media screen and (max-width: 767px) {
+  ul,
+  ol {
+    padding-inline-start: 0;
+    /* list-style-position: inside; */
+  }
 }

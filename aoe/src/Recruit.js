@@ -18,6 +18,10 @@ const Styles = styled.div`
 
   .RecruitTopSec {
     padding: 5% 0;
+
+    @media screen and (max-width: 992px) {
+      padding: 10% 0;
+    }
   }
 
   .RecruitBottomSec {
@@ -26,20 +30,22 @@ const Styles = styled.div`
 
   .RecruitTitle {
     padding-bottom: 3%;
-    margin-bottom: 2%;
+    margin-bottom: 6%;
     font-family: "Noto Serif JP", serif;
     background: linear-gradient(transparent 30%, #007bff 30%);
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 
   .RecruitSubTitle {
-    padding: 5% 0;
+    padding-top: 5%;
     margin-bottom: 5%;
     font-family: "Noto Serif JP", serif;
     border-bottom: solid 1px #007bff;
   }
 
   .RecruitTitleText {
+    margin: 0 auto;
+    max-width: 600px;
     font-family: "Noto Serif JP", serif;
   }
 
@@ -53,7 +59,7 @@ const Styles = styled.div`
     display: block;
     height: auto;
     max-width: 100%;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 `;
 
@@ -85,7 +91,11 @@ export const Recruit = () => (
                 <div className="RecruitText">
                   <h3 className="RecruitSubTitle">ホールスタッフ</h3>
                   <p>条件　16歳以上　土日勤務可能な方</p>
-                  <p>・11時～22時の内5時間程度　※ラストまで入れる方歓迎</p>
+                  <p>
+                    ・11時～22時の内5時間程度　
+                    <br />
+                    ※ラストまで入れる方歓迎
+                  </p>
                   <p>・時給 ￥1000 ・研修期間中 ￥950</p>
                   <p>・勤務時間、勤務日数は相談に応じます</p>
                   <p>・食事付き・制服給与</p>
@@ -107,7 +117,11 @@ export const Recruit = () => (
                 <div className="RecruitText">
                   <h3 className="RecruitSubTitle">キッチンスタッフ</h3>
                   <p>条件　16歳以上　土日勤務可能な方</p>
-                  <p>・11時～22時の内5時間程度　※ラストまで入れる方歓迎</p>
+                  <p>
+                    ・11時～22時の内5時間程度　
+                    <br />
+                    ※ラストまで入れる方歓迎
+                  </p>
                   <p>・時給 ￥1000 ・研修期間中 ￥950</p>
                   <p>・勤務時間、勤務日数は相談に応じます</p>
                   <p>・食事付き・制服給与</p>

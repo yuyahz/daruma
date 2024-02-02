@@ -39,7 +39,7 @@ const Styles = styled.div`
     margin-bottom: 2%;
     font-family: "Noto Serif JP", serif;
     background: linear-gradient(transparent 30%, #007bff 30%);
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 
   .RentText {
@@ -77,7 +77,7 @@ const Styles = styled.div`
     display: block;
     height: auto;
     max-width: 100%;
-    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 
   .RentBr {
