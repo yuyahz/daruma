@@ -11,7 +11,7 @@ const Styles = styled.div`
 
   .Article {
     margin: 3% 0 20% 0;
-    padding: 0 3%;
+    /* padding: 0 3%; */
     /* background-color: white; */
     border-radius: 15px;
     /* filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3)); */
@@ -30,7 +30,13 @@ const Styles = styled.div`
     p {
       color: white;
       font-size: 1.5rem;
-      margin-top: 2rem;
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    @media screen and (max-width: 992px) {
+      p {
+        margin: 3rem 0 0 0;
+      }
     }
 
     /* @media screen and (max-width: 992px) {
@@ -48,7 +54,7 @@ export const News = () => (
         </Col>
       </Row>
       <Row>
-        <Col md={{ span: 10, offset: 1 }}>
+        <Col lg={{ span: 10, offset: 1 }}>
           <div className="Article">
             <NewsList />
           </div>

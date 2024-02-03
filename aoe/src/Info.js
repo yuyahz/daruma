@@ -15,16 +15,14 @@ const Styles = styled.div`
   .InfoSecTitle {
     padding-top: 2%;
     text-align: center;
-
-    @media screen and (max-width: 992px) {
-      margin-top: 2rem;
-    }
   }
 
   .InfoTitle {
-    padding-bottom: 3%;
+    padding: 2.5% 3% 2.5% 3%;
+    margin-bottom: 8%;
     font-family: "Noto Serif JP", serif;
-    background: linear-gradient(transparent 30%, #007bff 30%);
+    background: linear-gradient(transparent 0%, #007bff 0%);
+    border-radius: 8px;
     /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 
@@ -46,13 +44,12 @@ const Styles = styled.div`
   }
 
   .InfoFrame {
-    margin: 13% 5% 15%;
+    margin: 0 2rem 2rem;
     padding: 3% 3% 1%;
     font-family: "Noto Serif JP", serif;
     background-color: #c73d13;
     border: 4px double #007bff;
     border-radius: 1rem;
-    filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
   }
 
   .InfoCap {

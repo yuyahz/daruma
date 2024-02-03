@@ -12,7 +12,7 @@ const Styles = styled.div`
     text-align: center;
 
     @media screen and (max-width: 992px) {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
   }
 
@@ -29,10 +29,11 @@ const Styles = styled.div`
   }
 
   .RecruitTitle {
-    padding-bottom: 3%;
-    margin-bottom: 6%;
+    padding: 2.5% 3% 2.5% 3%;
+    margin-bottom: 8%;
     font-family: "Noto Serif JP", serif;
-    background: linear-gradient(transparent 30%, #007bff 30%);
+    background: linear-gradient(transparent 0%, #007bff 0%);
+    border-radius: 8px;
     /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 

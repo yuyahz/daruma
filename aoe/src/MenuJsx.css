@@ -14,7 +14,7 @@
 
 .MenuTitle {
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1.5rem 0 2rem 0;
 }
 
 .AssetTitle {
@@ -22,16 +22,17 @@
 }
 
 @media screen and (max-width: 992px) {
+  .MenuTitle {
+    margin: 3rem 0 1.5rem 0;
+  }
   .AssetTitle {
-    width: 35%;
-    margin-top: 2rem;
+    width: 180px;
   }
 }
 
 @media screen and (max-width: 575px) {
   .AssetTitle {
-    width: 45%;
-    margin-bottom: 1rem;
+    width: 140px;
   }
 }
 

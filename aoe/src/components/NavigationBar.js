@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .navbar {
-    margin: 0% 6% 0% 6%;
+    margin: 0% 6% 3% 6%;
     position: relative;
     z-index: 1000;
     font-weight: bold;
@@ -14,7 +14,7 @@ const Styles = styled.div`
 
   @media screen and (max-width: 992px) {
     .navbar {
-      margin: 6% 0 0 6%;
+      margin: 5% 0 0 6%;
     }
   }
 
@@ -36,12 +36,18 @@ const Styles = styled.div`
     }
   }
 
+  .ml-auto {
+    padding: 24px 0 0 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    .ml-auto {
+      padding: 3% 0;
+    }
+  }
+
   .mr-auto {
     padding: 24px 0 0 0;
-
-    @media screen and (min-width: 1920px) {
-      padding: 24px 0 6vw 0;
-    }
   }
 
   @media screen and (max-width: 992px) {
@@ -51,20 +57,6 @@ const Styles = styled.div`
       button {
         width: 230px;
       }
-    }
-  }
-
-  .ml-auto {
-    padding: 24px 0 0 0;
-
-    @media screen and (min-width: 1920px) {
-      padding: 24px 0 6vw 0;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    .ml-auto {
-      padding: 3% 0;
     }
   }
 `;

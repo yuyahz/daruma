@@ -18,7 +18,7 @@ const Styles = styled.div`
 
   @media screen and (max-width: 992px) {
     .RentSecTitle {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
   }
 
@@ -35,10 +35,11 @@ const Styles = styled.div`
   }
 
   .RentTitle {
-    padding-bottom: 3%;
-    margin-bottom: 2%;
+    padding: 2.5% 3% 1% 3%;
+    margin-bottom: 8%;
     font-family: "Noto Serif JP", serif;
-    background: linear-gradient(transparent 30%, #007bff 30%);
+    background: linear-gradient(transparent 0%, #007bff 0%);
+    border-radius: 8px;
     /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 
@@ -56,16 +57,10 @@ const Styles = styled.div`
   }
 
   .RentSubTitle {
-    padding: 20% 0 5%;
+    padding-top: 5%;
     margin-bottom: 5%;
     font-family: "Noto Serif JP", serif;
     border-bottom: solid 1px #007bff;
-  }
-
-  @media screen and (max-width: 768px) {
-    .RentSubTitle {
-      padding: 3% 0 5%;
-    }
   }
 
   .RentCaption {

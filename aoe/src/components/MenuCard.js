@@ -7,7 +7,7 @@ import * as FadeIn from "./FadeIn";
 
 const Styles = styled.div`
   .SideSpace {
-    margin: 0% 5% 5% 5%;
+    margin: 7% 5% 5% 5%;
     -webkit-flex-direction: row;
     flex-direction: row;
   }
@@ -21,7 +21,7 @@ const Styles = styled.div`
       padding: 10% 0;
 
       :first-child {
-        padding-top: 30%;
+        padding-top: 10%;
       }
 
       :last-child {

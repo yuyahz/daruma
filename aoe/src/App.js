@@ -28,7 +28,7 @@ class App extends Component {
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
             <Link to="/">
-              <div className="d-none d-lg-block">
+              <div>
                 <Image className="HomeLogo" src={Logo} alt="HomeLogo" fluid />
               </div>
             </Link>
