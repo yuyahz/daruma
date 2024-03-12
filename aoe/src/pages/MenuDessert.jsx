@@ -44,7 +44,7 @@ export const Dessert = ({ data }) => {
                   </p>
                 </div>
                 <div className="MenuCap">
-                  <p className="MenuTitele">オレンジシャーベット（果肉入り）</p>
+                  <p className="MenuTitele">ココナッツシャーベット</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥510 */}
                     {/* <span className="MenuTextSp"></span>¥560 */}
@@ -52,7 +52,7 @@ export const Dessert = ({ data }) => {
                   </p>
                 </div>
                 <div className="MenuCap">
-                  <p className="MenuTitele">アップルシャーベット（果肉入り）</p>
+                  <p className="MenuTitele">ピーチシャーベット</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥510 */}
                     {/* <span className="MenuTextSp"></span>¥560 */}
@@ -60,7 +60,7 @@ export const Dessert = ({ data }) => {
                   </p>
                 </div>
                 <div className="MenuCap">
-                  <p className="MenuTitele">パインシャーベット（果肉入り）</p>
+                  <p className="MenuTitele">パインシャーベット (果肉入り)</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥530 */}
                     {/* <span className="MenuTextSp"></span>¥580 */}
@@ -68,7 +68,7 @@ export const Dessert = ({ data }) => {
                   </p>
                 </div>
                 <div className="MenuCap">
-                  <p className="MenuTitele">かぼちゃMINIアイス</p>
+                  <p className="MenuTitele">カカオショコラアイス</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥530 */}
                     {/* <span className="MenuTextSp"></span>¥580 */}
@@ -76,7 +76,7 @@ export const Dessert = ({ data }) => {
                   </p>
                 </div>
                 <div className="MenuCap">
-                  <p className="MenuTitele">生チョコアイス（チョコ・抹茶）</p>
+                  <p className="MenuTitele">生チョコアイス (チョコ・抹茶)</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥370 */}
                     {/* <span className="MenuTextSp"></span>¥400 */}
