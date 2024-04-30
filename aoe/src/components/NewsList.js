@@ -85,10 +85,10 @@ export const NewsList = () => {
                   <ListGroup.Item
                     action
                     href="Article"
-                    active={selectedTab === "Article"}
-                    onClick={(e) => handleTabSelect("Article", e)}
+                    active={selectedTab === "Article0"}
+                    onClick={(e) => handleTabSelect("Article0", e)}
                   >
-                    2024.3.31 <h6>4月定休日</h6>
+                    2024.4.30 <h6>5月定休日</h6>
                   </ListGroup.Item>
                   <ListGroup.Item
                     action
@@ -96,7 +96,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article2"}
                     onClick={(e) => handleTabSelect("Article2", e)}
                   >
-                    2024.2.28 <h6>3月定休日</h6>
+                    2024.3.31 <h6>4月定休日</h6>
                   </ListGroup.Item>
                   <ListGroup.Item
                     action
@@ -120,12 +120,13 @@ export const NewsList = () => {
               <Col sm={8} className="NewsSec order-sm-2">
                 <Tab.Content className="TabFrame">
                   <Tab.Pane className="TabContent" eventKey="Article">
-                    <h3 className="title">4月の定休日について</h3>
+                    <h3 className="title">5月の定休日について</h3>
                     <p className="br">
                       日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                     </p>
                     <p className="br font">
-                      4月のお休みは <strong>1日, 8日, 15日, 22日</strong>
+                      5月のお休みは
+                      <strong>1日, 8日, 13日, 20日, 21日, 22日, 27日</strong>
                       となります。
                     </p>
                     <p className="br">
@@ -134,12 +135,12 @@ export const NewsList = () => {
                   </Tab.Pane>
 
                   <Tab.Pane className="TabContent" eventKey="Article2">
-                    <h3 className="title">3月の定休日について</h3>
+                    <h3 className="title">4月の定休日について</h3>
                     <p className="br">
                       日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                     </p>
                     <p className="br font">
-                      3月のお休みは <strong>4日, 11日, 18日, 25日</strong>
+                      4月のお休みは <strong>1日, 8日, 15日, 22日</strong>
                       となります。
                     </p>
                     <p className="br">
