@@ -100,6 +100,15 @@ export const Home = () => (
     <div className="restrict-width">
       <Container fluid className="CarouselBg d-none d-sm-block">
         <Row>
+          <Col sm={6} className="CarouselCap align-self-center">
+            <div className="CarouselText">
+              <p>六 十 年 守 り 続 け た</p>
+              <p>味 を そ の ま ま に</p>
+              <p>昔 か ら 変 わ ら ぬ</p>
+              <p>伝 統 の 味 を 届 け る 為 に</p>
+              <p>そ し て こ れ か ら も 。</p>
+            </div>
+          </Col>
           <Col sm={6} className="align-self-center">
             <Carousel>
               <Carousel.Item>
@@ -127,15 +136,6 @@ export const Home = () => (
                 />
               </Carousel.Item>
             </Carousel>
-          </Col>
-          <Col sm={6} className="CarouselCap align-self-center">
-            <div className="CarouselText">
-              <p>六 十 年 守 り 続 け た</p>
-              <p>味 を そ の ま ま に</p>
-              <p>昔 か ら 変 わ ら ぬ</p>
-              <p>伝 統 の 味 を 届 け る 為 に</p>
-              <p>そ し て こ れ か ら も 。</p>
-            </div>
           </Col>
         </Row>
       </Container>
