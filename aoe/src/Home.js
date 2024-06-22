@@ -278,12 +278,14 @@ export const Home = () => (
                       </IconContext.Provider>
                       <li style={{ paddingBottom: "6px" }}>
                         お持ち帰りをご希望のお客様は<u>こちらを</u>
-                        クリックして頂き、FAX用紙をダウンロード
+                        クリックして頂き、FAX用紙をダウンロード。
                       </li>
                       <li style={{ paddingBottom: "6px" }}>
-                        必要事項を記入後、当店まで送付して頂きます
+                        必要事項を記入後、当店まで送付して頂きます。
                       </li>
-                      <li>受け取り完了後、指定日に商品をお引き取りください</li>
+                      <li>
+                        受け取り完了後、指定日に商品をお引き取りください。
+                      </li>
                     </ol>
                   </div>
                 </a>

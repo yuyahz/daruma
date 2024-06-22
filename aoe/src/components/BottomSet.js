@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
-import CardList from "../assets/CardList.svg";
+import CardList from "../assets/CardList-v2.svg";
 import Contact from "../assets/Contact.svg";
 import Copylight from "../assets/Copylight.svg";
 
