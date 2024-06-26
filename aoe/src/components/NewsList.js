@@ -126,7 +126,7 @@ export const NewsList = () => {
                     </p>
                     <p className="br font">
                       7月のお休みは
-                      <strong>1日, 8日, 17日, 22日, 29日</strong>
+                      <strong>1日, 2日, 8日, 17日, 22日, 29日</strong>
                       となります。
                     </p>
                     <p className="br">
