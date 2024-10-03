@@ -88,7 +88,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article"}
                     onClick={(e) => handleTabSelect("Article", e)}
                   >
-                    2024.8.31 <h6>9月定休日</h6>
+                    2024.9.30 <h6>10月定休日</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -97,7 +97,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article2"}
                     onClick={(e) => handleTabSelect("Article2", e)}
                   >
-                    2024.7.30 <h6>8月定休日</h6>
+                    2024.8.31 <h6>9月定休日</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -123,13 +123,13 @@ export const NewsList = () => {
               <Col sm={8} className="NewsSec order-sm-2">
                 <Tab.Content className="TabFrame">
                   <Tab.Pane className="TabContent" eventKey="Article">
-                    <h3 className="title">9月の定休日について</h3>
+                    <h3 className="title">10月の定休日について</h3>
                     <p className="br">
                       日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                     </p>
                     <p className="br font">
-                      9月のお休みは
-                      <strong>2日, 3日, 4日, 5日, 9日, 18日, 25日, 30日</strong>
+                      10月のお休みは
+                      <strong>7日, 16日, 21日, 22日, 23日, 24日, 28日</strong>
                       となります。
                     </p>
                     <p className="br">
@@ -138,12 +138,13 @@ export const NewsList = () => {
                   </Tab.Pane>
 
                   <Tab.Pane className="TabContent" eventKey="Article2">
-                    <h3 className="title">8月の定休日について</h3>
+                    <h3 className="title">9月の定休日について</h3>
                     <p className="br">
                       日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                     </p>
                     <p className="br font">
-                      8月のお休みは <strong>5日, 16日, 19日, 26日</strong>
+                      9月のお休みは
+                      <strong>2日, 3日, 4日, 5日, 9日, 18日, 25日, 30日</strong>
                       となります。
                     </p>
                     <p className="br">
