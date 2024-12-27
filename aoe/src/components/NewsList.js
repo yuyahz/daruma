@@ -88,7 +88,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article"}
                     onClick={(e) => handleTabSelect("Article", e)}
                   >
-                    2024.11.30 <h6>12月定休日</h6>
+                    2024.12.27 <h6>ご挨拶と年末年始定休日のお知らせ</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -123,18 +123,34 @@ export const NewsList = () => {
               <Col sm={8} className="NewsSec order-sm-2">
                 <Tab.Content className="TabFrame">
                   <Tab.Pane className="TabContent" eventKey="Article">
-                    <h3 className="title">12月の定休日について</h3>
+                    <h3 className="title">ご挨拶と年末年始定休日のお知らせ</h3>
                     <p className="br">
-                      日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
+                      今年も早いもので、年末のご挨拶をさせていただく時期となりました。
+                      <br />
+                      皆様におかれましては、ますますご清栄のこととお慶び申し上げます。
+                      <br />
+                      本年も沢山の皆様にご来店いただきました。 <br />
+                      厚くお礼申し上げます。
                     </p>
                     <p className="br font">
-                      12月のお休みは
-                      <strong>2日, 9日, 16日, 23日, 24日, 31日</strong>
+                      年末年始のお休みは
+                      <strong> 12月31日</strong> ~ <strong>1月1日</strong>
+                      となります。
+                    </p>
+                    <p className="br font">
+                      2025年1月の定休日は
+                      <strong> 6日</strong>,&nbsp;<strong>7日</strong>,&nbsp;
+                      <strong>15日</strong>,&nbsp;<strong>20日</strong>,&nbsp;
+                      <strong>27日</strong>
                       となります。
                     </p>
                     <p className="br">
-                      スタッフ一同、心よりお待ちいたしております。
+                      来年も相変わらぬご高配を頂けますようお願い申し上げて、{" "}
+                      <br />
+                      歳末のご挨拶とさせて頂きます。 <br />
+                      それではよいお年をお過ごしくださいませ。
                     </p>
+                    <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
                   </Tab.Pane>
 
                   <Tab.Pane className="TabContent" eventKey="Article2">
