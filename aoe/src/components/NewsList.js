@@ -4,23 +4,23 @@ import { Row, Col, ListGroup, Tab } from "react-bootstrap";
 import styled from "styled-components";
 
 const Styles = styled.div`
-  .NewsSec {
+  .contents {
     font-family: "Noto Serif JP", serif;
     color: #f3f0db;
   }
 
-  .Tab {
+  .tab {
     margin: 6%;
   }
 
-  .TabFrame {
+  .tabFrame {
     border: 5px solid #fff;
     border-radius: 15px;
     /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
     background-color: #007bff;
   }
 
-  .TabContent {
+  .tabContent {
     margin: 8%;
   }
 
@@ -38,7 +38,7 @@ const Styles = styled.div`
     font-weight: medium;
   }
 
-  .Calender {
+  .calender {
     margin: 8% 0 8% 0;
     text-align: center;
     padding: 3%;
@@ -55,7 +55,7 @@ const Styles = styled.div`
     filter: none;
   }
 
-  .order-sm-1 {
+  .date {
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
   }
 
@@ -80,15 +80,15 @@ export const NewsList = () => {
         <Col>
           <Tab.Container activeKey={selectedTab} onSelect={handleTabSelect}>
             <Row>
-              <Col sm={4} className="order-sm-1">
-                <ListGroup className="Tab">
+              <Col sm={12} lg={4} className="date order-2 order-lg-1">
+                <ListGroup className="tab">
                   <ListGroup.Item
                     action
                     href="Article"
                     active={selectedTab === "Article"}
                     onClick={(e) => handleTabSelect("Article", e)}
                   >
-                    2024.12.27 <h6>ご挨拶と年末年始定休日のお知らせ</h6>
+                    2025.1.1 <h6>新年のご挨拶と1月定休日のお知らせ</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -97,7 +97,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article2"}
                     onClick={(e) => handleTabSelect("Article2", e)}
                   >
-                    2024.10.31 <h6>11月定休日</h6>
+                    2024.12.27 <h6>ご挨拶と年末年始定休日のお知らせ</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -120,9 +120,32 @@ export const NewsList = () => {
                 </ListGroup>
               </Col>
 
-              <Col sm={8} className="NewsSec order-sm-2">
-                <Tab.Content className="TabFrame">
-                  <Tab.Pane className="TabContent" eventKey="Article">
+              <Col sm={12} lg={8} className="contents order-1 order-lg-2">
+                <Tab.Content className="tabFrame">
+                  <Tab.Pane className="tabContent" eventKey="Article">
+                    <h3 className="title">
+                      🎍 新年あけましておめでとうございます 🐍
+                    </h3>
+                    <p className="br">
+                      皆様におかれましては輝かしい新年をお迎えのこととお喜び申し上げます。
+                      <br />
+                      まだまだ寒さ厳しき折ではございますが、皆様方におかれましては風邪など引かないようお気をつけくださいませ。
+                    </p>
+                    <p className="br font">
+                      2025年1月の定休日は
+                      <strong> 6日</strong>,&nbsp;<strong>7日</strong>,&nbsp;
+                      <strong>15日</strong>,&nbsp;<strong>20日</strong>,&nbsp;
+                      <strong>27日</strong>
+                      となります。
+                    </p>
+                    <p className="br">
+                      今年もたくさんのお客様にご満足いただけるよう、スタッフ一同力を尽くしてまいります！
+                      本年も何卒よろしくお願い申し上げます。
+                    </p>
+                    <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
+                  </Tab.Pane>
+
+                  <Tab.Pane className="tabContent" eventKey="Article2">
                     <h3 className="title">ご挨拶と年末年始定休日のお知らせ</h3>
                     <p className="br">
                       今年も早いもので、年末のご挨拶をさせていただく時期となりました。
@@ -153,22 +176,7 @@ export const NewsList = () => {
                     <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
                   </Tab.Pane>
 
-                  <Tab.Pane className="TabContent" eventKey="Article2">
-                    <h3 className="title">11月の定休日について</h3>
-                    <p className="br">
-                      日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
-                    </p>
-                    <p className="br font">
-                      11月のお休みは
-                      <strong>6日, 7日, 11日, 18日, 25日</strong>
-                      となります。
-                    </p>
-                    <p className="br">
-                      スタッフ一同、心よりお待ちいたしております。
-                    </p>
-                  </Tab.Pane>
-
-                  <Tab.Pane className="TabContent" eventKey="Article3">
+                  <Tab.Pane className="tabContent" eventKey="Article3">
                     <h3 className="title">
                       ホームページリニューアルのお知らせ
                     </h3>
@@ -186,7 +194,7 @@ export const NewsList = () => {
                     </p>
                   </Tab.Pane>
 
-                  <Tab.Pane className="TabContent" eventKey="Article4">
+                  <Tab.Pane className="tabContent" eventKey="Article4">
                     <h3 className="title">義援金、店頭募金送金のご報告</h3>
                     <p className="br">
                       被災地の少しでも早い復興をお祈り申し上げます。
@@ -215,7 +223,7 @@ export const NewsList = () => {
 // import React from "react";
 // import { Row, Col, Image, ListGroup, Tab, TabContent } from "react-bootstrap";
 // import styled from "styled-components";
-// import Calender from "../assets/Calender2022_2023.svg";
+// import calender from "../assets/calender2022_2023.svg";
 
 // const Styles = styled.div`
 //   .NewsSec {
@@ -252,7 +260,7 @@ export const NewsList = () => {
 //     font-weight: medium;
 //   }
 
-//   .Calender {
+//   .calender {
 //     margin: 8% 0 8% 0;
 //     text-align: center;
 //     padding: 3%;
@@ -281,8 +289,8 @@ export const NewsList = () => {
 //         <Tab.Container defaultActiveKey="Article">
 //           <Row>
 //             <Col sm={9} className="NewsSec order-sm-2">
-//               <Tab.Content className="TabFrame">
-//                 <Tab.Pane className="TabContent" eventKey="Article">
+//               <Tab.Content className="tabFrame">
+//                 <Tab.Pane className="tabContent" eventKey="Article">
 //                   <h3 className="title">2月の定休日について</h3>
 //                   <p className="br">
 //                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -297,7 +305,7 @@ export const NewsList = () => {
 //                   </p>
 //                 </Tab.Pane>
 
-//                 <Tab.Pane className="TabContent" eventKey="Article2">
+//                 <Tab.Pane className="tabContent" eventKey="Article2">
 //                   <h3 className="title">1月の定休日について</h3>
 //                   <p className="br">
 //                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -311,7 +319,7 @@ export const NewsList = () => {
 //                   </p>
 //                 </Tab.Pane>
 
-//                 <Tab.Pane className="TabContent" eventKey="Article3">
+//                 <Tab.Pane className="tabContent" eventKey="Article3">
 //                   <h3 className="title">ホームページリニューアルのお知らせ</h3>
 //                   <p className="br">
 //                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -327,7 +335,7 @@ export const NewsList = () => {
 //                   </p>
 //                 </Tab.Pane>
 
-//                 <Tab.Pane className="TabContent" eventKey="Article4">
+//                 <Tab.Pane className="tabContent" eventKey="Article4">
 //                   <h3 className="title">義援金、店頭募金送金のご報告</h3>
 //                   <p className="br">
 //                     被災地の少しでも早い復興をお祈り申し上げます。
@@ -345,7 +353,7 @@ export const NewsList = () => {
 //             </Col>
 
 //             <Col sm={3} className="order-sm-1">
-//               <ListGroup className="Tab">
+//               <ListGroup className="tab">
 //                 <ListGroup.Item action href="Article">
 //                   2024.1.31 <h6>2月定休日</h6>
 //                 </ListGroup.Item>
@@ -362,8 +370,8 @@ export const NewsList = () => {
 //             </Col>
 
 //             {/* In order to if random day off happend
-//             <Col sm={12} className="Calender">
-//               <Image src={Calender2022_2023} alt="Calender2022_2023" fluid />
+//             <Col sm={12} className="calender">
+//               <Image src={calender2022_2023} alt="calender2022_2023" fluid />
 //             </Col> */}
 //           </Row>
 //         </Tab.Container>
@@ -375,7 +383,7 @@ export const NewsList = () => {
 // import React from "react";
 // import { Row, Col, Image, ListGroup, Tab, TabContent } from "react-bootstrap";
 // import styled from "styled-components";
-// import Calender from "../assets/Calender2022_2023.svg";
+// import calender from "../assets/calender2022_2023.svg";
 
 // const Styles = styled.div`
 //   .NewsSec {
@@ -412,7 +420,7 @@ export const NewsList = () => {
 //     font-weight: medium;
 //   }
 
-//   .Calender {
+//   .calender {
 //     margin: 8% 0 8% 0;
 //     text-align: center;
 //     padding: 3%;
@@ -441,8 +449,8 @@ export const NewsList = () => {
 //         <Tab.Container defaultActiveKey="Article">
 //           <Row>
 //             <Col sm={9} className="NewsSec order-sm-2">
-//               <Tab.Content className="TabFrame">
-//                 <Tab.Pane className="TabContent" eventKey="Article">
+//               <Tab.Content className="tabFrame">
+//                 <Tab.Pane className="tabContent" eventKey="Article">
 //                   <h3 className="title">2月の定休日について</h3>
 //                   <p className="br">
 //                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -457,7 +465,7 @@ export const NewsList = () => {
 //                   </p>
 //                 </Tab.Pane>
 
-//                 <Tab.Pane className="TabContent" eventKey="Article2">
+//                 <Tab.Pane className="tabContent" eventKey="Article2">
 //                   <h3 className="title">1月の定休日について</h3>
 //                   <p className="br">
 //                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -471,7 +479,7 @@ export const NewsList = () => {
 //                   </p>
 //                 </Tab.Pane>
 
-//                 <Tab.Pane className="TabContent" eventKey="Article3">
+//                 <Tab.Pane className="tabContent" eventKey="Article3">
 //                   <h3 className="title">ホームページリニューアルのお知らせ</h3>
 //                   <p className="br">
 //                     日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -487,7 +495,7 @@ export const NewsList = () => {
 //                   </p>
 //                 </Tab.Pane>
 
-//                 <Tab.Pane className="TabContent" eventKey="Article4">
+//                 <Tab.Pane className="tabContent" eventKey="Article4">
 //                   <h3 className="title">義援金、店頭募金送金のご報告</h3>
 //                   <p className="br">
 //                     被災地の少しでも早い復興をお祈り申し上げます。
@@ -505,7 +513,7 @@ export const NewsList = () => {
 //             </Col>
 
 //             <Col sm={3} className="order-sm-1">
-//               <ListGroup className="Tab">
+//               <ListGroup className="tab">
 //                 <ListGroup.Item action href="Article">
 //                   2024.1.31 <h6>2月定休日</h6>
 //                 </ListGroup.Item>
@@ -522,8 +530,8 @@ export const NewsList = () => {
 //             </Col>
 
 //             {/* In order to if random day off happend
-//             <Col sm={12} className="Calender">
-//               <Image src={Calender2022_2023} alt="Calender2022_2023" fluid />
+//             <Col sm={12} className="calender">
+//               <Image src={calender2022_2023} alt="calender2022_2023" fluid />
 //             </Col> */}
 //           </Row>
 //         </Tab.Container>
