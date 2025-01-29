@@ -16,8 +16,11 @@ const Styles = styled.div`
   .tabFrame {
     border: 5px solid #fff;
     border-radius: 15px;
-    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
     background-color: #007bff;
+
+    @media screen and (max-width: 576px) {
+      border: 1px solid #fff;
+    }
   }
 
   .tabContent {
@@ -62,6 +65,66 @@ const Styles = styled.div`
   .list-group {
     filter: none;
   }
+
+  @media screen and (max-width: 991px) {
+    /* Bootstrap lg breakpoint */
+    .list-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .list-group-item {
+      width: auto;
+      border-radius: 20px !important;
+      padding: 8px 16px !important;
+      margin-bottom: 0 !important;
+      border: none !important;
+      background-color: #f8f9fa !important;
+
+      /* Add dot before each item */
+      /* &::before {
+        content: "•";
+        margin-right: 8px;
+        color: #007bff;
+      } */
+
+      /* Remove default list-group-item styling */
+      &:first-child {
+        border-top-left-radius: 20px !important;
+        border-top-right-radius: 20px !important;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+      }
+
+      /* Adjust heading style */
+      h6 {
+        display: inline-block;
+        margin: 0 0 0 8px;
+      }
+    }
+
+    .list-group-item.active {
+      background-color: #007bff !important;
+      color: white !important;
+
+      &::before {
+        color: white;
+      }
+    }
+  }
+
+  .tab {
+    margin: 6%;
+    @media screen and (max-width: 991px) {
+      margin: 3% 0;
+    }
+  }
 `;
 
 export const NewsList = () => {
@@ -88,7 +151,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article"}
                     onClick={(e) => handleTabSelect("Article", e)}
                   >
-                    2025.1.1 <h6>新年のご挨拶と1月定休日のお知らせ</h6>
+                    2025.1.29 <h6>2月定休日のお知らせ</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -97,7 +160,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article2"}
                     onClick={(e) => handleTabSelect("Article2", e)}
                   >
-                    2024.12.27 <h6>ご挨拶と年末年始定休日のお知らせ</h6>
+                    2025.1.1 <h6>新年のご挨拶</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -123,6 +186,24 @@ export const NewsList = () => {
               <Col sm={12} lg={8} className="contents order-1 order-lg-2">
                 <Tab.Content className="tabFrame">
                   <Tab.Pane className="tabContent" eventKey="Article">
+                    <h3 className="title">2月の定休日</h3>
+                    <p className="br">
+                      日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
+                    </p>
+                    <p className="br font">
+                      2月のお休みは
+                      <strong> 3日</strong>,&nbsp;<strong>10日</strong>,&nbsp;
+                      <strong>17日</strong>,&nbsp;<strong>25日</strong>,&nbsp;
+                      <strong>26日</strong>
+                      となります。
+                    </p>
+                    <p className="br">
+                      スタッフ一同、心よりお待ちいたしております。
+                    </p>
+                    <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
+                  </Tab.Pane>
+
+                  <Tab.Pane className="tabContent" eventKey="Article2">
                     <h3 className="title">
                       🎍 新年あけましておめでとうございます 🐍
                     </h3>
@@ -141,37 +222,6 @@ export const NewsList = () => {
                     <p className="br">
                       今年もたくさんのお客様にご満足いただけるよう、スタッフ一同力を尽くしてまいります！
                       本年も何卒よろしくお願い申し上げます。
-                    </p>
-                    <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
-                  </Tab.Pane>
-
-                  <Tab.Pane className="tabContent" eventKey="Article2">
-                    <h3 className="title">ご挨拶と年末年始定休日のお知らせ</h3>
-                    <p className="br">
-                      今年も早いもので、年末のご挨拶をさせていただく時期となりました。
-                      <br />
-                      皆様におかれましては、ますますご清栄のこととお慶び申し上げます。
-                      <br />
-                      本年も沢山の皆様にご来店いただきました。 <br />
-                      厚くお礼申し上げます。
-                    </p>
-                    <p className="br font">
-                      年末年始のお休みは
-                      <strong> 12月31日</strong> ~ <strong>1月1日</strong>
-                      となります。
-                    </p>
-                    <p className="br font">
-                      2025年1月の定休日は
-                      <strong> 6日</strong>,&nbsp;<strong>7日</strong>,&nbsp;
-                      <strong>15日</strong>,&nbsp;<strong>20日</strong>,&nbsp;
-                      <strong>27日</strong>
-                      となります。
-                    </p>
-                    <p className="br">
-                      来年も相変わらぬご高配を頂けますようお願い申し上げて、{" "}
-                      <br />
-                      歳末のご挨拶とさせて頂きます。 <br />
-                      それではよいお年をお過ごしくださいませ。
                     </p>
                     <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
                   </Tab.Pane>

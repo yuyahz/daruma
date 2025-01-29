@@ -326,14 +326,18 @@
 .NewsBg {
   background-color: #fff;
   padding: 2% 5% 5%;
-  border: solid 10px #007bff;
+  border: solid 8px #007bff;
   border-radius: 30px;
-  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
-}
 
-@media screen and (max-width: 576px) {
-  .NewsBg {
+  @media screen and (max-width: 991px) {
+    border: solid 4px #007bff;
+  }
+
+  @media screen and (max-width: 576px) {
     border-radius: 6.6vw;
+    padding: 0;
+    border: none;
+    background-color: transparent;
   }
 }
 
@@ -343,9 +347,14 @@
   font-weight: bold;
   letter-spacing: 0.2em;
   text-align: center;
+
+  @media screen and (max-width: 576px) {
+    color: #fff;
+  }
 }
 
 .NewsTitleFlashing {
+  color: #007bff;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   -webkit-animation: blink 1.5s ease-in-out infinite alternate;
