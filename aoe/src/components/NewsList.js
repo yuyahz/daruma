@@ -151,7 +151,16 @@ export const NewsList = () => {
                     active={selectedTab === "Article"}
                     onClick={(e) => handleTabSelect("Article", e)}
                   >
-                    2025.1.29 <h6>2月定休日のお知らせ</h6>
+                    2025.2.27 <h6>3月定休日のお知らせ</h6>
+                  </ListGroup.Item>
+
+                  <ListGroup.Item
+                    action
+                    href="Article1"
+                    active={selectedTab === "Article1"}
+                    onClick={(e) => handleTabSelect("Article1", e)}
+                  >
+                    2025.2.11 <h6>臨時休業のお知らせ</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -186,19 +195,37 @@ export const NewsList = () => {
               <Col sm={12} lg={8} className="contents order-1 order-lg-2">
                 <Tab.Content className="tabFrame">
                   <Tab.Pane className="tabContent" eventKey="Article">
-                    <h3 className="title">2月の定休日</h3>
+                    <h3 className="title">3月の定休日</h3>
                     <p className="br">
                       日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
                     </p>
+                    <p>3月のお休みは、</p>
                     <p className="br font">
-                      2月のお休みは
-                      <strong> 3日</strong>,&nbsp;<strong>10日</strong>,&nbsp;
-                      <strong>17日</strong>,&nbsp;<strong>25日</strong>,&nbsp;
-                      <strong>26日</strong>
-                      となります。
+                      <strong>3月3日</strong>&nbsp;/&nbsp;
+                      <strong>3月10日</strong>&nbsp;/&nbsp;
+                      <strong>3月17日</strong>&nbsp;/&nbsp;
+                      <strong>3月24日</strong>&nbsp;/&nbsp;
+                      <strong>3月25日</strong>&nbsp;/&nbsp;
+                      <strong>3月31日</strong>
                     </p>
                     <p className="br">
                       スタッフ一同、心よりお待ちいたしております。
+                    </p>
+                    <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
+                  </Tab.Pane>
+
+                  <Tab.Pane className="tabContent" eventKey="Article1">
+                    <h3 className="title">臨時休業のお知らせ</h3>
+                    <p className="br">
+                      いつもご愛顧いただき、ありがとうございます。
+                      誠に勝手ではございますが、下記日程は臨時休業とさせていただきます。
+                    </p>
+                    <p className="br font">
+                      <strong>2月12日</strong>&nbsp;/&nbsp;
+                      <strong>2月13日</strong>
+                    </p>
+                    <p className="br">
+                      お客様にはご不便とご迷惑をお掛けいたしますが、ご了承の程、よろしくお願いいたします。
                     </p>
                     <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
                   </Tab.Pane>
@@ -212,12 +239,13 @@ export const NewsList = () => {
                       <br />
                       まだまだ寒さ厳しき折ではございますが、皆様方におかれましては風邪など引かないようお気をつけくださいませ。
                     </p>
+                    <p>2025年1月の定休日は、</p>
                     <p className="br font">
-                      2025年1月の定休日は
-                      <strong> 6日</strong>,&nbsp;<strong>7日</strong>,&nbsp;
-                      <strong>15日</strong>,&nbsp;<strong>20日</strong>,&nbsp;
+                      <strong>6日</strong>&nbsp;/&nbsp;
+                      <strong>7日</strong>&nbsp;/&nbsp;
+                      <strong>15日</strong>&nbsp;/&nbsp;
+                      <strong>20日</strong>&nbsp;/&nbsp;
                       <strong>27日</strong>
-                      となります。
                     </p>
                     <p className="br">
                       今年もたくさんのお客様にご満足いただけるよう、スタッフ一同力を尽くしてまいります！

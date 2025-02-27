@@ -232,38 +232,122 @@ export const Home = () => (
         <NewsList />
       </Container>
 
-      <Row className="bg">
+      {/* <Row className="bg">
         <Col md={{ span: 10, offset: 1 }}>
           <Row className="Point" xs={1} md={2}>
-            <Col xs={6} md={4} className="deco-mini-logo">
+            <Col xs={6} md={4} className="d-flex ">
+              <Col sm={6} className="CarouselCap align-self-center">
+                <div className="PointCardText">
+                  <h2>どんどん食べて、</h2>
+                  <h2>どんどん貯めよう</h2>
+                </div>
+              </Col>
               <Image
-                className="mini-logo-top d-none d-lg-block"
-                src={TitleMainDecoBlue}
-                alt="TakeoutDeco"
+                className="PointBtn"
+                src={PointCard}
+                alt="PointCard"
                 fluid
               />
             </Col>
             <Col xs={12} md={8}>
               <FadeIn.Up>
-                <Image
-                  className="PointBtn"
-                  src={PointCard}
-                  alt="PointCard"
-                  fluid
-                />
+                <div className="card-container">
+                  <ul className="against-reboot">
+                    <li style={{ paddingBottom: "6px" }}>
+                      ご飲食￥1,000毎にスタンプ1個！
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      スタンプ36個で、次回1,000割引！
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      現金及び他券との併用はできません。
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      紛失などによる再発行は致しません。
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      発行店のみご利用いただけます。
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      紛失などによる再発行は致しません。
+                    </li>
+                    <li>
+                      スタンプカードのご利用は、一回につき一品限りとさせて頂きます。
+                    </li>
+                  </ul>
+                </div>
+              </FadeIn.Up>
+            </Col>
+          </Row>
+        </Col>
+      </Row> */}
+
+      <Row className="PointBg">
+        <Col md={12}>
+          <Row className="Point" xs={1} md={2}>
+            <Col
+              xs={12}
+              md={6}
+              className="d-flex align-items-center justify-content-center"
+            >
+              <div className="PointCardText">
+                <span>どんどん貯めよう</span>
+              </div>
+              <div className="PointCardText">
+                <span>どんどん食べて、</span>
+              </div>
+              <Image
+                className="PointBtn"
+                src={PointCard}
+                alt="PointCard"
+                fluid
+              />
+            </Col>
+            <Col
+              xs={12}
+              md={6}
+              className="d-flex align-items-center justify-content-center"
+            >
+              <FadeIn.Up>
+                <div className="card-container">
+                  <ul className="against-reboot">
+                    <h3>無料スタンプカード受付中！</h3>
+                    <li style={{ paddingBottom: "6px" }}>
+                      ご飲食￥1,000毎にスタンプ1個！
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      スタンプ36個で、次回1,000割引！
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      現金及び他券との併用はできません。
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      紛失などによる再発行は致しません。
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      発行店のみご利用いただけます。
+                    </li>
+                    <li style={{ paddingBottom: "6px" }}>
+                      紛失などによる再発行は致しません。
+                    </li>
+                    <li>
+                      スタンプカードのご利用は、一回につき一品限りとさせて頂きます。
+                    </li>
+                  </ul>
+                </div>
               </FadeIn.Up>
             </Col>
           </Row>
         </Col>
       </Row>
 
-      <Row>
-        <Col md={{ span: 10, offset: 1 }} id="takeout">
-          <Row className="Takeout" xs={1} md={2}>
+      <Row className="FaxBg">
+        <Col md={{ span: 10, offset: 1 }} id="Fax">
+          <Row className="Fax" xs={1} md={2}>
             <Col xs={12} md={8}>
               <FadeIn.Up>
                 <a href={require("./assets/Document.pdf")} target="_blank">
-                  <div className="takeout-container">
+                  <div className="fax-container">
                     <IconContext.Provider
                       value={{ color: "white", size: "30%" }}
                     >
@@ -293,9 +377,9 @@ export const Home = () => (
             </Col>
             <Col xs={6} md={4} className="deco-mini-logo">
               <Image
-                className="mini-logo-bottom d-none d-lg-block"
+                className="mini-logo d-none d-md-block"
                 src={TitleMainDecoBlue}
-                alt="TakeoutDeco"
+                alt="FaxDeco"
                 fluid
               />
             </Col>

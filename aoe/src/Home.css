@@ -54,6 +54,9 @@
 .restrict-width {
   max-width: 1200px;
   margin: 0 auto;
+  @media screen and (max-width: 991px) {
+    margin-top: 20%;
+  }
 }
 
 .Left {
@@ -180,9 +183,12 @@
 
 .TakeoutTextM {
   font-size: 100%;
-  padding-top: 10px;
+  padding-top: 16px;
   font-family: "Noto sans JP", serif;
   color: #fff;
+  @media screen and (max-width: 363px) {
+    padding-top: 24px;
+  }
 }
 
 .MobileHanami {
@@ -267,9 +273,12 @@
 }
 
 .IntroSecBottom {
-  margin-bottom: 15%;
   font-family: "Noto Serif JP", serif;
   color: #f3f0db;
+
+  @media screen and (max-width: 576px) {
+    margin-bottom: 0;
+  }
 }
 
 .IntroInsideSec {
@@ -286,6 +295,9 @@
 
 .IntroCaption2 {
   padding: 12% 0 7% 0;
+  @media screen and (max-width: 767px) {
+    max-width: 360px;
+  }
 }
 
 .IntroCaptionTitle1 {
@@ -313,7 +325,11 @@
   display: block;
   height: auto;
   max-width: 100%;
+  max-height: 740px;
   margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    max-height: 620px;
+  }
   /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
@@ -328,6 +344,7 @@
   padding: 2% 5% 5%;
   border: solid 8px #007bff;
   border-radius: 30px;
+  margin-top: 15%;
 
   @media screen and (max-width: 991px) {
     border: solid 4px #007bff;
@@ -390,10 +407,15 @@
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
+.PointBg {
+  margin-top: 15%;
+  @media screen and (max-width: 767px) {
+    margin-top: 35%;
+  }
+}
+
 .Point {
   text-align: center;
-  margin: 20% 0 5% 0;
-  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .PointDeco {
@@ -401,38 +423,84 @@
 }
 
 .PointBtn {
-  max-width: 600px;
-  border-radius: 2rem;
-}
-
-@media screen and (max-width: 576px) {
-  .PointBtn {
-    border-radius: 1.5rem;
-  }
-}
-
-.Takeout {
-  text-align: center;
-  margin: 5% 0 20% 0;
-  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
-}
-
-.TakeoutBtn {
-  max-width: 600px;
-  border-radius: 2rem;
+  width: 100%;
+  max-width: 400px;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  margin-left: 30px;
+  border: 1px solid white;
+  border-radius: 21px;
 }
 
-@media screen and (max-width: 576px) {
-  .TakeoutBtn {
-    border-radius: 0.5rem;
+@media screen and (max-width: 1260px) {
+  .PointBtn {
+    border-radius: 1.6vw;
   }
 }
 
-.TakeoutBtn:hover {
-  transform: scale(0.95);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+@media screen and (max-width: 767px) {
+  .PointBtn {
+    border-radius: 3vw;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .PointBtn {
+    margin-left: 5.2vw;
+  }
+}
+
+.PointCardText {
+  font-size: 32px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  letter-spacing: 0.5vw;
+  line-height: 2;
+  color: #fff;
+  writing-mode: vertical-rl;
+  align-items: center;
+}
+
+@media screen and (max-width: 690px) {
+  .PointCardText {
+    font-size: 5.6vw;
+    line-height: 1.5;
+  }
+}
+
+.FaxBg {
+  margin-top: 15%;
+}
+
+.Fax {
+  text-align: center;
+}
+
+.fax-container {
+  min-width: 563px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 60px;
+  margin-bottom: 160px;
+  @media screen and (max-width: 767px) {
+    max-width: 443px;
+    margin-bottom: 35%;
+    margin-left: 15px;
+  }
+}
+
+.deco-mini-logo {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.mini-logo {
+  width: 320px;
+  rotate: 20deg;
 }
 
 .CardList {
@@ -462,8 +530,8 @@
   background-color: yellow;
 }
 
-.takeout-container {
-  min-width: 563px;
+.card-container {
+  max-width: 563px;
   margin: 0 auto;
   color: #fff;
   text-align: left;
@@ -471,46 +539,42 @@
   align-items: center;
   justify-content: center;
   padding: 20px 60px;
-  transition: 0.2s cubic-bezier(0.65, 0, 0.16, 1);
-}
 
-.takeout-container:hover {
-  transition: 0.2s cubic-bezier(0.65, 0, 0.16, 1);
-  background-color: #007bff;
-  border-radius: 10px;
+  ul,
+  ol {
+    padding-inline-start: 0;
+    list-style-position: inside;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    position: relative;
+    padding-left: 16px;
+  }
+  li:before {
+    content: "•";
+    left: 0;
+    position: absolute;
+  }
 }
 
 .against-reboot {
   margin-top: 1rem;
 }
 
-.deco-mini-logo {
-  display: flex;
-  justify-content: center;
-}
-
 @media screen and (max-width: 690px) {
-  .takeout-container {
-    min-width: 0;
-    padding: 2.899vw 7.246vw;
+  .card-container {
+    padding: 16px 0 0 0;
     /* border-radius: 20px; */
   }
-}
 
-.mini-logo-top {
-  width: 20%;
-  rotate: -14deg;
-}
-
-.mini-logo-bottom {
-  width: 20%;
-  rotate: 14deg;
-}
-
-ul,
-ol {
-  padding-inline-start: 60px;
-  /* list-style-position: inside; */
+  .fax-container {
+    min-width: 0;
+    padding: 0;
+    /* border-radius: 20px; */
+  }
 }
 
 @media screen and (max-width: 767px) {
