@@ -41,10 +41,13 @@ export const Home = () => (
         </FadeIn.Left>
       </Col>
 
-      <Col lg className="TitleDeco">
+      <Col lg className="TitleDeco d-flex flex-column align-items-center">
         <FadeIn.Down>
           <Image src={TitleMainDeco} alt="MainDeco" fluid />
         </FadeIn.Down>
+        <FadeIn.Up>
+          <h1 className="H1Title">焼肉ダルマ青江店</h1>
+        </FadeIn.Up>
       </Col>
 
       <Col lg className="Right d-none d-lg-block">
@@ -98,8 +101,9 @@ export const Home = () => (
     </Row>
 
     <div className="restrict-width">
-      <Container fluid className="CarouselBg d-none d-sm-block">
-        <Row>
+      <Container fluid className="CarouselBg">
+        <Row className="d-flex flex-column-reverse flex-sm-row">
+          {/* Left Column - Text (Text on top for small screens, on the left for sm and larger screens) */}
           <Col sm={6} className="CarouselCap align-self-center">
             <div className="CarouselText">
               <p>六 十 年 守 り 続 け た</p>
@@ -109,8 +113,10 @@ export const Home = () => (
               <p>そ し て こ れ か ら も 。</p>
             </div>
           </Col>
+
+          {/* Right Column - Carousel (Image on the right for sm and larger screens) */}
           <Col sm={6} className="align-self-center">
-            <Carousel>
+            <Carousel indicators>
               <Carousel.Item>
                 <Image
                   className="d-block w-100 CarouselPic"
@@ -232,56 +238,6 @@ export const Home = () => (
         <NewsList />
       </Container>
 
-      {/* <Row className="bg">
-        <Col md={{ span: 10, offset: 1 }}>
-          <Row className="Point" xs={1} md={2}>
-            <Col xs={6} md={4} className="d-flex ">
-              <Col sm={6} className="CarouselCap align-self-center">
-                <div className="PointCardText">
-                  <h2>どんどん食べて、</h2>
-                  <h2>どんどん貯めよう</h2>
-                </div>
-              </Col>
-              <Image
-                className="PointBtn"
-                src={PointCard}
-                alt="PointCard"
-                fluid
-              />
-            </Col>
-            <Col xs={12} md={8}>
-              <FadeIn.Up>
-                <div className="card-container">
-                  <ul className="against-reboot">
-                    <li style={{ paddingBottom: "6px" }}>
-                      ご飲食￥1,000毎にスタンプ1個！
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      スタンプ36個で、次回1,000割引！
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      現金及び他券との併用はできません。
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      紛失などによる再発行は致しません。
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      発行店のみご利用いただけます。
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      紛失などによる再発行は致しません。
-                    </li>
-                    <li>
-                      スタンプカードのご利用は、一回につき一品限りとさせて頂きます。
-                    </li>
-                  </ul>
-                </div>
-              </FadeIn.Up>
-            </Col>
-          </Row>
-        </Col>
-      </Row> */}
-
       <Row className="PointBg">
         <Col md={12}>
           <Row className="Point" xs={1} md={2}>
@@ -344,25 +300,29 @@ export const Home = () => (
       <Row className="FaxBg">
         <Col md={{ span: 10, offset: 1 }} id="Fax">
           <Row className="Fax" xs={1} md={2}>
-            <Col xs={12} md={8}>
+            <Col
+              xs={12}
+              md={8}
+              className="d-flex align-items-center justify-content-center"
+            >
               <FadeIn.Up>
                 <a href={require("./assets/Document.pdf")} target="_blank">
                   <div className="fax-container">
                     <IconContext.Provider
                       value={{ color: "white", size: "30%" }}
                     >
-                      <FaFax className="d-none d-md-block" />
+                      <FaFax className="d-none d-xl-block d-md-none d-lg-none" />
                     </IconContext.Provider>
 
                     <ol type="1" className="against-reboot">
                       <IconContext.Provider
                         value={{ color: "white", size: "40px" }}
                       >
-                        <FaFax className="d-md-none d-lg-none d-xl-none mb-3" />
+                        <FaFax className="d-xl-none mb-3" />
                       </IconContext.Provider>
                       <li style={{ paddingBottom: "6px" }}>
-                        お持ち帰りをご希望のお客様は<u>こちらを</u>
-                        クリックして頂き、FAX用紙をダウンロード。
+                        お持ち帰りをご希望のお客様は<u>こちら</u>
+                        をクリックして頂き、FAX用紙をダウンロード。
                       </li>
                       <li style={{ paddingBottom: "6px" }}>
                         必要事項を記入後、当店まで送付して頂きます。
@@ -375,9 +335,9 @@ export const Home = () => (
                 </a>
               </FadeIn.Up>
             </Col>
-            <Col xs={6} md={4} className="deco-mini-logo">
+            <Col xs={6} md={4} className="deco-fax-logo">
               <Image
-                className="mini-logo d-none d-md-block"
+                className="fax-logo d-none d-md-block"
                 src={TitleMainDecoBlue}
                 alt="FaxDeco"
                 fluid

@@ -84,13 +84,6 @@ const Styles = styled.div`
       border: none !important;
       background-color: #f8f9fa !important;
 
-      /* Add dot before each item */
-      /* &::before {
-        content: "•";
-        margin-right: 8px;
-        color: #007bff;
-      } */
-
       /* Remove default list-group-item styling */
       &:first-child {
         border-top-left-radius: 20px !important;

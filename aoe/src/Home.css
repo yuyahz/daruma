@@ -1,9 +1,3 @@
-@media screen and (min-width: 1441px) {
-  .ForBigScreen {
-    padding: 0 20% 0 20%;
-  }
-}
-
 .HomeLogo {
   max-width: 110px;
   position: fixed;
@@ -15,9 +9,21 @@
   z-index: 99999;
 }
 
+.restrict-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .Title {
   position: relative;
   margin-bottom: 10%;
+}
+
+.H1Title {
+  margin-top: 44px;
+  font-family: "Noto sans JP", serif;
+  font-size: 24px;
+  color: #fff;
 }
 
 .TitleDeco {
@@ -25,18 +31,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (max-width: 991px) {
-  .TitleDeco {
-    padding: 20%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .TitleDeco {
-    margin-top: 10%;
-  }
 }
 
 .TitleHalfCircle {
@@ -49,14 +43,6 @@
   font-size: 220%;
   font-weight: 100;
   letter-spacing: 1vw;
-}
-
-.restrict-width {
-  max-width: 1200px;
-  margin: 0 auto;
-  @media screen and (max-width: 991px) {
-    margin-top: 20%;
-  }
 }
 
 .Left {
@@ -186,9 +172,6 @@
   padding-top: 16px;
   font-family: "Noto sans JP", serif;
   color: #fff;
-  @media screen and (max-width: 363px) {
-    padding-top: 24px;
-  }
 }
 
 .MobileHanami {
@@ -211,9 +194,8 @@
 .CarouselBg {
   background-color: #fff;
   width: 100%;
-  padding: 5% 10%;
+  padding: 2vw 9.5vw 7.7vw 9.5vw;
   border-radius: 25px;
-  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .carousel-control-prev {
@@ -221,26 +203,9 @@
   opacity: 1;
 }
 
-/* .carousel-control-prev-icon {
-  width: 30px;
-  height: 30px;
-} */
-
 .carousel-control-next {
   filter: drop-shadow(2px 3px 5px rgba(33, 33, 33, 0.5));
   opacity: 1;
-}
-
-/* .carousel-control-next-icon {
-  width: 30px;
-  height: 30px;
-} */
-
-@media screen and (min-width: 767px) {
-  .CarouselPic {
-    margin: 0 auto;
-    /* max-width: 400px; */
-  }
 }
 
 .CarouselCap {
@@ -254,11 +219,34 @@
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.2vw;
-  line-height: 2;
+  line-height: 3vw;
   color: #c73d13;
   writing-mode: vertical-rl;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 6.4vw;
+}
+
+.carousel-indicators {
+  position: relative !important;
+  bottom: -33vw;
+}
+
+.carousel-indicators li {
+  width: 12px; /* Dot size */
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: #007bff !important;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #0056b3 !important; /* Active dot color */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important; /* Hide chevrons */
 }
 
 .IntroSec {
@@ -275,15 +263,10 @@
 .IntroSecBottom {
   font-family: "Noto Serif JP", serif;
   color: #f3f0db;
-
-  @media screen and (max-width: 576px) {
-    margin-bottom: 0;
-  }
 }
 
 .IntroInsideSec {
   margin: 5% 0 5% 0;
-  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .IntroCaption {
@@ -295,9 +278,6 @@
 
 .IntroCaption2 {
   padding: 12% 0 7% 0;
-  @media screen and (max-width: 767px) {
-    max-width: 360px;
-  }
 }
 
 .IntroCaptionTitle1 {
@@ -309,14 +289,6 @@
   padding-bottom: 3%;
 }
 
-/* .br_TopPage {
-  white-space: pre-wrap;
-  font-family: "Noto Serif JP", serif;
-  font-size: 32px;
-  color: #f3f0db;
-  padding-bottom: 3%;
-} */
-
 .IntroCaptionP {
   font-size: 14px;
 }
@@ -327,17 +299,7 @@
   max-width: 100%;
   max-height: 740px;
   margin: 0 auto;
-  @media screen and (max-width: 767px) {
-    max-height: 620px;
-  }
-  /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
 }
-
-/* @media screen and (min-width: 767px) {
-  .IntroPic {
-    max-width: 400px;
-  }
-} */
 
 .NewsBg {
   background-color: #fff;
@@ -345,17 +307,6 @@
   border: solid 8px #007bff;
   border-radius: 30px;
   margin-top: 15%;
-
-  @media screen and (max-width: 991px) {
-    border: solid 4px #007bff;
-  }
-
-  @media screen and (max-width: 576px) {
-    border-radius: 6.6vw;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-  }
 }
 
 .NewsTitle {
@@ -364,19 +315,23 @@
   font-weight: bold;
   letter-spacing: 0.2em;
   text-align: center;
+}
 
-  @media screen and (max-width: 576px) {
-    color: #fff;
-  }
+.NewsTitle {
+  margin-bottom: 1%;
+  color: #007bff;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-align: center;
 }
 
 .NewsTitleFlashing {
   color: #007bff;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  -webkit-animation: blink 1.5s ease-in-out infinite alternate;
-  -moz-animation: blink 1.5s ease-in-out infinite alternate;
-  animation: blink 1.5s ease-in-out infinite alternate;
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  -moz-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s ease-in-out infinite alternate;
 }
 @-webkit-keyframes blink {
   0% {
@@ -409,9 +364,6 @@
 
 .PointBg {
   margin-top: 15%;
-  @media screen and (max-width: 767px) {
-    margin-top: 35%;
-  }
 }
 
 .Point {
@@ -431,97 +383,21 @@
   border-radius: 21px;
 }
 
-@media screen and (max-width: 1260px) {
-  .PointBtn {
-    border-radius: 1.6vw;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .PointBtn {
-    border-radius: 3vw;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  .PointBtn {
-    margin-left: 5.2vw;
-  }
-}
-
 .PointCardText {
   font-size: 32px;
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
   letter-spacing: 0.5vw;
-  line-height: 2;
+  line-height: 1.5;
   color: #fff;
   writing-mode: vertical-rl;
   align-items: center;
-}
-
-@media screen and (max-width: 690px) {
-  .PointCardText {
-    font-size: 5.6vw;
-    line-height: 1.5;
-  }
-}
-
-.FaxBg {
-  margin-top: 15%;
-}
-
-.Fax {
-  text-align: center;
-}
-
-.fax-container {
-  min-width: 563px;
-  margin: 0 auto;
-  color: #fff;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 60px;
-  margin-bottom: 160px;
-  @media screen and (max-width: 767px) {
-    max-width: 443px;
-    margin-bottom: 35%;
-    margin-left: 15px;
-  }
-}
-
-.deco-mini-logo {
-  display: flex;
-  justify-content: center;
-  z-index: -1;
-}
-
-.mini-logo {
-  width: 320px;
-  rotate: 20deg;
 }
 
 .CardList {
   margin: 3% 0 3% 0;
   text-align: center;
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-}
-
-.Contact {
-  margin: 8% 0 13% 0;
-  text-align: center;
-  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
-}
-
-.Copylight {
-  margin: 15% 0 5% 0;
-  text-align: center;
-}
-
-.CopylightIcon {
-  width: 65%;
 }
 
 .Hanami {
@@ -531,20 +407,14 @@
 }
 
 .card-container {
-  max-width: 563px;
+  max-width: 560px;
   margin: 0 auto;
   color: #fff;
   text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 60px;
-
-  ul,
-  ol {
-    padding-inline-start: 0;
-    list-style-position: inside;
-  }
+  padding-top: 40px;
 
   ul {
     list-style: none;
@@ -560,27 +430,198 @@
   }
 }
 
-.against-reboot {
-  margin-top: 1rem;
+.FaxBg {
+  margin-top: 15%;
 }
 
-@media screen and (max-width: 690px) {
-  .card-container {
-    padding: 16px 0 0 0;
-    /* border-radius: 20px; */
+.Fax {
+  text-align: center;
+}
+
+.fax-container {
+  margin: 0 100px 8.333vw 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: left;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+
+  dl,
+  ol,
+  ul {
+    margin-left: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.fax-container:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.deco-fax-logo {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.fax-logo {
+  width: 290px;
+  rotate: 20deg;
+}
+
+/* Media queries */
+@media screen and (min-width: 1441px) {
+  .ForBigScreen {
+    padding: 0 20% 0 20%;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .CarouselBg {
+    padding: 24px 120px 96px 120px;
+  }
+  .CarouselText {
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-top: 5rem;
+  }
+  .carousel-indicators {
+    bottom: -410px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .PointBtn {
+    border-radius: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .fax-container {
+    margin: 0;
+    margin-bottom: 100px;
+
+    dl,
+    ol,
+    ul {
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
-  .fax-container {
-    min-width: 0;
-    padding: 0;
-    /* border-radius: 20px; */
+  .fax-logo {
+    width: 24.167vw;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .restrict-width {
+    margin-top: 20%;
+  }
+  .TitleDeco {
+    padding: 20%;
+  }
+  .NewsBg {
+    border: solid 4px #007bff;
   }
 }
 
 @media screen and (max-width: 767px) {
-  ul,
-  ol {
-    padding-inline-start: 0;
-    /* list-style-position: inside; */
+  .CarouselBg {
+    padding: 2vw 9.5vw 8vw 9.5vw;
+  }
+  .CarouselPic {
+    margin: 0 auto;
+  }
+  .carousel-indicators {
+    bottom: -34vw;
+  }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+  .IntroPic {
+    max-height: 620px;
+  }
+  .IntroCaption2 {
+    max-width: 360px;
+  }
+  .NewsTitle {
+    color: #fff;
+  }
+  .PointBg {
+    margin-top: 25%;
+    color: #fff;
+  }
+  .PointBtn {
+    border-radius: 3vw;
+  }
+  .fax-container {
+    max-width: 510.41px;
+    margin: 0 0 30% 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .PointBtn {
+    margin-left: 5.2vw;
+  }
+  .PointCardText {
+    font-size: 5.6vw;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .H1Title {
+    font-size: 4.248vw;
+    margin-top: 7.788vw;
+  }
+  .CarouselBg {
+    margin-bottom: 37vw;
+  }
+  .TitleDeco {
+    margin-top: 10%;
+  }
+  .IntroSecBottom {
+    margin-bottom: 0;
+  }
+  .CarouselText {
+    margin-top: 10vw;
+  }
+  .carousel-indicators {
+    bottom: -61vw;
+  }
+  .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+  }
+  .NewsBg {
+    border-radius: 6.6vw;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .PointBg {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 363px) {
+  .TakeoutTextM {
+    padding-top: 24px;
   }
 }

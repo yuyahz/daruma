@@ -16,6 +16,52 @@ const Styles = styled.div`
       margin-bottom: 20%;
     }
 
+    .contact {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 727px;
+    }
+
+    .contact-container {
+      border: solid 4px #007bff;
+      border-radius: 130px;
+      padding: 30px 106px;
+
+      p {
+        margin-bottom: 24px;
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        margin-bottom: 24px;
+      }
+
+      @media screen and (max-width: 795px) {
+        padding: 3.774vw 12.579vw;
+
+        h4 {
+          margin-bottom: 16px;
+        }
+
+        .bottom-spacing {
+          margin-bottom: 2px;
+        }
+      }
+
+      .no-decoration {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      @media screen and (max-width: 576px) {
+        border-radius: 30px;
+        padding: 30px 10vw;
+      }
+    }
+
     .hour-day {
       @media screen and (max-width: 576px) {
         margin-bottom: 6px;
@@ -48,8 +94,27 @@ export const BottomSet = () => {
         </Row>
 
         <Row className="BottomSet">
-          <Col md={{ span: 6, offset: 3 }}>
-            <Image src={Contact} alt="Contact" fluid />
+          <Col className="container-fluid">
+            <div className="contact">
+              <div className="contact-container">
+                <h4>ご予約お問い合わせはこちらまで</h4>
+                <p>
+                  ※ご予約は60名様まで承ります。お肉のお持ち帰りは基本的にFAXにて承っておりますが電話注文でも可能です。
+                </p>
+                <div className="d-none d-md-block">
+                  <a href="tel:0862243525" className="no-decoration">
+                    <h2>お問い合わせ・086 - 224 - 3525</h2>
+                  </a>
+                </div>
+                <div className="d-block d-md-none">
+                  <h4 className="bottom-spacing">お問い合わせ</h4>
+                  <a href="tel:0862243525" className="no-decoration">
+                    <h2>086 - 224 - 3525</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* <Image src={Contact} alt="Contact" fluid /> */}
           </Col>
         </Row>
 
