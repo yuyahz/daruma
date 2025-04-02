@@ -23,34 +23,7 @@ export const Drink = ({ data }) => {
             <Col md={{ span: 8, offset: 2 }}>
               <Row className="MenuWrapper mb-5" xs={1} md={1}>
                 <div className="MenuCaption">
-                  <p className={"MenuTitle" + " " + "MenuTitleBg"}>
-                    ソフトドリンク
-                  </p>
-                  <p className="MenuTitele">
-                    ウーロン茶 / コーラ / オレンジジュース / キリンレモン /
-                    カルピス / ジンジャエール
-                  </p>
-                  <p className="MenuText">
-                    {/* <span className="MenuTextSp"></span>ALL¥220 */}
-                    {/* <span className="MenuTextSp"></span>ALL¥240 */}
-                    <span className="MenuTextSp"></span>ALL¥280
-                  </p>
-                </div>
-                <div className="MenuCaption">
-                  <p className="MenuTitele">黒ウーロン茶</p>
-                  <p className="MenuText">
-                    {/* <span className="MenuTextSp"></span>¥330 */}
-                    {/* <span className="MenuTextSp"></span>¥360 */}
-                    <span className="MenuTextSp"></span>ALL¥400
-                  </p>
-                </div>
-                <div className="MenuCaption">
-                  <p className="MenuTax"></p>
-                </div>
-              </Row>
-
-              <Row className="MenuWrapper mb-5" xs={1} md={1}>
-                <div className="MenuCaption">
+                  <p className={"MenuTitle" + " " + "MenuTitleBg"}>ビール</p>
                   <p className="MenuTitele">生ビール / 小ジョッキ (キリン) </p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥530 */}
@@ -83,6 +56,15 @@ export const Drink = ({ data }) => {
                   </p>
                 </div>
                 <div className="MenuCaption">
+                  <p className="MenuTax"></p>
+                </div>
+              </Row>
+
+              <Row className="MenuWrapper mb-5" xs={1} md={1}>
+                <div className="MenuCaption">
+                  <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                    お酒　/　焼酎　/　その他
+                  </p>
                   <p className="MenuTitele">お酒</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"> (1合) ¥320</span> (2合) ¥630 */}
@@ -112,12 +94,6 @@ export const Drink = ({ data }) => {
                     <span className="MenuTextSp"></span>¥580
                   </p>
                 </div>
-                <div className="MenuCaption">
-                  <p className="MenuTax"></p>
-                </div>
-              </Row>
-
-              <Row className="MenuWrapper mb-5" xs={1} md={1}>
                 <div className="MenuCaption">
                   <p className="MenuTitele">麦 / 二階堂</p>
                   <p className="MenuText">
@@ -205,6 +181,7 @@ export const Drink = ({ data }) => {
 
               <Row className="MenuWrapper" xs={1} md={1}>
                 <div className="MenuCaption">
+                  <p className={"MenuTitle" + " " + "MenuTitleBg"}>ワイン</p>
                   <p className="MenuTitele">ハーフボトル (赤・白・ロゼ) </p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥1050 */}
@@ -225,6 +202,9 @@ export const Drink = ({ data }) => {
 
               <Row className="MenuWrapper" xs={1} md={1}>
                 <div className="MenuCaption">
+                  <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                    ウィスキー
+                  </p>
                   <p className="MenuTitele">ウィスキー</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥740 */}
@@ -261,6 +241,34 @@ export const Drink = ({ data }) => {
                     {/* <span className="MenuTextSp"></span>¥480 */}
                     {/* <span className="MenuTextSp"></span>¥520 */}
                     <span className="MenuTextSp"></span>¥570
+                  </p>
+                </div>
+                <div className="MenuCaption">
+                  <p className="MenuTax"></p>
+                </div>
+              </Row>
+
+              <Row className="MenuWrapper mb-5" xs={1} md={1}>
+                <div className="MenuCaption">
+                  <p className={"MenuTitle" + " " + "MenuTitleBg"}>
+                    ソフトドリンク
+                  </p>
+                  <p className="MenuTitele">
+                    ウーロン茶 / コーラ / オレンジジュース / キリンレモン /
+                    カルピス / ジンジャエール
+                  </p>
+                  <p className="MenuText">
+                    {/* <span className="MenuTextSp"></span>ALL¥220 */}
+                    {/* <span className="MenuTextSp"></span>ALL¥240 */}
+                    <span className="MenuTextSp"></span>ALL¥280
+                  </p>
+                </div>
+                <div className="MenuCaption">
+                  <p className="MenuTitele">黒ウーロン茶</p>
+                  <p className="MenuText">
+                    {/* <span className="MenuTextSp"></span>¥330 */}
+                    {/* <span className="MenuTextSp"></span>¥360 */}
+                    <span className="MenuTextSp"></span>ALL¥400
                   </p>
                 </div>
                 <div className="MenuCaption">
