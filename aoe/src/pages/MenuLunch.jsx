@@ -6,28 +6,20 @@ import LunchDeco from "../assets/LunchDeco.svg";
 export const Lunch = ({ data }) => {
   return (
     <React.Fragment>
-      <div className="restrict-width">
+      <div className="restrict-width bottom-space">
         <Container fluid={true}>
-          {/* <Row className="MenuTitleSpace">
-          <Col>
-            <div className="MenuDeco">
+          <Row>
+            <Col className="MenuTitleImgContainer">
               <Image
-                className="MenuDecoTitle"
+                className="MenuTitleImg"
                 src={LunchDeco}
                 alt="Logo"
                 fluid
               />
-            </div>
-          </Col>
-        </Row> */}
-
-          <Row>
-            <Col className="MenuTitle">
-              <Image className="AssetTitle" src={LunchDeco} alt="Logo" fluid />
             </Col>
           </Row>
 
-          <Row className="MenuSpace">
+          <Row>
             <Col md={{ span: 8, offset: 2 }}>
               <Row xs={1} md={1}>
                 <Col className="MenuLunchTitle">
@@ -37,13 +29,13 @@ export const Lunch = ({ data }) => {
                 </Col>
               </Row>
 
-              <Row className="MenuSec" xs={1} md={1}>
-                <div className="MenuCap">
+              <Row className="MenuWrapper" xs={1} md={1}>
+                <div className="MenuCaption">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     焼肉セレクトランチ
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     好きなお肉をセレクト!!{" "}
                     <span className="MenuSmText">
@@ -51,28 +43,28 @@ export const Lunch = ({ data }) => {
                     </span>
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     焼きしゃぶロース以外のその他のお肉は以下のメニューより２品お選び下さい。
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     ハラミ、上ホルモン、ホルモン、レバー、ブタ、ブタバラ、トリ、セセリ、ウィンナー（3本）、
                     センマイ、ブタロース、よめなかせ、心臓、ギアラ
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     ※お肉とは別に下記のメニュー付きです
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     本日の一品、キムチ、サラダ、ライス、スープ（小）、デザート
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele"></p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSpSingle"></span>¥1180 */}
@@ -81,12 +73,12 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥1390
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption SpecificSpace">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     ホルモンうどんランチ
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     本日の一品、キムチ、サラダ、ライス、デザート
                   </p>
@@ -96,12 +88,12 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥1060
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption SpecificSpace">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     石焼ビビンバランチ
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     本日の一品、キムチ、サラダ、スープ（小）、デザート
                   </p>
@@ -111,12 +103,12 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥1390
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption SpecificSpace">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     韓国ラーメンランチ
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     本日の一品、キムチ、サラダ、ライス、デザート
                   </p>
@@ -126,12 +118,12 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥1060
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption SpecificSpace">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     豆腐チゲランチ
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     本日の一品、キムチ、サラダ、ライス、デザート
                   </p>
@@ -141,7 +133,7 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥1060
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption SpecificSpace">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     カムジャタンランチ{" "}
                     <span className="MenuSmText">
@@ -149,7 +141,7 @@ export const Lunch = ({ data }) => {
                     </span>
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     本日の一品、キムチ、サラダ、ライス、デザート
                   </p>
@@ -159,7 +151,7 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥1280
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption SpecificSpace">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     プゴクスープランチ{" "}
                     <span className="MenuSmText">
@@ -167,7 +159,7 @@ export const Lunch = ({ data }) => {
                     </span>
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     ビビンバ（小）、本日の一品、キムチ、サラダ、デザート
                   </p>
@@ -177,12 +169,12 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥1360
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption SpecificSpace">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     にんにくチャーハンランチ
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     本日の一品、キムチ、サラダ、スープ（小）、デザート
                   </p>
@@ -192,12 +184,12 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥950
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption SpecificSpace">
                   <p className={"MenuTitle" + " " + "MenuTitleBg"}>
                     和牛すじ煮込み汁ランチ
                   </p>
                 </div>
-                <div className="MenuCapSet">
+                <div className="MenuCaptionSet">
                   <p className="MenuTitele">
                     本日の一品、キムチ、サラダ、ライス、デザート
                   </p>
@@ -207,7 +199,7 @@ export const Lunch = ({ data }) => {
                     <span className="MenuTextSpSingle"></span>¥1060
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   {/* <p className="MenuTax">※税抜き価格表示</p> */}
                   <p className="MenuTax">※税込価格表示</p>
                 </div>

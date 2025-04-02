@@ -1,39 +1,14 @@
-.MenuDeco {
+.bottom-space {
+  margin-bottom: 10%;
+}
+
+.MenuTitleImgContainer {
   text-align: center;
-  border: 4px double #c73d13;
-  border-radius: 10rem;
-  filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
-  background-color: #007bff;
+  margin-top: 44px;
 }
 
-@media screen and (max-width: 575px) {
-  .MenuDeco {
-    display: none;
-  }
-}
-
-.MenuTitle {
-  text-align: center;
-  margin: 1.5rem 0 2rem 0;
-}
-
-.AssetTitle {
+.MenuTitleImg {
   width: 17%;
-}
-
-@media screen and (max-width: 992px) {
-  .MenuTitle {
-    margin: 3rem 0 1.5rem 0;
-  }
-  .AssetTitle {
-    width: 180px;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .AssetTitle {
-    width: 140px;
-  }
 }
 
 .MenuTitleSpace {
@@ -41,70 +16,51 @@
   padding: 0 12% 0 12%;
 }
 
-@media screen and (max-width: 575px) {
-  .MenuTitleSpace {
-    padding: 10% 0 10% 0;
-  }
+.MenuWrapper {
+  margin-top: 44px;
 }
 
-.MenuSpace {
-  margin: 1% 0 10% 0;
-}
-
-.MenuDecoTitle {
-  width: 15%;
-  padding: 2%;
-}
-
-@media screen and (min-width: 1441px) {
-  .MenuDecoTitle {
-    max-width: 10%;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .MenuDecoTitle {
-    max-width: 100%;
-  }
-}
-
-/* .MenuSec {
-  margin: 6%;
-} */
-
-.MenuHdCap {
+.MenuSubtitleWrapper {
   padding: 1% 0;
   color: #007bff;
 }
 
-.MenuHdTitele {
+.MenuSubtitle {
   padding-left: 6%;
   font-size: 80%;
   text-align: left;
   float: left;
 }
 
-.MenuHdText {
+.MenuSubtitileRightWrapper {
   padding-right: 4%;
   font-size: 80%;
   text-align: right;
 }
 
-.HdTextSp {
+.MenuSubtitileRight {
   margin-right: 7.5%;
 }
 
-.MenuCap {
+.MenuCaption {
   border-top: solid 1px #007bff;
   padding-top: 2%;
   color: #f3f0db;
 }
 
-.MenuCapSet {
+.SpecificSpace {
+  padding-top: 44px;
+}
+
+.MenuCaption:nth-child(1) {
+  border-top: none;
+}
+
+.MenuCaptionSet {
   color: #f3f0db;
 }
 
-.MenuCapSetParty {
+.MenuCaptionSetParty {
   text-align: right;
   color: #f3f0db;
 }
@@ -169,7 +125,7 @@
 }
 
 .MenuLunchBottom {
-  padding: 5% 20%;
+  margin-top: 44px;
 }
 
 .MenuLunchBottomText {
@@ -190,4 +146,28 @@
 
 .MenuBrParty {
   white-space: pre-wrap;
+}
+
+@media screen and (max-width: 575px) {
+  .MenuDeco {
+    display: none;
+  }
+  .MenuTitleSpace {
+    padding: 10% 0 10% 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-space {
+    margin-bottom: 17%;
+  }
+  .MenuTitleImg {
+    width: 140px;
+  }
+  /* .MenuTitle {
+    margin: 3rem 0 1.5rem 0;
+  } */
+  .MenuLunchBottom {
+    margin-top: 24px;
+  }
 }

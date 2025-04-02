@@ -28,13 +28,13 @@ class App extends Component {
         {/* <React.Fragment> */}
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
-            <Link to="/">
-              <HashLink smooth to="#home">
-                <div id="home">
-                  <Image className="HomeLogo" src={Logo} alt="HomeLogo" fluid />
-                </div>
-              </HashLink>
-            </Link>
+            {/* <Link to="/"> */}
+            <HashLink smooth to="#home">
+              <div id="home">
+                <Image className="HomeLogo" src={Logo} alt="HomeLogo" fluid />
+              </div>
+            </HashLink>
+            {/* </Link> */}
           </Col>
         </Row>
         <NavigationBar />

@@ -6,25 +6,12 @@ import DessertDeco from "../assets/DessertDeco.svg";
 export const Dessert = ({ data }) => {
   return (
     <React.Fragment>
-      <div className="restrict-width">
-        <Container fluid={true}>
-          {/* <Row className="MenuTitleSpace">
-          <Col>
-            <div className="MenuDeco">
-              <Image
-                className="MenuDecoTitle"
-                src={DessertDeco}
-                alt="Logo"
-                fluid
-              />
-            </div>
-          </Col>
-        </Row> */}
-
+      <div className="restrict-width bottom-space">
+        <Container fluid={true} style={{ margin: "0 0 20% 0" }}>
           <Row>
-            <Col className="MenuTitle">
+            <Col className="MenuTitleImgContainer">
               <Image
-                className="AssetTitle"
+                className="MenuTitleImg"
                 src={DessertDeco}
                 alt="Logo"
                 fluid
@@ -32,10 +19,10 @@ export const Dessert = ({ data }) => {
             </Col>
           </Row>
 
-          <Row className="MenuSpace">
+          <Row>
             <Col md={{ span: 8, offset: 2 }}>
-              <Row className="MenuSec" xs={1} md={1}>
-                <div className="MenuCap">
+              <Row className="MenuWrapper" xs={1} md={1}>
+                <div className="MenuCaption">
                   <p className="MenuTitele">ソフトクリーム</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥310 */}
@@ -43,7 +30,7 @@ export const Dessert = ({ data }) => {
                     <span className="MenuTextSp"></span>¥360
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   <p className="MenuTitele">ココナッツシャーベット</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥510 */}
@@ -51,7 +38,7 @@ export const Dessert = ({ data }) => {
                     <span className="MenuTextSp"></span>¥580
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   <p className="MenuTitele">ピーチシャーベット</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥510 */}
@@ -59,7 +46,7 @@ export const Dessert = ({ data }) => {
                     <span className="MenuTextSp"></span>¥580
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   <p className="MenuTitele">パインシャーベット (果肉入り)</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥530 */}
@@ -67,7 +54,7 @@ export const Dessert = ({ data }) => {
                     <span className="MenuTextSp"></span>¥600
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   <p className="MenuTitele">カカオショコラアイス</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥530 */}
@@ -75,7 +62,7 @@ export const Dessert = ({ data }) => {
                     <span className="MenuTextSp"></span>¥600
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   <p className="MenuTitele">生チョコアイス (チョコ・抹茶)</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥370 */}
@@ -83,7 +70,7 @@ export const Dessert = ({ data }) => {
                     <span className="MenuTextSp"></span>¥420
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   <p className="MenuTitele">クリームソーダ</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥500 */}
@@ -91,7 +78,7 @@ export const Dessert = ({ data }) => {
                     <span className="MenuTextSp"></span>¥570
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   <p className="MenuTitele">クリームコーラ</p>
                   <p className="MenuText">
                     {/* <span className="MenuTextSp"></span>¥500 */}
@@ -99,7 +86,7 @@ export const Dessert = ({ data }) => {
                     <span className="MenuTextSp"></span>¥570
                   </p>
                 </div>
-                <div className="MenuCap">
+                <div className="MenuCaption">
                   {/* <p className="MenuTax">※税抜き価格表示</p> */}
                   <p className="MenuTax">※税込価格表示</p>
                 </div>

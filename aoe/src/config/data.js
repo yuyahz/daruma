@@ -24,7 +24,7 @@ export const CardData = [
   {
     id: "rice-dishes",
     cardImg: RiceDishes,
-    cardTitle: "ご飯もの・スープ",
+    cardTitle: "ご飯もの・スープ・キムチ",
     cardText:
       "先代から受け継がれたレシピは、牛から出汁をとりじっく手間暇かけたスー プです。当店オリジナルのメニューも大人気!!",
   },

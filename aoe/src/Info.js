@@ -12,9 +12,13 @@ import Parking_1 from "./assets/Parking_1.png";
 import Parking_2 from "./assets/Parking_2.png";
 
 const Styles = styled.div`
-  .InfoSecTitle {
+  .InfoTitleSec {
     padding-top: 2%;
     text-align: center;
+
+    @media screen and (max-width: 992px) {
+      margin-top: 3rem;
+    }
   }
 
   .InfoTitle {
@@ -46,10 +50,15 @@ const Styles = styled.div`
   .InfoFrame {
     margin: 0 2rem 2rem;
     padding: 3% 3% 1%;
+    text-align: center;
     font-family: "Noto Serif JP", serif;
     background-color: #c73d13;
     border: 4px double #007bff;
     border-radius: 1rem;
+
+    @media screen and (max-width: 992px) {
+      margin: 0 0 2rem 0;
+    }
   }
 
   .InfoCap {
@@ -86,19 +95,15 @@ export const Info = () => (
   <Styles>
     <div className="restrict-width">
       <Container fluid={true}>
-        <Row className="InfoSecTitle">
+        <Row className="InfoTitleSec">
           <Col md={{ span: 8, offset: 2 }}>
             <div className="InfoText">
               <h2 className="InfoTitle">店内紹介</h2>
               <div className="InfoFrame">
+                <p>明るい店内は、アットホームな雰囲気!!</p>
+                <p>宴会、2次会に最適な広さです。</p>
                 <p>
-                  明るい店内は、アットホームな雰囲気！宴会、2次会に最適な広さです。
-                </p>
-                <p>
-                  お座敷の席が多いため、お子様連れのお客様も、ゆっくりお食事が楽しめます。
-                </p>
-                <p>
-                  店内が広く、段差も少ないため車椅子のお客様も、安心してご来店いただけます。
+                  お座敷の席が多いため、お子様連れのお客様もゆっくりお食事が楽しんで頂けます。店内が広く段差も少ないため車椅子のお客様も、安心してご来店いただけます。
                 </p>
               </div>
             </div>

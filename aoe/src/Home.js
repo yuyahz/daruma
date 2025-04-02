@@ -266,26 +266,14 @@ export const Home = () => (
             >
               <FadeIn.Up>
                 <div className="card-container">
-                  <ul className="against-reboot">
+                  <ul className="against-reboot m-0 p-0">
                     <h3>無料スタンプカード受付中！</h3>
-                    <li style={{ paddingBottom: "6px" }}>
-                      ご飲食￥1,000毎にスタンプ1個！
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      スタンプ36個で、次回1,000割引！
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      現金及び他券との併用はできません。
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      紛失などによる再発行は致しません。
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      発行店のみご利用いただけます。
-                    </li>
-                    <li style={{ paddingBottom: "6px" }}>
-                      紛失などによる再発行は致しません。
-                    </li>
+                    <li>ご飲食￥1,000毎にスタンプ1個！</li>
+                    <li>スタンプ36個で、次回1,000割引！</li>
+                    <li>現金及び他券との併用はできません。</li>
+                    <li>紛失などによる再発行は致しません。</li>
+                    <li>発行店のみご利用いただけます。</li>
+                    <li>紛失などによる再発行は致しません。</li>
                     <li>
                       スタンプカードのご利用は、一回につき一品限りとさせて頂きます。
                     </li>
@@ -314,19 +302,17 @@ export const Home = () => (
                       <FaFax className="d-none d-xl-block d-md-none d-lg-none" />
                     </IconContext.Provider>
 
-                    <ol type="1" className="against-reboot">
+                    <ol type="1" className="against-reboot m-0 p-0">
                       <IconContext.Provider
                         value={{ color: "white", size: "40px" }}
                       >
                         <FaFax className="d-xl-none mb-3" />
                       </IconContext.Provider>
-                      <li style={{ paddingBottom: "6px" }}>
+                      <li>
                         お持ち帰りをご希望のお客様は<u>こちら</u>
                         をクリックして頂き、FAX用紙をダウンロード。
                       </li>
-                      <li style={{ paddingBottom: "6px" }}>
-                        必要事項を記入後、当店まで送付して頂きます。
-                      </li>
+                      <li>必要事項を記入後、当店まで送付して頂きます。</li>
                       <li>
                         受け取り完了後、指定日に商品をお引き取りください。
                       </li>

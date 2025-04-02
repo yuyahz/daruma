@@ -12,6 +12,10 @@ const Styles = styled.div`
     text-align: center;
     color: #ffff;
 
+    img {
+      max-width: 100%;
+    }
+
     @media screen and (max-width: 576px) {
       margin-bottom: 20%;
     }
@@ -58,7 +62,7 @@ const Styles = styled.div`
 
       @media screen and (max-width: 576px) {
         border-radius: 30px;
-        padding: 30px 10vw;
+        padding: 6.5vw 5vw;
       }
     }
 
@@ -87,8 +91,8 @@ export const BottomSet = () => {
   return (
     <Styles>
       <Container fluid>
-        <Row className="BottomSet">
-          <Col md={{ span: 4, offset: 4 }}>
+        <Row className="BottomSet d-flex justify-content-center">
+          <Col>
             <Image src={CardList} alt="CardList" fluid />
           </Col>
         </Row>
@@ -97,7 +101,7 @@ export const BottomSet = () => {
           <Col className="container-fluid">
             <div className="contact">
               <div className="contact-container">
-                <h4>ご予約お問い合わせはこちらまで</h4>
+                <h4>ご予約お問い合わせはこちらまで。</h4>
                 <p>
                   ※ご予約は60名様まで承ります。お肉のお持ち帰りは基本的にFAXにて承っておりますが電話注文でも可能です。
                 </p>
