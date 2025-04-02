@@ -297,7 +297,7 @@ export const Home = () => (
         </Col>
       </Row>
 
-      <Row className="FaxBg">
+      <Row id="takeout" className="FaxBg">
         <Col md={{ span: 10, offset: 1 }} id="Fax">
           <Row className="Fax" xs={1} md={2}>
             <Col

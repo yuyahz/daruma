@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import Logo from "./assets/Logo.svg";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import {
   BrowserRouter as Router,
   HashRouter,
@@ -28,9 +29,11 @@ class App extends Component {
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
             <Link to="/">
-              <div>
-                <Image className="HomeLogo" src={Logo} alt="HomeLogo" fluid />
-              </div>
+              <HashLink smooth to="#home">
+                <div id="home">
+                  <Image className="HomeLogo" src={Logo} alt="HomeLogo" fluid />
+                </div>
+              </HashLink>
             </Link>
           </Col>
         </Row>

@@ -144,7 +144,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article"}
                     onClick={(e) => handleTabSelect("Article", e)}
                   >
-                    2025.2.27 <h6>3月定休日のお知らせ</h6>
+                    2025.3.31 <h6>4月定休日のお知らせ</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -153,7 +153,7 @@ export const NewsList = () => {
                     active={selectedTab === "Article1"}
                     onClick={(e) => handleTabSelect("Article1", e)}
                   >
-                    2025.2.11 <h6>臨時休業のお知らせ</h6>
+                    2025.2.27 <h6>3月定休日のお知らせ</h6>
                   </ListGroup.Item>
 
                   <ListGroup.Item
@@ -188,6 +188,25 @@ export const NewsList = () => {
               <Col sm={12} lg={8} className="contents order-1 order-lg-2">
                 <Tab.Content className="tabFrame">
                   <Tab.Pane className="tabContent" eventKey="Article">
+                    <h3 className="title">4月の定休日</h3>
+                    <p className="br">
+                      日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
+                    </p>
+                    <p>4月のお休みは、</p>
+                    <p className="br font">
+                      <strong>4月7日</strong>&nbsp;/&nbsp;
+                      <strong>4月14日</strong>&nbsp;/&nbsp;
+                      <strong>4月21日</strong>&nbsp;/&nbsp;
+                      <strong>4月22日</strong>&nbsp;/&nbsp;
+                      <strong>4月28日</strong>
+                    </p>
+                    <p className="br">
+                      スタッフ一同、心よりお待ちいたしております。
+                    </p>
+                    <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
+                  </Tab.Pane>
+
+                  <Tab.Pane className="tabContent" eventKey="Article1">
                     <h3 className="title">3月の定休日</h3>
                     <p className="br">
                       日頃より、焼肉ダルマ青江店のホームページをご利用いただき、誠にありがとうございます。
@@ -207,6 +226,8 @@ export const NewsList = () => {
                     <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
                   </Tab.Pane>
 
+                  {/* 臨時休業のお知らせ
+                  
                   <Tab.Pane className="tabContent" eventKey="Article1">
                     <h3 className="title">臨時休業のお知らせ</h3>
                     <p className="br">
@@ -221,7 +242,7 @@ export const NewsList = () => {
                       お客様にはご不便とご迷惑をお掛けいたしますが、ご了承の程、よろしくお願いいたします。
                     </p>
                     <p className="br">焼肉ダルマ青江店 スタッフ一同</p>
-                  </Tab.Pane>
+                  </Tab.Pane> */}
 
                   <Tab.Pane className="tabContent" eventKey="Article2">
                     <h3 className="title">

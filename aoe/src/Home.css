@@ -20,7 +20,8 @@
 }
 
 .H1Title {
-  margin-top: 44px;
+  margin-top: 24px;
+  margin-bottom: 60%;
   font-family: "Noto sans JP", serif;
   font-size: 24px;
   color: #fff;
@@ -500,6 +501,9 @@ a:hover {
 }
 
 @media screen and (max-width: 1260px) {
+  .H1Title {
+    margin-bottom: 10%;
+  }
   .PointBtn {
     border-radius: 1.6vw;
   }
