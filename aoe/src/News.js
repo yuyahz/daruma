@@ -38,10 +38,6 @@ const Styles = styled.div`
         margin: 3rem 0 0 0;
       }
     }
-
-    /* @media screen and (max-width: 992px) {
-      margin-top: 2rem;
-    } */
   }
 `;
 

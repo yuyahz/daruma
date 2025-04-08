@@ -8,7 +8,8 @@
 }
 
 .MenuTitleImg {
-  width: 17%;
+  width: 100%;
+  max-width: 240px;
 }
 
 .MenuTitleSpace {
@@ -161,12 +162,6 @@
   .bottom-space {
     margin-bottom: 17%;
   }
-  .MenuTitleImg {
-    width: 140px;
-  }
-  /* .MenuTitle {
-    margin: 3rem 0 1.5rem 0;
-  } */
   .MenuLunchBottom {
     margin-top: 24px;
   }

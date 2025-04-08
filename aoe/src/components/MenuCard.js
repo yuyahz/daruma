@@ -68,7 +68,6 @@ const Styles = styled.div`
 
   .CardButtonText {
     text-decoration: none;
-    color: #fff;
   }
 `;
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "../MenuJsx.css";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import DrinkDeco from "../assets/DrinkDeco.svg";
+import Menu_Drinks from "../assets/Menu_Drinks.svg";
 
 export const Drink = ({ data }) => {
   return (
@@ -12,8 +12,8 @@ export const Drink = ({ data }) => {
             <Col className="MenuTitleImgContainer">
               <Image
                 className="MenuTitleImg"
-                src={DrinkDeco}
-                alt="Logo"
+                src={Menu_Drinks}
+                alt="お飲み物"
                 fluid
               />
             </Col>

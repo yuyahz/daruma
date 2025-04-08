@@ -1,9 +1,9 @@
 import React from "react";
 import "../MenuJsx.css";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import OnedishDeco from "../assets/OnedishDeco.svg";
+import Menu_Appetizer from "../assets/Menu_Appetizer.svg";
 
-export const OneDish = ({ data }) => {
+export const Appetizer = ({ data }) => {
   return (
     <React.Fragment>
       <div className="restrict-width bottom-space">
@@ -12,8 +12,8 @@ export const OneDish = ({ data }) => {
             <Col className="MenuTitleImgContainer">
               <Image
                 className="MenuTitleImg"
-                src={OnedishDeco}
-                alt="Logo"
+                src={Menu_Appetizer}
+                alt="刺身、一品料理、生野菜"
                 fluid
               />
             </Col>

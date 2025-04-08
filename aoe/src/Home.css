@@ -90,6 +90,10 @@
   }
 }
 
+#takeout {
+  margin-bottom: 44px;
+}
+
 .TakeoutTop {
   width: 50%;
   min-width: 125px;
@@ -252,18 +256,15 @@
 
 .IntroSec {
   font-family: "Noto Serif JP", serif;
-  color: #f3f0db;
 }
 
 .IntroSecTop {
   margin-top: 15%;
   font-family: "Noto Serif JP", serif;
-  color: #f3f0db;
 }
 
 .IntroSecBottom {
   font-family: "Noto Serif JP", serif;
-  color: #f3f0db;
 }
 
 .IntroInsideSec {
@@ -422,6 +423,7 @@
   li {
     position: relative;
     padding-left: 16px;
+    padding-bottom: 6px;
   }
   li:before {
     content: "•";
@@ -525,6 +527,9 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
+  #takeout {
+    margin-bottom: 0;
+  }
   .TitleDeco {
     padding: 20%;
   }
@@ -570,7 +575,7 @@ a:hover {
   }
   .fax-container {
     max-width: 510.41px;
-    margin-bottom: 30%;
+    margin-bottom: 25%;
     padding: 0;
     padding-left: 30px;
     padding-right: 15px;

@@ -3,22 +3,18 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
 import * as FadeIn from "./components/FadeIn";
 import { BottomSet } from "./components/BottomSet";
-import InfoBox from "./assets/InfoBox.png";
-import InfoFloor from "./assets/InfoFloor.png";
-import InfoParty_1 from "./assets/InfoParty_1.png";
-import InfoParty_2 from "./assets/InfoParty_2.png";
-import InfoWaitting_1 from "./assets/InfoWaitting_1.png";
-import Parking_1 from "./assets/Parking_1.png";
-import Parking_2 from "./assets/Parking_2.png";
+import InfoBox from "./assets/Info_Box.webp";
+import InfoFloor from "./assets/Info_Floor.webp";
+import InfoParty_1 from "./assets/Info_Party_1.webp";
+import InfoParty_2 from "./assets/Info_Party_2.webp";
+import InfoWaitting_1 from "./assets/Info_Waitting_1.webp";
+import Parking_1 from "./assets/Info_Parking_1.webp";
+import Parking_2 from "./assets/Info_Parking_2.webp";
 
 const Styles = styled.div`
   .InfoTitleSec {
     padding-top: 2%;
     text-align: center;
-
-    @media screen and (max-width: 992px) {
-      margin-top: 3rem;
-    }
   }
 
   .InfoTitle {
@@ -27,7 +23,6 @@ const Styles = styled.div`
     font-family: "Noto Serif JP", serif;
     background: linear-gradient(transparent 0%, #007bff 0%);
     border-radius: 8px;
-    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 
   .InfoPic {
@@ -42,11 +37,6 @@ const Styles = styled.div`
     margin-bottom: 5%;
   }
 
-  .InfoText {
-    font-size: 90%;
-    color: #f3f0db;
-  }
-
   .InfoFrame {
     margin: 0 2rem 2rem;
     padding: 3% 3% 1%;
@@ -55,10 +45,6 @@ const Styles = styled.div`
     background-color: #c73d13;
     border: 4px double #007bff;
     border-radius: 1rem;
-
-    @media screen and (max-width: 992px) {
-      margin: 0 0 2rem 0;
-    }
   }
 
   .InfoCap {
@@ -83,11 +69,39 @@ const Styles = styled.div`
 
   .InfoBr {
     white-space: pre-wrap;
-    font-size: 60%;
+    font-size: 12px;
   }
 
   .InfoParty_1 {
     margin-bottom: 3%;
+  }
+
+  .last-content {
+    margin-bottom: 10%;
+  }
+
+  @media screen and (max-width: 992px) {
+    .InfoTitleSec {
+      margin-top: 3rem;
+    }
+    .InfoFrame {
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .last-content {
+      margin-bottom: 20%;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .InfoCapTitele {
+      float: none;
+    }
+    .InfoCapText {
+      text-align: left;
+    }
   }
 `;
 
@@ -97,7 +111,7 @@ export const Info = () => (
       <Container fluid={true}>
         <Row className="InfoTitleSec">
           <Col md={{ span: 8, offset: 2 }}>
-            <div className="InfoText">
+            <div>
               <h2 className="InfoTitle">店内紹介</h2>
               <div className="InfoFrame">
                 <p>明るい店内は、アットホームな雰囲気!!</p>
@@ -167,7 +181,7 @@ export const Info = () => (
                 <div className="InfoCap">
                   <p className="InfoCapTitele">宴会場</p>
                   <p className="InfoCapText">
-                    宴会場は最大６０名まで、利用可能
+                    宴会場は最大６０名まで利用可能
                     <p className="InfoBr">
                       ※(少人数でご利用したいお客様は、個室としてもご利用して頂けます)
                     </p>
@@ -210,13 +224,13 @@ export const Info = () => (
             <div className="InfoSec">
               <div className="InfoCap">
                 <p className="InfoCapTitele">第一駐車場</p>
-                <p className="InfoCapText">最大　16台</p>
+                <p className="InfoCapText">最大16台停車可能</p>
               </div>
             </div>
           </Col>
         </Row>
 
-        <Row className="InfoSecTitle">
+        <Row className="InfoSecTitle last-content">
           <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
             <Row xs={1} md={1}>
               <Col>
@@ -227,7 +241,7 @@ export const Info = () => (
               <div className="InfoSec">
                 <div className="InfoCap">
                   <p className="InfoCapTitele">第二駐車場</p>
-                  <p className="InfoCapText">最大 16台</p>
+                  <p className="InfoCapText">最大16台停車可能</p>
                 </div>
               </div>
             </Row>

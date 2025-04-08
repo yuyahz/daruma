@@ -1,59 +1,59 @@
-import Yakiniku from "../assets/Yakiniku.png";
-import OneDish from "../assets/OneDish.png";
-import RiceDishes from "../assets/RiceDishes.png";
-import Drink from "../assets/Drink.png";
-import Dessert from "../assets/Dessert.png";
-import PartyPlan from "../assets/PartyPlan.png";
-import Lunch from "../assets/Lunch.png";
+import Yakiniku from "../assets/Menu_Yakiniku.webp";
+import Appetizer from "../assets/Menu_Appetizer.webp";
+import Foods from "../assets/Menu_Foods.webp";
+import Drink from "../assets/Menu_Drink.webp";
+import Dessert from "../assets/Menu_Dessert.webp";
+import Set from "../assets/Menu_Set.webp";
+import Lunch from "../assets/Menu_Lunch.webp";
 
 export const CardData = [
   {
     id: "yakiniku",
     cardImg: Yakiniku,
+    cardAlt: "焼肉ダルマ青江店焼肉",
     cardTitle: "焼肉",
-    cardText:
-      "市場直送の新鮮で選りすぐりの部位を 美味しく召し上がって頂けるように、スタッフ自ら仕込み提供しています。",
+    cardText: "市場直送の新鮮で選りすぐりの部位を...",
   },
   {
-    id: "one-dish",
-    cardImg: OneDish,
+    id: "appetizer",
+    cardImg: Appetizer,
+    cardAlt: "焼肉ダルマ青江店刺身と一品料理",
     cardTitle: "刺身・一品料理・生野菜",
-    cardText:
-      "安心安全を第一にスタッフ自ら仕込んだ新鮮な牛の刺身と、当店自慢の本場韓国料理の味を是非。",
+    cardText: "安心安全を第一にスタッフ自ら仕込んだ...",
   },
   {
-    id: "rice-dishes",
-    cardImg: RiceDishes,
+    id: "foods",
+    cardImg: Foods,
+    cardAlt: "焼肉ダルマ青江店ご飯ものとスープ",
     cardTitle: "ご飯もの・スープ・キムチ",
-    cardText:
-      "先代から受け継がれたレシピは、牛から出汁をとりじっく手間暇かけたスー プです。当店オリジナルのメニューも大人気!!",
+    cardText: "先代から受け継がれたレシピは...",
   },
   {
     id: "drinks",
     cardImg: Drink,
+    cardAlt: "焼肉ダルマ青江店お酒や飲み物",
     cardTitle: "お飲物",
-    cardText:
-      "キンキンに冷えたビールは勿論!! 店長自らピックアップした日本と韓国両方のお酒を取り揃えています。",
+    cardText: "キンキンに冷えたビールは勿論...",
   },
   {
     id: "dessert",
     cardImg: Dessert,
+    cardAlt: "焼肉ダルマ青江店デザート",
     cardTitle: "デザート",
-    cardText:
-      "大人にもお子様にも人気のソフトクリーム以外にも、フレッシュフルーツのアイスも取り揃えています。",
+    cardText: "大人にもお子様にも人気のソフトクリーム...",
   },
   {
-    id: "party-plan",
-    cardImg: PartyPlan,
+    id: "set",
+    cardImg: Set,
+    cardAlt: "焼肉ダルマ青江店宴会コース料理",
     cardTitle: "宴会コース料理",
-    cardText:
-      "幹事さまの手間を省く為に分かりやすく、満足していただけるコースをご用意しております。",
+    cardText: "幹事さまの手間を省く為に分かりやすく...",
   },
   {
     id: "lunch",
     cardImg: Lunch,
+    cardAlt: "焼肉ダルマ青江店韓国ランチ",
     cardTitle: "韓国ランチ",
-    cardText:
-      "リーズナブルに本格韓国料理を楽しんで召し上がって頂けるメニューをご用意しています。",
+    cardText: "リーズナブルに本格韓国料理を...",
   },
 ];

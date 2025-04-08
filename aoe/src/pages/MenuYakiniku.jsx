@@ -1,7 +1,7 @@
 import React from "react";
 import "../MenuJsx.css";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import YakinikuDeco from "../assets/YakinikuDeco.svg";
+import Menu_Yakiniku from "../assets/Menu_Yakiniku.svg";
 
 export const Yakiniku = ({ data }) => {
   return (
@@ -12,8 +12,8 @@ export const Yakiniku = ({ data }) => {
             <Col className="MenuTitleImgContainer">
               <Image
                 className="MenuTitleImg"
-                src={YakinikuDeco}
-                alt="Logo"
+                src={Menu_Yakiniku}
+                alt="焼肉"
                 fluid
               />
             </Col>

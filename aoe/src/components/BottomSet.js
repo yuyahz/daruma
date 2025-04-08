@@ -10,7 +10,7 @@ const Styles = styled.div`
     padding: 2% 0;
     margin-bottom: 7%;
     text-align: center;
-    color: #ffff;
+    color: #fff;
 
     img {
       max-width: 100%;
@@ -91,6 +91,22 @@ export const BottomSet = () => {
   return (
     <Styles>
       <Container fluid>
+        <Row className="BottomSet">
+          <Col md={{ span: 6, offset: 3 }}>
+            <div style={{ borderRadius: "30px", overflow: "hidden" }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.862202099409!2d133.9139300772949!3d34.63292238684366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554078f39efa369%3A0xb31d46e5bf98f192!2sYakiniku%20Daruma!5e0!3m2!1sen!2sca!4v1744074812328!5m2!1sen!2sca"
+                width="100%"
+                height="400"
+                style={{ border: 0, display: "block" }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </Col>
+        </Row>
+
         <Row className="BottomSet d-flex justify-content-center">
           <Col>
             <Image src={CardList} alt="CardList" fluid />
@@ -118,7 +134,6 @@ export const BottomSet = () => {
                 </div>
               </div>
             </div>
-            {/* <Image src={Contact} alt="Contact" fluid /> */}
           </Col>
         </Row>
 

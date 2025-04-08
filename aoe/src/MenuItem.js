@@ -1,14 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
 import { CardData } from "./config/data";
 import { BottomSet } from "./components/BottomSet";
 import { Yakiniku } from "./pages/MenuYakiniku";
-import { OneDish } from "./pages/MenuOneDish";
-import { RiceDishes } from "./pages/MenuRiceDishes";
+import { Appetizer } from "./pages/MenuAppetizer";
+import { Foods } from "./pages/MenuFoods";
 import { Drink } from "./pages/MenuDrink";
 import { Dessert } from "./pages/MenuDessert";
-import { PartyPlan } from "./pages/MenuPartyPlan";
+import { Set } from "./pages/MenuSet";
 import { Lunch } from "./pages/MenuLunch";
 
 const MenuItem = () => {
@@ -26,16 +25,16 @@ const getComponent = (id) => {
   switch (id) {
     case "yakiniku":
       return <Yakiniku data={fetchData} />;
-    case "one-dish":
-      return <OneDish data={fetchData} />;
-    case "rice-dishes":
-      return <RiceDishes data={fetchData} />;
+    case "appetizer":
+      return <Appetizer data={fetchData} />;
+    case "foods":
+      return <Foods data={fetchData} />;
     case "drinks":
       return <Drink data={fetchData} />;
     case "dessert":
       return <Dessert data={fetchData} />;
-    case "party-plan":
-      return <PartyPlan data={fetchData} />;
+    case "set":
+      return <Set data={fetchData} />;
     case "lunch":
       return <Lunch data={fetchData} />;
     default:

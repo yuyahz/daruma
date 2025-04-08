@@ -28,7 +28,7 @@ const Styles = styled.div`
   }
 
   .Link {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     transition: 0.9s cubic-bezier(0.22, 1, 0.36, 1);
     &:hover {

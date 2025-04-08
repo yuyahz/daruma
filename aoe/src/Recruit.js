@@ -7,25 +7,18 @@ import RecruitServer from "./assets/RecruitServer.png";
 import RecruitKitchen from "./assets/RecruitKitchen.png";
 
 const Styles = styled.div`
-  .RecruitTitleSec {
+  .RecruitTitleWrapper {
     padding-top: 2%;
     text-align: center;
-
-    @media screen and (max-width: 992px) {
-      margin-top: 3rem;
-    }
   }
 
-  .RecruitTopSec {
+  .RecruitTopWrapper {
     padding: 5% 0;
-
-    @media screen and (max-width: 992px) {
-      padding: 10% 0;
-    }
   }
 
-  .RecruitBottomSec {
+  .RecruitBottomWrapper {
     padding-bottom: 8%;
+    margin-bottom: 10%;
   }
 
   .RecruitTitle {
@@ -34,7 +27,6 @@ const Styles = styled.div`
     font-family: "Noto Serif JP", serif;
     background: linear-gradient(transparent 0%, #007bff 0%);
     border-radius: 8px;
-    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
   }
 
   .RecruitSubTitle {
@@ -44,15 +36,10 @@ const Styles = styled.div`
     border-bottom: solid 1px #007bff;
   }
 
-  .RecruitTitleText {
+  .RecruitTitleTextWrapper {
     margin: 0 auto;
     max-width: 600px;
     font-family: "Noto Serif JP", serif;
-  }
-
-  .RecruitText {
-    font-size: 90%;
-    color: #f3f0db;
   }
 
   .RecruitPic {
@@ -60,7 +47,21 @@ const Styles = styled.div`
     display: block;
     height: auto;
     max-width: 100%;
-    /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
+  }
+
+  @media screen and (max-width: 992px) {
+    .RecruitTitleWrapper {
+      margin-top: 3rem;
+    }
+    .RecruitTopWrapper {
+      padding: 10% 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .RecruitBottomWrapper {
+      margin-bottom: 20%;
+    }
   }
 `;
 
@@ -68,11 +69,11 @@ export const Recruit = () => (
   <Styles>
     <div className="restrict-width">
       <Container fluid={true}>
-        <Row className="RecruitTitleSec">
+        <Row className="RecruitTitleWrapper">
           <Col md={{ span: 8, offset: 2 }}>
-            <div className="RecruitText">
+            <div>
               <h2 className="RecruitTitle">アルバイト募集中</h2>
-              <p className="RecruitTitleText">
+              <p className="RecruitTitleTextWrapper">
                 未経験でも大丈夫！先輩スタッフが丁寧にお教えいたしますので、ご安心下さい。
                 興味のある方は 086 - 224 - 3525 までお気軽にお電話下さい。
               </p>
@@ -80,7 +81,7 @@ export const Recruit = () => (
           </Col>
         </Row>
 
-        <Row className="RecruitTopSec">
+        <Row className="RecruitTopWrapper">
           <Col md={{ span: 8, offset: 2 }}>
             <Row xs={1} md={2}>
               <Col>
@@ -89,7 +90,7 @@ export const Recruit = () => (
                 </FadeIn.Up>
               </Col>
               <Col>
-                <div className="RecruitText">
+                <div>
                   <h3 className="RecruitSubTitle">ホールスタッフ</h3>
                   <p>条件　16歳以上　土日勤務可能な方</p>
                   <p>
@@ -106,7 +107,7 @@ export const Recruit = () => (
           </Col>
         </Row>
 
-        <Row className="RecruitBottomSec">
+        <Row className="RecruitBottomWrapper">
           <Col md={{ span: 8, offset: 2 }}>
             <Row xs={1} md={2}>
               <Col>
@@ -115,7 +116,7 @@ export const Recruit = () => (
                 </FadeIn.Up>
               </Col>
               <Col>
-                <div className="RecruitText">
+                <div>
                   <h3 className="RecruitSubTitle">キッチンスタッフ</h3>
                   <p>条件　16歳以上　土日勤務可能な方</p>
                   <p>

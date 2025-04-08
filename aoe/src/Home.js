@@ -9,17 +9,14 @@ import * as FadeIn from "./components/FadeIn";
 import TitleMainDeco from "./assets/TitleMainDeco.svg";
 import TitleHalfCircle from "./assets/TitleHalfCircle.svg";
 import ScrollIcon from "./assets/ScrollIcon.svg";
-import Slider_1 from "./assets/Slider_1.png";
-import Slider_2 from "./assets/Slider_2.png";
-import Slider_3 from "./assets/Slider_3.png";
-import IntroPic_1 from "./assets/IntroPic_1.png";
-import IntroPic_2 from "./assets/IntroPic_2.png";
-import IntroPic_3 from "./assets/IntroPic_3.png";
-import Takeout from "./assets/Takeout.svg";
-import TakeoutDeco from "./assets/TakeoutDeco.svg";
+import Slider_1 from "./assets/Home_Slider_1.webp";
+import Slider_2 from "./assets/Home_Slider_2.webp";
+import Slider_3 from "./assets/Home_Slider_3.webp";
+import IntroPic_1 from "./assets/Home_IntroPic_1.webp";
+import IntroPic_2 from "./assets/Home_IntroPic_2.webp";
+import IntroPic_3 from "./assets/Home_IntroPic_3.webp";
 import TitleMainDecoBlue from "./assets/TitleMainDeco-Blue.svg";
 import PointCard from "./assets/PointCard.svg";
-import PointCardDeco from "./assets/PointCardDeco.svg";
 import { IconContext } from "react-icons";
 import { FaShoppingBag } from "react-icons/fa";
 import { GiFruitTree } from "react-icons/gi";
@@ -121,7 +118,7 @@ export const Home = () => (
                 <Image
                   className="d-block w-100 CarouselPic"
                   src={Slider_1}
-                  alt="First slide"
+                  alt="焼肉ダルマ青江店"
                   rounded
                 />
               </Carousel.Item>
@@ -129,7 +126,7 @@ export const Home = () => (
                 <Image
                   className="d-block w-100 CarouselPic"
                   src={Slider_2}
-                  alt="Second slide"
+                  alt="焼肉ダルマ青江店"
                   rounded
                 />
               </Carousel.Item>
@@ -137,7 +134,7 @@ export const Home = () => (
                 <Image
                   className="d-block w-100 CarouselPic"
                   src={Slider_3}
-                  alt="Third slide"
+                  alt="焼肉ダルマ青江店"
                   rounded
                 />
               </Carousel.Item>
@@ -162,7 +159,7 @@ export const Home = () => (
             <Col className="IntroCaption">
               <div className="IntroCaption2">
                 <h2 className="IntroCaptionTitle2">受け継がれる秘伝のタレ</h2>
-                <p className="IntroCaptionP">
+                <p>
                   ダルマのタレは、10種類以上の厳選された素材を独自の製法でブレンドした、秘伝の味。
                   創業から変わらず、
                   守り続けているタレはコクと甘みのある深い味わいになっています。

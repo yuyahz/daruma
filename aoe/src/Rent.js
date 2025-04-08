@@ -3,12 +3,11 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
 import * as FadeIn from "./components/FadeIn";
 import { BottomSet } from "./components/BottomSet";
-import BBQ_AllStuffs from "./assets/BBQ_AllStuffs.png";
-import BBQ from "./assets/BBQ.png";
-import TeburaSet from "./assets/TeburaSet.png";
-import Set1600 from "./assets/Set1600.png";
-import Set2100 from "./assets/Set2100.png";
-import Takeout from "./assets/Takeout.svg";
+import BBQ_AllStuffs from "./assets/Rent_BBQ_AllStuffs.webp";
+import BBQ from "./assets/Rent_BBQ.webp";
+import TeburaSet from "./assets/Rent_TeburaSet.webp";
+import Set1600 from "./assets/Rent_Set1600.webp";
+import Set2100 from "./assets/Rent_Set2100.webp";
 
 const Styles = styled.div`
   .RentSecTitle {
@@ -41,11 +40,6 @@ const Styles = styled.div`
     background: linear-gradient(transparent 0%, #007bff 0%);
     border-radius: 8px;
     /* filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2)); */
-  }
-
-  .RentText {
-    font-size: 90%;
-    color: #f3f0db;
   }
 
   .RentTitleText {
@@ -99,9 +93,49 @@ const Styles = styled.div`
 
   .RentTax {
     font-size: 90%;
-    color: #f3f0db;
     text-align: center;
-    margin: 5% 0 20% 0;
+    margin-top: 5%;
+  }
+
+  .fax-container-rent {
+    margin: 10% 0;
+  }
+
+  .fax-wrapper-rent {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+
+    h3 {
+      color: #fff;
+    }
+
+    li {
+      padding-bottom: 6px;
+      margin-left: 16px;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .fax-container-rent:hover {
+    background-color: #007bff;
+    color: #fff;
+    padding: 24px 24px 0 24px;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .fax-container-rent {
+      margin: 30% 0;
+    }
   }
 `;
 
@@ -111,7 +145,7 @@ export const Rent = () => (
       <Container fluid={true}>
         <Row className="RentSecTitle">
           <Col md={{ span: 8, offset: 2 }}>
-            <div className="RentText">
+            <div>
               <h2 className="RentTitle">
                 BBQ器具<h2 className="RentTitleText">無料貸し出し</h2>
               </h2>
@@ -220,19 +254,37 @@ export const Rent = () => (
           </Col>
         </Row>
 
-        <Row>
-          <Col md={{ span: 6, offset: 3 }}>
-            <p className="RentTax">※税込価格表示</p>
+        <Col
+          className="Fax d-flex align-items-center justify-content-center"
+          md={{ span: 8, offset: 2 }}
+          id="Fax"
+        >
+          <p className="RentTax mb-0">※税込価格表示</p>
+        </Col>
+
+        <Row id="takeout" className="fax-container-rent">
+          <Col
+            className="Fax d-flex align-items-center justify-content-center"
+            md={{ span: 8, offset: 2 }}
+            id="Fax"
+          >
+            <FadeIn.Up>
+              <h3>お肉のみのお持ち帰り方はこちら</h3>
+              <a href={require("./assets/Document.pdf")} target="_blank">
+                <div className="fax-wrapper-rent">
+                  <ol type="1" className="against-reboot m-0 p-0">
+                    <li>
+                      お持ち帰りをご希望のお客様は<u>こちら</u>
+                      をクリックして頂き、FAX用紙をダウンロード。
+                    </li>
+                    <li>必要事項を記入後、当店まで送付して頂きます。</li>
+                    <li>受け取り完了後、指定日に商品をお引き取りください。</li>
+                  </ol>
+                </div>
+              </a>
+            </FadeIn.Up>
           </Col>
         </Row>
-
-        {/* <Row>
-        <Col md={{ span: 6, offset: 3 }} className="RentBtnSec">
-          <a href={require("./assets/Document.pdf")} target="_blank">
-            <Image className="RentBtn" src={Takeout} />
-          </a>
-        </Col>
-      </Row> */}
 
         <BottomSet />
       </Container>
