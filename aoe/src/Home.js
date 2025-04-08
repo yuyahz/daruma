@@ -118,7 +118,7 @@ export const Home = () => (
                 <Image
                   className="d-block w-100 CarouselPic"
                   src={Slider_1}
-                  alt="焼肉ダルマ青江店"
+                  alt="焼肉ダルマ青江店スライド1"
                   rounded
                 />
               </Carousel.Item>
@@ -126,7 +126,7 @@ export const Home = () => (
                 <Image
                   className="d-block w-100 CarouselPic"
                   src={Slider_2}
-                  alt="焼肉ダルマ青江店"
+                  alt="焼肉ダルマ青江店スライド2"
                   rounded
                 />
               </Carousel.Item>
@@ -134,7 +134,7 @@ export const Home = () => (
                 <Image
                   className="d-block w-100 CarouselPic"
                   src={Slider_3}
-                  alt="焼肉ダルマ青江店"
+                  alt="焼肉ダルマ青江店スライド3"
                   rounded
                 />
               </Carousel.Item>
@@ -151,6 +151,7 @@ export const Home = () => (
                 <Image
                   className="IntroPic"
                   src={IntroPic_1}
+                  alt="焼肉ダルマ青江店焼肉1"
                   style={{ borderRadius: "25px" }}
                 />
               </FadeIn.Left>
@@ -190,6 +191,7 @@ export const Home = () => (
                 <Image
                   className="IntroPic"
                   src={IntroPic_2}
+                  alt="焼肉ダルマ青江店焼肉2"
                   style={{ borderRadius: "25px" }}
                 />
               </FadeIn.Right>
@@ -206,6 +208,7 @@ export const Home = () => (
                 <Image
                   className="IntroPic"
                   src={IntroPic_3}
+                  alt="焼肉ダルマ青江店焼肉3"
                   style={{ borderRadius: "25px" }}
                 />
               </FadeIn.Left>
