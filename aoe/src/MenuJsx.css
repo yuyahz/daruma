@@ -2,78 +2,73 @@
   margin-bottom: 10%;
 }
 
-.MenuTitleImgContainer {
+.menu-title-img-container {
   text-align: center;
   margin-top: 44px;
 }
 
-.MenuTitleImg {
+.menu-title-img {
   width: 100%;
   max-width: 240px;
 }
 
-.MenuTitleSpace {
-  margin: 3% 0;
-  padding: 0 12% 0 12%;
-}
-
-.MenuWrapper {
+.menu-wrapper {
   margin-top: 44px;
 }
 
-.MenuSubtitleWrapper {
+.menu-subtitile-wrapper {
   padding: 1% 0;
   color: #007bff;
 }
 
-.MenuSubtitle {
+.menu-subtitile {
   padding-left: 6%;
   font-size: 80%;
   text-align: left;
   float: left;
 }
 
-.MenuSubtitileRightWrapper {
+.menu-subtitile-rightside-wrapper {
   padding-right: 4%;
   font-size: 80%;
   text-align: right;
 }
 
-.MenuSubtitileRight {
+.menu-subtitile-rightside {
   margin-right: 7.5%;
 }
 
-.MenuCaption {
+.menu-caption {
   border-top: solid 1px #007bff;
   padding-top: 2%;
   color: #f3f0db;
 }
 
-.SpecificSpace {
+.menu-specific-spacing {
   padding-top: 44px;
 }
 
-.MenuCaption:nth-child(1) {
+.menu-caption:nth-child(1) {
   border-top: none;
 }
 
-.MenuCaptionSet {
+.menu-captionSet {
   color: #f3f0db;
 }
 
-.MenuCaptionSetParty {
+.menu-captionSetParty {
   text-align: right;
   color: #f3f0db;
 }
 
-.MenuTitele {
+.menu-name {
   padding-left: 4%;
   font-size: 110%;
   text-align: left;
   float: left;
 }
 
-.MenuTitleBg {
+.menu-subtitle-bg-primary {
   padding: 0.5em 1em;
   margin: 1em 0;
   color: #f3f0db;
@@ -82,7 +77,7 @@
   filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.1));
 }
 
-.MenuTitleBgSub {
+.menu-subtitle-bg-secondary {
   padding: 0.5em 1rem;
   margin: 1em 0;
   color: #f3f0db;
@@ -91,45 +86,47 @@
   filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3));
 }
 
-.MenuText {
+.menu-price-wrapper {
   padding-right: 4%;
   font-size: 120%;
   text-align: right;
 }
 
-.MenuSmText {
-  font-size: 70%;
+.menu-price {
+  margin-right: 6%;
 }
 
-.MenuTax {
+.menu-tax {
   padding-right: 4%;
   font-size: 80%;
   text-align: right;
 }
 
-.MenuTextSp {
-  margin-right: 6%;
-}
-
-.MenuTextSpSingle {
+.menu-priceSingle {
   margin-right: 11%;
 }
 
-.MenuLunchTitle {
-  padding-top: 5%;
+.menu-lunch-titile-wrapper {
+  padding-top: 66px;
   text-align: center;
 }
 
-.MenuLunchText {
+.menu-lunch-titile {
   font-family: "Noto Serif JP", serif;
+  font-size: 44px;
+}
+
+.menu-lunch-subtitile {
+  font-family: "Noto Serif JP", serif;
+  font-size: 24px;
   color: #f3f0db;
 }
 
-.MenuLunchBottom {
+.menu-lunch-bottom-block {
   margin-top: 44px;
 }
 
-.MenuLunchBottomText {
+.menu-lunch-bottom-text {
   padding: 10%;
   font-family: "Noto Serif JP", serif;
   background-color: #007bff;
@@ -139,30 +136,17 @@
   border: 4px double #c73d13;
 }
 
-.MenuBr {
+.menu-line-break {
   white-space: pre-wrap;
   font-weight: bold;
   text-shadow: (2px 3px 5px rgba(1, 1, 0, 0.3));
-}
-
-.MenuBrParty {
-  white-space: pre-wrap;
-}
-
-@media screen and (max-width: 575px) {
-  .MenuDeco {
-    display: none;
-  }
-  .MenuTitleSpace {
-    padding: 10% 0 10% 0;
-  }
 }
 
 @media screen and (max-width: 992px) {
   .bottom-space {
     margin-bottom: 17%;
   }
-  .MenuLunchBottom {
+  .menu-lunch-bottom-block {
     margin-top: 24px;
   }
 }

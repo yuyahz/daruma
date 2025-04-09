@@ -5,7 +5,7 @@ import { BottomSet } from "./components/BottomSet";
 
 export const Menu = () => (
   <div className="restrict-width">
-    <Container fluid>
+    <Container fluid className="px-0 mx-0">
       <MenuCard />
       <BottomSet />
     </Container>

@@ -109,13 +109,15 @@
   right: 0;
   text-align: center;
   border-radius: 50px;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  border: none;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .TakeoutTop:hover {
-  transform: scale(0.95);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  background-color: #0056b3; /* darker blue */
+  color: white;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .TakeoutText {
@@ -139,13 +141,15 @@
   right: 0;
   text-align: center;
   border-radius: 50px;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  border: none;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .HanamiTop:hover {
-  transform: scale(0.95);
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  background-color: #f99e96; /* slightly darker pink */
+  color: white;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .HanamiText {
@@ -170,6 +174,13 @@
   padding-top: 1rem;
   border-radius: 10px;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.MobileTakeout:hover {
+  background-color: #0056b3; /* darker blue */
+  color: white;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .TakeoutTextM {
@@ -187,6 +198,13 @@
   padding-top: 1rem;
   border-radius: 10px;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.MobileHanami:hover {
+  background-color: #f99e96; /* slightly darker pink */
+  color: white;
+  filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .HanamiTextM {
@@ -475,7 +493,7 @@ a:hover {
 
 .fax-logo {
   width: 290px;
-  rotate: 20deg;
+  rotate: 15deg;
 }
 
 /* Media queries */
@@ -526,12 +544,12 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   #takeout {
     margin-bottom: 0;
   }
   .TitleDeco {
-    padding: 20%;
+    padding: 10% 10% 5% 10%;
   }
   .NewsBg {
     border: solid 4px #007bff;

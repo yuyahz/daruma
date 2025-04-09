@@ -11,10 +11,7 @@ const Styles = styled.div`
 
   .Article {
     margin: 3% 0 20% 0;
-    /* padding: 0 3%; */
-    /* background-color: white; */
     border-radius: 15px;
-    /* filter: drop-shadow(2px 3px 5px rgba(1, 1, 0, 0.3)); */
 
     @media screen and (max-width: 576px) {
       margin: 3% 0 30% 0;

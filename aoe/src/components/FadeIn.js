@@ -52,7 +52,7 @@ const FadeInUp = styled(FadeIn)`
 
 const FadeInDown = styled(FadeIn)`
   opacity: 0;
-  transition: 4s opacity 0.5s ease, transform 3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 1s ease, transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
   ${({ isActive }) => isActive && `opacity: 1;`}
   ${({ delay }) => delay && `transition-delay: ${delay}ms;`}
   transform: translateY(-30px);
