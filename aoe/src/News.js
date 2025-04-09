@@ -1,6 +1,7 @@
 import React from "react";
-import { Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
+import * as FadeIn from "./components/FadeIn";
+import { Row, Col, Image } from "react-bootstrap";
 import { NewsList } from "./components/NewsList";
 import { BottomSet } from "./components/BottomSet";
 
@@ -39,25 +40,27 @@ const Styles = styled.div`
 export const News = () => (
   <Styles>
     <div className="restrict-width">
-      <Row className="NewsTitleWrapper">
-        <Col>
-          <p>新着情報</p>
-        </Col>
-      </Row>
-      <Row>
-        <Col lg={{ span: 10, offset: 1 }}>
-          <div className="Article">
-            <NewsList />
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col md={{ span: 10, offset: 1 }}>
-          <div>
-            <BottomSet />
-          </div>
-        </Col>
-      </Row>
+      <FadeIn.Down>
+        <Row className="NewsTitleWrapper">
+          <Col>
+            <p>新着情報</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={{ span: 10, offset: 1 }}>
+            <div className="Article">
+              <NewsList />
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ span: 10, offset: 1 }}>
+            <div>
+              <BottomSet />
+            </div>
+          </Col>
+        </Row>
+      </FadeIn.Down>
     </div>
   </Styles>
 );

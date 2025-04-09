@@ -126,6 +126,10 @@ const Styles = styled.div`
     border-radius: 10px;
   }
 
+  .RentFax {
+    margin-bottom: 100px !important;
+  }
+
   @media screen and (max-width: 992px) {
     .RentTitleWrapper {
       padding-top: 60px;
@@ -133,6 +137,9 @@ const Styles = styled.div`
   }
 
   @media screen and (max-width: 767px) {
+    .RentFax {
+      margin-bottom: 25% !important;
+    }
     .fax-container-rent {
       margin: 30% 0;
     }
@@ -263,7 +270,7 @@ export const Rent = () => (
             <p className="RentTax mb-0">※税込価格表示</p>
           </Col>
 
-          <Row id="takeout" className="fax-container-rent">
+          <Row id="takeout" className="fax-container-rent RentFax">
             <Col
               className="Fax d-flex align-items-center justify-content-center"
               md={{ span: 8, offset: 2 }}
