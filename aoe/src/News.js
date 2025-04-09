@@ -5,35 +5,33 @@ import { NewsList } from "./components/NewsList";
 import { BottomSet } from "./components/BottomSet";
 
 const Styles = styled.div`
-  .News {
-    text-align: center;
-  }
-
   .Article {
     margin: 3% 0 20% 0;
     border-radius: 15px;
-
-    @media screen and (max-width: 576px) {
-      margin: 3% 0 30% 0;
-    }
   }
 
-  .NewsTitle {
+  .NewsTitleWrapper {
     color: #007bff;
     font-weight: bold;
     letter-spacing: 0.2em;
     text-align: center;
+    padding-top: 10%;
 
     p {
       color: white;
-      font-size: 1.5rem;
-      margin: 1.5rem 0 2rem 0;
+      font-size: 24px;
     }
+  }
 
-    @media screen and (max-width: 992px) {
-      p {
-        margin: 3rem 0 0 0;
-      }
+  @media screen and (max-width: 992px) {
+    .NewsTitleWrapper {
+      padding-top: 60px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .Article {
+      margin: 3% 0 30% 0;
     }
   }
 `;
@@ -41,7 +39,7 @@ const Styles = styled.div`
 export const News = () => (
   <Styles>
     <div className="restrict-width">
-      <Row className="NewsTitle">
+      <Row className="NewsTitleWrapper">
         <Col>
           <p>新着情報</p>
         </Col>

@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
 import * as FadeIn from "./components/FadeIn";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { BottomSet } from "./components/BottomSet";
 import InfoBox from "./assets/Info_Box.webp";
 import InfoFloor from "./assets/Info_Floor.webp";
@@ -12,8 +12,8 @@ import Parking_1 from "./assets/Info_Parking_1.webp";
 import Parking_2 from "./assets/Info_Parking_2.webp";
 
 const Styles = styled.div`
-  .InfoTitleSec {
-    padding-top: 2%;
+  .InfoTitleWrapper {
+    padding-top: 10%;
     text-align: center;
   }
 
@@ -22,7 +22,7 @@ const Styles = styled.div`
     margin-bottom: 8%;
     font-family: "Noto Serif JP", serif;
     background: linear-gradient(transparent 0%, #007bff 0%);
-    border-radius: 8px;
+    border-radius: 50px;
   }
 
   .InfoPic {
@@ -81,8 +81,8 @@ const Styles = styled.div`
   }
 
   @media screen and (max-width: 992px) {
-    .InfoTitleSec {
-      margin-top: 3rem;
+    .InfoTitleWrapper {
+      padding-top: 60px;
     }
     .InfoFrame {
       margin: 0 0 2rem 0;
@@ -107,149 +107,151 @@ const Styles = styled.div`
 
 export const Info = () => (
   <Styles>
-    <div className="restrict-width">
-      <Container fluid={true}>
-        <Row className="InfoTitleSec">
-          <Col md={{ span: 8, offset: 2 }}>
-            <div>
-              <h2 className="InfoTitle">店内紹介</h2>
-              <div className="InfoFrame">
-                <p>明るい店内は、アットホームな雰囲気!!</p>
-                <p>宴会、2次会に最適な広さです。</p>
-                <p>
-                  お座敷の席が多いため、お子様連れのお客様もゆっくりお食事が楽しんで頂けます。店内が広く段差も少ないため車椅子のお客様も、安心してご来店いただけます。
-                </p>
-              </div>
-            </div>
-          </Col>
-        </Row>
-
-        <Row className="InfoSecTitle">
-          <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
-            <Row xs={1} md={1}>
-              <Col>
-                <FadeIn.Up>
-                  <Image src={InfoBox} className="InfoPic" rounded />
-                </FadeIn.Up>
-              </Col>
-              <div className="InfoSec">
-                <div className="InfoCap">
-                  <p className="InfoCapTitele">BOX席</p>
-                  {/* <p className="InfoCapText">6人席 × 3</p> */}
+    <FadeIn.Down>
+      <div className="restrict-width">
+        <Container fluid={true}>
+          <Row className="InfoTitleWrapper">
+            <Col md={{ span: 8, offset: 2 }}>
+              <div>
+                <h2 className="InfoTitle">店内紹介</h2>
+                <div className="InfoFrame">
+                  <p>明るい店内は、アットホームな雰囲気!!</p>
+                  <p>宴会、2次会に最適な広さです。</p>
+                  <p>
+                    お座敷の席が多いため、お子様連れのお客様もゆっくりお食事が楽しんで頂けます。店内が広く段差も少ないため車椅子のお客様も、安心してご来店いただけます。
+                  </p>
                 </div>
               </div>
-            </Row>
-          </Col>
-        </Row>
+            </Col>
+          </Row>
 
-        <Row className="InfoSecTitle">
-          <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
-            <Row xs={1} md={1}>
-              <Col>
-                <FadeIn.Up>
-                  <Image src={InfoFloor} className="InfoPic" rounded />
-                </FadeIn.Up>
-              </Col>
-              <div className="InfoSec">
-                <div className="InfoCap">
-                  <p className="InfoCapTitele">板の間</p>
-                  {/* <p className="InfoCapText">４人席 × 5　6人席 × 3</p> */}
+          <Row className="InfoSecTitle">
+            <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
+              <Row xs={1} md={1}>
+                <Col>
+                  <FadeIn.Up>
+                    <Image src={InfoBox} className="InfoPic" rounded />
+                  </FadeIn.Up>
+                </Col>
+                <div className="InfoSec">
+                  <div className="InfoCap">
+                    <p className="InfoCapTitele">BOX席</p>
+                    {/* <p className="InfoCapText">6人席 × 3</p> */}
+                  </div>
                 </div>
-              </div>
-            </Row>
-          </Col>
-        </Row>
+              </Row>
+            </Col>
+          </Row>
 
-        <Row className="InfoSecTitle">
-          <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
-            <Row xs={1} md={1}>
-              <Col>
-                <FadeIn.Up>
-                  <Image
-                    className={"InfoPic" + " " + " InfoParty_1"}
-                    src={InfoParty_1}
-                    rounded
-                  />
-                </FadeIn.Up>
-              </Col>
-              <Col>
-                <FadeIn.Up>
-                  <Image src={InfoParty_2} className="InfoPic" rounded />
-                </FadeIn.Up>
-              </Col>
-              <div className="InfoSec">
-                <div className="InfoCap">
-                  <p className="InfoCapTitele">宴会場</p>
-                  <p className="InfoCapText">
-                    宴会場は最大６０名まで利用可能
-                    <p className="InfoBr">
-                      ※(少人数でご利用したいお客様は、個室としてもご利用して頂けます)
+          <Row className="InfoSecTitle">
+            <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
+              <Row xs={1} md={1}>
+                <Col>
+                  <FadeIn.Up>
+                    <Image src={InfoFloor} className="InfoPic" rounded />
+                  </FadeIn.Up>
+                </Col>
+                <div className="InfoSec">
+                  <div className="InfoCap">
+                    <p className="InfoCapTitele">板の間</p>
+                    {/* <p className="InfoCapText">４人席 × 5　6人席 × 3</p> */}
+                  </div>
+                </div>
+              </Row>
+            </Col>
+          </Row>
+
+          <Row className="InfoSecTitle">
+            <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
+              <Row xs={1} md={1}>
+                <Col>
+                  <FadeIn.Up>
+                    <Image
+                      className={"InfoPic" + " " + " InfoParty_1"}
+                      src={InfoParty_1}
+                      rounded
+                    />
+                  </FadeIn.Up>
+                </Col>
+                <Col>
+                  <FadeIn.Up>
+                    <Image src={InfoParty_2} className="InfoPic" rounded />
+                  </FadeIn.Up>
+                </Col>
+                <div className="InfoSec">
+                  <div className="InfoCap">
+                    <p className="InfoCapTitele">宴会場</p>
+                    <p className="InfoCapText">
+                      宴会場は最大６０名まで利用可能
+                      <p className="InfoBr">
+                        ※(少人数でご利用したいお客様は、個室としてもご利用して頂けます)
+                      </p>
                     </p>
-                  </p>
+                  </div>
                 </div>
-              </div>
-            </Row>
-          </Col>
-        </Row>
+              </Row>
+            </Col>
+          </Row>
 
-        <Row className="InfoSecTitle">
-          <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
-            <Row xs={1} md={1}>
-              <Col>
-                <FadeIn.Up>
-                  <Image src={InfoWaitting_1} className="InfoPic" rounded />
-                </FadeIn.Up>
-              </Col>
+          <Row className="InfoSecTitle">
+            <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
+              <Row xs={1} md={1}>
+                <Col>
+                  <FadeIn.Up>
+                    <Image src={InfoWaitting_1} className="InfoPic" rounded />
+                  </FadeIn.Up>
+                </Col>
+                <div className="InfoSec">
+                  <div className="InfoCap">
+                    <p className="InfoCapTitele">待合室</p>
+                    <p className="InfoCapText">
+                      ベビーベッド、おもちゃ、ベビーチェアあり
+                    </p>
+                  </div>
+                </div>
+              </Row>
+            </Col>
+          </Row>
+
+          <Row className="InfoSecTitle">
+            <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
+              <Row xs={1} md={1}>
+                <Col>
+                  <FadeIn.Up>
+                    <Image src={Parking_1} className="InfoPic" rounded />
+                  </FadeIn.Up>
+                </Col>
+              </Row>
               <div className="InfoSec">
                 <div className="InfoCap">
-                  <p className="InfoCapTitele">待合室</p>
-                  <p className="InfoCapText">
-                    ベビーベッド、おもちゃ、ベビーチェアあり
-                  </p>
-                </div>
-              </div>
-            </Row>
-          </Col>
-        </Row>
-
-        <Row className="InfoSecTitle">
-          <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
-            <Row xs={1} md={1}>
-              <Col>
-                <FadeIn.Up>
-                  <Image src={Parking_1} className="InfoPic" rounded />
-                </FadeIn.Up>
-              </Col>
-            </Row>
-            <div className="InfoSec">
-              <div className="InfoCap">
-                <p className="InfoCapTitele">第一駐車場</p>
-                <p className="InfoCapText">最大16台停車可能</p>
-              </div>
-            </div>
-          </Col>
-        </Row>
-
-        <Row className="InfoSecTitle last-content">
-          <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
-            <Row xs={1} md={1}>
-              <Col>
-                <FadeIn.Up>
-                  <Image src={Parking_2} className="InfoPic" rounded />
-                </FadeIn.Up>
-              </Col>
-              <div className="InfoSec">
-                <div className="InfoCap">
-                  <p className="InfoCapTitele">第二駐車場</p>
+                  <p className="InfoCapTitele">第一駐車場</p>
                   <p className="InfoCapText">最大16台停車可能</p>
                 </div>
               </div>
-            </Row>
-          </Col>
-        </Row>
+            </Col>
+          </Row>
 
-        <BottomSet />
-      </Container>
-    </div>
+          <Row className="InfoSecTitle last-content">
+            <Col md={{ span: 8, offset: 2 }} className="InfoBottomSec">
+              <Row xs={1} md={1}>
+                <Col>
+                  <FadeIn.Up>
+                    <Image src={Parking_2} className="InfoPic" rounded />
+                  </FadeIn.Up>
+                </Col>
+                <div className="InfoSec">
+                  <div className="InfoCap">
+                    <p className="InfoCapTitele">第二駐車場</p>
+                    <p className="InfoCapText">最大16台停車可能</p>
+                  </div>
+                </div>
+              </Row>
+            </Col>
+          </Row>
+
+          <BottomSet />
+        </Container>
+      </div>
+    </FadeIn.Down>
   </Styles>
 );

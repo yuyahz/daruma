@@ -16,7 +16,6 @@
 
 .Title {
   position: relative;
-  margin-bottom: 10%;
 }
 
 .H1Title {
@@ -215,7 +214,7 @@
 }
 
 .CarouselBg {
-  background-color: #fff;
+  border: solid 1px #fff;
   width: 100%;
   padding: 2vw 9.5vw 7.7vw 9.5vw;
   border-radius: 25px;
@@ -239,14 +238,17 @@
 
 .CarouselText {
   font-family: "Noto Serif JP", serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 24px;
   letter-spacing: 0.2vw;
-  line-height: 3vw;
-  color: #c73d13;
+  color: #fff;
   writing-mode: vertical-rl;
   align-items: center;
   margin-top: 6.4vw;
+}
+
+.carousel-inner {
+  border-radius: 10px;
 }
 
 .carousel-indicators {
@@ -272,20 +274,25 @@
   display: none !important; /* Hide chevrons */
 }
 
-.IntroSec {
+.IntroWrapper {
   font-family: "Noto Serif JP", serif;
+  padding: 0 15px;
 }
 
 .IntroSecTop {
   margin-top: 15%;
-  font-family: "Noto Serif JP", serif;
+
+  h3 {
+    font-weight: 100;
+    font-size: 64px;
+    width: 100%;
+    color: #fff;
+    margin: 5% 0;
+    line-height: 1.8;
+  }
 }
 
-.IntroSecBottom {
-  font-family: "Noto Serif JP", serif;
-}
-
-.IntroInsideSec {
+.IntroInsideWrapper {
   margin: 5% 0 5% 0;
 }
 
@@ -508,8 +515,6 @@ a:hover {
     padding: 24px 120px 96px 120px;
   }
   .CarouselText {
-    letter-spacing: 2px;
-    line-height: 2;
     margin-top: 5rem;
   }
   .carousel-indicators {
@@ -518,8 +523,16 @@ a:hover {
 }
 
 @media screen and (max-width: 1260px) {
+  .IntroSecTop {
+    h3 {
+      font-size: 5.079vw;
+    }
+  }
   .H1Title {
     margin-bottom: 10%;
+  }
+  .CarouselText {
+    font-size: 1.905vw;
   }
   .PointBtn {
     border-radius: 1.6vw;
@@ -549,7 +562,17 @@ a:hover {
     margin-bottom: 0;
   }
   .TitleDeco {
-    padding: 10% 10% 5% 10%;
+    margin-top: 44px;
+  }
+  .CarouselBg {
+    margin-top: 15%;
+  }
+  .IntroSecTop {
+    margin-top: 0;
+
+    h3 {
+      margin: 20% 0 15% 0;
+    }
   }
   .NewsBg {
     border: solid 4px #007bff;
@@ -557,6 +580,9 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .CarouselText {
+    font-size: 16px;
+  }
   .CarouselBg {
     padding: 2vw 9.5vw 8vw 9.5vw;
   }
@@ -576,9 +602,6 @@ a:hover {
   }
   .IntroCaption2 {
     max-width: 360px;
-  }
-  .NewsTitle {
-    color: #fff;
   }
   .PointBg {
     margin-top: 25%;
@@ -601,6 +624,19 @@ a:hover {
 }
 
 @media screen and (max-width: 690px) {
+  .IntroWrapper {
+    padding: 0;
+
+    div.col {
+      padding: 0;
+    }
+  }
+  .IntroSecTop {
+    h3 {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
   .PointBtn {
     margin-left: 5.2vw;
   }
@@ -612,20 +648,29 @@ a:hover {
 
 @media screen and (max-width: 575px) {
   .H1Title {
-    font-size: 4.248vw;
-    margin-top: 7.788vw;
+    margin-top: 24px;
   }
   .CarouselBg {
-    margin-bottom: 37vw;
+    margin-bottom: 0;
+    margin-top: 30%;
   }
   .TitleDeco {
-    margin-top: 10%;
+    margin-top: 7.652vw;
+  }
+  .MobileButtonsTitle {
+    margin-top: 8.348vw !important;
+  }
+  .IntroSecTop {
+    h3 {
+      font-size: 5.565vw;
+      margin: 30% 0 15% 0;
+    }
   }
   .IntroSecBottom {
     margin-bottom: 0;
   }
   .CarouselText {
-    margin-top: 10vw;
+    margin-top: 15vw;
   }
   .carousel-indicators {
     bottom: -61vw;
@@ -633,6 +678,9 @@ a:hover {
   .carousel-indicators li {
     width: 6px;
     height: 6px;
+  }
+  .NewsTitle {
+    color: #fff;
   }
   .NewsBg {
     border-radius: 6.6vw;
@@ -646,6 +694,18 @@ a:hover {
 }
 
 @media screen and (max-width: 363px) {
+  .CarouselText {
+    font-size: 4.408vw;
+  }
+  .IntroSecTop {
+    h3 {
+      font-size: 5.3vw;
+    }
+  }
+  .H1Title {
+    margin-top: 6.612vw;
+    font-size: 6.612vw;
+  }
   .TakeoutTextM {
     padding-top: 24px;
   }

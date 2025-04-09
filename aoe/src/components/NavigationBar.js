@@ -12,13 +12,7 @@ const Styles = styled.div`
     z-index: 1000;
     font-weight: bold;
     letter-spacing: 0.15em;
-    transition: transform 0.3s ease-out; /* Smooth transition */
-  }
-
-  @media screen and (max-width: 992px) {
-    .navbar {
-      margin-top: 30px;
-    }
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
   .LinkRent {
@@ -41,22 +35,27 @@ const Styles = styled.div`
 
   /* Add active class styling */
   .active {
-    color: #007bff; /* Change this to whatever active color you want */
-    font-weight: bold;
+    color: #007bff !important; /* Change this to whatever active color you want */
+    /* font-weight: bold; */
   }
 
   .ml-auto {
-    padding: 44px 0 0 0;
+    padding-top: 24px;
   }
 
   @media screen and (max-width: 992px) {
     /* Change background color when navbar is expanded */
-    .navbar {
-      margin: 40px 15px;
-    }
     .Link {
       color: #007bff;
       padding-left: 24px;
+    }
+    .navbar {
+      width: 100%;
+      margin: 0;
+      padding: 30px;
+    }
+    .navbar-collapse {
+      transition: all 0.3s ease-in-out;
     }
     .navbar-collapse.show {
       margin-top: 15px;
@@ -64,8 +63,19 @@ const Styles = styled.div`
       background-color: #fff;
       border-radius: 6px;
     }
+    .nav-item {
+      font-size: 19px;
+      padding: 6px 0;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
     button {
       background: #fff;
+    }
+    .btn {
+      border: 2px solid #007bff;
+    }
+    .kmKAxr .LinlkRent {
+      color: #fff !important;
     }
   }
 `;
@@ -77,15 +87,28 @@ export const NavigationBar = () => {
 
   const handleLinkClick = () => setExpanded(false);
 
+  const scrollThreshold = 45;
+
   const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
-      // If scrolling down, hide the navbar
-      setIsVisible(false);
-    } else {
-      // If scrolling up, show the navbar
+    const currentScroll = window.scrollY;
+
+    if (currentScroll === 0) {
       setIsVisible(true);
+      setLastScrollY(0);
+      return;
     }
-    setLastScrollY(window.scrollY);
+
+    if (Math.abs(currentScroll - lastScrollY) < scrollThreshold) {
+      return;
+    }
+
+    if (currentScroll > lastScrollY) {
+      setIsVisible(false); // scrolling down
+    } else {
+      setIsVisible(true); // scrolling up
+    }
+
+    setLastScrollY(currentScroll);
   };
 
   useEffect(() => {
@@ -108,7 +131,7 @@ export const NavigationBar = () => {
           expanded={expanded}
           onToggle={setExpanded}
           style={{
-            transform: isVisible ? "translateY(0)" : "translateY(-150%)", // Hide navbar when scrolling
+            transform: isVisible ? "translateY(0)" : "translateY(-100%)", // Hide navbar when scrolling
           }}
         >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

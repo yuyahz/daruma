@@ -1,11 +1,11 @@
 import React from "react";
+import "./Home.css";
+import * as FadeIn from "./components/FadeIn";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import "./Home.css";
 import { Container, Row, Col, Carousel, Image } from "react-bootstrap";
 import { NewsList } from "./components/NewsList";
 import { BottomSet } from "./components/BottomSet";
-import * as FadeIn from "./components/FadeIn";
 import TitleMainDeco from "./assets/TitleMainDeco.svg";
 import TitleHalfCircle from "./assets/TitleHalfCircle.svg";
 import ScrollIcon from "./assets/ScrollIcon.svg";
@@ -103,7 +103,7 @@ export const Home = () => (
           {/* Left Column - Text (Text on top for small screens, on the left for sm and larger screens) */}
           <Col sm={6} className="CarouselCap align-self-center">
             <div className="CarouselText">
-              <p>六 十 年 守 り 続 け た</p>
+              <p>五 十 年 守 り 続 け た</p>
               <p>味 を そ の ま ま に</p>
               <p>昔 か ら 変 わ ら ぬ</p>
               <p>伝 統 の 味 を 届 け る 為 に</p>
@@ -143,90 +143,103 @@ export const Home = () => (
         </Row>
       </Container>
 
-      <Row className="IntroSecTop">
-        <Col md={{ span: 10, offset: 1 }}>
-          <Row className="IntroInsideSec" xs={1} md={2}>
-            <Col>
-              <FadeIn.Left>
-                <Image
-                  className="IntroPic"
-                  src={IntroPic_1}
-                  alt="焼肉ダルマ青江店焼肉1"
-                  style={{ borderRadius: "25px" }}
-                />
-              </FadeIn.Left>
-            </Col>
+      <div className="IntroWrapper">
+        <Row className="IntroSecTop">
+          <h3 className="mx-auto">
+            先代の味を受け継ぎ、
+            <br />
+            その想いをお客様に届ける為に、
+            <br />
+            毎日丁寧に仕込んでいます。
+          </h3>
+          <Col md={{ span: 10, offset: 1 }}>
+            <Row className="IntroInsideWrapper" xs={1} md={2}>
+              <Col>
+                <FadeIn.Left>
+                  <Image
+                    className="IntroPic"
+                    src={IntroPic_1}
+                    alt="焼肉ダルマ青江店焼肉1"
+                    style={{ borderRadius: "25px" }}
+                  />
+                </FadeIn.Left>
+              </Col>
 
-            <Col className="IntroCaption">
-              <div className="IntroCaption2">
-                <h2 className="IntroCaptionTitle2">受け継がれる秘伝のタレ</h2>
-                <p>
-                  ダルマのタレは、10種類以上の厳選された素材を独自の製法でブレンドした、秘伝の味。
-                  創業から変わらず、
-                  守り続けているタレはコクと甘みのある深い味わいになっています。
-                  焼肉の味を引き立たせることはもちろん、
-                  幅広い年齢層の方に美味しく召し上がって頂けます。
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+              <Col className="IntroCaption">
+                <div className="IntroCaption2">
+                  <h2 className="IntroCaptionTitle2">受け継がれる秘伝のタレ</h2>
+                  <p>
+                    ダルマのタレは、10種類以上の厳選された素材を独自の製法でブレンドした、秘伝の味。
+                    創業から変わらず、
+                    守り続けているタレはコクと甘みのある深い味わいになっています。
+                    焼肉の味を引き立たせることはもちろん、
+                    幅広い年齢層の方に美味しく召し上がって頂けます。
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
-      <Row className="IntroSec">
-        <Col md={{ span: 10, offset: 1 }}>
-          <Row className="IntroInsideSec" xs={1} md={2}>
-            <Col className="IntroCaption" xs={{ order: 12 }} md={{ order: 1 }}>
-              <div className="IntroCaption2">
-                <h2 className="IntroCaptionTitle2">豊富なサイドメニュー</h2>
-                <p className="IntroCaptionP">
-                  多彩なサイドメニューは、こだわりの手作り。ダルマ開店当時の人気メニュー「ホルモンうどん焼き」から好評の豆腐チゲ、
-                  キムチチゲなどおいしい一品が勢揃い。サラダやデザートも充実しているのでお子様にも女性にも喜ばれています。
-                </p>
-              </div>
-            </Col>
+        <Row className="IntroMid">
+          <Col md={{ span: 10, offset: 1 }}>
+            <Row className="IntroInsideWrapper" xs={1} md={2}>
+              <Col
+                className="IntroCaption"
+                xs={{ order: 12 }}
+                md={{ order: 1 }}
+              >
+                <div className="IntroCaption2">
+                  <h2 className="IntroCaptionTitle2">豊富なサイドメニュー</h2>
+                  <p className="IntroCaptionP">
+                    多彩なサイドメニューは、こだわりの手作り。ダルマ開店当時の人気メニュー「ホルモンうどん焼き」から好評の豆腐チゲ、
+                    キムチチゲなどおいしい一品が勢揃い。サラダやデザートも充実しているのでお子様にも女性にも喜ばれています。
+                  </p>
+                </div>
+              </Col>
 
-            <Col xs={{ order: 1 }} md={{ order: 12 }}>
-              <FadeIn.Right>
-                <Image
-                  className="IntroPic"
-                  src={IntroPic_2}
-                  alt="焼肉ダルマ青江店焼肉2"
-                  style={{ borderRadius: "25px" }}
-                />
-              </FadeIn.Right>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+              <Col xs={{ order: 1 }} md={{ order: 12 }}>
+                <FadeIn.Right>
+                  <Image
+                    className="IntroPic"
+                    src={IntroPic_2}
+                    alt="焼肉ダルマ青江店焼肉2"
+                    style={{ borderRadius: "25px" }}
+                  />
+                </FadeIn.Right>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
 
-      <Row className="IntroSecBottom">
-        <Col md={{ span: 10, offset: 1 }}>
-          <Row className="IntroInsideSec" xs={1} md={2}>
-            <Col>
-              <FadeIn.Left>
-                <Image
-                  className="IntroPic"
-                  src={IntroPic_3}
-                  alt="焼肉ダルマ青江店焼肉3"
-                  style={{ borderRadius: "25px" }}
-                />
-              </FadeIn.Left>
-            </Col>
-            <Col className="IntroCaption">
-              <div className="IntroCaption2">
-                <h2 className="IntroCaptionTitle2">ボリューム満点のお肉</h2>
-                <p className="IntroCaptionP">
-                  ダルマのお肉はおいしくて、ボリューム満点
-                  食肉業者直売だから実現したこのボリューム！この価格！
-                  お腹いっぱい新鮮なお肉を楽しんで頂く為、スタッフ一同
-                  日々お客様の為に精進しています。
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        <Row className="IntroSecBottom">
+          <Col md={{ span: 10, offset: 1 }}>
+            <Row className="IntroInsideWrapper" xs={1} md={2}>
+              <Col>
+                <FadeIn.Left>
+                  <Image
+                    className="IntroPic"
+                    src={IntroPic_3}
+                    alt="焼肉ダルマ青江店焼肉3"
+                    style={{ borderRadius: "25px" }}
+                  />
+                </FadeIn.Left>
+              </Col>
+              <Col className="IntroCaption">
+                <div className="IntroCaption2">
+                  <h2 className="IntroCaptionTitle2">ボリューム満点のお肉</h2>
+                  <p className="IntroCaptionP">
+                    ダルマのお肉はおいしくて、ボリューム満点
+                    食肉業者直売だから実現したこのボリューム！この価格！
+                    お腹いっぱい新鮮なお肉を楽しんで頂く為、スタッフ一同
+                    日々お客様の為に精進しています。
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </div>
 
       <Container fluid className="NewsBg">
         <Row className="NewsTitle">
